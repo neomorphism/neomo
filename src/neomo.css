@@ -15,3 +15,373 @@ body {
   margin: 0;
 }
 /* CSS Normalize FINISH */
+
+/*
+* Title : padding
+* Description : defined padding basic class
+*/
+.p-0,
+.pl-0 {
+  padding-left: 0rem;
+}
+.p-1,
+.pl-1 {
+  padding-left: 1rem;
+}
+.p-2,
+.pl-2 {
+  padding-left: 1.2rem;
+}
+.p-3,
+.pl-3 {
+  padding-left: 1.3rem;
+}
+.p-4,
+.pl-4 {
+  padding-left: 1.4rem;
+}
+.p-5,
+.pl-5 {
+  padding-left: 1.5rem;
+}
+.p-6,
+.pl-6 {
+  padding-left: 1.6rem;
+}
+.p-7,
+.pl-7 {
+  padding-left: 1.7rem;
+}
+.p-8,
+.pl-8 {
+  padding-left: 1.8rem;
+}
+.p-9,
+.pl-9 {
+  padding-left: 1.9rem;
+}
+.p-10,
+.pl-10 {
+  padding-left: 2rem;
+}
+
+.p-0,
+.pr-0 {
+  padding-right: 0rem;
+}
+.p-1,
+.pr-1 {
+  padding-right: 1rem;
+}
+.p-2,
+.pr-2 {
+  padding-right: 1.2rem;
+}
+.p-3,
+.pr-3 {
+  padding-right: 1.3rem;
+}
+.p-4,
+.pr-4 {
+  padding-right: 1.4rem;
+}
+.p-5,
+.pr-5 {
+  padding-right: 1.5rem;
+}
+.p-6,
+.pr-6 {
+  padding-right: 1.6rem;
+}
+.p-7,
+.pr-7 {
+  padding-right: 1.7rem;
+}
+.p-8,
+.pr-8 {
+  padding-right: 1.8rem;
+}
+.p-9,
+.pr-9 {
+  padding-right: 1.9rem;
+}
+.p-10,
+.pr-10 {
+  padding-right: 2rem;
+}
+
+.p-0,
+.pt-0 {
+  padding-top: 0rem;
+}
+.p-1,
+.pt-1 {
+  padding-top: 1rem;
+}
+.p-2,
+.pt-2 {
+  padding-top: 1.2rem;
+}
+.p-3,
+.pt-3 {
+  padding-top: 1.3rem;
+}
+.p-4,
+.pt-4 {
+  padding-top: 1.4rem;
+}
+.p-5,
+.pt-5 {
+  padding-top: 1.5rem;
+}
+.p-6,
+.pt-6 {
+  padding-top: 1.6rem;
+}
+.p-7,
+.pt-7 {
+  padding-top: 1.7rem;
+}
+.p-8,
+.pt-8 {
+  padding-top: 1.8rem;
+}
+.p-9,
+.pt-9 {
+  padding-top: 1.9rem;
+}
+.p-10,
+.pt-10 {
+  padding-top: 2rem;
+}
+
+.p-0,
+.pb-0 {
+  padding-bottom: 0rem;
+}
+.p-1,
+.pb-1 {
+  padding-bottom: 1rem;
+}
+.p-2,
+.pb-2 {
+  padding-bottom: 1.2rem;
+}
+.p-3,
+.pb-3 {
+  padding-bottom: 1.3rem;
+}
+.p-4,
+.pb-4 {
+  padding-bottom: 1.4rem;
+}
+.p-5,
+.pb-5 {
+  padding-bottom: 1.5rem;
+}
+.p-6,
+.pb-6 {
+  padding-bottom: 1.6rem;
+}
+.p-7,
+.pb-7 {
+  padding-bottom: 1.7rem;
+}
+.p-8,
+.pb-8 {
+  padding-bottom: 1.8rem;
+}
+.p-9,
+.pb-9 {
+  padding-bottom: 1.9rem;
+}
+.p-10,
+.pb-10 {
+  padding-bottom: 2rem;
+}
+/* padding FINISH */
+
+/*
+* Title : margin
+* Description : defined margin basic class
+*/
+.m-0,
+.ml-0 {
+  margin-left: 0rem;
+}
+.m-1,
+.ml-1 {
+  margin-left: 1rem;
+}
+.m-2,
+.ml-2 {
+  margin-left: 1.2rem;
+}
+.m-3,
+.ml-3 {
+  margin-left: 1.3rem;
+}
+.m-4,
+.ml-4 {
+  margin-left: 1.4rem;
+}
+.m-5,
+.ml-5 {
+  margin-left: 1.5rem;
+}
+.m-6,
+.ml-6 {
+  margin-left: 1.6rem;
+}
+.m-7,
+.ml-7 {
+  margin-left: 1.7rem;
+}
+.m-8,
+.ml-8 {
+  margin-left: 1.8rem;
+}
+.m-9,
+.ml-9 {
+  margin-left: 1.9rem;
+}
+.m-10,
+.ml-10 {
+  margin-left: 2rem;
+}
+
+.m-0,
+.mr-0 {
+  margin-right: 0rem;
+}
+.m-1,
+.mr-1 {
+  margin-right: 1rem;
+}
+.m-2,
+.mr-2 {
+  margin-right: 1.2rem;
+}
+.m-3,
+.mr-3 {
+  margin-right: 1.3rem;
+}
+.m-4,
+.mr-4 {
+  margin-right: 1.4rem;
+}
+.m-5,
+.mr-5 {
+  margin-right: 1.5rem;
+}
+.m-6,
+.mr-6 {
+  margin-right: 1.6rem;
+}
+.m-7,
+.mr-7 {
+  margin-right: 1.7rem;
+}
+.m-8,
+.mr-8 {
+  margin-right: 1.8rem;
+}
+.m-9,
+.mr-9 {
+  margin-right: 1.9rem;
+}
+.m-10,
+.mr-10 {
+  margin-right: 2rem;
+}
+
+.m-0,
+.mt-0 {
+  margin-top: 0rem;
+}
+.m-1,
+.mt-1 {
+  margin-top: 1rem;
+}
+.m-2,
+.mt-2 {
+  margin-top: 1.2rem;
+}
+.m-3,
+.mt-3 {
+  margin-top: 1.3rem;
+}
+.m-4,
+.mt-4 {
+  margin-top: 1.4rem;
+}
+.m-5,
+.mt-5 {
+  margin-top: 1.5rem;
+}
+.m-6,
+.mt-6 {
+  margin-top: 1.6rem;
+}
+.m-7,
+.mt-7 {
+  margin-top: 1.7rem;
+}
+.m-8,
+.mt-8 {
+  margin-top: 1.8rem;
+}
+.m-9,
+.mt-9 {
+  margin-top: 1.9rem;
+}
+.m-10,
+.mt-10 {
+  margin-top: 2rem;
+}
+
+.m-0,
+.mb-0 {
+  margin-bottom: 0rem;
+}
+.m-1,
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.m-2,
+.mb-2 {
+  margin-bottom: 1.2rem;
+}
+.m-3,
+.mb-3 {
+  margin-bottom: 1.3rem;
+}
+.m-4,
+.mb-4 {
+  margin-bottom: 1.4rem;
+}
+.m-5,
+.mb-5 {
+  margin-bottom: 1.5rem;
+}
+.m-6,
+.mb-6 {
+  margin-bottom: 1.6rem;
+}
+.m-7,
+.mb-7 {
+  margin-bottom: 1.7rem;
+}
+.m-8,
+.mb-8 {
+  margin-bottom: 1.8rem;
+}
+.m-9,
+.mb-9 {
+  margin-bottom: 1.9rem;
+}
+.m-10,
+.mb-10 {
+  margin-bottom: 2rem;
+}
+/* margin FINISH */
