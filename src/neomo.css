@@ -1,0 +1,17 @@
+/* Import Section */
+@import "./layout.css";
+
+/* Common Section */
+
+/*
+* Title : CSS Normalize
+* Description : this is example
+*/
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+}
+/* CSS Normalize FINISH */
