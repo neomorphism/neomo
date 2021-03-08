@@ -25,6 +25,10 @@ If you need more arguments. write two hyphenate.<br/>
 /* Example component FINISH */
 ```
 
+```css
+/* Section Information */
+```
+
 ### Commit style
 
 #### New File
