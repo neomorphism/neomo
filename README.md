@@ -20,7 +20,7 @@
 <link rel="stylesheet" type="text/css" href="neomo.min.css" />
 ```
 
-### NPM/YARN
+### NPM/YARN Package
 
 ```
 npm install @neomorphism/neomo-ui
