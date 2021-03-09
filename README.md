@@ -9,8 +9,8 @@
 
 ## Features
 
-- 특징
-- 특징
+- Neomorphism design is a design language that makes the distinction between objects and backgrounds only shadowed, giving them a voluminous and vivid feeling of life.
+- The distinction between objects and backgrounds is distinguished only by shadows and light, not by color tea, giving a round and smooth impression. Overall, the UI is lively, and this is tactile beyond simple graphics.
 
 ## Getting Started
 
