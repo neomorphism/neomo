@@ -1,5 +1,6 @@
 /* Import Section */
 @import "./layout/layout.css";
+@import "./components/simple-table.css";
 
 /* Common Section */
 
@@ -385,3 +386,4 @@ body {
   margin-bottom: 2rem;
 }
 /* margin FINISH */
+

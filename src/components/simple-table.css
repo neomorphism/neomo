@@ -1,0 +1,45 @@
+/* Simple Table Section Information */
+
+/*
+* Title : Table component
+* Description : this is Table
+*/
+.table {
+  max-width: 1200px;
+  width: 100%;
+  padding: 15px;
+  border-spacing: 0;
+
+  /* Neumorphism */
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.table > thead > tr {
+  text-align: center;
+  font-weight: bold;
+}
+
+.table > tbody > tr {
+  text-align: center;
+}
+
+.table > thead > tr > th {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.table > thead > tr > th::after {
+  box-shadow: inset 20px 20px 60px #bebebe, inset -20px -20px 60px #ffffff;
+}
+
+.table > tbody > tr > td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: thin solid rgba(0, 0, 0, 0.08);
+}
+
+/* Table component FINISH */
