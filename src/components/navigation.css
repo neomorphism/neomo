@@ -1,0 +1,52 @@
+/* Navigation Information */
+
+/*
+* Title : nav
+* Description : navigation layout
+*/
+
+.nav {
+  list-style: none;
+
+  border-radius: 39px;
+  background: #e0e0e0;
+  box-shadow: 12px 12px 24px #929292, -12px -12px 24px #ffffff;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  padding: 5px 50px;
+}
+
+/* nav FINISH */
+
+/*
+  * Title : nav-cloumn
+  * Description : nav-cloumn layout
+  */
+
+.nav-cloumn {
+  list-style: none;
+  width: 50%;
+  padding: 25px 20px;
+  border-radius: 39px;
+  background: #e0e0e0;
+  box-shadow: 12px 12px 24px #929292, -12px -12px 24px #ffffff;
+}
+
+.nav-cloumn .nav-item {
+  padding: 25px 20px;
+}
+
+/* nav-cloumn FINISH */
+
+/*
+  * Title : nav-item
+  * Description : nav-item layout
+  */
+
+.nav-item .nav-link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* nav-item FINISH */
