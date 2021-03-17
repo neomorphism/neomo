@@ -49,6 +49,24 @@
 </html>
 ```
 
+
+> Simple Button usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+  <body>
+    <div class="container">
+        <button class="neo-button mt-10">마우스를 가져와보세요</button>
+    </div>
+  </body>
+</html>
+```
+
 ## Navigation Information
 
 > Naviagtion usage
