@@ -49,6 +49,7 @@
 </html>
 ```
 
+
 > Simple Button usage
 
 ```html
@@ -62,6 +63,65 @@
     <div class="container">
         <button class="neo-button mt-10">마우스를 가져와보세요</button>
     </div>
+  </body>
+</html>
+```
+
+## Navigation Information
+
+> Naviagtion usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" href="../src/components/navigation.css" />
+  </head>
+  <body>
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+  </body>
+</html>
+```
+
+> Naviagtion column usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" href="../src/components/navigation.css" />
+  </head>
+
+  <body>
+    <ul class="nav-cloumn">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
   </body>
 </html>
 ```
