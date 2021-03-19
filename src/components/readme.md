@@ -125,3 +125,33 @@
   </body>
 </html>
 ```
+
+> Simple card usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" href="../src/components/navigation.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <img 
+              class="card-img-top" 
+              src="http://t1.daumcdn.net/friends/prod/editor/dc8b3d02-a15a-4afa-a88b-989cf2a50476.jpg" alt="Card image cap"
+            >
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                here is an card contents 
+                write some texts
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
+```
