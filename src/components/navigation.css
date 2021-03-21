@@ -12,9 +12,10 @@
   background: #e0e0e0;
   box-shadow: 12px 12px 24px #929292, -12px -12px 24px #ffffff;
   display: flex;
-  justify-content: space-between;
-  width: 50%;
-  padding: 5px 50px;
+  justify-content: space-evenly;
+  padding-left: 0;
+  
+ 
 }
 
 /* nav FINISH */
