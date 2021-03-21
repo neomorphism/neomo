@@ -1,0 +1,57 @@
+/* Simple Pagination Section Information */
+
+/*
+* Title : Pagination component
+* Description : this is Pagination
+*/
+.pagination {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background: #dde1e7;
+  padding: 25px;
+  width: 1000px;
+
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+.pagination-list {
+  display: flex;
+  list-style: none;
+}
+.pagination-list li {
+  flex: 1;
+  margin: 0px 5px;
+  background: #dde1e7;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+.pagination-list li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #4d3252;
+  height: 45px;
+  width: 55px;
+  display: block;
+  line-height: 45px;
+}
+.pagination-list li a:hover {
+  border-radius: 10px;
+  box-shadow: inset -3px -3px 7px #ffffff73,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+  font-size: 17px;
+  color: #6f6cde;
+}
+.pagination-list li:first-child {
+  margin: 0 15px 0 0;
+}
+.pagination-list li:last-child {
+  margin: 0 0 0 15px;
+}
+.pagination-list li:first-child a {
+  width: 120px;
+}
+.pagination-list li:last-child a {
+  width: 100px;
+}
+/* Pagination component FINISH */
