@@ -1,0 +1,67 @@
+/* Checkbox Section Information */
+
+/*
+* Title : checkbox form
+* Description : this is checkbox
+*/
+
+.checkbox-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  vertical-align: middle;
+  outline: none;
+  border: none;
+  background-color: neomo;
+}
+
+.checkbox-label {
+  vertical-align: middle;
+}
+
+.checkbox-color + .checkbox-label {
+}
+
+.checkbox-input:before {
+  content: " ";
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  position: absolute;
+  border-radius: 20%;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+}
+
+.checkbox-input:checked:after {
+  content: "✔";
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  position: absolute;
+  border-radius: 20%;
+  box-shadow: inset 1px 2px 2px #b8b9be, inset -5px -2px 4px #fff;
+}
+
+.checkbox-input:hover:before {
+  content: "✔";
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  border-radius: 20%;
+  position: relative;
+}

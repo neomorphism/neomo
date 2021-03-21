@@ -3,6 +3,7 @@
 @import "./components/simple-table.css";
 @import "./components/simple-card.css";
 @import "./components/simple-button.css";
+@import "./forms/checkbox.css";
 
 /* Common Section */
 
@@ -389,3 +390,48 @@ body {
 }
 /* margin FINISH */
 
+:root {
+  --blue: #0056b3;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #a91e2c;
+  --orange: #fd7e14;
+  --yellow: #f0b400;
+  --green: #18634b;
+  --teal: #0056b3;
+  --cyan: #17a2b8;
+  --white: #ecf0f3;
+  --gray: #93a5be;
+  --gray-dark: #525480;
+  --primary: #e6e7ee;
+  --secondary: #2d4cc8;
+  --success: #18634b;
+  --info: #0056b3;
+  --warning: #f0b400;
+  --danger: #a91e2c;
+  --light: #d1d9e6;
+  --dark: #31344b;
+  --default: #262833;
+  --white: #ecf0f3;
+  --gray: #44476a;
+  --neutral: #ecf0f3;
+  --soft: #e6e7ee;
+  --black: #262833;
+  --purple: #6f42c1;
+  --gray-100: #f3f7fa;
+  --gray-200: #fafbfe;
+  --gray-300: #e6e7ee;
+  --gray-400: #d1d9e6;
+  --gray-500: #b1bcce;
+  --gray-600: #93a5be;
+  --gray-700: #66799e;
+  --gray-800: #525480;
+  --facebook: #3b5999;
+  --dribbble: #ea4c89;
+  --github: #222222;
+  --behance: #0057ff;
+  --twitter: #1da1f2;
+  --slack: #3aaf85;
+  --neomo: #eff8ff;
+}
