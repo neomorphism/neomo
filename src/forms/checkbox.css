@@ -6,6 +6,7 @@
 */
 
 .checkbox-input {
+  margin: 0 2px 0 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -18,14 +19,10 @@
   vertical-align: middle;
   outline: none;
   border: none;
-  background-color: neomo;
 }
 
 .checkbox-label {
   vertical-align: middle;
-}
-
-.checkbox-color + .checkbox-label {
 }
 
 .checkbox-input:before {
