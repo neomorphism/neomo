@@ -155,3 +155,53 @@
   </body>
 </html>
 ```
+
+> Simple Dropdown usage
+
+````html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+  <body class="p-2">
+    <div class="dropdown">
+      <button class="dropdown-button">Dropdown</button>
+      <div class="dropdown-content">
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JAVA</a>
+        <a href="#">C++</a>
+      </div>
+    </div>
+  </body>
+</html>
+
+> Simple Pagination usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+  <body class="p-2">
+    <div class="pagination">
+      <ul class="pagination-list">
+        <li><a href="#">Previous</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">Next</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
+````
