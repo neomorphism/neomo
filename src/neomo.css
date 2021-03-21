@@ -4,6 +4,7 @@
 @import "./components/simple-card.css";
 @import "./components/simple-button.css";
 @import "./forms/checkbox.css";
+@import "./forms/radio.css";
 @import "./components/navigation.css";
 @import "./components/simple-dropdown.css";
 @import "./components/simple-pagination.css";
