@@ -1,0 +1,54 @@
+/* Simple Dropdown Section Information */
+
+/*
+* Title : Dropdown component
+* Description : this is Dropdown
+*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-button {
+  padding: 8px;
+  font-size: 15px;
+  min-width: 150px;
+  min-height: 50px;
+
+  border: none;
+  background-color: #dde1e7;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+.dropdown-button:focus {
+  border: none;
+  outline: none;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 150px;
+  padding: 5px;
+
+  background-color: #dde1e7;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+.dropdown-content a {
+  color: black;
+  padding: 8px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background: #dde1e7;
+  border-radius: 10px;
+  box-shadow: inset 3px 3px 6px #b8b9be, inset -3px -3px 6px #ffffff;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropdown-button {
+  background: #dde1e7;
+  box-shadow: inset 3px 3px 6px #b8b9be, inset -3px -3px 6px #ffffff;
+}
+/* Dropdown component FINISH */
