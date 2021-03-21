@@ -5,6 +5,8 @@
 @import "./components/simple-button.css";
 @import "./forms/checkbox.css";
 @import "./components/navigation.css";
+@import "./components/simple-dropdown.css";
+@import "./components/simple-pagination.css";
 
 /* Common Section */
 
