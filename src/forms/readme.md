@@ -15,7 +15,7 @@
   <body>
     <div>
       <input class="checkbox-input" type="checkbox" value="" id="check1" />
-      <label class="checkbox-label" for="check1">체크박스 입니다.</label>
+      <label class="checkbox-label" for="check1">This is checkbox.</label>
     </div>
   </body>
 </html>
