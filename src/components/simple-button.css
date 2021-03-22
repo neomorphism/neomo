@@ -33,6 +33,10 @@
     color: #6f6cde;
 }
 
+.button:focus {
+    outline: 0;
+}
+
 .square {
     border-radius: 0px;
 }
@@ -63,10 +67,14 @@
 
 .dark {
     /* Neumorphism design */
+    /* 작성 필요 */
+    background: black;
 }
 
 .dark:hover {
     /* Neumorphism design */
+    /* 작성 필요 */
+    box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
 .blue {
