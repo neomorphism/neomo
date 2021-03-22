@@ -7,30 +7,20 @@
 */
 
 .button {
-    /* Layout */
     display: inline-block;
     min-width: 100px;
     min-height: 50px;
     padding-left: 10px;
     padding-right: 10px;
 
-    /* Neumorphism design */
-    border: none;
-    border-radius: 10px;
-    background: white;
-    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
-
-    /* Text */
-    text-align: center;
-    color: black;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .button:hover {
-    /* Neumorphism design */
-    box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
-
-    /* Text */
-    color: #6f6cde;
+    outline: 0;
+    cursor: pointer;
 }
 
 .button:focus {
@@ -38,65 +28,39 @@
 }
 
 .square {
-    border-radius: 0px;
+    border-radius: 0px !important;
 }
 
 .normal {
-    /* Layout */
     min-width: 100px;
     min-height: 50px;
 }
 
 .small {
-    /* Layout */
     min-width: 50px;
     min-height: 50px;
 }
 
 .medium {
-    /* Layout */
     min-width: 110px;
     min-height: 60px;
 }
 
 .large {
-    /* Layout */
     min-width: 130px;
     min-height: 70px;
 }
 
-.dark {
-    /* Neumorphism design */
-    /* 작성 필요 */
-    background: black;
+.bg-gray {
+    background: #e0e0e0;
 }
 
-.dark:hover {
-    /* Neumorphism design */
-    /* 작성 필요 */
-    box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+.bg-dark {
+    background: #464646;
 }
 
-.blue {
-    /* Neumorphism design */
+.bg-blue {
     background: #eff8ff;
-    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
-
-    /* Text */
-    color: #2b2d2e;
-}
-
-.blue:hover {
-    /* Neumorphism design */
-    background: #dbebfa;
-    box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
-
-    /* Text */
-    color: #2b2d2e;
-}
-
-.bg {
-    background: #f3f4f7;
 }
 
 /* Button component FINISH */

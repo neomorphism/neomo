@@ -1,0 +1,69 @@
+/* Common Section */
+
+/*
+* Title : Neumorphism Color
+* Author : Jieun Han
+* Description : This includes three colors(gray, white, blue) and shadow effects based on them
+*/
+
+.gray {
+    border: none;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288);
+
+    text-align: center;
+    color: black;
+}
+
+.gray-pressed, button.gray:hover, button.gray:focus {
+    border: none;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow: inset -3px -3px 7px #ffffff80, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+
+    text-align: center;
+    color: #6f6cde;
+}
+
+.dark {
+    border: none;
+    border-radius: 10px;
+    background: #464646;
+    box-shadow: -3px -3px 7px #ffffff50, 3px 3px 5px black;
+
+    text-align: center;
+    color: white;
+}
+
+.dark-pressed, button.dark:hover, button.dark:focus {
+    border: none;
+    border-radius: 10px;
+    background: #464646;
+    box-shadow: inset -3px -3px 7px #ffffff50, inset 3px 3px 5px black;
+
+    text-align: center;
+    color: white;
+}
+
+.blue {
+    border: none;
+    border-radius: 10px;
+    background: #eff8ff;
+    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288);
+
+    text-align: center;
+    color: #2b2d2e;
+}
+
+.blue-pressed, button.blue:hover, button.blue:focus {
+    border: none;
+    border-radius: 10px;
+    background: #dbebfa;
+    box-shadow: inset -3px -3px 7px #ffffff80, inset 4px 4px 7px rgba(94, 104, 121, 0.288);
+
+    text-align: center;
+    color: #2b2d2e;
+}
+
+/* Neumorphism Color FINISH */
