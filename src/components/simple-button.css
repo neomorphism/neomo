@@ -33,6 +33,10 @@
     color: #6f6cde;
 }
 
+.button:focus {
+    outline: 0;
+}
+
 .square {
     border-radius: 0px;
 }
