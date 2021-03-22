@@ -1,33 +1,72 @@
-
+/*! CSS Used from: https://bulma.io/css/bulma-docs.min.css?v=202103052015 */
 
 .card{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  min-height: 0;
+  max-width:100%;
+  position:relative;
 
   /* Neumorphism */
   border-radius: 20px;
   background: #e0e0e0;
+  background-clip:border-box;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
-.card-img,
-.card-img-top,
-.card-img-bottom {
-  width: 100%;
+
+.card-header:first-child{
+  /* Neumorphism */
+  border-radius: 20px;
 }
 
-.card-body{
-  flex: 1 1 auto;
-  padding: 15px;
+.card-footer:last-child{
+  /* Neumorphism */
+  border-radius: 20px;
 }
 
-.card-title{
-  margin-bottom: 5px;
+.card-header{
+  align-items:stretch;
+  display:flex;
 }
 
-.card-text:last-child {
-  margin-bottom: 0px;
+.card-header-title{
+  align-items:center;
+  display:flex;
+  flex-grow:1;
+  font-weight:700;
+  padding:.75rem 1rem;
+}
+
+.card-content{
+  padding:1.5rem;
+}
+
+.card-footer{
+  border-top:1px solid gray;
+  align-items:stretch;
+  display:flex;
+}
+
+.card-footer-item{
+  align-items:center;
+  display:flex;
+  flex-basis:0;
+  flex-grow:1;
+  flex-shrink:0;
+  justify-content:center;
+  padding:.75rem;
+}
+
+.card-footer-item:not(:last-child){
+  border-right:1px solid gray;
+}
+
+img{height:auto;max-width:100%;}
+img{height:auto;max-width:100%;}
+.image img{
+  display:block;
+  height:auto;
+  width:100%;
+}
+
+.card-image:first-child img{
+  border-radius: 20px;
 }
