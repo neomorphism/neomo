@@ -148,21 +148,39 @@
     <link rel="stylesheet" href="../src/components/navigation.css" />
   </head>
   <body>
-    <div class="container">
-        <div class="card" style="width: 18rem;">
-            <img 
-              class="card-img-top" 
-              src="http://t1.daumcdn.net/friends/prod/editor/dc8b3d02-a15a-4afa-a88b-989cf2a50476.jpg" alt="Card image cap"
-            >
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                here is an card contents 
-                write some texts
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+    <div class="card"  style="width: 18rem;">
+      <header class="card-header">
+        <p class="card-header-title">
+          Component
+        </p>
+      </header>
+      <div class="card-image">
+        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+      </div>
+      <div class="card-content">
+        <div>
+          <div class="media-left">
+            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+          </div>
+          <div>
+            <p>John Smith</p>
+            <p>@johnsmith</p>
+          </div>
         </div>
+    
+        <div class="content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+          <a href="#">#css</a> <a href="#">#responsive</a>
+          <br>
+          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+        </div>
+      </div>
+      <footer class="card-footer">
+        <a href="#" class="card-footer-item">Save</a>
+        <a href="#" class="card-footer-item">Edit</a>
+        <a href="#" class="card-footer-item">Delete</a>
+      </footer>
     </div>
   </body>
 </html>
