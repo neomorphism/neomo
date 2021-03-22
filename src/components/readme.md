@@ -49,7 +49,6 @@
 </html>
 ```
 
-
 > Simple Button usage
 
 ```html
@@ -61,19 +60,19 @@
   </head>
   <body>
     <div class="container bg">
-        <button class="button mt-10">기본 버튼</button>
-        <br/>
-        <button class="button square mt-10">사각형 버튼</button>
-        <br/>
-        <button class="button small mt-10">❤️</button>
-        <button class="button normal mt-10">❤️</button>
-        <button class="button medium mt-10">❤️</button>
-        <button class="button large mt-10">❤️</button>
-        <br/>
-        <button class="button blue mt-10">파란색 기본 버튼</button>
-        <br/>
-        <button class="button square blue mt-10">파란색 사각형 버튼</button>
-        <br/>
+      <button class="button mt-10">기본 버튼</button>
+      <br />
+      <button class="button square mt-10">사각형 버튼</button>
+      <br />
+      <button class="button small mt-10">❤️</button>
+      <button class="button normal mt-10">❤️</button>
+      <button class="button medium mt-10">❤️</button>
+      <button class="button large mt-10">❤️</button>
+      <br />
+      <button class="button blue mt-10">파란색 기본 버튼</button>
+      <br />
+      <button class="button square blue mt-10">파란색 사각형 버튼</button>
+      <br />
     </div>
   </body>
 </html>
@@ -88,7 +87,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" href="../src/components/navigation.css" />
+    <link rel="stylesheet" href="../src/neomo.css" />
   </head>
   <body>
     <ul class="nav">
@@ -116,7 +115,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" href="../src/components/navigation.css" />
+    <link rel="stylesheet" href="../src/neomo.css" />
   </head>
 
   <body>
@@ -145,34 +144,38 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" href="../src/components/navigation.css" />
+    <link rel="stylesheet" href="../src/neomo.css" />
   </head>
   <body>
-    <div class="card"  style="width: 18rem;">
+    <div class="card" style="width: 18rem;">
       <header class="card-header">
-        <p class="card-header-title">
-          Component
-        </p>
+        <p class="card-header-title">Component</p>
       </header>
       <div class="card-image">
-        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+        <img
+          src="https://bulma.io/images/placeholders/1280x960.png"
+          alt="Placeholder image"
+        />
       </div>
       <div class="card-content">
         <div>
           <div class="media-left">
-            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+            <img
+              src="https://bulma.io/images/placeholders/96x96.png"
+              alt="Placeholder image"
+            />
           </div>
           <div>
             <p>John Smith</p>
             <p>@johnsmith</p>
           </div>
         </div>
-    
+
         <div class="content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-          <a href="#">#css</a> <a href="#">#responsive</a>
-          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+          iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
+          <a href="#">#responsive</a>
+          <br />
           <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
         </div>
       </div>
