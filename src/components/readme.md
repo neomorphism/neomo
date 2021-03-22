@@ -60,8 +60,20 @@
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
   <body>
-    <div class="container">
-        <button class="neo-button mt-10">마우스를 가져와보세요</button>
+    <div class="container bg">
+        <button class="button mt-10">기본 버튼</button>
+        <br/>
+        <button class="button square mt-10">사각형 버튼</button>
+        <br/>
+        <button class="button small mt-10">❤️</button>
+        <button class="button normal mt-10">❤️</button>
+        <button class="button medium mt-10">❤️</button>
+        <button class="button large mt-10">❤️</button>
+        <br/>
+        <button class="button blue mt-10">파란색 기본 버튼</button>
+        <br/>
+        <button class="button square blue mt-10">파란색 사각형 버튼</button>
+        <br/>
     </div>
   </body>
 </html>
@@ -158,7 +170,7 @@
 
 > Simple Dropdown usage
 
-````html
+```html
 <!DOCTYPE html>
 <html charset="utf-8">
   <head>
@@ -177,6 +189,7 @@
     </div>
   </body>
 </html>
+```
 
 > Simple Pagination usage
 
@@ -204,4 +217,4 @@
     </div>
   </body>
 </html>
-````
+```

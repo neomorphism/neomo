@@ -8,7 +8,7 @@ The file name must be lowercase and must be hyphenated to distinguish between wo
 
 > EX) card-box
 
-If you need more arguments. write two hyphenate.<br/>
+If you need more arguments. write two hyphenates.<br/>
 
 > EX) card-box--text
 
