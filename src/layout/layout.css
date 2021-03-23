@@ -19,10 +19,9 @@
     padding: 30px;
     font-size: 30px;
   }
-
 }
 /* X-Large */
-@media (min-width: 1200px) and (max-width: 1400px) {
+@media (max-width: 1400px) {
   .container {
     max-width: 1140px;
   }
@@ -33,7 +32,7 @@
   }
 }
 /* Large */
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .container {
     max-width: 960px;
   }
@@ -44,7 +43,7 @@
   }
 }
 /* Medium */
-@media (min-width: 768px) and (max-width: 992px) {
+@media (max-width: 992px) {
   .container {
     max-width: 720px;
   }
@@ -55,7 +54,7 @@
   }
 }
 /* Small */
-@media (min-width: 576px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .container {
     max-width: 540px;
   }
