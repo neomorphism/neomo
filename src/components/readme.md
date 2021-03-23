@@ -71,10 +71,10 @@
   </div>
   <br />
   <div class="container bg-dark">
-    <button class="button dark small m-10">❤️</button>
-    <button class="button dark normal m-10">❤️</button>
-    <button class="button dark medium m-10">❤️</button>
-    <button class="button dark large m-10">❤️</button>
+    <button class="button dark small m-10">small</button>
+    <button class="button dark normal m-10">normal</button>
+    <button class="button dark medium m-10">medium</button>
+    <button class="button dark large m-10">large</button>
     <br />
   </div>
   <br />
@@ -148,6 +148,8 @@
 </html>
 ```
 
+## Card Information
+
 > Simple card usage
 
 ```html
@@ -178,6 +180,8 @@
 </html>
 ```
 
+## Dropdown Information
+
 > Simple Dropdown usage
 
 ```html
@@ -200,6 +204,8 @@
   </body>
 </html>
 ```
+
+## Pagination Information
 
 > Simple Pagination usage
 
@@ -227,4 +233,30 @@
     </div>
   </body>
 </html>
+
+<!-- 아래는 color.css 적용해본 테스트 코드 -->
+
+<!-- <!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+  <body class="p-2">
+    <div class="pagination gray">
+      <ul class="pagination-list">
+        <li class="gray"><a href="#">Previous</a></li>
+        <li class="gray"><a href="#">1</a></li>
+        <li class="gray"><a href="#">2</a></li>
+        <li class="gray"><a href="#">3</a></li>
+        <li class="gray"><a href="#">4</a></li>
+        <li class="gray"><a href="#">5</a></li>
+        <li class="gray"><a href="#">6</a></li>
+        <li class="gray"><a href="#">7</a></li>
+        <li class="gray"><a href="#">8</a></li>
+        <li class="gray"><a href="#">Next</a></li>
+      </ul>
+    </div>
+  </body>
+</html> -->
 ```

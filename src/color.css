@@ -4,66 +4,78 @@
 * Title : Neumorphism Color
 * Author : Jieun Han
 * Description : This includes three colors(gray, white, blue) and shadow effects based on them
+* 주의 : <li> 태그 밑에 <a> 태그를 넣을 경우, <a> 태그에 해당하는 css selector에 'color: inherit;'를 넣어야 함
 */
 
 .gray {
     border: none;
     border-radius: 10px;
-    background: #e0e0e0;
+    background: var(--neomo-gray);
     box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288);
 
     text-align: center;
-    color: black;
+    color: var(--neomo-gray-text);
 }
 
-.gray-pressed, button.gray:hover, button.gray:focus {
+.gray-pressed, button.gray:hover, button.gray:focus, li.gray:hover {
     border: none;
     border-radius: 10px;
-    background: #e0e0e0;
+    background: var(--neomo-gray);
     box-shadow: inset -3px -3px 7px #ffffff80, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 
     text-align: center;
-    color: #6f6cde;
+    color: var(--neomo-gray-pressed-text);
 }
 
 .dark {
     border: none;
     border-radius: 10px;
-    background: #464646;
+    background: var(--neomo-dark);
     box-shadow: -3px -3px 7px #ffffff50, 3px 3px 5px black;
 
     text-align: center;
-    color: white;
+    color: var(--neomo-dark-text);
 }
 
-.dark-pressed, button.dark:hover, button.dark:focus {
+.dark-pressed, button.dark:hover, button.dark:focus, li.dark:hover {
     border: none;
     border-radius: 10px;
-    background: #464646;
+    background: var(--neomo-dark);
     box-shadow: inset -3px -3px 7px #ffffff50, inset 3px 3px 5px black;
 
     text-align: center;
-    color: white;
+    color: var(--noemo-dark-pressed-text);
 }
 
 .blue {
     border: none;
     border-radius: 10px;
-    background: #eff8ff;
+    background: var(--neomo-blue);
     box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288);
 
     text-align: center;
-    color: #2b2d2e;
+    color: var(--neomo-blue-text);
 }
 
-.blue-pressed, button.blue:hover, button.blue:focus {
+.blue-pressed, button.blue:hover, button.blue:focus, li.blue:hover {
     border: none;
     border-radius: 10px;
-    background: #dbebfa;
-    box-shadow: inset -3px -3px 7px #ffffff80, inset 4px 4px 7px rgba(94, 104, 121, 0.288);
+    background: var(--noemo-blue-pressed);
+    box-shadow: inset -3px -3px 7px #ffffffbd, inset 4px 4px 7px rgba(94, 104, 121, 0.288);
 
     text-align: center;
-    color: #2b2d2e;
+    color: var(--neomo-blue-text);
 }
 
+:root {
+    --neomo-gray: #e0e0e0;
+    --neomo-gray-text: #000000;
+    --neomo-gray-pressed-text: #6f6cde;
+    --neomo-dark: #464646;
+    --neomo-dark-text: white;
+    --noemo-dark-pressed-text: #ffffffe8;
+    --neomo-blue: #eff8ff;
+    --neomo-blue-text: #2b2d2e;
+    --noemo-blue-pressed: #dbebfa;
+}
 /* Neumorphism Color FINISH */

@@ -55,3 +55,46 @@
   width: 100px;
 }
 /* Pagination component FINISH */
+
+/* 아래는 color.css 적용해본 테스트 코드 */
+
+/* .pagination {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 25px;
+  width: 1000px;
+}
+.pagination-list {
+  display: flex;
+  list-style: none;
+}
+.pagination-list li {
+  flex: 1;
+  margin: 0px 5px;
+}
+.pagination-list li a {
+  font-size: 18px;
+  text-decoration: none;
+  height: 45px;
+  width: 55px;
+  display: block;
+  line-height: 45px;
+  color: inherit;
+}
+.pagination-list li a:hover {
+  font-size: 17px;
+  color: inherit;
+}
+.pagination-list li:first-child {
+  margin: 0 15px 0 0;
+}
+.pagination-list li:last-child {
+  margin: 0 0 0 15px;
+}
+.pagination-list li:first-child a {
+  width: 120px;
+}
+.pagination-list li:last-child a {
+  width: 100px;
+} */
