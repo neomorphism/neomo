@@ -9,14 +9,33 @@
   list-style: none;
 
   border-radius: 50px;
-  background: #ffffff;
+
   box-shadow: 16px 16px 32px #d9d9d9, -16px -16px 32px #ffffff;
   display: flex;
   justify-content: space-evenly;
   padding-left: 0;
+  padding: 15px 10px;
 }
 
 /* nav FINISH */
+
+/*
+* Title : nav2
+* Description : navigation layout
+*/
+
+.nav2 {
+  list-style: none;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px white;
+
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 0;
+  box-shadow: 1px 1px 1px #bebebe, -1px -1px 1px #bebebe;
+}
+
+/* nav2 FINISH */
 
 /*
   * Title : nav-cloumn
@@ -49,6 +68,29 @@
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
+.nav-item--animation {
+  border-radius: 15px;
+  background: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  transition: all 1s ease-in-out;
+}
+
+/* .nav-item2 {
+  border-radius: 15px;
+  background: white;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+} */
+.nav-item2 {
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.nav-item2:hover {
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 5px 5px 5px #bebebe, -5px -5px 5px #ffffff;
+}
+
 /* nav-item FINISH */
 
 /*
@@ -56,7 +98,8 @@
   * Description : nav-link layout
   */
 
-.nav-link {
+.nav-link,
+.nav-link2 {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
 }
@@ -73,12 +116,25 @@
   box-shadow: inset 3px 3px 3px #bebebe, inset -0.1px -0.1px 2px #bebebe;
 }
 
-/*
-.test {
+.nav-link2:focus {
+  border: 0.1rem outset #bebebe;
+  border-radius: 1rem;
+}
+
+/* .test {
   height: 100px;
   width: 100px;
   background-color: teal;
   margin-left: 100px;
   box-shadow: inset -5px -5px 5px red;
 }
-*/
+.test2 {
+  border: 0.5rem outset pink;
+  outline: 0.5rem solid khaki;
+  box-shadow: 0 0 0 2rem skyblue;
+  border-radius: 12px;
+  font: bold 1rem sans-serif;
+  margin: 2rem;
+  padding: 1rem;
+  outline-offset: 0.5rem;
+} */
