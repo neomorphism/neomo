@@ -450,6 +450,46 @@
 </html>
 ```
 
+
+> Progress Bar usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+  <body class="p-2">
+    <div class="columns">
+      <div class="column size-3">
+        <h2>Choose your color</h2>
+        <span>success</span>
+        <div class="progress">
+          <div class="progress-bar success" style="width: 60%;"></div>
+        </div>
+        <span>info</span>
+        <div class="progress">
+          <div class="progress-bar info" style="width: 60%;"></div>
+        </div>
+        <span>danger</span>
+        <div class="progress">
+          <div class="progress-bar danger" style="width: 60%;"></div>
+        </div>
+        <span>dark</span>
+        <div class="progress">
+          <div class="progress-bar dark" style="width: 60%;"></div>
+        </div>
+        <span>gray</span>
+        <div class="progress">
+          <div class="progress-bar gray" style="width: 60%;"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```
+
 <!-- 아래는 color.css 적용해본 테스트 코드 -->
 
 <!-- <!DOCTYPE html>
