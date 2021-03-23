@@ -2,14 +2,15 @@
 
 /*
 * Title : nav
-* Description : navigation layout
+* Description : normal nav. 
+                Expressing neumorphism with an effect on the boader.
+                Distribute even space using space-evenly.
+                Use padding to secure enough space.
+                Get Reactive with flex.
 */
-
 .nav {
   list-style: none;
-
   border-radius: 50px;
-
   box-shadow: 16px 16px 32px #d9d9d9, -16px -16px 32px #ffffff;
   display: flex;
   justify-content: space-evenly;
@@ -21,7 +22,9 @@
 
 /*
 * Title : nav2
-* Description : navigation layout
+* Description : nomal2 nav.
+                express a different design from nav by giving shadows inside the box.
+                
 */
 
 .nav2 {
@@ -39,34 +42,55 @@
 
 /*
   * Title : nav-cloumn
-  * Description : nav-cloumn layout
+  * Description : nav version column
   */
 
 .nav-cloumn {
   list-style: none;
-  width: 50%;
-  padding: 25px 20px;
-  border-radius: 39px;
-  background: #e0e0e0;
-  box-shadow: 12px 12px 24px #929292, -12px -12px 24px #ffffff;
+  border-radius: 50px;
+  box-shadow: 16px 16px 32px #d9d9d9, -16px -16px 32px #ffffff;
+  display: flex;
+
+  padding-left: 0;
+  padding: 15px 10px;
+  width: fit-content;
 }
 
-.nav-cloumn .nav-item {
-  padding: 25px 20px;
+.nav-item--column {
+  list-style: none;
+  width: fit-content;
 }
 
 /* nav-cloumn FINISH */
 
 /*
   * Title : nav-item
-  * Description : nav-item layout
-  */
+  * Description : Remove list-style
+*/
 
 .nav-item {
+  list-style: none;
+}
+
+/* nav-item FINISH */
+
+/*
+  * Title : nav-item:focus
+  * Description : When the button is pressed, it has a pressing effect.
+  */
+
+.nav-item:focus {
   border-radius: 15px;
   background: white;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 3px 3px 3px #bebebe, inset -0.1px -0.1px 2px #bebebe;
 }
+
+/* nav-item:focus FINISH */
+
+/*
+  * Title : nav-item--animation
+  * Description : 
+*/
 
 .nav-item--animation {
   border-radius: 15px;
@@ -74,6 +98,8 @@
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   transition: all 1s ease-in-out;
 }
+
+/* nav-item--animation FINISH */
 
 /* .nav-item2 {
   border-radius: 15px;
@@ -101,6 +127,10 @@
 .nav-link,
 .nav-link2 {
   text-decoration: none;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  padding: 5px;
   color: rgba(0, 0, 0, 0.7);
 }
 
