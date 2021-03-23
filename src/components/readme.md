@@ -89,14 +89,14 @@
 
 ## Navigation Information
 
-> Naviagtion usage
+> Naviagtion type1 usage
 
 ```html
 <!DOCTYPE html>
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" href="../src/components/navigation.css" />
+    <link rel="stylesheet" href="../src/neomo.css" />
   </head>
   <body>
     <ul class="nav">
@@ -117,6 +117,34 @@
 </html>
 ```
 
+> Naviagtion type2 usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" href="../src/neomo.css" />
+  </head>
+  <body>
+    <ul class="nav2">
+      <li class="nav-item2">
+        <a class="nav-link2 active" href="#">Active</a>
+      </li>
+      <li class="nav-item2">
+        <a class="nav-link2 active" href="#">Active</a>
+      </li>
+      <li class="nav-item2">
+        <a class="nav-link2 active" href="#">Active</a>
+      </li>
+      <li class="nav-item2">
+        <a class="nav-link2 active" href="#">Active</a>
+      </li>
+    </ul>
+  </body>
+</html>
+```
+
 > Naviagtion column usage
 
 ```html
@@ -124,7 +152,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" href="../src/components/navigation.css" />
+    <link rel="stylesheet" href="../src/neomo.css" />
   </head>
 
   <body>
@@ -149,52 +177,57 @@
 ## Card Information
 
 > Simple card usage
+
 ```html
 <!DOCTYPE html>
 <html charset="utf-8">
-<head>
-    <meta charset = "utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>test.html</title>
-    <link rel= "stylesheet" type="text/css" href="src/neomo.css">
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="src/neomo.css" />
+  </head>
   <body>
-    <div class="card"  style="width: 18rem;">
-      <header class="card-header">
-        <p class="card-header-title">
-          Component
-        </p>
-      </header>
-      <div class="card-image">
-        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-      </div>
-      <div class="card-content">
-        <div>
-          <div class="media-left">
-            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-          </div>
+    <body>
+      <div class="card" style="width: 18rem;">
+        <header class="card-header">
+          <p class="card-header-title">Component</p>
+        </header>
+        <div class="card-image">
+          <img
+            src="https://bulma.io/images/placeholders/1280x960.png"
+            alt="Placeholder image"
+          />
+        </div>
+        <div class="card-content">
           <div>
-            <p>John Smith</p>
-            <p>@johnsmith</p>
+            <div class="media-left">
+              <img
+                src="https://bulma.io/images/placeholders/96x96.png"
+                alt="Placeholder image"
+              />
+            </div>
+            <div>
+              <p>John Smith</p>
+              <p>@johnsmith</p>
+            </div>
+          </div>
+
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            nec iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
+            <a href="#">#responsive</a>
+            <br />
+            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
           </div>
         </div>
-    
-        <div class="content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-          <a href="#">#css</a> <a href="#">#responsive</a>
-          <br>
-          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-        </div>
+        <footer class="card-footer">
+          <a href="#" class="card-footer-item">Save</a>
+          <a href="#" class="card-footer-item">Edit</a>
+          <a href="#" class="card-footer-item">Delete</a>
+        </footer>
       </div>
-      <footer class="card-footer">
-        <a href="#" class="card-footer-item">Save</a>
-        <a href="#" class="card-footer-item">Edit</a>
-        <a href="#" class="card-footer-item">Delete</a>
-      </footer>
-    </div>
+    </body>
   </body>
-</body>
 </html>
 ```
 
@@ -364,92 +397,98 @@
 </html>
 ```
 
-
 > Column usage
 
 ```html
 <html>
-<head>
-    <meta charset = "utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>test.html</title>
-    <link rel= "stylesheet" type="text/css" href="src/neomo.css">
-</head>
-<body>
-  <div class="container">
-    <div class="columns">
-      <div class="column">
-        <p class="neomo-inset m-1 p-2" style="text-align:center;">First column</p>
+    <link rel="stylesheet" type="text/css" href="src/neomo.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <p class="neomo-inset m-1 p-2" style="text-align:center;">
+            First column
+          </p>
+        </div>
+        <div class="column">
+          <p class="neomo-inset m-1 p-2" style="text-align:center;">
+            Second column
+          </p>
+        </div>
+        <div class="column">
+          <p class="neomo-inset m-1 p-2" style="text-align:center;">
+            Third column
+          </p>
+        </div>
+        <div class="column">
+          <p class="neomo-inset m-1 p-2" style="text-align:center;">
+            Fourth column
+          </p>
+        </div>
       </div>
-      <div class="column">
-        <p class="neomo-inset m-1 p-2" style="text-align:center;">Second column</p>
-      </div>
-      <div class="column">
-        <p class="neomo-inset m-1 p-2" style="text-align:center;">Third column</p>
-      </div>
-      <div class="column">
-        <p class="neomo-inset m-1 p-2" style="text-align:center;">Fourth column</p>
-      </div>
-    </div>
 
-    <div class="columns">
-      <div class="column size-1">
-        <p class="neomo-outset m-1 p-2" style="text-align:center;">size1</p>
+      <div class="columns">
+        <div class="column size-1">
+          <p class="neomo-outset m-1 p-2" style="text-align:center;">size1</p>
+        </div>
+        <div class="column size-2">
+          <p class="neomo-outset m-1 p-2" style="text-align:center;">size2</p>
+        </div>
+        <div class="column size-3">
+          <p class="neomo-outset m-1 p-2" style="text-align:center;">size3</p>
+        </div>
+        <div class="column size-4">
+          <p class="neomo-outset m-1 p-2" style="text-align:center;">size4</p>
+        </div>
       </div>
-      <div class="column size-2">
-        <p class="neomo-outset m-1 p-2" style="text-align:center;">size2</p>
-      </div>
-      <div class="column size-3">
-        <p class="neomo-outset m-1 p-2" style="text-align:center;">size3</p>
-      </div>
-      <div class="column size-4">
-        <p class="neomo-outset m-1 p-2" style="text-align:center;">size4</p>
-      </div>
-    </div>
 
-    <div class="columns">
-      <div class="column size-5">
-        <p class="neomo-outset m-1 p-2" style="text-align:center;">size5</p>
+      <div class="columns">
+        <div class="column size-5">
+          <p class="neomo-outset m-1 p-2" style="text-align:center;">size5</p>
+        </div>
+        <div class="column size-6">
+          <p class="neomo-outset m-1 p-2" style="text-align:center;">size6</p>
+        </div>
       </div>
-      <div class="column size-6">
-        <p class="neomo-outset m-1 p-2" style="text-align:center;">size6</p>
-      </div>
-    </div>
 
-    <div class="columns">
-      <div class="column size-7">
-        <p class="neomo-outset m-1 p-2" style="text-align:center;">size7</p>
+      <div class="columns">
+        <div class="column size-7">
+          <p class="neomo-outset m-1 p-2" style="text-align:center;">size7</p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column size-8">
+          <p class="neomo-outset m-1 p-2" style="text-align:center;">size8</p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column size-9">
+          <p class="neomo-outset m-1 p-2" style="text-align:center;">size9</p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column size-10">
+          <p class="neomo-outset m-1 p-2" style="text-align:center;">size10</p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column size-11">
+          <p class="neomo-outset m-1 p-2" style="text-align:center;">size11</p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column size-12">
+          <p class="neomo-outset m-1 p-2" style="text-align:center;">size12</p>
+        </div>
       </div>
     </div>
-    <div class="columns">
-      <div class="column size-8">
-        <p class="neomo-outset m-1 p-2" style="text-align:center;">size8</p>
-      </div>
-    </div>
-    <div class="columns">
-      <div class="column size-9">
-        <p class="neomo-outset m-1 p-2" style="text-align:center;">size9</p>
-      </div>
-    </div>
-    <div class="columns">
-      <div class="column size-10">
-        <p class="neomo-outset m-1 p-2" style="text-align:center;">size10</p>
-      </div>
-    </div>
-    <div class="columns">
-      <div class="column size-11">
-        <p class="neomo-outset m-1 p-2" style="text-align:center;">size11</p>
-      </div>
-    </div>
-    <div class="columns">
-      <div class="column size-12">
-        <p class="neomo-outset m-1 p-2" style="text-align:center;">size12</p>
-      </div>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
 ```
-
 
 > Progress Bar usage
 
