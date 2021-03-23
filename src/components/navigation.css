@@ -9,7 +9,6 @@
                 Get Reactive with flex.
 */
 .nav {
-  list-style: none;
   border-radius: 50px;
   box-shadow: 16px 16px 32px #d9d9d9, -16px -16px 32px #ffffff;
   display: flex;
@@ -43,7 +42,7 @@
 /*
   * Title : nav-cloumn
   * Description : nav version column
-  */
+*/
 
 .nav-cloumn {
   list-style: none;
@@ -56,12 +55,19 @@
   width: fit-content;
 }
 
+/* nav-cloumn FINISH */
+
+/*
+  * Title : nav-item--column 
+  * Description : nav version column
+*/
+
 .nav-item--column {
   list-style: none;
   width: fit-content;
 }
 
-/* nav-cloumn FINISH */
+/* nav-item--column  FINISH */
 
 /*
   * Title : nav-item
@@ -107,32 +113,50 @@
   background: linear-gradient(145deg, #f0f0f0, #cacaca);
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 } */
+
+/*
+  * Title : nav-item2
+  * Description : 
+*/
+
 .nav-item2 {
   border-radius: 15px;
   padding: 10px;
 }
+/* nav-item2 FINISH */
+
+/*
+  * Title : nav-item2:hover
+  * Description : 
+*/
 
 .nav-item2:hover {
-  background: linear-gradient(145deg, #f0f0f0, #cacaca);
-  box-shadow: 5px 5px 5px #bebebe, -5px -5px 5px #ffffff;
+  box-shadow: 5px 5px 5px #bebebe, -5px -5px 5px #bebebe;
 }
 
-/* nav-item FINISH */
+/* nav-item2:hover FINISH */
 
 /*
   * Title : nav-link
   * Description : nav-link layout
-  */
+*/
 
-.nav-link,
-.nav-link2 {
+.nav-link {
   text-decoration: none;
   border-radius: 15px;
   background: white;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  padding: 5px;
+  padding: 5px 12px;
+
   color: rgba(0, 0, 0, 0.7);
 }
+
+/* nav-link FINISH */
+
+/*
+  * Title : nav-link--animation
+  * Description : nav-link layout
+*/
 
 .nav-link--animation {
   text-decoration: none;
@@ -140,16 +164,43 @@
   transition: box-shadow 1s ease-in-out;
 }
 
+/* nav-link--animation FINISH */
+
+/*
+  * Title : nav-link:focus
+  * Description : nav-link layout
+*/
+
 .nav-link:focus {
   border-radius: 15px;
   background: white;
   box-shadow: inset 3px 3px 3px #bebebe, inset -0.1px -0.1px 2px #bebebe;
 }
 
-.nav-link2:focus {
-  border: 0.1rem outset #bebebe;
-  border-radius: 1rem;
+/* nav-link FINISH */
+
+/*
+  * Title : nav-link2
+  * Description : nav-link layout
+*/
+
+.nav-link2 {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
 }
+
+/* nav-link FINISH */
+
+/*
+  * Title : nav-link2:focus
+  * Description : nav-link layout
+*/
+
+.nav-link2:focus {
+  border-radius: 10px;
+  box-shadow: 0 0 0 0.1rem skyblue;
+}
+/* nav-link FINISH */
 
 /* .test {
   height: 100px;
