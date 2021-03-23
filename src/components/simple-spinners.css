@@ -1,0 +1,41 @@
+/* Simple Spinners Section Information */
+
+/*
+* Title : Spinner component
+* Author : Jieun Han
+* Description : It is based on three different colors.
+*/
+
+.loader {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid var(--neomo-gray-pressed-text);
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  animation: spin 2s linear infinite;
+}
+
+.loader-gray {
+  border: 3px solid white;
+  border-top: 3px solid gray;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  animation: spin 2s linear infinite;
+}
+
+.loader-blue {
+  border: 3px solid var(--neomo-gray);
+  border-top: 3px solid skyblue;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Button component FINISH */

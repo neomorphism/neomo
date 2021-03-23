@@ -3,15 +3,18 @@
 /*
 * Title : Button component
 * Author : Jieun Han
-* Description : this is Button
+* Description : This is Button
 */
 
 .button {
-    display: inline-block;
+    display: flex;
     min-width: 100px;
     min-height: 50px;
     padding-left: 10px;
     padding-right: 10px;
+
+    justify-content: center;
+    align-items: center;
 
     -webkit-appearance: none;
     -moz-appearance: none;

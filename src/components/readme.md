@@ -63,6 +63,7 @@
 
   <body>
     <div class="container bg-gray">
+      <br />
       <button class="button gray m-10">기본 버튼</button>
       <br />
       <button class="button gray square m-10">사각형 버튼</button>
@@ -70,6 +71,7 @@
     </div>
     <br />
     <div class="container bg-dark">
+      <br />
       <button class="button dark small m-10">small</button>
       <button class="button dark normal m-10">normal</button>
       <button class="button dark medium m-10">medium</button>
@@ -78,9 +80,59 @@
     </div>
     <br />
     <div class="container bg-blue">
+      <br />
       <button class="button blue m-10">파란색 기본 버튼</button>
       <br />
       <button class="button blue square blue m-10">파란색 사각형 버튼</button>
+      <br />
+    </div>
+  </body>
+</html>
+```
+
+## Spinners Information
+
+> Simple Spinners usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+
+  <body>
+    <div class="container bg-gray">
+      <br />
+      <button class="button gray m-10">기본 버튼</button>
+      <br />
+      <button class="button gray square m-10">사각형 버튼</button>
+      <br />
+      <button class="button gray m-10">
+        <div class="loader"></div>
+      </button>
+      <br />
+    </div>
+    <br />
+    <div class="container bg-dark">
+      <br />
+      <button class="button dark small m-10">small&nbsp;<div class="loader-gray"></div></button>
+      <button class="button dark normal m-10">normal&nbsp;<div class="loader-gray"></div></button>
+      <button class="button dark medium m-10">medium&nbsp;<div class="loader-gray"></div></button>
+      <button class="button dark large m-10">large&nbsp;<div class="loader-gray"></div></button>
+      <br />
+    </div>
+    <br />
+    <div class="container bg-blue">
+      <br />
+      <button class="button blue m-10">파란색 기본 버튼</button>
+      <br />
+      <button class="button blue square blue m-10">파란색 사각형 버튼</button>
+      <br />
+      <button class="button blue m-10">
+        <div class="loader-blue"></div>
+      </button>
       <br />
     </div>
   </body>
