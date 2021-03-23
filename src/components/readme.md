@@ -193,7 +193,7 @@
   </head>
   <body class="p-2">
     <div class="dropdown">
-      <button class="dropdown-button">Dropdown</button>
+      <button class="dropdown-button gray">Dropdown</button>
       <div class="dropdown-content">
         <a href="#">HTML</a>
         <a href="#">CSS</a>
