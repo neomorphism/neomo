@@ -8,14 +8,12 @@
 .nav {
   list-style: none;
 
-  border-radius: 39px;
-  background: #e0e0e0;
-  box-shadow: 12px 12px 24px #929292, -12px -12px 24px #ffffff;
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow: 16px 16px 32px #d9d9d9, -16px -16px 32px #ffffff;
   display: flex;
   justify-content: space-evenly;
   padding-left: 0;
-  
- 
 }
 
 /* nav FINISH */
@@ -45,9 +43,42 @@
   * Description : nav-item layout
   */
 
-.nav-item .nav-link {
+.nav-item {
+  border-radius: 15px;
+  background: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* nav-item FINISH */
+
+/*
+  * Title : nav-link
+  * Description : nav-link layout
+  */
+
+.nav-link {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.7);
 }
 
-/* nav-item FINISH */
+.nav-link--animation {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  transition: box-shadow 1s ease-in-out;
+}
+
+.nav-link:focus {
+  border-radius: 15px;
+  background: white;
+  box-shadow: inset 3px 3px 3px #bebebe, inset -0.1px -0.1px 2px #bebebe;
+}
+
+/*
+.test {
+  height: 100px;
+  width: 100px;
+  background-color: teal;
+  margin-left: 100px;
+  box-shadow: inset -5px -5px 5px red;
+}
+*/

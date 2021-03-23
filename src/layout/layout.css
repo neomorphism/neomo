@@ -15,20 +15,11 @@
   .container {
     max-width: 1320px;
   }
-  .nav {
-    padding: 30px;
-    font-size: 30px;
-  }
 }
 /* X-Large */
 @media (max-width: 1400px) {
   .container {
     max-width: 1140px;
-  }
-
-  .nav {
-    padding: 25px;
-    font-size: 27px;
   }
 }
 /* Large */
@@ -36,21 +27,11 @@
   .container {
     max-width: 960px;
   }
-
-  .nav {
-    padding: 20px;
-    font-size: 25px;
-  }
 }
 /* Medium */
 @media (max-width: 992px) {
   .container {
     max-width: 720px;
-  }
-
-  .nav {
-    padding: 10px;
-    font-size: 25px;
   }
 }
 /* Small */
@@ -58,21 +39,11 @@
   .container {
     max-width: 540px;
   }
-
-  .nav {
-    padding: 5px;
-    font-size: 25px;
-  }
 }
 /* Extra Small */
 @media screen and (max-width: 576px) {
   .container {
     max-width: 100%;
-  }
-
-  .nav {
-    padding: 0px;
-    font-size: 10px;
   }
 }
 /* container FINISH */
