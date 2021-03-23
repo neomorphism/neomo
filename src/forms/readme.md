@@ -20,8 +20,6 @@
   </body>
 </html>
 ```
-
-# Radio
 ## Radio Information
 
 > Radio usage
