@@ -1,0 +1,55 @@
+/* Badge Section Information */
+
+/*
+* Title : Badge component
+* Description : This is the css of the badge on the component.
+*/
+
+.badge {
+  margin: 0 5px 0 5px;
+  padding: 0.6rem 0.8rem;
+  border-radius: 10px;
+  box-shadow: inset 1px 2px 2px #b8b9be, inset -5px -2px 4px #fff;
+}
+
+.badge-primary {
+  color: white;
+  background-color: #0d6efd;
+  box-shadow: inset 10px 10px 20px #2b67c2, inset -20px -20px 20px #55a4ff;
+}
+
+.badge-secondary {
+  color: white;
+  background: #6c757d;
+  box-shadow: inset 10px 10px 20px #52585f, inset -20px -20px 20px #879199;
+}
+
+.badge-success {
+  color: white;
+  background: #11a661;
+  box-shadow: inset 10px 10px 20px #0a9956, inset -20px -20px 20px #14bf70;
+}
+
+.badge-danger {
+  color: white;
+  background: #f41a30;
+  box-shadow: inset 10px 10px 20px #c41224, inset -20px -20px 20px #f41a30;
+}
+
+.badge-warning {
+  color: white;
+  background: #ffbf00;
+  box-shadow: inset 10px 10px 20px #daa70f, inset -20px -20px 20px #ffdc00;
+}
+
+.badge-sm {
+  padding: 0.3rem 0.5rem;
+}
+
+.badge-md {
+  padding: 0.6rem 0.8rem;
+}
+
+.badge-rg {
+  padding: 1rem 1.25rem;
+}
