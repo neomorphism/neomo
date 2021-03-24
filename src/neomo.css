@@ -8,9 +8,9 @@
 @import "./components/select.css";
 @import "./components/spinners.css";
 @import "./components/table.css";
-@import "./components/simple-dropdown.css";
-@import "./components/simple-pagination.css";
-@import "./components/simple-modal.css";
+@import "./components/dropdown.css";
+@import "./components/pagination.css";
+@import "./components/modal.css";
 @import "./components/simple-columns.css";
 @import "./components/simple-progressbar.css";
 @import "./forms/checkbox.css";
