@@ -1,3 +1,12 @@
+/* Alert function start */
+var el = document.querySelector(".alt-close");
+      document
+        .querySelector(".alt-close")
+        .addEventListener("click", function () {
+          el.parentElement.style.display = "none";
+        });
+/* Alert function end */
+
 /* Modal function start */
 var modal = document.getElementById("Modal");
 var btn = document.getElementById("ModalBtn");
@@ -15,3 +24,4 @@ window.onclick = function (event) {
   }
 };
 /* Modal function end */
+
