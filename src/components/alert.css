@@ -1,0 +1,63 @@
+/* Alert Section Information */
+
+/*
+* Title : Alert component
+* Description : This is the css of the Alert on the component.
+*/
+
+.alert {
+  margin: 10px 5px 10px 5px;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  box-shadow: inset 1px 2px 2px #b8b9be, inset -5px -2px 4px #fff;
+}
+
+.alert-outset {
+  box-shadow: 10px 10px 12px #ababab, -10px -10px 12px #ffffff;
+}
+
+.alert-primary {
+  color: white;
+  background-color: #0d6efd;
+  box-shadow: inset 10px 10px 20px #2b67c2, inset -20px -20px 20px #55a4ff;
+}
+
+.alert-secondary {
+  color: white;
+  background: #6c757d;
+  box-shadow: inset 10px 10px 20px #52585f, inset -20px -20px 20px #879199;
+}
+
+.alert-success {
+  color: white;
+  background: #11a661;
+  box-shadow: inset 10px 10px 20px #0a9956, inset -20px -20px 20px #14bf70;
+}
+
+.alert-danger {
+  color: white;
+  background: #f41a30;
+  box-shadow: inset 10px 10px 20px #c41224, inset -20px -20px 20px #f41a30;
+}
+
+.alert-warning {
+  color: white;
+  background: #ffbf00;
+  box-shadow: inset 10px 10px 20px #daa70f, inset -20px -20px 20px #ffdc00;
+}
+
+.alt-close {
+  border: none;
+  float: right;
+  color: #b8b9be;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: transparent;
+}
+.alt-close:hover,
+.alt-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+}
