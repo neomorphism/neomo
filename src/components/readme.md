@@ -1,5 +1,75 @@
 # Components
 
+## Alert Information
+
+> Alert usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+  <body>
+    <div class="alert" role="alert">This is alert!</div>
+  </body>
+</html>
+```
+
+> Alert outset usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+  <body>
+    <div class="alert alert-outset" role="alert">This is alert outset!</div>
+  </body>
+</html>
+```
+
+> Alert colors
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+  <body>
+    <div class="alert" role="alert">This is alert!</div>
+    <div class="alert alert-primary" role="alert">This is alert!</div>
+    <div class="alert alert-secondary" role="alert">This is alert!</div>
+    <div class="alert alert-success" role="alert">This is alert!</div>
+    <div class="alert alert-danger" role="alert">This is alert!</div>
+    <div class="alert alert-warning" role="alert">This is alert!</div>
+  </body>
+</html>
+```
+
+> Alert dismissing
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+  <body>
+    <div class="alert" id="Alt">
+      <span
+        ><strong>Well done!</strong> You successfully read this important alert
+        message.</span
+      >
+      <button class="alt-close">X</button>
+    </div>
+
+    <script type="text/javascript" src="../src/neomo.js"></script>
+  </body>
+</html>
+```
 ## Badge Information
 
 > Badge usage
