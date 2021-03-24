@@ -147,18 +147,18 @@
   <body>
     <div class="container bg-gray">
       <br />
-      <button class="button gray m-10">기본 버튼</button>
+      <button class="button outset-gray m-10">기본 버튼</button>
       <br />
-      <button class="button gray square m-10">사각형 버튼</button>
+      <button class="button outset-gray square m-10">사각형 버튼</button>
       <br />
     </div>
     <br />
     <div class="container bg-dark">
       <br />
-      <button class="button dark small m-10">small</button>
-      <button class="button dark normal m-10">normal</button>
-      <button class="button dark medium m-10">medium</button>
-      <button class="button dark large m-10">large</button>
+      <button class="button outset-dark small m-10">small</button>
+      <button class="button outset-dark normal m-10">normal</button>
+      <button class="button outset-dark medium m-10">medium</button>
+      <button class="button outset-dark large m-10">large</button>
       <br />
     </div>
     <br />
@@ -281,7 +281,7 @@
   <body>
     <div class="container bg-gray">
       <br />
-      <button class="button gray m-10">
+      <button class="button outset-gray m-10">
         <div class="loader"></div>
       </button>
       <br />
@@ -289,19 +289,19 @@
     <br />
     <div class="container bg-dark">
       <br />
-      <button class="button dark small m-10">
+      <button class="button outset-dark small m-10">
         small&nbsp;
         <div class="loader-gray"></div>
       </button>
-      <button class="button dark normal m-10">
+      <button class="button outset-dark normal m-10">
         normal&nbsp;
         <div class="loader-gray"></div>
       </button>
-      <button class="button dark medium m-10">
+      <button class="button outset-dark medium m-10">
         medium&nbsp;
         <div class="loader-gray"></div>
       </button>
-      <button class="button dark large m-10">
+      <button class="button outset-dark large m-10">
         large&nbsp;
         <div class="loader-gray"></div>
       </button>
@@ -310,7 +310,7 @@
     <br />
     <div class="container bg-blue">
       <br />
-      <button class="button blue m-10">
+      <button class="button outset-blue m-10">
         <div class="loader-blue"></div>
       </button>
       <br />
