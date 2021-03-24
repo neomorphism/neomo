@@ -13,8 +13,8 @@
 @import "./components/pagination.css";
 @import "./components/select.css";
 @import "./components/spinners.css";
-@import "./components/simple-columns.css";
-@import "./components/simple-progressbar.css";
+@import "./components/columns.css";
+@import "./components/progressbar.css";
 @import "./forms/checkbox.css";
 @import "./forms/input.css";
 @import "./forms/radio.css";
