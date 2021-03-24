@@ -70,6 +70,7 @@
   </body>
 </html>
 ```
+
 ## Badge Information
 
 > Badge usage
@@ -789,6 +790,26 @@
           <div class="progress-bar gray" style="width: 60%;"></div>
         </div>
       </div>
+    </div>
+  </body>
+</html>
+```
+
+## Icon Information
+
+> simple-icon usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" href="../neomo.css" />
+  </head>
+
+  <body>
+    <div class="icon-xs--square">
+      <i class="fas fa-home fa-xs"></i>
     </div>
   </body>
 </html>
