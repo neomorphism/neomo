@@ -63,7 +63,7 @@
 
 ## Table Information
 
-> Simple Table usage
+> Table usage
 
 ```html
 <!DOCTYPE html>
