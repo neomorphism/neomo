@@ -105,10 +105,6 @@
   <body>
     <div class="container bg-gray">
       <br />
-      <button class="button gray m-10">기본 버튼</button>
-      <br />
-      <button class="button gray square m-10">사각형 버튼</button>
-      <br />
       <button class="button gray m-10">
         <div class="loader"></div>
       </button>
@@ -125,10 +121,6 @@
     </div>
     <br />
     <div class="container bg-blue">
-      <br />
-      <button class="button blue m-10">파란색 기본 버튼</button>
-      <br />
-      <button class="button blue square blue m-10">파란색 사각형 버튼</button>
       <br />
       <button class="button blue m-10">
         <div class="loader-blue"></div>
@@ -579,34 +571,4 @@
     </div>
   </body>
 </html>
-```
-
-<!-- 아래는 color.css 적용해본 테스트 코드 -->
-
-<!-- <!DOCTYPE html>
-<html charset="utf-8">
-  <head>
-    <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
-  </head>
-  <body class="p-2">
-    <div class="pagination gray">
-      <ul class="pagination-list">
-        <li class="gray"><a href="#">Previous</a></li>
-        <li class="gray"><a href="#">1</a></li>
-        <li class="gray"><a href="#">2</a></li>
-        <li class="gray"><a href="#">3</a></li>
-        <li class="gray"><a href="#">4</a></li>
-        <li class="gray"><a href="#">5</a></li>
-        <li class="gray"><a href="#">6</a></li>
-        <li class="gray"><a href="#">7</a></li>
-        <li class="gray"><a href="#">8</a></li>
-        <li class="gray"><a href="#">Next</a></li>
-      </ul>
-    </div>
-  </body>
-</html> -->
-
-```
-
 ```
