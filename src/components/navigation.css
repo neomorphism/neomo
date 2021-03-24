@@ -81,19 +81,6 @@
 /* nav-item FINISH */
 
 /*
-  * Title : nav-item:focus
-  * Description : When the button is pressed, it has a pressing effect.
-  */
-
-.nav-item:focus {
-  border-radius: 15px;
-  background: white;
-  box-shadow: inset 3px 3px 3px #bebebe, inset -0.1px -0.1px 2px #bebebe;
-}
-
-/* nav-item:focus FINISH */
-
-/*
   * Title : nav-item--animation
   * Description : 
 */
@@ -147,7 +134,6 @@
   background: white;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   padding: 5px 12px;
-
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -160,8 +146,26 @@
 
 .nav-link--animation {
   text-decoration: none;
+  padding: 5px 12px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   color: rgba(0, 0, 0, 0.7);
-  transition: box-shadow 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+/* nav-link--animation FINISH */
+
+/*
+  * Title : nav-link--animation:focus
+  * Description : nav-link layout
+*/
+
+.nav-link--animation:hover {
+  border-radius: 15px;
+  background: white;
+  color: blue;
+  box-shadow: inset 3px 3px 3px #bebebe, inset -0.1px -0.1px 2px #bebebe;
 }
 
 /* nav-link--animation FINISH */
