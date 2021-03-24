@@ -1,14 +1,13 @@
 /* Icon Information */
 
 /*
-* Title : icon-normal--square
+* Title : icon-square
 * Description : this is example
 */
 
-.icon-normal--square {
+.icon-square {
   width: 30px;
   height: 30px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,23 +16,56 @@
   box-shadow: inset 1px 1px 1px #bebebe, inset -0.1px -0.1px 2px #bebebe;
 }
 
-/* CSS Normalize FINISH */
+/* icon-square FINISH */
 
 /*
-* Title : icon-xs--square
+* Title : icon-size
 * Description : this is example
 */
-
-.icon-xs--square {
+.icon-xs {
   width: 20px;
   height: 20px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 7px;
-  background: white;
-  box-shadow: inset 1px 1px 1px #bebebe, inset -0.1px -0.1px 2px #bebebe;
+  border-radius: 5px;
 }
 
-/* icon-xs--square FINISH */
+.icon-sm {
+  width: 25px;
+  height: 25px;
+  border-radius: 7px;
+}
+
+.icon-lg {
+  width: 35px;
+  height: 35px;
+}
+
+.icon-2x {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+}
+.icon-3x {
+  width: 75px;
+  height: 75px;
+  border-radius: 17px;
+}
+
+.icon-5x {
+  width: 125px;
+  height: 125px;
+  border-radius: 20px;
+}
+
+.icon-7x {
+  width: 175px;
+  height: 175px;
+  border-radius: 25px;
+}
+
+.icon-10x {
+  width: 250px;
+  height: 250px;
+  border-radius: 30px;
+}
+
+/* icon-size FINISH */
