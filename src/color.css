@@ -6,7 +6,7 @@
 * 주의 : <li> 태그 밑에 <a> 태그를 넣을 경우, <a> 태그에 해당하는 css selector에 'color: inherit;'를 넣어야 함
 */
 
-.gray {
+.outset-gray {
     border: none;
     border-radius: 10px;
     background: var(--neomo-gray);
@@ -16,7 +16,7 @@
     color: var(--neomo-gray-text);
 }
 
-.gray-pressed,
+.inset-gray,
 button.gray:hover, button.gray:focus,
 li.gray:hover,
 input.gray:focus, input.gray:disabled {
@@ -29,7 +29,7 @@ input.gray:focus, input.gray:disabled {
     color: var(--neomo-gray-pressed-text);
 }
 
-.dark {
+.outset-dark {
     border: none;
     border-radius: 10px;
     background: var(--neomo-dark);
@@ -39,7 +39,7 @@ input.gray:focus, input.gray:disabled {
     color: var(--neomo-dark-text);
 }
 
-.dark-pressed,
+.inset-dark,
 button.dark:hover, button.dark:focus,
 li.dark:hover, 
 input.dark:focus, input.dark:disabled {
@@ -52,7 +52,7 @@ input.dark:focus, input.dark:disabled {
     color: var(--noemo-dark-pressed-text);
 }
 
-.blue {
+.outset-blue {
     border: none;
     border-radius: 10px;
     background: var(--neomo-blue);
@@ -62,7 +62,7 @@ input.dark:focus, input.dark:disabled {
     color: var(--neomo-blue-text);
 }
 
-.blue-pressed,
+.inset-blue,
 button.blue:hover, button.blue:focus,
 li.blue:hover,
 input.blue:focus, input.blue:disabled {
