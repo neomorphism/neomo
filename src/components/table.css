@@ -2,18 +2,19 @@
 
 /*
 * Title : Table component
-* Description : this is Table
+* Description : This is the css of the Table on the component.
 */
 .table {
   max-width: 1200px;
   width: 100%;
-  padding: 15px;
+  padding: 10px 0 10px 0;
   border-spacing: 0;
+  border-radius: 10px;
+  box-shadow: inset 1px 2px 2px #b8b9be, inset -5px -2px 4px #fff;
+}
 
-  /* Neumorphism */
-  border-radius: 20px;
-  background: #e0e0e0;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+.table-outset {
+  box-shadow: 10px 10px 12px #ababab, -10px -10px 12px #ffffff;
 }
 
 .table > thead > tr {
@@ -26,20 +27,21 @@
 }
 
 .table > thead > tr > th {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.table > thead > tr > th::after {
-  box-shadow: inset 20px 20px 60px #bebebe, inset -20px -20px 60px #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .table > tbody > tr > td {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border-top: thin solid rgba(0, 0, 0, 0.08);
+}
+
+.table > tbody > tr:hover,
+.table > thead > tr:hover {
+  position: relative;
+  background: rgb(219, 219, 219);
+  border-radius: 10px;
 }
 
 /* Table component FINISH */
