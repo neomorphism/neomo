@@ -1,5 +1,65 @@
 # Components
 
+## Badge Information
+
+> Badge usage
+
+```html
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+  <body>
+    <div class="mt-5">
+      <span class="badge">NEOMO</span>
+    </div>
+  </body>
+</html>
+```
+
+> Badge background colors
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+  <body>
+    <div class="mt-5">
+      <span class="badge badge-primary">NEOMO</span>
+      <span class="badge badge-secondary">NEOMO</span>
+      <span class="badge badge-success">NEOMO</span>
+      <span class="badge badge-danger">NEOMO</span>
+      <span class="badge badge-warning">NEOMO</span>
+    </div>
+  </body>
+</html>
+```
+
+> Badge size
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+  <body>
+    <div class="mt-5">
+      <span class="badge badge-sm">NEOMO</span>
+      <span class="badge badge-md">NEOMO</span>
+      <span class="badge badge-rg">NEOMO</span>
+    </div>
+  </body>
+</html>
+```
 ## Table Information
 
 > Simple Table usage
