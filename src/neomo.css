@@ -1,19 +1,20 @@
 /* Import Section */
 @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
 @import "./color.css";
-@import "./layout/layout.css";
+@import "./components/badge.css";
 @import "./components/simple-table.css";
 @import "./components/simple-card.css";
 @import "./components/button.css";
 @import "./components/spinners.css";
-@import "./forms/checkbox.css";
-@import "./forms/radio.css";
 @import "./components/navigation.css";
 @import "./components/simple-dropdown.css";
 @import "./components/simple-pagination.css";
 @import "./components/simple-modal.css";
 @import "./components/simple-columns.css";
 @import "./components/simple-progressbar.css";
+@import "./forms/checkbox.css";
+@import "./forms/radio.css";
+@import "./layout/layout.css";
 
 /* Common Section */
 
@@ -27,7 +28,7 @@ html {
 }
 body {
   margin: 0;
-  font-family: 'Jeju Gothic', sans-serif;
+  font-family: "Jeju Gothic", sans-serif;
 }
 /* CSS Normalize FINISH */
 
