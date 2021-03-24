@@ -16,7 +16,10 @@
     color: var(--neomo-gray-text);
 }
 
-.gray-pressed, button.gray:hover, button.gray:focus, li.gray:hover {
+.gray-pressed,
+button.gray:hover, button.gray:focus,
+li.gray:hover,
+input.gray:focus, input.gray:disabled {
     border: none;
     border-radius: 10px;
     background: var(--neomo-gray);
@@ -36,7 +39,10 @@
     color: var(--neomo-dark-text);
 }
 
-.dark-pressed, button.dark:hover, button.dark:focus, li.dark:hover {
+.dark-pressed,
+button.dark:hover, button.dark:focus,
+li.dark:hover, 
+input.dark:focus, input.dark:disabled {
     border: none;
     border-radius: 10px;
     background: var(--neomo-dark);
@@ -56,7 +62,10 @@
     color: var(--neomo-blue-text);
 }
 
-.blue-pressed, button.blue:hover, button.blue:focus, li.blue:hover {
+.blue-pressed,
+button.blue:hover, button.blue:focus,
+li.blue:hover,
+input.blue:focus, input.blue:disabled {
     border: none;
     border-radius: 10px;
     background: var(--noemo-blue-pressed);
