@@ -493,10 +493,9 @@
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
   <body class="p-2">
-    <!-- Open example modal-->
-    <button id="ModalBtn" class="button gray">Open outset modal</button>
+    <button id="ModalBtn" class="button outset-gray">Open outset modal</button>
     <div id="Modal" class="modal">
-      <div class="modal-content gray">
+      <div class="modal-content outset-gray">
         <span class="modal-close">&times;</span>
         <p>Any other element you want</p>
       </div>
@@ -517,10 +516,9 @@
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
   <body class="p-2">
-    <!-- Open pressed modal-->
-    <button id="ModalBtn" class="button gray">Open inset modal</button>
+    <button id="ModalBtn" class="button outset-gray">Open inset modal</button>
     <div id="Modal" class="modal">
-      <div class="modal-content gray-pressed">
+      <div class="modal-content inset-gray">
         <span class="modal-close">&times;</span>
         <p>Any other element you want</p>
       </div>
@@ -541,10 +539,11 @@
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
   <body class="p-2">
-    <!-- Open image modal-->
-    <button id="ModalBtn" class="button gray">Open outset image modal</button>
+    <button id="ModalBtn" class="button outset-gray">
+      Open outset image modal
+    </button>
     <div id="Modal" class="modal">
-      <div class="modal-content gray">
+      <div class="modal-content outset-gray">
         <span class="modal-close">&times;</span>
         <p class="image">
           <img
@@ -563,16 +562,17 @@
 > Outset Card Modal usage
 
 ```html
-<!DOCTYPE html>
 <html charset="utf-8">
   <head>
     <title>test</title>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
   <body class="p-2">
-    <button id="ModalBtn" class="button gray">Open outset card modal</button>
+    <button id="ModalBtn" class="button outset-gray">
+      Open outset card modal
+    </button>
     <div id="Modal" class="modal">
-      <div class="modal-card-sm gray">
+      <div class="modal-card-sm outset-gray">
         <span class="modal-close">&times;</span>
         <img
           class="card-img-top"
