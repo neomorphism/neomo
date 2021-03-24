@@ -60,6 +60,7 @@
   </body>
 </html>
 ```
+
 ## Table Information
 
 > Simple Table usage
@@ -150,6 +151,99 @@
 </html>
 ```
 
+## Select Information
+
+> Select usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+  <body>
+    <div class="mt-2 ml-2">
+      <select>
+        <option selected>This is select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+  </body>
+</html>
+```
+
+> Select colors
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+
+  <body>
+    <div class="mt-2 ml-2">
+      <select>
+        <option selected>This is select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <select class="slt-primary">
+        <option selected>This is select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <select class="slt-success">
+        <option selected>This is select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <select class="slt-danger">
+        <option selected>This is select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <select class="slt-warning">
+        <option selected>This is select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+  </body>
+</html>
+```
+
+> multiple select example
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+  <body>
+    <div class="mt-2 ml-2">
+      <select multiple>
+        <option selected>This is select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+  </body>
+</html>
+```
+
 ## Spinners Information
 
 > Simple Spinners usage
@@ -173,10 +267,22 @@
     <br />
     <div class="container bg-dark">
       <br />
-      <button class="button dark small m-10">small&nbsp;<div class="loader-gray"></div></button>
-      <button class="button dark normal m-10">normal&nbsp;<div class="loader-gray"></div></button>
-      <button class="button dark medium m-10">medium&nbsp;<div class="loader-gray"></div></button>
-      <button class="button dark large m-10">large&nbsp;<div class="loader-gray"></div></button>
+      <button class="button dark small m-10">
+        small&nbsp;
+        <div class="loader-gray"></div>
+      </button>
+      <button class="button dark normal m-10">
+        normal&nbsp;
+        <div class="loader-gray"></div>
+      </button>
+      <button class="button dark medium m-10">
+        medium&nbsp;
+        <div class="loader-gray"></div>
+      </button>
+      <button class="button dark large m-10">
+        large&nbsp;
+        <div class="loader-gray"></div>
+      </button>
       <br />
     </div>
     <br />
