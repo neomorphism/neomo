@@ -29,26 +29,26 @@
     outline: 0;
 }
 
-.square {
+button.square {
     border-radius: 0px !important;
 }
 
-.normal {
+button.normal {
     min-width: 100px;
     min-height: 50px;
 }
 
-.small {
+button.small {
     min-width: 50px;
     min-height: 50px;
 }
 
-.medium {
+button.medium {
     min-width: 110px;
     min-height: 60px;
 }
 
-.large {
+button.large {
     min-width: 130px;
     min-height: 70px;
 }
