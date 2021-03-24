@@ -1,0 +1,39 @@
+/* Icon Information */
+
+/*
+* Title : icon-normal--square
+* Description : this is example
+*/
+
+.icon-normal--square {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: white;
+  box-shadow: inset 1px 1px 1px #bebebe, inset -0.1px -0.1px 2px #bebebe;
+}
+
+/* CSS Normalize FINISH */
+
+/*
+* Title : icon-xs--square
+* Description : this is example
+*/
+
+.icon-xs--square {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  background: white;
+  box-shadow: inset 1px 1px 1px #bebebe, inset -0.1px -0.1px 2px #bebebe;
+}
+
+/* icon-xs--square FINISH */
