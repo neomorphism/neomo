@@ -498,7 +498,7 @@
 
 ## Modal Information
 
-> Simple Modal usage
+> Simple Ouset Modal usage
 
 ```html
 <!DOCTYPE html>
@@ -509,7 +509,7 @@
   </head>
   <body class="p-2">
     <!-- Open example modal-->
-    <button id="ModalBtn" class="button gray">Open example modal</button>
+    <button id="ModalBtn" class="button gray">Open outset modal</button>
     <div id="Modal" class="modal">
       <div class="modal-content gray">
         <span class="modal-close">&times;</span>
@@ -522,7 +522,7 @@
 </html>
 ```
 
-> Simple Pressed Modal usage
+> Simple Inset Modal usage
 
 ```html
 <!DOCTYPE html>
@@ -533,8 +533,8 @@
   </head>
   <body class="p-2">
     <!-- Open pressed modal-->
-    <button id="ModalBtn2" class="button gray">Open pressed modal</button>
-    <div id="Modal2" class="modal">
+    <button id="ModalBtn" class="button gray">Open inset modal</button>
+    <div id="Modal" class="modal">
       <div class="modal-content gray-pressed">
         <span class="modal-close">&times;</span>
         <p>Any other element you want</p>
@@ -546,7 +546,7 @@
 </html>
 ```
 
-> Image Modal usage
+> Ouset Image Modal usage
 
 ```html
 <!DOCTYPE html>
@@ -557,8 +557,8 @@
   </head>
   <body class="p-2">
     <!-- Open image modal-->
-    <button id="ModalBtn3" class="button gray">Open image modal</button>
-    <div id="Modal3" class="modal">
+    <button id="ModalBtn" class="button gray">Open outset image modal</button>
+    <div id="Modal" class="modal">
       <div class="modal-content gray">
         <span class="modal-close">&times;</span>
         <p class="image">
@@ -575,7 +575,7 @@
 </html>
 ```
 
-> Card Modal usage
+> Outset Card Modal usage
 
 ```html
 <!DOCTYPE html>
@@ -585,8 +585,8 @@
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
   <body class="p-2">
-    <button id="ModalBtn4" class="button gray">Open card modal</button>
-    <div id="Modal4" class="modal">
+    <button id="ModalBtn" class="button gray">Open outset card modal</button>
+    <div id="Modal" class="modal">
       <div class="modal-card-sm gray">
         <span class="modal-close">&times;</span>
         <img
