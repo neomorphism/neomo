@@ -812,3 +812,36 @@
   </body>
 </html>
 ```
+
+
+## Tab Information
+
+> simple-tab usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+  <body>
+    <div class="tab">
+      <ul>
+        <li id="tab1" class="tab-button">
+          <a href="#tab1">tab1</a>
+          <div class="tab-content inset-gray">write your text1</div>
+        </li>
+        <li id="tab2" class="tab-button">
+          <a href="#tab2">tab2</a>
+          <div class="tab-content inset-gray">write your text2</div>
+        </li>
+        <li id="tab3" class="tab-button">
+          <a href="#tab3">tab3</a>
+          <div class="tab-content inset-gray">write your text3</div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
+```
