@@ -1,10 +1,9 @@
 /* Alert function start */
-var el = document.querySelector(".alt-close");
-      document
-        .querySelector(".alt-close")
-        .addEventListener("click", function () {
-          el.parentElement.style.display = "none";
-        });
+var alt = document.querySelector(".alt-close");
+
+alt.addEventListener("click", function () {
+  alt.parentElement.style.display = "none";
+});
 /* Alert function end */
 
 /* Modal function start */
@@ -24,4 +23,3 @@ window.onclick = function (event) {
   }
 };
 /* Modal function end */
-
