@@ -2,12 +2,12 @@
 @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
 @import "./color.css";
 @import "./components/badge.css";
-@import "./components/simple-table.css";
 @import "./components/simple-card.css";
 @import "./components/button.css";
+@import "./components/navigation.css";
 @import "./components/select.css";
 @import "./components/spinners.css";
-@import "./components/navigation.css";
+@import "./components/table.css";
 @import "./components/simple-dropdown.css";
 @import "./components/simple-pagination.css";
 @import "./components/simple-modal.css";
