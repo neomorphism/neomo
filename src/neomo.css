@@ -4,8 +4,8 @@
 @import "./layout/layout.css";
 @import "./components/simple-table.css";
 @import "./components/simple-card.css";
-@import "./components/simple-button.css";
-@import "./components/simple-spinners.css";
+@import "./components/button.css";
+@import "./components/spinners.css";
 @import "./forms/checkbox.css";
 @import "./forms/radio.css";
 @import "./components/navigation.css";
