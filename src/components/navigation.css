@@ -27,7 +27,6 @@
 */
 
 .nav2 {
-  list-style: none;
   border-radius: 20px;
   box-shadow: 2px 2px 2px white;
 
@@ -40,42 +39,13 @@
 /* nav2 FINISH */
 
 /*
-  * Title : nav-cloumn
-  * Description : nav version column
-*/
-
-.nav-cloumn {
-  list-style: none;
-  border-radius: 50px;
-  box-shadow: 16px 16px 32px #d9d9d9, -16px -16px 32px #ffffff;
-  display: flex;
-
-  padding-left: 0;
-  padding: 15px 10px;
-  width: fit-content;
-}
-
-/* nav-cloumn FINISH */
-
-/*
-  * Title : nav-item--column 
-  * Description : nav version column
-*/
-
-.nav-item--column {
-  list-style: none;
-  width: fit-content;
-}
-
-/* nav-item--column  FINISH */
-
-/*
   * Title : nav-item
   * Description : Remove list-style
 */
 
 .nav-item {
   list-style: none;
+  padding: 10px 5px;
 }
 
 /* nav-item FINISH */
@@ -107,6 +77,7 @@
 */
 
 .nav-item2 {
+  list-style: none;
   border-radius: 15px;
   padding: 10px;
 }
@@ -135,6 +106,19 @@
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   padding: 5px 12px;
   color: rgba(0, 0, 0, 0.7);
+}
+
+/* nav-link FINISH */
+
+/*
+  * Title : nav-link:focus
+  * Description : nav-link layout
+*/
+
+.nav-link:focus {
+  border-radius: 15px;
+  background: white;
+  box-shadow: inset 3px 3px 3px #bebebe, inset -0.1px -0.1px 2px #bebebe;
 }
 
 /* nav-link FINISH */
@@ -171,19 +155,6 @@
 /* nav-link--animation FINISH */
 
 /*
-  * Title : nav-link:focus
-  * Description : nav-link layout
-*/
-
-.nav-link:focus {
-  border-radius: 15px;
-  background: white;
-  box-shadow: inset 3px 3px 3px #bebebe, inset -0.1px -0.1px 2px #bebebe;
-}
-
-/* nav-link FINISH */
-
-/*
   * Title : nav-link2
   * Description : nav-link layout
 */
@@ -204,22 +175,118 @@
   border-radius: 10px;
   box-shadow: 0 0 0 0.1rem skyblue;
 }
+
 /* nav-link FINISH */
 
-/* .test {
-  height: 100px;
-  width: 100px;
-  background-color: teal;
-  margin-left: 100px;
-  box-shadow: inset -5px -5px 5px red;
+/*
+  * Title : nav-cloumn
+  * Description : nav version column
+*/
+
+.nav-column {
+  border-radius: 50px;
+  box-shadow: 16px 16px 32px #d9d9d9, -16px -16px 32px #ffffff;
+  display: flex;
+  flex-direction: column;
 }
-.test2 {
-  border: 0.5rem outset pink;
-  outline: 0.5rem solid khaki;
-  box-shadow: 0 0 0 2rem skyblue;
-  border-radius: 12px;
-  font: bold 1rem sans-serif;
-  margin: 2rem;
-  padding: 1rem;
-  outline-offset: 0.5rem;
-} */
+
+/*
+  * Title : nav-item--col
+  * Description : Remove list-style
+*/
+
+.nav-item--column {
+  list-style: none;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.nav-item--column:last-child {
+  margin-bottom: 20px;
+}
+/* nav-item--col FINISH */
+
+/* nav-cloumn FINISH */
+
+/*
+  * Title : nav-link--column
+  * Description : nav version column
+*/
+
+.nav-link--column {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* nav-link--column FINISH */
+
+/*
+  * Title : nav-link--column
+  * Description : nav version column
+*/
+
+.nav-link--column {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* nav-link--column FINISH */
+
+/*
+  * Title : nav-link--column
+  * Description : nav version column
+*/
+
+.nav-link--column:focus {
+  border-radius: 15px;
+  background: white;
+  box-shadow: inset 3px 3px 3px #bebebe, inset -0.1px -0.1px 2px #bebebe;
+}
+
+/* nav-link--column FINISH */
+
+/* type1은 a태그를 기준으로 했고 type2는 li 태그를 기준으로 했음 */
+
+@media screen and (min-width: 1400px) {
+  .nav-column {
+    max-width: 250px;
+  }
+}
+/* X-Large */
+@media (max-width: 1400px) {
+  .nav-column {
+    max-width: 220px;
+  }
+}
+/* Large */
+@media (max-width: 1200px) {
+  .nav-column {
+    max-width: 200px;
+  }
+}
+/* Medium */
+@media (max-width: 992px) {
+  .nav-column {
+    max-width: 200px;
+  }
+}
+/* Small */
+@media (max-width: 768px) {
+  .nav-column {
+    max-width: 200px;
+  }
+}
+/* Extra Small */
+@media screen and (max-width: 576px) {
+  .nav-column {
+    max-width: 20%;
+  }
+}
