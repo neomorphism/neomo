@@ -60,6 +60,7 @@
   </body>
 </html>
 ```
+
 ## Button Information
 
 > Simple Button usage
@@ -271,6 +272,37 @@
       </li>
       <li class="nav-item">
         <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+  </body>
+</html>
+```
+
+> Naviagtion type1-animation usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" href="../src/neomo.css" />
+  </head>
+  <body>
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link--animation" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link--animation" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link--animation" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link--animation" href="#">Disabled1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link--animation disabled">Disabled</a>
       </li>
     </ul>
   </body>
