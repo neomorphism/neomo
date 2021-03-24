@@ -17,9 +17,9 @@
 }
 
 .inset-gray,
-button.gray:hover, button.gray:focus,
-li.gray:hover,
-input.gray:focus, input.gray:disabled {
+button.outset-gray:hover, button.outset-gray:focus,
+li.outset-gray:hover,
+input.outset-gray:focus, input.outset-gray:disabled {
     border: none;
     border-radius: 10px;
     background: var(--neomo-gray);
@@ -40,9 +40,9 @@ input.gray:focus, input.gray:disabled {
 }
 
 .inset-dark,
-button.dark:hover, button.dark:focus,
-li.dark:hover, 
-input.dark:focus, input.dark:disabled {
+button.outset-dark:hover, button.outset-dark:focus,
+li.outset-dark:hover, 
+input.outset-dark:focus, input.outset-dark:disabled {
     border: none;
     border-radius: 10px;
     background: var(--neomo-dark);
@@ -63,9 +63,9 @@ input.dark:focus, input.dark:disabled {
 }
 
 .inset-blue,
-button.blue:hover, button.blue:focus,
-li.blue:hover,
-input.blue:focus, input.blue:disabled {
+button.outset-blue:hover, button.outset-blue:focus,
+li.outset-blue:hover,
+input.outset-blue:focus, input.outset-blue:disabled {
     border: none;
     border-radius: 10px;
     background: var(--noemo-blue-pressed);
