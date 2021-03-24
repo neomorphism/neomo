@@ -348,18 +348,21 @@
   </head>
 
   <body>
-    <ul class="nav-cloumn">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
+    <ul class="nav-column">
+      <li class="nav-item--column">
+        <a class="nav-link--column" href="#">Active</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+      <li class="nav-item--column">
+        <a class="nav-link--column" href="#">Link</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+      <li class="nav-item--column">
+        <a class="nav-link--column" href="#">Link</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled">Disabled</a>
+      <li class="nav-item--column">
+        <a class="nav-link--column" href="#">Disabled1</a>
+      </li>
+      <li class="nav-item--column">
+        <a class="nav-link--column disabled">Disabled</a>
       </li>
     </ul>
   </body>
