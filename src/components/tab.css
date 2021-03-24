@@ -1,0 +1,71 @@
+.tab {
+  width: 800px;
+  position: relative;
+}
+.tab ul {
+  list-style: none;
+  border-radius: 10px;
+  background: var(--neomo-gray);
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+.tab ul li {
+  float: left;
+  text-align: center;
+  display: inline-block;
+}
+.tab ul li:only-child {
+  width: 100%;
+}
+.tab ul li:first-child:nth-last-child(2),
+.tab ul li:first-child:nth-last-child(2) + li {
+  width: 50%;
+}
+.tab ul li:first-child:nth-last-child(3),
+.tab ul li:first-child:nth-last-child(3) ~ li {
+  width: 33.33%;
+}
+.tab ul li:first-child:nth-last-child(4),
+.tab ul li:first-child:nth-last-child(4) ~ li {
+  width: 25%;
+}
+.tab ul li:first-child:nth-last-child(5),
+.tab ul li:first-child:nth-last-child(5) ~ li {
+  width: 20%;
+}
+.tab ul li:first-child:nth-last-child(6),
+.tab ul li:first-child:nth-last-child(6) ~ li {
+  width: 16.66%;
+}
+.tab ul li:first-child:nth-last-child(7),
+.tab ul li:first-child:nth-last-child(7) ~ li {
+  width: 14.28%;
+}
+.tab ul li a {
+  display: block;
+  line-height: 40px;
+  height: 40px;
+  text-decoration: none;
+  color: #000;
+}
+.tab-content {
+  display: none;
+  min-width: 760px;
+  text-align: left;
+  margin-left: 40px;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  top: 40px;
+  box-sizing: border-box;
+  color: #000;
+}
+.tab-button:target {
+  border: none;
+  border-radius: 10px;
+  background: var(--neomo-gray);
+  box-shadow: inset -3px -3px 7px #ffffff80,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+.tab-button:target .tab-content {
+  display: block;
+}
