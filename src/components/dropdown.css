@@ -15,9 +15,9 @@
   min-height: 50px;
 
   border: none;
-  background-color: #dde1e7;
   border-radius: 10px;
-  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+  background: var(--neomo-gray);
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 .dropdown-button:focus {
   border: none;
@@ -29,9 +29,9 @@
   min-width: 150px;
   padding: 5px;
 
-  background-color: #dde1e7;
   border-radius: 10px;
-  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
+  background: var(--neomo-gray);
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 .dropdown-content a {
   color: black;
@@ -40,15 +40,17 @@
   display: block;
 }
 .dropdown-content a:hover {
-  background: #dde1e7;
   border-radius: 10px;
-  box-shadow: inset 3px 3px 6px #b8b9be, inset -3px -3px 6px #ffffff;
+  background: var(--neomo-gray);
+  box-shadow: inset -3px -3px 7px #ffffff80,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 .dropdown:hover .dropdown-content {
   display: block;
 }
 .dropdown:hover .dropdown-button {
-  background: #dde1e7;
-  box-shadow: inset 3px 3px 6px #b8b9be, inset -3px -3px 6px #ffffff;
+  background: var(--neomo-gray);
+  box-shadow: inset -3px -3px 7px #ffffff80,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 /* Dropdown component FINISH */
