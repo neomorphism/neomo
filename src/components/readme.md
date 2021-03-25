@@ -478,8 +478,8 @@
         </div>
 
         <div class="content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          nec iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+          iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
           <a href="#">#responsive</a>
           <br />
           <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
@@ -795,7 +795,7 @@
 
 ## Icon Information
 
-> simple-icon usage
+> square-icon usage
 
 ```html
 <!DOCTYPE html>
@@ -806,13 +806,30 @@
   </head>
 
   <body>
-    <div class="icon-xs--square">
+    <div class="icon-square icon-xs">
       <i class="fas fa-home fa-xs"></i>
     </div>
   </body>
 </html>
 ```
 
+> circle-icon usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" href="../neomo.css" />
+  </head>
+
+  <body>
+    <div class="icon-circle icon-sm">
+      <i class="fas fa-home fa-sm"></i>
+    </div>
+  </body>
+</html>
+```
 
 ## Tab Information
 
