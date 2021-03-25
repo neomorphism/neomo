@@ -19,6 +19,25 @@
 /* icon-square FINISH */
 
 /*
+* Title : icon-square2
+* Description : this is example
+*/
+
+.icon-square2 {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  border-radius: 50px;
+  background: #f4f4f4;
+  box-shadow: -1px -1px 1px white, 1px 1px 1px #bebebe;
+}
+
+/* icon-square2 FINISH */
+
+/*
 * Title : icon-circle
 * Description : this is example
 */
@@ -35,6 +54,24 @@
 }
 
 /* icon-circle FINISH */
+
+/*
+* Title : icon-circle2
+* Description : this is example
+*/
+
+.icon-circle2 {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #f4f4f4;
+  box-shadow: -2px -2px 2px white, 2px 2px 2px #bebebe;
+}
+
+/* icon-circle2 FINISH */
 
 /*
 * Title : icon-size
