@@ -795,7 +795,7 @@
 
 ## Icon Information
 
-> square-icon usage
+> square-icon type1 usage
 
 ```html
 <!DOCTYPE html>
@@ -813,7 +813,25 @@
 </html>
 ```
 
-> circle-icon usage
+> square-icon type2 usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" href="../neomo.css" />
+  </head>
+
+  <body>
+    <div class="icon-square2 icon-xs">
+      <i class="fas fa-home fa-xs"></i>
+    </div>
+  </body>
+</html>
+```
+
+> circle-icon type1 usage
 
 ```html
 <!DOCTYPE html>
@@ -825,6 +843,24 @@
 
   <body>
     <div class="icon-circle icon-sm">
+      <i class="fas fa-home fa-sm"></i>
+    </div>
+  </body>
+</html>
+```
+
+> circle-icon type2 usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" href="../neomo.css" />
+  </head>
+
+  <body>
+    <div class="icon-circle2 icon-sm">
       <i class="fas fa-home fa-sm"></i>
     </div>
   </body>
