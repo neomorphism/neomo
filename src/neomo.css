@@ -16,6 +16,7 @@
 @import "./components/select.css";
 @import "./components/spinners.css";
 @import "./components/tab.css";
+@import "./components/toast.css";
 @import "./components/tooltips.css";
 @import "./forms/checkbox.css";
 @import "./forms/input.css";
