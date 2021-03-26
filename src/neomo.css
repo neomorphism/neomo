@@ -1,21 +1,22 @@
 /* Import Section */
 @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
 @import "./color.css";
-@import "./content/table.css";
 @import "./components/alert.css";
+@import "./content/table.css";
 @import "./components/badge.css";
-@import "./components/card.css";
 @import "./components/button.css";
+@import "./components/card.css";
+@import "./components/columns.css";
 @import "./components/dropdown.css";
 @import "./components/icon.css";
 @import "./components/modal.css";
 @import "./components/navigation.css";
 @import "./components/pagination.css";
+@import "./components/progressbar.css";
 @import "./components/select.css";
 @import "./components/spinners.css";
 @import "./components/tab.css";
-@import "./components/columns.css";
-@import "./components/progressbar.css";
+@import "./components/tooltips.css";
 @import "./forms/checkbox.css";
 @import "./forms/input.css";
 @import "./forms/radio.css";
