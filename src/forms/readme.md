@@ -31,38 +31,70 @@
   <head>
     <title>test</title>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
-    <script src="https://kit.fontawesome.com/6ad71d6444.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/6ad71d6444.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <div class="container bg-gray">
       <br />
-      <input class="input outset-gray" type="text" disabled placeholder="Disabled">
-      <input class="input square outset-gray" type="text" placeholder="Square Input">
-      <input class="input rounded outset-gray" type="text" placeholder="Rounded Input">
+      <input
+        class="input outset-gray"
+        type="text"
+        disabled
+        placeholder="Disabled"
+      />
+      <input
+        class="input square outset-gray"
+        type="text"
+        placeholder="Square Input"
+      />
+      <input
+        class="input rounded outset-gray"
+        type="text"
+        placeholder="Rounded Input"
+      />
       <br />
     </div>
     <div class="container bg-dark">
       <br />
-      <input class="input outset-dark small" type="text" placeholder="Small Input">
+      <input
+        class="input outset-dark small"
+        type="text"
+        placeholder="Small Input"
+      />
       <br />
-      <input class="input outset-dark" type="text" placeholder="Normal Input">
+      <input class="input outset-dark" type="text" placeholder="Normal Input" />
       <br />
-      <input class="input outset-dark medium" type="text" placeholder="Medium Input">
+      <input
+        class="input outset-dark medium"
+        type="text"
+        placeholder="Medium Input"
+      />
       <br />
-      <input class="input outset-dark large" type="text" placeholder="Large Input">
+      <input
+        class="input outset-dark large"
+        type="text"
+        placeholder="Large Input"
+      />
       <br />
     </div>
     <div class="container bg-blue">
       <br />
       <span class="left-icon">
         <i class="far fa-envelope fa-lg icon"></i>
-        <input class="input outset-blue" type="email" placeholder="email">
-      </span>  
+        <input class="input outset-blue" type="email" placeholder="email" />
+      </span>
       <br />
       <span class="right-icon">
         <i class="fas fa-lock fa-lg icon"></i>
-        <input class="input outset-blue" type="password" placeholder="password">
+        <input
+          class="input outset-blue"
+          type="password"
+          placeholder="password"
+        />
       </span>
     </div>
   </body>
@@ -103,5 +135,25 @@
       <label class="radio-label" for="radio2">this is radio. 'option2'</label>
     </div>
   </body>
+</html>
+```
+
+## Range Information
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+  <body>
+    <div>example</div>
+    <input type="range" min="1" max="100" class="range-round" id="myRange" />
+    <p>Value: <span id="demo"></span></p>
+  </body>
+
+  <script src="../src/forms/range.js"></script>
 </html>
 ```
