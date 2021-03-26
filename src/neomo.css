@@ -227,6 +227,26 @@ body {
 * Title : margin
 * Description : defined margin basic class
 */
+.m-auto{
+  margin:auto!important;
+}
+
+.ml-auto{
+  margin-left:auto!important;
+}
+
+.mr-auto{
+  margin-right:auto!important;
+}
+
+.mt-auto{
+  margin-top:auto!important;
+}
+
+.mb-auto{
+  margin-bottom:auto!important;
+}
+
 .m-0,
 .ml-0 {
   margin-left: 0;
