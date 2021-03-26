@@ -974,3 +974,51 @@
   </body>
 </html>
 ```
+
+## Toast Information
+
+> toast usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" href="../neomo.css" />
+  </head>
+
+  <body>
+    <div class="columns m-5">
+      <div class="columns m-5">
+      <div class="column size-3">
+        <div class="toast show inset-blue" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <span class=""></span> 
+              <strong class="mr-auto ml-2">Neumorphism</strong> 
+              <small class="mr-2 ml-auto">11 mins ago</small> 
+              <button type="button" class="" data-dismiss="toast" aria-label="Close" onclick="toast_button(this);">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="toast-body">Hello, world! This is a toast message.</div>
+        </div>
+      </div>
+      <div class="column size-3">
+        <div class="toast show outset-blue" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <span class=""></span> 
+              <strong class="mr-auto ml-2">Neumorphism</strong> 
+              <small class="mr-2 ml-auto">11 mins ago</small> 
+              <button type="button" class="" data-dismiss="toast" aria-label="Close" onclick="toast_button(this);">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="toast-body">Hello, world! This is a toast message.</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script type="text/javascript" src="../src/components/toast.js"></script>
+```
