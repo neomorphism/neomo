@@ -906,53 +906,71 @@
 ```html
 <!DOCTYPE html>
 <html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
 
-<head>
-  <title>test</title>
-  <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
-</head>
+  <body>
+    <div class="container">
+      <h1>Tooltip Example</h1>
+      <br />
+      <br />
+      <br />
+      <div class="tooltip">
+        <span>Hover here!</span>
+        <div class="tooltip-content bottom outset-blue">
+          <p>bottom tooltip!</p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <div class="tooltip">
+        <span>Hover here!</span>
+        <div class="tooltip-content top outset-dark">
+          <p>top tooltip!</p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <div class="tooltip">
+        <span>Hover here!</span>
+        <div class="tooltip-content left outset-gray">
+          <p>left tooltip!</p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <div class="tooltip">
+        <span>Hover here!</span>
+        <div class="tooltip-content right outset-gray">
+          <p>right tooltip!</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```
 
-<body>
-  <div class="container">
-    <h1>Tooltip Example</h1>
-    <br />
-    <br />
-    <br />
-    <div class="tooltip">
-      <span>Hover here!</span>
-      <div class="tooltip-content bottom outset-blue">
-        <p>bottom tooltip!</p>
-      </div>
-    </div>
-    <br />
-    <br />
-    <br />
-    <div class="tooltip">
-      <span>Hover here!</span>
-      <div class="tooltip-content top outset-dark">
-        <p>top tooltip!</p>
-      </div>
-    </div>
-    <br />
-    <br />
-    <br />
-    <div class="tooltip">
-      <span>Hover here!</span>
-      <div class="tooltip-content left outset-gray">
-        <p>left tooltip!</p>
-      </div>
-    </div>
-    <br />
-    <br />
-    <br />
-    <div class="tooltip">
-      <span>Hover here!</span>
-      <div class="tooltip-content right outset-gray">
-        <p>right tooltip!</p>
-      </div>
-    </div>
-  </div>
-</body>
+## Navbar Information
 
+> navbar-search usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+  <body>
+    <form class="search-bar">
+      <input type="text" class="search-bar--text" placeholder="Search" />
+      <input type="submit" class="search-bar--button" value="Search" />
+    </form>
+  </body>
 </html>
 ```
