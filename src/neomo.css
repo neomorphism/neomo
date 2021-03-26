@@ -21,6 +21,7 @@
 @import "./forms/checkbox.css";
 @import "./forms/input.css";
 @import "./forms/radio.css";
+@import "./forms/range.css";
 @import "./layout/layout.css";
 
 /* Common Section */
