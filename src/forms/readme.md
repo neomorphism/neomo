@@ -58,7 +58,7 @@
         type="file"
         id="ex-filename"
         class="file-hidden"
-        onclick="filename(this)"
+        onclick="FileUpload()"
       />
     </div>
 
