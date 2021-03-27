@@ -660,7 +660,7 @@
   </body>
 </html>
 ```
-
+## Column Information
 > Column usage
 
 ```html
@@ -753,7 +753,7 @@
   </body>
 </html>
 ```
-
+## Progress Bar Information
 > Progress Bar usage
 
 ```html
@@ -981,7 +981,7 @@
   </body>
 </html>
 
-<script type="text/javascript" src="../src/components/toast.js"></script>
+<script type="text/javascript" src="../src/neomo.js"></script>
 ```
 
 ## Tooltips Information
@@ -1039,5 +1039,331 @@
   </div>
 </body>
 
+</html>
+```
+
+## Breadcrumb Information
+
+> Breadcrumb-basic usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+<head>
+  <title>test</title>
+  <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="columns">
+      <div class="column size-6">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+          <ul>
+            <li>
+              <a href="#">
+                <span>Neomo</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Documentation</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Components</span>
+              </a>
+            </li>
+            <li class="is-active">
+              <a href="#" aria-current="page">
+                <span>Breadcrumb</span> 
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+```
+
+> Breadcrumb-icon usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+<head>
+  <title>test</title>
+  <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="columns">
+      <div class="column size-6">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+          <ul>
+            <li>
+              <a href="#">
+                <div class="icon-circle icon-sm">
+                  <i class="fas fa-home fa-sm"></i>
+                </div>
+                <span>Neomo</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="icon-circle icon-sm">
+                  <i class="fas fa-home fa-sm"></i>
+                </div>
+                <span>Documentation</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="icon-circle icon-sm">
+                  <i class="fas fa-home fa-sm"></i>
+                </div>
+                <span>Components</span>
+              </a>
+            </li>
+            <li class="is-active">
+              <a href="#" aria-current="page">
+                <div class="icon-circle icon-sm">
+                  <i class="fas fa-home fa-sm"></i>
+                </div>
+                <span>Breadcrumb</span> 
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+```
+
+> Breadcrumb-centered usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+<head>
+  <title>test</title>
+  <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="columns">
+      <div class="column size-6">
+        <nav class="breadcrumb centered" aria-label="breadcrumbs">
+          <ul>
+            <li>
+              <a href="#">
+                <div class="icon-circle icon-sm">
+                  <i class="fas fa-home fa-sm"></i>
+                </div>
+                <span>Neomo</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="icon-circle icon-sm">
+                  <i class="fas fa-home fa-sm"></i>
+                </div>
+                <span>Documentation</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="icon-circle icon-sm">
+                  <i class="fas fa-home fa-sm"></i>
+                </div>
+                <span>Components</span>
+              </a>
+            </li>
+            <li class="is-active">
+              <a href="#" aria-current="page">
+                <div class="icon-circle icon-sm">
+                  <i class="fas fa-home fa-sm"></i>
+                </div>
+                <span>Breadcrumb</span> 
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+```
+
+> Breadcrumb-right usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+<head>
+  <title>test</title>
+  <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="columns">
+      <div class="column size-6">
+        <nav class="breadcrumb right" aria-label="breadcrumbs">
+          <ul>
+            <li>
+              <a href="#">
+                <div class="icon-circle icon-sm">
+                  <i class="fas fa-home fa-sm"></i>
+                </div>
+                <span>Neomo</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="icon-circle icon-sm">
+                  <i class="fas fa-home fa-sm"></i>
+                </div>
+                <span>Documentation</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="icon-circle icon-sm">
+                  <i class="fas fa-home fa-sm"></i>
+                </div>
+                <span>Components</span>
+              </a>
+            </li>
+            <li class="is-active">
+              <a href="#" aria-current="page">
+                <div class="icon-circle icon-sm">
+                  <i class="fas fa-home fa-sm"></i>
+                </div>
+                <span>Breadcrumb</span> 
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+```
+
+> Breadcrumb-arrow usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+<head>
+  <title>test</title>
+  <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="columns">
+      <div class="column size-6">
+        <nav class="breadcrumb centered arrow" aria-label="breadcrumbs">
+          <ul>
+            <li>
+              <a href="#">
+                <div class="icon-circle icon-sm">
+                  <i class="fas fa-home fa-sm"></i>
+                </div>
+                <span>Neomo</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="icon-circle icon-sm">
+                  <i class="fas fa-home fa-sm"></i>
+                </div>
+                <span>Documentation</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="icon-circle icon-sm">
+                  <i class="fas fa-home fa-sm"></i>
+                </div>
+                <span>Components</span>
+              </a>
+            </li>
+            <li class="is-active">
+              <a href="#" aria-current="page">
+                <div class="icon-circle icon-sm">
+                  <i class="fas fa-home fa-sm"></i>
+                </div>
+                <span>Breadcrumb</span> 
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+```
+
+> Breadcrumb-direction usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+<head>
+  <title>test</title>
+  <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="columns">
+      <div class="column size-6">
+        <nav class="breadcrumb centered direction" aria-label="breadcrumbs">
+          <ul>
+            <li>
+              <a href="#">
+                <div class="icon-circle icon-sm">
+                  <i class="fas fa-home fa-sm"></i>
+                </div>
+                <span>Neomo</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="icon-circle icon-sm">
+                  <i class="fas fa-home fa-sm"></i>
+                </div>
+                <span>Documentation</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="icon-circle icon-sm">
+                  <i class="fas fa-home fa-sm"></i>
+                </div>
+                <span>Components</span>
+              </a>
+            </li>
+            <li class="is-active">
+              <a href="#" aria-current="page">
+                <div class="icon-circle icon-sm">
+                  <i class="fas fa-home fa-sm"></i>
+                </div>
+                <span>Breadcrumb</span> 
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
 ```
