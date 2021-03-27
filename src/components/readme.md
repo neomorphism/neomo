@@ -952,7 +952,7 @@
     <div class="columns m-5">
       <div class="columns m-5">
       <div class="column size-3">
-        <div class="toast show inset-blue" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast show inset-gray" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
               <span class=""></span> 
               <strong class="mr-auto ml-2">Neumorphism</strong> 
@@ -965,7 +965,7 @@
         </div>
       </div>
       <div class="column size-3">
-        <div class="toast show outset-blue" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast show outset-gray" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
               <span class=""></span> 
               <strong class="mr-auto ml-2">Neumorphism</strong> 
