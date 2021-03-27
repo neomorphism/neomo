@@ -1,71 +1,43 @@
 .tab {
-  width: 800px;
-  position: relative;
+  width: 960px;
 }
-.tab ul {
+.tab-list {
   list-style: none;
-  border-radius: 10px;
-  background: var(--neomo-gray);
-  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
-.tab ul li {
+.tab-list li {
   float: left;
-  text-align: center;
+  margin-right: 30px;
+}
+.tab-list li a {
   display: inline-block;
-}
-.tab ul li:only-child {
-  width: 100%;
-}
-.tab ul li:first-child:nth-last-child(2),
-.tab ul li:first-child:nth-last-child(2) + li {
-  width: 50%;
-}
-.tab ul li:first-child:nth-last-child(3),
-.tab ul li:first-child:nth-last-child(3) ~ li {
-  width: 33.33%;
-}
-.tab ul li:first-child:nth-last-child(4),
-.tab ul li:first-child:nth-last-child(4) ~ li {
-  width: 25%;
-}
-.tab ul li:first-child:nth-last-child(5),
-.tab ul li:first-child:nth-last-child(5) ~ li {
-  width: 20%;
-}
-.tab ul li:first-child:nth-last-child(6),
-.tab ul li:first-child:nth-last-child(6) ~ li {
-  width: 16.66%;
-}
-.tab ul li:first-child:nth-last-child(7),
-.tab ul li:first-child:nth-last-child(7) ~ li {
-  width: 14.28%;
-}
-.tab ul li a {
-  display: block;
-  line-height: 40px;
-  height: 40px;
-  text-decoration: none;
   color: #000;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+  font-size: 17px;
+  transition: 0.3s;
 }
 .tab-content {
   display: none;
-  min-width: 760px;
-  text-align: left;
-  margin-left: 40px;
-  padding: 20px;
-  position: absolute;
-  left: 0;
-  top: 40px;
-  box-sizing: border-box;
-  color: #000;
+  padding: 6px 12px;
+  margin-top: 30px;
 }
-.tab-button:target {
-  border: none;
+.tab-content--title {
+  font-size: 20px;
+  margin: 20px 0 10px 20px;
+}
+.tab-content--text {
+  font-size: 15px;
+  margin: 5px 0 10px 20px;
+}
+ul.tab-list li.current {
   border-radius: 10px;
-  background: var(--neomo-gray);
   box-shadow: inset -3px -3px 7px #ffffff80,
     inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
-.tab-button:target .tab-content {
+.tab-content.current {
   display: block;
 }
