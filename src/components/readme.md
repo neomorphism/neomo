@@ -562,7 +562,7 @@
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
   <body class="p-2">
-    <button id="ModalBtn" class="button outset-gray">Open outset modal</button>
+    <button id="ModalBtn" class="button outset-gray" onclick="ModalOpen()">Open outset modal</button>
     <div id="Modal" class="modal">
       <div class="modal-content outset-gray">
         <span class="modal-close">&times;</span>
@@ -585,7 +585,7 @@
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
   <body class="p-2">
-    <button id="ModalBtn" class="button outset-gray">Open inset modal</button>
+    <button id="ModalBtn" class="button outset-gray" onclick="ModalOpen()">Open inset modal</button>
     <div id="Modal" class="modal">
       <div class="modal-content inset-gray">
         <span class="modal-close">&times;</span>
@@ -608,7 +608,7 @@
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
   <body class="p-2">
-    <button id="ModalBtn" class="button outset-gray">
+    <button id="ModalBtn" class="button outset-gray" onclick="ModalOpen()">
       Open outset image modal
     </button>
     <div id="Modal" class="modal">
@@ -637,7 +637,7 @@
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
   <body class="p-2">
-    <button id="ModalBtn" class="button outset-gray">
+    <button id="ModalBtn" class="button outset-gray" onclick="ModalOpen()">
       Open outset card modal
     </button>
     <div id="Modal" class="modal">
