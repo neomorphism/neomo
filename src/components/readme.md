@@ -279,39 +279,39 @@
   </head>
 
   <body>
-    <div class="container bg-gray">
+    <div class="container gray">
       <br />
       <button class="button outset-gray m-10">
-        <div class="loader"></div>
+        <div class="loader border-white point-purple"></div>
       </button>
       <br />
     </div>
     <br />
-    <div class="container bg-dark">
+    <div class="container dark">
       <br />
       <button class="button outset-dark small m-10">
         small&nbsp;
-        <div class="loader-gray"></div>
+        <div class="loader border-white point-gray"></div>
       </button>
       <button class="button outset-dark normal m-10">
         normal&nbsp;
-        <div class="loader-gray"></div>
+        <div class="loader border-white point-gray"></div>
       </button>
       <button class="button outset-dark medium m-10">
         medium&nbsp;
-        <div class="loader-gray"></div>
+        <div class="loader border-white point-gray"></div>
       </button>
       <button class="button outset-dark large m-10">
         large&nbsp;
-        <div class="loader-gray"></div>
+        <div class="loader border-white point-gray"></div>
       </button>
       <br />
     </div>
     <br />
-    <div class="container bg-blue">
+    <div class="container neomo">
       <br />
-      <button class="button outset-blue m-10">
-        <div class="loader-blue"></div>
+      <button class="button outset-neomo m-10">
+        <div class="loader border-gray point-blue"></div>
       </button>
       <br />
     </div>
