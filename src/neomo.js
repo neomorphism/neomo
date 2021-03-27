@@ -41,3 +41,17 @@ function ModalOpen() {
   };
 }
 /* Modal function end */
+
+/* Tab function start */
+function TabToggle() {
+  $(function () {
+    $("ul.tab-list li").click(function () {
+      var activeTab = $(this).attr("data-tab");
+      $("ul.tab-list li").removeClass("current");
+      $(".tab-content").removeClass("current");
+      $(this).addClass("current");
+      $("#" + activeTab).addClass("current");
+    });
+  });
+}
+/* Tab function end */
