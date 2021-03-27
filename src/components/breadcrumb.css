@@ -1,3 +1,10 @@
+/* Breadcrumb Section Information */
+
+/*
+* Title : Breadcrumb component
+* Description : this is Breadcrumb
+*/
+
 .breadcrumb{
     user-select:none;
     white-space:nowrap;
@@ -46,6 +53,10 @@
   .breadcrumb.centered ul{
     justify-content:center;
   }
+
+  .breadcrumb.right ul{
+    justify-content:flex-end;
+  }
   
   .breadcrumb.arrow li+li::before{
     content:"\2794";
@@ -68,3 +79,5 @@
   .breadcrumb.lg{
     font-size:1.5rem;
   }
+
+  /* Breadcrumb component FINISH */
