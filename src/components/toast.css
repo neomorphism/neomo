@@ -1,3 +1,10 @@
+/* Toast Section Information */
+
+/*
+* Title : Toast component
+* Description : this is Toast
+*/
+
 .toast{
     max-width:350px;
     overflow:hidden;
@@ -22,3 +29,5 @@
 .toast-body{
     padding:.75rem;
 }
+
+/* Toast component FINISH */
