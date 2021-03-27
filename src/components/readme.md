@@ -145,15 +145,15 @@
   </head>
 
   <body>
-    <div class="container bg-gray">
+    <div class="container gray">
       <br />
-      <button class="button outset-gray m-10">기본 버튼</button>
+      <button class="button outset-gray m-10">Default Button</button>
       <br />
-      <button class="button outset-gray square m-10">사각형 버튼</button>
+      <button class="button outset-gray square m-10">Square Button</button>
       <br />
     </div>
     <br />
-    <div class="container bg-dark">
+    <div class="container dark">
       <br />
       <button class="button outset-dark small m-10">small</button>
       <button class="button outset-dark normal m-10">normal</button>
@@ -162,11 +162,11 @@
       <br />
     </div>
     <br />
-    <div class="container bg-blue">
+    <div class="container neomo">
       <br />
-      <button class="button blue m-10">파란색 기본 버튼</button>
+      <button class="button outset-neomo m-10">Blue Button</button>
       <br />
-      <button class="button blue square blue m-10">파란색 사각형 버튼</button>
+      <button class="button outset-neomo square blue m-10">Blue Square Button</button>
       <br />
     </div>
   </body>
