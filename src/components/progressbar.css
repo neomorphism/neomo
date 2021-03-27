@@ -1,3 +1,11 @@
+/* Progressbar Section Information */
+
+/*
+* Title : Progressbar component
+* Description : this is Progressbar
+*/
+
+
 .progress{
     display:flex;
     height:1rem;
@@ -39,3 +47,5 @@
   .progress-bar.gray{
     background-color:var(--gray);
   }
+
+  /* Progressbar component FINISH */
