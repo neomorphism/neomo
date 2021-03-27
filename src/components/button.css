@@ -25,6 +25,18 @@
     cursor: pointer;
 }
 
+button.outset-neomo:hover {
+    box-shadow: inset 5px 5px 9px #cad3da, inset -5px -5px 9px #ebf1f5 !important;
+}
+
+button.outset-gray:hover {
+    box-shadow: inset 5px 5px 9px #b3b3b3, inset -5px -5px 9px #dfdfdf !important;
+}
+
+button.outset-dark:hover {
+    box-shadow: inset 5px 5px 9px #3c3c3c, inset -5px -5px 9px #535353 !important;
+}
+
 .button:focus {
     outline: 0;
 }
@@ -51,18 +63,6 @@ button.medium {
 button.large {
     min-width: 130px;
     min-height: 70px;
-}
-
-.bg-gray {
-    background: #e0e0e0;
-}
-
-.bg-dark {
-    background: #464646;
-}
-
-.bg-blue {
-    background: #eff8ff;
 }
 
 /* Button component FINISH */
