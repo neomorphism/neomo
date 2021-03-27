@@ -7,14 +7,14 @@ alt.addEventListener("click", function () {
 /* Alert function end */
 
 /* File function start */
-function filename() {
+function FileUpload() {
   $(document).ready(function () {
-    var fileTarget = $(".file .file-hidden");
+    let fileTarget = $(".file .file-hidden");
     fileTarget.on("change", function () {
       if (window.FileReader) {
-        var filename = $(this)[0].files[0].name;
+        let filename = $(this)[0].files[0].name;
       } else {
-        var filename = $(this).val().split("/").pop().split("\\").pop();
+        let filename = $(this).val().split("/").pop().split("\\").pop();
       }
       $(this).siblings(".file-name").val(filename);
     });
@@ -23,19 +23,21 @@ function filename() {
 /* File function end */
 
 /* Modal function start */
-var modal = document.getElementById("Modal");
-var btn = document.getElementById("ModalBtn");
-var span = document.getElementsByClassName("modal-close")[0];
+function ModalOpen() {
+  let modal = document.getElementById("Modal");
+  let btn = document.getElementById("ModalBtn");
+  let span = document.getElementsByClassName("modal-close")[0];
 
-btn.onclick = function () {
-  modal.style.display = "block";
-};
-span.onclick = function () {
-  modal.style.display = "none";
-};
-window.onclick = function (event) {
-  if (event.target == modal) {
+  btn.onclick = function () {
+    modal.style.display = "block";
+  };
+  span.onclick = function () {
     modal.style.display = "none";
-  }
-};
+  };
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+}
 /* Modal function end */
