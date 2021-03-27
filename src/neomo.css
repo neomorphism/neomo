@@ -2,6 +2,7 @@
 @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
 @import "./color.css";
 @import "./components/alert.css";
+@import "./components/breadcrumb.css";
 @import "./content/table.css";
 @import "./components/badge.css";
 @import "./components/button.css";
