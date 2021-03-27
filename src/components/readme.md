@@ -869,7 +869,7 @@
 
 ## Tab Information
 
-> simple-tab usage
+> Tab usage
 
 ```html
 <!DOCTYPE html>
@@ -878,23 +878,40 @@
     <title>test</title>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
-  <body>
+  <body class="p-2" style="background-color: var(--neomo-gray)">
     <div class="tab">
-      <ul>
-        <li id="tab1" class="tab-button">
-          <a href="#tab1">tab1</a>
-          <div class="tab-content inset-gray">write your text1</div>
+      <ul class="tab-list gray">
+        <li class="current" data-tab="tab1" onclick="TabToggle()">
+          <a href="#">Tab1</a>
         </li>
-        <li id="tab2" class="tab-button">
-          <a href="#tab2">tab2</a>
-          <div class="tab-content inset-gray">write your text2</div>
-        </li>
-        <li id="tab3" class="tab-button">
-          <a href="#tab3">tab3</a>
-          <div class="tab-content inset-gray">write your text3</div>
-        </li>
+        <li data-tab="tab2" onclick="TabToggle()"><a href="#">Tab2</a></li>
+        <li data-tab="tab3" onclick="TabToggle()"><a href="#">Tab3</a></li>
+        <li data-tab="tab4" onclick="TabToggle()"><a href="#">Tab4</a></li>
       </ul>
+
+      <div id="tab1" class="tab-content current inset-gray">
+        <div class="tab-content--title">Tab1</div>
+        <p class="tab-content--text">wirte your text1</p>
+      </div>
+
+      <div id="tab2" class="tab-content inset-gray">
+        <div class="tab-content--title">Tab2</div>
+        <p class="tab-content--text">wirte your text2</p>
+      </div>
+
+      <div id="tab3" class="tab-content inset-gray">
+        <div class="tab-content--title">Tab3</div>
+        <p class="tab-content--text">wirte your text3</p>
+      </div>
+
+      <div id="tab4" class="tab-content inset-gray">
+        <div class="tab-content--title">Tab4</div>
+        <p class="tab-content--text">wirte your text4</p>
+      </div>
     </div>
+
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../src/neomo.js"></script>
   </body>
 </html>
 ```
