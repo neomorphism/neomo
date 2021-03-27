@@ -9,12 +9,12 @@ alt.addEventListener("click", function () {
 /* File function start */
 function FileUpload() {
   $(document).ready(function () {
-    let fileTarget = $(".file .file-hidden");
+    var fileTarget = $(".file .file-hidden");
     fileTarget.on("change", function () {
       if (window.FileReader) {
-        let filename = $(this)[0].files[0].name;
+        var filename = $(this)[0].files[0].name;
       } else {
-        let filename = $(this).val().split("/").pop().split("\\").pop();
+        var filename = $(this).val().split("/").pop().split("\\").pop();
       }
       $(this).siblings(".file-name").val(filename);
     });
@@ -24,9 +24,9 @@ function FileUpload() {
 
 /* Modal function start */
 function ModalOpen() {
-  let modal = document.getElementById("Modal");
-  let btn = document.getElementById("ModalBtn");
-  let span = document.getElementsByClassName("modal-close")[0];
+  var modal = document.getElementById("Modal");
+  var btn = document.getElementById("ModalBtn");
+  var span = document.getElementsByClassName("modal-close")[0];
 
   btn.onclick = function () {
     modal.style.display = "block";
