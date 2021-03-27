@@ -105,4 +105,58 @@
     border-color: var(--neomo-gray) transparent transparent transparent;
 }
 
+.tooltip .tooltip-content.left.outset-blue::after {
+    top: 45%;
+    left: 100%;
+    margin-right: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--neomo-blue);
+}
+
+.tooltip .tooltip-content.left.outset-dark::after {
+    top: 45%;
+    left: 100%;
+    margin-right: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--neomo-dark);
+}
+
+.tooltip .tooltip-content.left.outset-gray::after {
+    top: 45%;
+    left: 100%;
+    margin-right: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--neomo-gray);
+}
+
+.tooltip .tooltip-content.right.outset-blue::after {
+    top: 45%;
+    right: 100%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent var(--neomo-blue) transparent transparent;
+}
+
+.tooltip .tooltip-content.right.outset-dark::after {
+    top: 45%;
+    right: 100%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent var(--neomo-dark) transparent transparent;
+}
+
+.tooltip .tooltip-content.right.outset-gray::after {
+    top: 45%;
+    right: 100%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent var(--neomo-gray) transparent transparent;
+}
+
 /* Tooltip component FINISH */
