@@ -2,88 +2,71 @@
 
 /*
 * Title : Neumorphism Color
-* Description : this is Neomo color
-* 주의 : <li> 태그 밑에 <a> 태그를 넣을 경우, <a> 태그에 해당하는 css selector에 'color: inherit;'를 넣어야 함
+* Description : this is NEOMO color
 */
 
+.neomo {
+  background-color: var(--neomo);
+  color: #707070;
+}
+
+.gray {
+  background-color: var(--neomo-gray);
+  color: #313131;
+}
+
+.dark {
+  background-color: var(--neomo-dark);
+  color: white;
+}
+
+.inset-neomo {
+  border: none;
+  border-radius: 10px;
+  background: var(--neomo);
+  box-shadow: inset 5px 5px 9px #cad3da, inset -5px -5px 9px #ebf1f5 !important;
+}
+
+.inset-gray {
+  border: none;
+  border-radius: 10px;
+  background: var(--neomo-gray);
+  box-shadow: inset 5px 5px 9px #b3b3b3, inset -5px -5px 9px #dfdfdf !important;
+}
+
+.inset-dark {
+  border: none;
+  border-radius: 10px;
+  background: var(--neomo-dark);
+  box-shadow: inset 5px 5px 9px #3c3c3c, inset -5px -5px 9px #535353 !important;
+}
+
+.outset-neomo {
+  border: none;
+  border-radius: 10px;
+  background: var(--neomo);
+  box-shadow: 3px 3px 12px #cad3da, -3px -3px 12px #fafdff !important;
+  color: var(--neomo-blue-text);
+}
+
 .outset-gray {
-    border: none;
-    border-radius: 10px;
-    background: var(--neomo-gray);
-    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288);
-
-    text-align: center;
-    color: var(--neomo-gray-text);
+  border: none;
+  border-radius: 10px;
+  background: var(--neomo-gray);
+  box-shadow: 3px 3px 12px #a8a8a8, -3px -3px 12px #e7e7e7 !important;
+  color: var(--neomo-gray-text);
 }
-
-.inset-gray,
-button.outset-gray:hover, button.outset-gray:focus,
-li.outset-gray:hover,
-input.outset-gray:focus, input.outset-gray:disabled {
-    border: none;
-    border-radius: 10px;
-    background: var(--neomo-gray);
-    box-shadow: inset -3px -3px 7px #ffffff80, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
-
-    text-align: center;
-    color: var(--neomo-gray-pressed-text);
-}
-
 .outset-dark {
-    border: none;
-    border-radius: 10px;
-    background: var(--neomo-dark);
-    box-shadow: -3px -3px 7px #ffffff50, 3px 3px 5px black;
-
-    text-align: center;
-    color: var(--neomo-dark-text);
-}
-
-.inset-dark,
-button.outset-dark:hover, button.outset-dark:focus,
-li.outset-dark:hover, 
-input.outset-dark:focus, input.outset-dark:disabled {
-    border: none;
-    border-radius: 10px;
-    background: var(--neomo-dark);
-    box-shadow: inset -3px -3px 7px #ffffff50, inset 3px 3px 5px black;
-
-    text-align: center;
-    color: var(--noemo-dark-pressed-text);
-}
-
-.outset-blue {
-    border: none;
-    border-radius: 10px;
-    background: var(--neomo-blue);
-    box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288);
-
-    text-align: center;
-    color: var(--neomo-blue-text);
-}
-
-.inset-blue,
-button.outset-blue:hover, button.outset-blue:focus,
-li.outset-blue:hover,
-input.outset-blue:focus, input.outset-blue:disabled {
-    border: none;
-    border-radius: 10px;
-    background: var(--noemo-blue-pressed);
-    box-shadow: inset -3px -3px 7px #ffffffbd, inset 4px 4px 7px rgba(94, 104, 121, 0.288);
-
-    text-align: center;
-    color: var(--neomo-blue-text);
+  border: none;
+  border-radius: 10px;
+  background: var(--neomo-dark);
+  box-shadow: 3px 3px 12px #3c3c3c, -3px -3px 12px #535353 !important;
+  color: var(--neomo-dark-text);
 }
 
 :root {
-    --neomo-gray: #e0e0e0;
-    --neomo-gray-text: #000000;
-    --neomo-gray-pressed-text: #6f6cde;
-    --neomo-dark: #464646;
-    --neomo-dark-text: white;
-    --noemo-dark-pressed-text: #ffffffe8;
-    --neomo-blue: #eff8ff;
-    --neomo-blue-text: #2b2d2e;
-    --noemo-blue-pressed: #dbebfa;
+  --neomo-gray: #d3d3d3;
+  --neomo-dark: #464646;
 }
-/* Neumorphism Color FINISH */
+
+/* Neomorphism Color FINISH */
