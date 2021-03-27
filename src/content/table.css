@@ -1,20 +1,21 @@
-/* Simple Table Section Information */
+/* Table Section Information */
 
 /*
-* Title : Table component
-* Description : This is the css of the Table on the component.
+* Title : Table content
+* Description : This is the css of the Table on the content.
 */
+
 .table {
   max-width: 1200px;
   width: 100%;
   padding: 10px 0 10px 0;
-  border-spacing: 0;
   border-radius: 10px;
-  box-shadow: inset 1px 2px 2px #b8b9be, inset -5px -2px 4px #fff;
+  box-shadow: inset 3px 3px 5px #b8b9be,
+    inset -3px -3px 5px #fff;
 }
 
 .table-outset {
-  box-shadow: 10px 10px 12px #ababab, -10px -10px 12px #ffffff;
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
 
 .table > thead > tr {
@@ -34,14 +35,7 @@
 .table > tbody > tr > td {
   padding-top: 8px;
   padding-bottom: 8px;
-  border-top: thin solid rgba(0, 0, 0, 0.08);
-}
-
-.table > tbody > tr:hover,
-.table > thead > tr:hover {
-  position: relative;
-  background: rgb(219, 219, 219);
-  border-radius: 10px;
+  border-top: thin solid rgba(0, 0, 0, 0.1);
 }
 
 /* Table component FINISH */
