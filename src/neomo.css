@@ -25,6 +25,7 @@
 @import "./forms/labels.css";
 @import "./forms/radio.css";
 @import "./forms/range.css";
+@import "./helpers/typography.css";
 @import "./layout/layout.css";
 
 /* Common Section */
