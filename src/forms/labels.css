@@ -1,0 +1,66 @@
+/* label Information */
+
+/*
+* Title : floatinglabel
+* Description : 
+*/
+
+.floatinglabel-field {
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 1em;
+}
+
+.floatinglabel-input,
+.floatinglabel-label {
+  transition: all 0.2s;
+  touch-action: manipulation;
+}
+
+.floatinglabel-input {
+  font-size: 1.5em;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 0;
+  padding: 0;
+  cursor: text;
+}
+
+.floatinglabel-input:focus {
+  outline: 0;
+  border-bottom: 1px solid #666;
+}
+
+.floatinglabel-label {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.floatinglabel-input:placeholder-shown + label {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 25.5px) scale(1.5);
+}
+
+.floatinglabel-input::-webkit-input-placeholder {
+  opacity: 0;
+  transition: inherit;
+}
+/**
+    * Show the placeholder when the input is focused.
+    */
+.floatinglabel-input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.floatinglabel-input:not(:placeholder-shown) + label,
+.floatinglabel-input:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+}
