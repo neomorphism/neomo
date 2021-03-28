@@ -6,20 +6,59 @@ alt.addEventListener("click", function () {
 });
 /* Alert function end */
 
-/* Modal function start */
-var modal = document.getElementById("Modal");
-var btn = document.getElementById("ModalBtn");
-var span = document.getElementsByClassName("modal-close")[0];
+/* File function start */
+function FileUpload() {
+  $(document).ready(function () {
+    var fileTarget = $(".file .file-hidden");
+    fileTarget.on("change", function () {
+      if (window.FileReader) {
+        var filename = $(this)[0].files[0].name;
+      } else {
+        var filename = $(this).val().split("/").pop().split("\\").pop();
+      }
+      $(this).siblings(".file-name").val(filename);
+    });
+  });
+}
+/* File function end */
 
-btn.onclick = function () {
-  modal.style.display = "block";
-};
-span.onclick = function () {
-  modal.style.display = "none";
-};
-window.onclick = function (event) {
-  if (event.target == modal) {
+/* Modal function start */
+function ModalOpen() {
+  var modal = document.getElementById("Modal");
+  var btn = document.getElementById("ModalBtn");
+  var span = document.getElementsByClassName("modal-close")[0];
+
+  btn.onclick = function () {
+    modal.style.display = "block";
+  };
+  span.onclick = function () {
     modal.style.display = "none";
-  }
-};
+  };
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+}
 /* Modal function end */
+
+/* Tab function start */
+function TabToggle() {
+  $(function () {
+    $("ul.tab-list li").click(function () {
+      var activeTab = $(this).attr("data-tab");
+      $("ul.tab-list li").removeClass("current");
+      $(".tab-content").removeClass("current");
+      $(this).addClass("current");
+      $("#" + activeTab).addClass("current");
+    });
+  });
+}
+/* Tab function end */
+
+
+/* Toast function start */
+function toast_button(obj) {
+  obj.closest(".toast").classList.remove("show");
+}
+/* Toast function end */

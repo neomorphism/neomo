@@ -1,0 +1,40 @@
+.file input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.file label {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  font-size: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+.file label:hover {
+  box-shadow: inset -3px -3px 7px #ffffff80,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+.file .file-name {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset -3px -3px 7px #ffffff80,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

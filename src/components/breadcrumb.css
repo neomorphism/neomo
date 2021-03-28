@@ -1,0 +1,83 @@
+/* Breadcrumb Section Information */
+
+/*
+* Title : Breadcrumb component
+* Description : this is Breadcrumb
+*/
+
+.breadcrumb{
+    user-select:none;
+    white-space:nowrap;
+  }
+  
+  .breadcrumb a{
+    align-items:center;
+    color:var(--blue);
+    display:flex;
+    justify-content:center;
+    padding:0 .75em;
+    text-decoration: none;
+  }
+  
+  .breadcrumb a:hover{
+    color:var(--neomo-gray);
+  }
+  
+  .breadcrumb li{
+    align-items:center;
+    display:flex;
+  }
+  
+  .breadcrumb li:first-child a{
+    padding-left:0;
+  }
+  
+  .breadcrumb li.is-active a{
+    color:#363636;
+    cursor:default;
+    pointer-events:none;
+  }
+  
+  .breadcrumb li+li::before{
+    color:#b5b5b5;
+    content:"\0002f";
+  }
+  
+  .breadcrumb ul{
+    align-items:flex-start;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+  }
+  
+  .breadcrumb.centered ul{
+    justify-content:center;
+  }
+
+  .breadcrumb.right ul{
+    justify-content:flex-end;
+  }
+  
+  .breadcrumb.arrow li+li::before{
+    content:"\2794";
+  }
+  
+  .breadcrumb.direction li+li::before{
+    content:"\276F";
+  
+  }
+  
+  
+  .breadcrumb.sm{
+    font-size:.75rem;
+  }
+  
+  .breadcrumb.md{
+    font-size:1.25rem;
+  }
+  
+  .breadcrumb.lg{
+    font-size:1.5rem;
+  }
+
+  /* Breadcrumb component FINISH */

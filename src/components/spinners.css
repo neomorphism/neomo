@@ -5,27 +5,32 @@
 * Description : this is Spinner
 */
 
-.loader {
-  border: 3px solid #f3f3f3;
-  border-top: 3px solid var(--neomo-gray-pressed-text);
+.loader.border-white {
+  border: 3px solid var(--white);
+}
+
+.loader.border-gray {
+  border: 3px solid var(--gray-400);
+}
+
+.loader.point-purple {
+  border-top: 3px solid var(--purple);
   border-radius: 50%;
   width: 1.5em;
   height: 1.5em;
   animation: spin 2s linear infinite;
 }
 
-.loader-gray {
-  border: 3px solid white;
-  border-top: 3px solid gray;
+.loader.point-gray {
+  border-top: 3px solid var(--gray-600);
   border-radius: 50%;
   width: 1.5em;
   height: 1.5em;
   animation: spin 2s linear infinite;
 }
 
-.loader-blue {
-  border: 3px solid var(--neomo-gray);
-  border-top: 3px solid skyblue;
+.loader.point-blue {
+  border-top: 3px solid var(--blue);
   border-radius: 50%;
   width: 1.5em;
   height: 1.5em;

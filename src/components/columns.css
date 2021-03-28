@@ -1,3 +1,11 @@
+/* Column Section Information */
+
+/*
+* Title : Column component
+* Description : this is Column
+*/
+
+
 .column{
     display:block;
     flex-basis:0;
@@ -96,3 +104,5 @@
         width:100%;
     }    
 }
+
+/* Column component FINISH */
