@@ -204,3 +204,30 @@
   <script src="../src/forms/range.js"></script>
 </html>
 ```
+
+## Label Information
+
+> Floating label usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <link rel="stylesheet" type="text/css" href="..src/neomo.css" />
+  </head>
+  <body>
+    <form action="">
+      <div class="floatinglabel-field">
+        <input
+          type="text"
+          name="fullname"
+          id="fullname"
+          placeholder="Your Name"
+          class="floatinglabel-input"
+        />
+        <label for="fullname" class="floatinglabel-label">Name</label>
+      </div>
+    </form>
+  </body>
+</html>
+```
