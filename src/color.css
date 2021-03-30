@@ -20,21 +20,21 @@
   color: white;
 }
 
-.inset-neomo {
+.inset-neomo, button.outset-neomo:hover {
   border: none;
   border-radius: 10px;
   background: var(--neomo);
   box-shadow: inset 5px 5px 9px #cad3da, inset -5px -5px 9px #ebf1f5 !important;
 }
 
-.inset-gray {
+.inset-gray, button.outset-gray:hover {
   border: none;
   border-radius: 10px;
   background: var(--neomo-gray);
   box-shadow: inset 5px 5px 9px #b3b3b3, inset -5px -5px 9px #dfdfdf !important;
 }
 
-.inset-dark {
+.inset-dark, button.outset-dark:hover {
   border: none;
   border-radius: 10px;
   background: var(--neomo-dark);
