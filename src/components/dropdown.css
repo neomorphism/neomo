@@ -8,7 +8,7 @@
   position: relative;
   display: inline-block;
 }
-.dropdown-button {
+.dropdown .dropdown-button {
   padding: 8px;
   font-size: 15px;
   min-width: 150px;
@@ -16,8 +16,11 @@
 
   border: none;
   border-radius: 10px;
-  background: var(--neomo-gray);
   box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+.dropdown:hover .dropdown-button {
+  box-shadow: inset -3px -3px 7px #ffffff80,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288) !important;
 }
 .dropdown-button:focus {
   border: none;
@@ -30,7 +33,6 @@
   padding: 5px;
 
   border-radius: 10px;
-  background: var(--neomo-gray);
   box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 .dropdown-content a {
@@ -41,16 +43,64 @@
 }
 .dropdown-content a:hover {
   border-radius: 10px;
-  background: var(--neomo-gray);
   box-shadow: inset -3px -3px 7px #ffffff80,
     inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.dropdown:hover .dropdown-button {
+
+.dropdown-toggle {
+  width: 200px;
+  padding-top: 20px;
+}
+.dropdown-toggle--button {
+  padding: 8px;
+  font-size: 15px;
+  min-width: 150px;
+  min-height: 50px;
+
+  border: none;
+  border-radius: 10px;
   background: var(--neomo-gray);
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+.dropdown-toggle--button:focus {
+  border: none;
+  outline: none;
+}
+.dropdown-toggle--content {
+  display: none;
+  padding-left: 8px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+.dropdown-toggle--content a {
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+.dropdown-toggle--content a:hover {
+  border-radius: 10px;
   box-shadow: inset -3px -3px 7px #ffffff80,
     inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+.dropdown-toggle--content a:focus {
+  border-radius: 10px;
+  box-shadow: inset -3px -3px 7px #ffffff80,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+.active {
+  box-shadow: inset 5px 5px 9px #cad3da, inset -5px -5px 9px #ebf1f5 !important;
+}
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
 }
 /* Dropdown component FINISH */
