@@ -520,6 +520,32 @@
 </html>
 ```
 
+> Dropdown Toggle usage
+> 
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+  <body class="p-2 gray">
+    <div class="dropdown-toggle">
+      <button class="dropdown-toggle--button" onclick="DropdownToggle()">
+        Dropdown
+      </button>
+      <div class="dropdown-toggle--content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="../src/neomo.js"></script>
+  </body>
+</html>
+```
+
 ## Pagination Information
 
 > Simple Pagination usage
