@@ -6,6 +6,24 @@ alt.addEventListener("click", function () {
 });
 /* Alert function end */
 
+/* Dropdown function start */
+function DropdownToggle() {
+  var dropdown = document.getElementsByClassName("dropdown-toggle--button");
+  var i;
+  for (i = 0; i < dropdown.length; i++) {
+    if (event.target === dropdown[i]) {
+      dropdown[i].classList.toggle("active");
+      var dropdownContent = dropdown[i].nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    }
+  }
+}
+/* Dropdown function end */
+
 /* File function start */
 function FileUpload() {
   $(document).ready(function () {
