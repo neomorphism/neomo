@@ -6,12 +6,6 @@
 */
 
 .button {
-    display: flex;
-    min-width: 100px;
-    min-height: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-
     justify-content: center;
     align-items: center;
 
@@ -23,18 +17,6 @@
 .button:hover {
     outline: 0;
     cursor: pointer;
-}
-
-button.outset-neomo:hover {
-    box-shadow: inset 5px 5px 9px #cad3da, inset -5px -5px 9px #ebf1f5 !important;
-}
-
-button.outset-gray:hover {
-    box-shadow: inset 5px 5px 9px #b3b3b3, inset -5px -5px 9px #dfdfdf !important;
-}
-
-button.outset-dark:hover {
-    box-shadow: inset 5px 5px 9px #3c3c3c, inset -5px -5px 9px #535353 !important;
 }
 
 .button:focus {
