@@ -5,6 +5,10 @@
 * Description : this is Spinner
 */
 
+.loader {
+  margin: auto;
+}
+
 .loader.border-white {
   border: 3px solid var(--white);
 }
