@@ -2,91 +2,88 @@
 
 /*
 * Title : Card component
-* Description : this is Card
+* Description : This is the css of the Card on the component.
 */
 
+.card {
+  max-width: 100%;
+  position: relative;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
+}
 
-.card{
-  max-width:100%;
-  position:relative;
+.card-header:first-child {
+  border-radius: 10px;
+}
 
-  /* Neumorphism */
-  border-radius: 20px;
+.card-footer:last-child {
+  border-radius: 10px;
+}
+
+.card-header {
+  align-items: stretch;
+  display: flex;
+}
+
+.card-header-title {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-footer {
+  border-top: 1px solid gray;
+  align-items: stretch;
+  display: flex;
+}
+
+.card-footer-item {
+  align-items: center;
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+  justify-content: center;
+  padding: 0.75rem;
+}
+
+.card-footer-item:not(:last-child) {
+  border-right: 1px solid gray;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+.image img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.card-image:first-child img {
+  border-radius: 10px;
+}
+
+.card.outset {
+  border-radius: 10px;
   background: #e0e0e0;
-  background-clip:border-box;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  box-shadow: 6px 6px 12px #b8b9be, -6px -6px 12px #fff !important;
 }
 
-
-.card-header:first-child{
-  /* Neumorphism */
-  border-radius: 20px;
+.card.inset {
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 11px #fff !important;
 }
-
-.card-footer:last-child{
-  /* Neumorphism */
-  border-radius: 20px;
-}
-
-.card-header{
-  align-items:stretch;
-  display:flex;
-}
-
-.card-header-title{
-  align-items:center;
-  display:flex;
-  flex-grow:1;
-  font-weight:700;
-  padding:.75rem 1rem;
-}
-
-.card-content{
-  padding:1.5rem;
-}
-
-.card-footer{
-  border-top:1px solid gray;
-  align-items:stretch;
-  display:flex;
-}
-
-.card-footer-item{
-  align-items:center;
-  display:flex;
-  flex-basis:0;
-  flex-grow:1;
-  flex-shrink:0;
-  justify-content:center;
-  padding:.75rem;
-}
-
-.card-footer-item:not(:last-child){
-  border-right:1px solid gray;
-}
-
-img{height:auto;max-width:100%;}
-img{height:auto;max-width:100%;}
-.image img{
-  display:block;
-  height:auto;
-  width:100%;
-}
-
-.card-image:first-child img{
-  border-radius: 20px;
-}
-
-.card.outset{
-    border-radius: 20px;
-    background: #e0e0e0;
-    box-shadow:6px 6px 12px #b8b9be,-6px -6px 12px #fff!important;
-}
-
-.card.inset{
-    border-radius: 20px;
-    background: #e0e0e0;
-    box-shadow:inset 2px 2px 5px #b8b9be,inset -3px -3px 11px #fff!important;
-}
-
-/* Card component FINISH */
