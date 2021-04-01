@@ -20,21 +20,21 @@
   color: white;
 }
 
-.inset-neomo, button.outset-neomo:hover {
+.inset-neomo, button.outset-neomo:hover, input.outset-neomo:focus, input.outset-neomo:disabled {
   border: none;
   border-radius: 10px;
   background: var(--neomo);
   box-shadow: inset 5px 5px 9px #cad3da, inset -5px -5px 9px #ebf1f5 !important;
 }
 
-.inset-gray, button.outset-gray:hover {
+.inset-gray, button.outset-gray:hover, input.outset-gray:focus, input.outset-gray:disabled {
   border: none;
   border-radius: 10px;
   background: var(--neomo-gray);
   box-shadow: inset 5px 5px 9px #b3b3b3, inset -5px -5px 9px #dfdfdf !important;
 }
 
-.inset-dark, button.outset-dark:hover {
+.inset-dark, button.outset-dark:hover, input.outset-dark:focus, input.outset-dark:disabled {
   border: none;
   border-radius: 10px;
   background: var(--neomo-dark);
