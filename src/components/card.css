@@ -78,12 +78,12 @@ img {
 
 .card.outset {
   border-radius: 10px;
-  background: #e0e0e0;
+  background: white;
   box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff !important;
 }
 
 .card.inset {
   border-radius: 10px;
-  background: #e0e0e0;
+  background: white;
   box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff !important;
 }
