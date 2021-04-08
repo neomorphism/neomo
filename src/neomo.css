@@ -7,7 +7,6 @@
 @import "./components/badge.css";
 @import "./components/button.css";
 @import "./components/card.css";
-@import "./components/columns.css";
 @import "./components/dropdown.css";
 @import "./components/icon.css";
 @import "./components/modal.css";
@@ -27,6 +26,7 @@
 @import "./forms/range.css";
 @import "./helpers/typography.css";
 @import "./layout/layout.css";
+@import "./layout/columns.css";
 
 /* Common Section */
 
