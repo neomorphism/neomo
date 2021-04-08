@@ -13,29 +13,10 @@
   align-items: center;
   border-radius: 10%;
   background: white;
-  box-shadow: inset 1px 1px 1px #bebebe, inset -0.1px -0.1px 2px #bebebe;
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
 
 /* icon-square FINISH */
-
-/*
-* Title : icon-square2
-* Description : this is example
-*/
-
-.icon-square2 {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10%;
-  border-radius: 50px;
-  background: #f4f4f4;
-  box-shadow: -1px -1px 1px white, 1px 1px 1px #bebebe;
-}
-
-/* icon-square2 FINISH */
 
 /*
 * Title : icon-circle
@@ -50,28 +31,10 @@
   align-items: center;
   border-radius: 50%;
   background: white;
-  box-shadow: inset 1px 1px 1px #bebebe, inset -0.1px -0.1px 2px #bebebe;
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
 
 /* icon-circle FINISH */
-
-/*
-* Title : icon-circle2
-* Description : this is example
-*/
-
-.icon-circle2 {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background: #f4f4f4;
-  box-shadow: -2px -2px 2px white, 2px 2px 2px #bebebe;
-}
-
-/* icon-circle2 FINISH */
 
 /*
 * Title : icon-size
