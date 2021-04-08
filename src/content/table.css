@@ -8,7 +8,7 @@
 .table {
   max-width: 1200px;
   width: 100%;
-  padding: 10px 0 10px 0;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }

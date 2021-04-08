@@ -6,22 +6,38 @@
 */
 
 .neomo {
-  background-color: var(--neomo);
+  background-color: var(--neomo) !important;
   color: #707070;
 }
 
 .gray {
-  background-color: var(--neomo-gray);
+  background-color: var(--neomo-gray) !important;
   color: #313131;
 }
 
 .dark {
-  background-color: var(--neomo-dark);
+  background-color: var(--neomo-dark) !important;
   color: white;
 }
 
 .inset {
-  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff !important; 
+}
+
+.info {
+  color: #0d6efd;
+}
+
+.success {
+  color: #12ce76;
+}
+
+.danger {
+  color: #f41a30;
+}
+
+.warning {
+  color: #ffc71d;
 }
 
 .inset-neomo,
