@@ -1,8 +1,10 @@
 /* Alert function start */
-var alt = document.querySelector(".alt-close");
+document.addEventListener("DOMContentLoaded", function () {
+  var alt = document.querySelector(".alt-close");
 
-alt.addEventListener("click", function () {
-  alt.parentElement.style.display = "none";
+  alt.addEventListener("click", function () {
+    alt.parentElement.style.display = "none";
+  });
 });
 /* Alert function end */
 
@@ -73,7 +75,6 @@ function TabToggle() {
   });
 }
 /* Tab function end */
-
 
 /* Toast function start */
 function toast_button(obj) {
