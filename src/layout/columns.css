@@ -97,6 +97,27 @@
     }    
 }
 
+.column.align-top{align-self:flex-start!important;}
+.column.align-mid{align-self:center!important;}
+.column.align-bottom{align-self:flex-end!important;}
+
+.column.just-left{justify-content:flex-start!important;}
+.column.just-center{justify-content:center!important;}
+.column.just-right{justify-content:flex-end!important;}
+
+.column.order-1{order:1!important;}
+.column.order-2{order:2!important;}
+.column.order-3{order:3!important;}
+.column.order-4{order:4!important;}
+.column.order-5{order:5!important;}
+.column.order-6{order:6!important;}
+.column.order-7{order:7!important;}
+.column.order-8{order:8!important;}
+.column.order-9{order:9!important;}
+.column.order-10{order:10!important;}
+.column.order-11{order:11!important;}
+.column.order-12{order:12!important;}
+
 /* 반응형 사이즈 커스터마이징 */
 
 .column-responsive{
