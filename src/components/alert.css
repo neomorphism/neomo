@@ -9,11 +9,7 @@
   margin: 10px 5px 10px 5px;
   padding: 1rem 1rem;
   border-radius: 10px;
-  box-shadow: inset 1px 2px 2px #b8b9be, inset -5px -2px 4px #fff;
-}
-
-.alert-outset {
-  box-shadow: 10px 10px 12px #ababab, -10px -10px 12px #ffffff;
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
 }
 
 .alert-primary {

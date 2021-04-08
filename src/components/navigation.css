@@ -10,7 +10,7 @@
 */
 .nav {
   border-radius: 50px;
-  box-shadow: 16px 16px 32px #d9d9d9, -16px -16px 32px #ffffff;
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
   display: flex;
   justify-content: space-evenly;
   padding-left: 0;
@@ -28,12 +28,11 @@
 
 .nav2 {
   border-radius: 20px;
-  box-shadow: 2px 2px 2px white;
 
   display: flex;
   justify-content: space-evenly;
   padding-left: 0;
-  box-shadow: 1px 1px 1px #bebebe, -1px -1px 1px #bebebe;
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
 
 /* nav2 FINISH */
@@ -89,7 +88,7 @@
 */
 
 .nav-item2:hover {
-  box-shadow: 5px 5px 5px #bebebe, -5px -5px 5px #bebebe;
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
 
 /* nav-item2:hover FINISH */
@@ -103,7 +102,7 @@
   text-decoration: none;
   border-radius: 15px;
   background: white;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
   padding: 5px 12px;
   color: rgba(0, 0, 0, 0.7);
 }
@@ -118,7 +117,7 @@
 .nav-link:focus {
   border-radius: 15px;
   background: white;
-  box-shadow: inset 3px 3px 3px #bebebe, inset -0.1px -0.1px 2px #bebebe;
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
 }
 
 /* nav-link FINISH */
@@ -185,7 +184,7 @@
 
 .nav-column {
   border-radius: 50px;
-  box-shadow: 16px 16px 32px #d9d9d9, -16px -16px 32px #ffffff;
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
   display: flex;
   flex-direction: column;
 }
@@ -219,23 +218,7 @@
   padding: 10px;
   border-radius: 15px;
   background: white;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-/* nav-link--column FINISH */
-
-/*
-  * Title : nav-link--column
-  * Description : nav version column
-*/
-
-.nav-link--column {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-  border-radius: 15px;
-  background: white;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
 
 /* nav-link--column FINISH */
@@ -248,45 +231,45 @@
 .nav-link--column:focus {
   border-radius: 15px;
   background: white;
-  box-shadow: inset 3px 3px 3px #bebebe, inset -0.1px -0.1px 2px #bebebe;
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
 }
 
 /* nav-link--column FINISH */
 
 /* type1은 a태그를 기준으로 했고 type2는 li 태그를 기준으로 했음 */
 
-@media screen and (min-width: 1400px) {
+/* @media screen and (min-width: 1400px) {
   .nav-column {
     max-width: 250px;
   }
 }
-/* X-Large */
+
 @media (max-width: 1400px) {
   .nav-column {
     max-width: 220px;
   }
 }
-/* Large */
+
 @media (max-width: 1200px) {
   .nav-column {
     max-width: 200px;
   }
 }
-/* Medium */
+
 @media (max-width: 992px) {
   .nav-column {
     max-width: 200px;
   }
 }
-/* Small */
+
 @media (max-width: 768px) {
   .nav-column {
     max-width: 200px;
   }
 }
-/* Extra Small */
+
 @media screen and (max-width: 576px) {
   .nav-column {
     max-width: 20%;
   }
-}
+} */
