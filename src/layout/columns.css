@@ -148,9 +148,7 @@
     .columns-responsive.xxlg{
         display:flex;
     }
-}
 
-@media screen and (min-width:1400px),print{
     .xxlg > .column-responsive.size-1{
         flex:none;
         width:8.33333%;
@@ -217,9 +215,7 @@
     .columns-responsive.xlg{
         display:flex;
     }
-}
 
-@media screen and (min-width:1200px),print{
     .xlg > .column-responsive.size-1{
         flex:none;
         width:8.33333%;
@@ -286,9 +282,7 @@
     .columns-responsive.lg{
         display:flex;
     }
-}
 
-@media screen and (min-width:992px),print{
     .lg > .column-responsive.size-1{
         flex:none;
         width:8.33333%;
@@ -355,9 +349,7 @@
     .columns-responsive.md{
         display:flex;
     }
-}
 
-@media screen and (min-width:768px),print{
     .md > .column-responsive.size-1{
         flex:none;
         width:8.33333%;
@@ -424,9 +416,7 @@
     .columns-responsive.sm{
         display:flex;
     }
-}
 
-@media screen and (min-width:576px),print{
     .sm > .column-responsive.size-1{
         flex:none;
         width:8.33333%;
@@ -488,14 +478,12 @@
     }    
 }
 
-/* 항상 반응형?? */
+/* 항상 반응형 적용안됨, 고정크기 */
 @media screen and (min-width:0px),print{
     .columns-responsive.xsm{
         display:flex;
     }
-}
 
-@media screen and (min-width:0px),print{
     .xsm > .column-responsive.size-1{
         flex:none;
         width:8.33333%;
