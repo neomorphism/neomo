@@ -97,13 +97,13 @@
     }    
 }
 
-.column.align-top{align-self:flex-start!important;}
-.column.align-mid{align-self:center!important;}
-.column.align-bottom{align-self:flex-end!important;}
+.columns.align-top{align-self:flex-start!important;}
+.columns.align-mid{align-self:center!important;}
+.columns.align-bottom{align-self:flex-end!important;}
 
-.column.just-left{justify-content:flex-start!important;}
-.column.just-center{justify-content:center!important;}
-.column.just-right{justify-content:flex-end!important;}
+.columns.just-left{justify-content:flex-start!important;}
+.columns.just-center{justify-content:center!important;}
+.columns.just-right{justify-content:flex-end!important;}
 
 .column.order-1{order:1!important;}
 .column.order-2{order:2!important;}
