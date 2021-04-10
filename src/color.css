@@ -25,19 +25,19 @@
 }
 
 .info {
-  color: #0d6efd;
+  color: #0d6efd !important;
 }
 
 .success {
-  color: #12ce76;
+  color: #12ce76 !important;
 }
 
 .danger {
-  color: #f41a30;
+  color: #f41a30 !important;
 }
 
 .warning {
-  color: #ffc71d;
+  color: #ffc71d !important;
 }
 
 .inset-neomo,
