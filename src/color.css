@@ -21,23 +21,23 @@
 }
 
 .inset {
-  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff !important; 
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff !important;
 }
 
 .info {
-  color: #0d6efd;
+  color: #0d6efd !important;
 }
 
 .success {
-  color: #12ce76;
+  color: #12ce76 !important;
 }
 
 .danger {
-  color: #f41a30;
+  color: #f41a30 !important;
 }
 
 .warning {
-  color: #ffc71d;
+  color: #ffc71d !important;
 }
 
 .inset-neomo,
@@ -91,7 +91,7 @@ input.outset-dark:disabled {
   border: none;
   border-radius: 10px;
   background: var(--neomo-dark);
-  box-shadow: 3px 3px 12px #3c3c3c, -3px -3px 12px #535353 !important;
+  box-shadow: 3px 3px 12px #303030, -3px -3px 12px #5a5a5a !important;
   color: var(--neomo-dark-text);
 }
 
