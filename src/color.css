@@ -1,103 +1,93 @@
 /* Common Section */
-
 /*
 * Title : Neumorphism Color
 * Description : this is NEOMO color
 */
-
 .neomo {
   background-color: var(--neomo) !important;
   color: #707070;
 }
-
 .gray {
   background-color: var(--neomo-gray) !important;
   color: #313131;
 }
-
 .dark {
   background-color: var(--neomo-dark) !important;
   color: white;
 }
-
 .inset {
   box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff !important;
 }
-
 .info {
-  color: #0d6efd !important;
+  color: #0d6efd;
 }
-
 .success {
-  color: #12ce76 !important;
+  color: #12ce76;
 }
-
 .danger {
-  color: #f41a30 !important;
+  color: #f41a30;
 }
-
 .warning {
-  color: #ffc71d !important;
+  color: #ffc71d;
 }
-
 .inset-neomo,
 button.outset-neomo:hover,
 input.outset-neomo:focus,
-input.outset-neomo:disabled {
+input.outset-neomo:disabled,
+input:checked + .switch.outset-neomo {
   border: none;
   border-radius: 10px;
   background: var(--neomo);
   box-shadow: inset -3px -3px 7px #ffffffe5,
     inset 3px 3px 5px rgba(88, 100, 121, 0.288) !important;
 }
-
 .inset-gray,
 button.outset-gray:hover,
 input.outset-gray:focus,
-input.outset-gray:disabled {
+input.outset-gray:disabled,
+input:checked + .switch.outset-gray {
   border: none;
   border-radius: 10px;
   background: var(--neomo-gray);
   box-shadow: inset -3px -3px 7px #ffffff80,
     inset 3px 3px 5px rgba(94, 104, 121, 0.288) !important;
 }
-
 .inset-dark,
 button.outset-dark:hover,
 input.outset-dark:focus,
-input.outset-dark:disabled {
+input.outset-dark:disabled,
+input:checked + .switch.outset-dark {
   border: none;
   border-radius: 10px;
   background: var(--neomo-dark);
   box-shadow: inset 5px 5px 9px #3c3c3c, inset -5px -5px 9px #535353 !important;
 }
-
-.outset-neomo {
+.outset-neomo,
+.switch.outset-neomo:before {
   border: none;
   border-radius: 10px;
-  background: var(--neomo);
+  background: var(--neomo) !important;
   box-shadow: -3px -3px 7px #ffffffe5, 3px 3px 5px #58647949 !important;
   color: var(--neomo-blue-text);
 }
-
-.outset-gray {
+.outset-gray,
+.switch.outset-gray:before {
   border: none;
   border-radius: 10px;
-  background: var(--neomo-gray);
+  background: var(--neomo-gray) !important;
   box-shadow: -3px -3px 7px #ffffff80, 3px 3px 5px rgba(94, 104, 121, 0.288) !important;
   color: var(--neomo-gray-text);
 }
-.outset-dark {
+.outset-dark,
+.switch.outset-dark:before {
   border: none;
   border-radius: 10px;
-  background: var(--neomo-dark);
-  box-shadow: 3px 3px 12px #303030, -3px -3px 12px #5a5a5a !important;
+  background: var(--neomo-dark) !important;
+  box-shadow: 3px 3px 12px #3c3c3c, -3px -3px 12px #535353 !important;
   color: var(--neomo-dark-text);
 }
-
 :root {
   --neomo-gray: #d3d3d3;
   --neomo-dark: #464646;
 }
-
 /* Neomorphism Color FINISH */
