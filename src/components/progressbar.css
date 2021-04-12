@@ -10,10 +10,8 @@
     display:flex;
     height:1rem;
     overflow:hidden;
-    background-color:ghostwhite;
-    border-radius:.55rem;
-    box-shadow:inset 0 .1rem .1rem rgba(38,40,51,.1);
-    border:.0625rem solid gainsboro;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
     margin-bottom:1rem;
   }
 
@@ -21,9 +19,7 @@
     display:flex;
     flex-direction:column;
     justify-content:center;
-    color:#ecf0f3;
     white-space:nowrap;
-    background-color:#e6e7ee;
     transition:width .6s ease;
   }
 
@@ -48,4 +44,43 @@
     background-color:var(--gray);
   }
 
+  .progress-bar.width-1{
+    width: 10% !important;;
+  }
+
+  .progress-bar.width-2{
+    width: 20% !important;;
+  }
+
+  .progress-bar.width-3{
+    width: 30% !important;;
+  }
+
+  .progress-bar.width-4{
+    width: 40% !important;;
+  }
+
+  .progress-bar.width-5{
+    width: 50% !important;;
+  }
+
+  .progress-bar.width-6{
+    width: 60% !important;;
+  }
+
+  .progress-bar.width-7{
+    width: 70% !important;;
+  }
+
+  .progress-bar.width-8{
+    width: 80% !important;;
+  }
+
+  .progress-bar.width-9{
+    width: 90% !important;;
+  }
+
+  .progress-bar.width-10{
+    width: 100% !important;;
+  }
   /* Progressbar component FINISH */

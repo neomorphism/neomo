@@ -8,18 +8,11 @@
 .card {
   max-width: 100%;
   position: relative;
-  padding: 10px 10px 10px 10px;
   border-radius: 10px;
   box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
 
-.card-header:first-child {
-  border-radius: 10px;
-}
 
-.card-footer:last-child {
-  border-radius: 10px;
-}
 
 .card-header {
   align-items: stretch;
@@ -39,7 +32,7 @@
 }
 
 .card-footer {
-  border-top: 1px solid gray;
+  border-top: thin solid rgba(0,0,0,0.09);
   align-items: stretch;
   display: flex;
 }
@@ -54,36 +47,13 @@
   padding: 0.75rem;
 }
 
-.card-footer-item:not(:last-child) {
-  border-right: 1px solid gray;
-}
-
-img {
-  height: auto;
-  max-width: 100%;
-}
-img {
-  height: auto;
-  max-width: 100%;
-}
-.image img {
-  display: block;
-  height: auto;
-  width: 100%;
-}
 
 .card-image:first-child img {
   border-radius: 10px;
 }
 
-.card.outset {
-  border-radius: 10px;
-  background: white;
-  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff !important;
+.card-image > img {
+  height: auto; 
+  max-width: 100%;
 }
 
-.card.inset {
-  border-radius: 10px;
-  background: white;
-  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff !important;
-}

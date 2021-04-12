@@ -10,6 +10,8 @@
     overflow:hidden;
     background-clip:padding-box;
     opacity:0;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
 
 .toast.show{
@@ -23,7 +25,7 @@
     padding:.25rem .75rem;
     background-clip:padding-box;
     border-bottom:1px solid;
-    border-color: var(--gray);
+    border-color: var(--neomo-gray);
 }
 
 .toast-body{
