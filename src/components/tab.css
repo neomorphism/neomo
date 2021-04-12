@@ -1,43 +1,65 @@
-.tab {
-  width: 960px;
-}
-.tab-list {
+/* Tab Section Information */
+
+/*
+* Title : Tab component
+* Description : This is the css of the Tab on the component.
+*/
+
+.tab ul {
   list-style: none;
-  margin: 0;
+  margin: 10px 0 30px 0;
   padding: 0;
-  overflow: hidden;
 }
-.tab-list li {
+.tab ul.tab-list li {
   float: left;
-  margin-right: 30px;
+  margin: 10px 30px 0 0;
 }
-.tab-list li a {
-  display: inline-block;
-  color: #000;
+.tab ul.tab-list li a {
   text-align: center;
+  display: block;
   text-decoration: none;
-  padding: 14px 16px;
-  font-size: 17px;
-  transition: 0.3s;
+  padding: 15px 20px 15px 20px;
+  color: black;
+  overflow: hidden;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
-.tab-content {
+.tab ul.tab-list li a:hover {
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
+}
+.tab ul.tab-list li a.current {
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
+}
+.tab ul.tab-list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.tab ul.tab-content {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
+}
+.tab ul.tab-content li {
   display: none;
-  padding: 6px 12px;
-  margin-top: 30px;
+  min-height: 200px;
+  overflow: hidden;
+  padding: 24px;
 }
 .tab-content--title {
   font-size: 20px;
-  margin: 20px 0 10px 20px;
+  font-weight: bold;
+  padding: 10px;
 }
 .tab-content--text {
   font-size: 15px;
-  margin: 5px 0 10px 20px;
+  padding: 15px;
 }
-ul.tab-list li.current {
-  border-radius: 10px;
-  box-shadow: inset -3px -3px 7px #ffffff80,
-    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+.vertical ul.tab-list li {
+  margin: 0;
+  width: 100%;
 }
-.tab-content.current {
-  display: block;
+.vertical ul.tab-list li a {
+  margin: 0 30px 20px 0;
 }

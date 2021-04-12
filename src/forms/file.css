@@ -1,38 +1,50 @@
+/* Simple File Section Information */
+
+/*
+* Title : File component
+* Description : this is File
+*/
+.file {
+  display: inline-block;
+}
 .file input[type="file"] {
   position: absolute;
   width: 1px;
   height: 1px;
   padding: 0;
-  margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-.file label {
-  display: inline-block;
-  padding: 0.5em 0.75em;
-  font-size: inherit;
-  line-height: normal;
-  vertical-align: middle;
-  cursor: pointer;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
-}
-.file label:hover {
-  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
-}
 .file .file-name {
   display: inline-block;
-  padding: 0.5em 0.75em;
+  padding: 15px;
+  border: none;
+  width: 200px;
   font-size: inherit;
   font-family: inherit;
   line-height: normal;
   vertical-align: middle;
-  border: none;
-  border-radius: 10px;
-  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background-color: white;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
+}
+.file label {
+  display: inline-block;
+  padding: 15px;
+  font-size: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
+}
+.file label:hover {
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
 }

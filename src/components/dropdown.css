@@ -5,22 +5,24 @@
 * Description : this is Dropdown
 */
 .dropdown {
-  position: relative;
   display: inline-block;
 }
-.dropdown .dropdown-button {
+.dropdown-button {
   padding: 8px;
   font-size: 15px;
   min-width: 150px;
   min-height: 50px;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 20px;
 
+  background-color: white;
   border: none;
   border-radius: 10px;
-  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288);
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
 .dropdown:hover .dropdown-button {
-  box-shadow: inset -3px -3px 7px #ffffff80,
-    inset 3px 3px 5px rgba(94, 104, 121, 0.288) !important;
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
 }
 .dropdown-button:focus {
   border: none;
@@ -31,9 +33,19 @@
   position: absolute;
   min-width: 150px;
   padding: 5px;
+  background-color: white;
+  z-index: 2;
 
   border-radius: 10px;
-  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288);
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
+}
+.dropdown-content--item {
+  color: #4a4a4a;
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  padding: 0.375rem 1rem;
+  position: relative;
 }
 .dropdown-content a {
   color: black;
@@ -43,64 +55,77 @@
 }
 .dropdown-content a:hover {
   border-radius: 10px;
-  box-shadow: inset -3px -3px 7px #ffffff80,
-    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
 }
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.dropdown .fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+.dropdown .fa-caret-up {
+  float: right;
+  padding-right: 8px;
+}
+/* Dropdown component FINISH */
 
 .dropdown-toggle {
-  width: 200px;
-  padding-top: 20px;
+  position: relative;
+  display: inline-block;
 }
 .dropdown-toggle--button {
   padding: 8px;
   font-size: 15px;
   min-width: 150px;
   min-height: 50px;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 20px;
 
+  background-color: white;
   border: none;
   border-radius: 10px;
-  background: var(--neomo-gray);
-  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288);
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
+}
+.dropdown-toggle:hover .dropdown-toggle--button {
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
 }
 .dropdown-toggle--button:focus {
   border: none;
   outline: none;
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
 }
 .dropdown-toggle--content {
   display: none;
-  padding-left: 8px;
-  width: 150px;
-  border: none;
+  position: absolute;
+  min-width: 150px;
+  padding: 5px;
+  background-color: white;
+  z-index: 1;
+
   border-radius: 10px;
-  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288);
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
 .dropdown-toggle--content a {
+  color: black;
+  padding: 8px;
   text-decoration: none;
-  font-size: 20px;
   display: block;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  padding-bottom: 5px;
 }
 .dropdown-toggle--content a:hover {
   border-radius: 10px;
-  box-shadow: inset -3px -3px 7px #ffffff80,
-    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
 }
-.dropdown-toggle--content a:focus {
-  border-radius: 10px;
-  box-shadow: inset -3px -3px 7px #ffffff80,
-    inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+.dropdown-show {
+  display: block;
 }
-.active {
-  box-shadow: inset 5px 5px 9px #cad3da, inset -5px -5px 9px #ebf1f5 !important;
-}
-.fa-caret-down {
+.dropdown-toggle .fa-caret-down {
   float: right;
   padding-right: 8px;
 }
-/* Dropdown component FINISH */
+.dropdown-toggle .fa-caret-up {
+  float: right;
+  padding-right: 8px;
+}
+/* Dropdown-toggle component FINISH */
