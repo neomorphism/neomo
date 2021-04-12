@@ -11,31 +11,85 @@
     flex-basis:0;
     flex-grow:1;
     flex-shrink:1;
-    padding:.115rem;
+    padding:0.2rem;
     box-sizing:border-box;
-    
-    
 }
 
 .columns{
-    margin-left:-.115rem;
-    margin-right:-.115rem;
-    margin-top:-.115rem;
+    margin-left:-0.1rem;
+    margin-right:-0.1rem;
+    margin-top:-0.1rem;
     flex-wrap: wrap;
     box-sizing:border-box;
+
+    /* 내부 column들 끼리 간격  */
+    --neomo-interval-x:0;
+    --neomo-interval-y:0;
+   
+    margin-top:calc(var(--neomo-interval-y) * -1);
+    margin-right:calc(var(--neomo-interval-x)/ -2);
+    margin-left:calc(var(--neomo-interval-x)/ -2);
 }
 
+/* 행간 기본간격 */
 .columns:not(:last-child){
-    margin-bottom: .115rem;
+    margin-bottom: 0.2rem;
 }
 
+.columns>*{
+    padding-right:calc(var(--neomo-interval-x)/ 2);
+    padding-left:calc(var(--neomo-interval-x)/ 2);
+    margin-top:var(--neomo-interval-y);
+}
+
+/* 내부 column들 끼리 간격 -1,2,3 */
+.columns.interval-1{
+    --neomo-interval-x:1.5rem;
+    --neomo-interval-y:1.5rem;
+}
+
+.columns.interval-2{
+    --neomo-interval-x:3.0rem;
+    --neomo-interval-y:3.0rem;
+}
+
+.columns.interval-3{
+    --neomo-interval-x:4.5rem;
+    --neomo-interval-y:4.5rem;
+}
+
+
+
+
+
+/* 상하좌우 정렬옵션, columns */
+.columns.align-top{align-self:flex-start!important;}
+.columns.align-mid{align-self:center!important;}
+.columns.align-bottom{align-self:flex-end!important;}
+
+.columns.just-left{justify-content:flex-start!important;}
+.columns.just-center{justify-content:center!important;}
+.columns.just-right{justify-content:flex-end!important;}
+
+/* columns 안에서 column 정렬순서 */
+.column.order-1{order:1!important;}
+.column.order-2{order:2!important;}
+.column.order-3{order:3!important;}
+.column.order-4{order:4!important;}
+.column.order-5{order:5!important;}
+.column.order-6{order:6!important;}
+.column.order-7{order:7!important;}
+.column.order-8{order:8!important;}
+.column.order-9{order:9!important;}
+.column.order-10{order:10!important;}
+.column.order-11{order:11!important;}
+.column.order-12{order:12!important;}
+
+/* 반응형 기본옵션 */
 @media screen and (min-width:1169px),print{
     .columns{
         display:flex;
     }
-}
-
-@media screen and (min-width:1169px),print{
     .column.size-1{
         flex:none;
         width:8.33333%;
@@ -97,29 +151,7 @@
     }    
 }
 
-.columns.align-top{align-self:flex-start!important;}
-.columns.align-mid{align-self:center!important;}
-.columns.align-bottom{align-self:flex-end!important;}
-
-.columns.just-left{justify-content:flex-start!important;}
-.columns.just-center{justify-content:center!important;}
-.columns.just-right{justify-content:flex-end!important;}
-
-.column.order-1{order:1!important;}
-.column.order-2{order:2!important;}
-.column.order-3{order:3!important;}
-.column.order-4{order:4!important;}
-.column.order-5{order:5!important;}
-.column.order-6{order:6!important;}
-.column.order-7{order:7!important;}
-.column.order-8{order:8!important;}
-.column.order-9{order:9!important;}
-.column.order-10{order:10!important;}
-.column.order-11{order:11!important;}
-.column.order-12{order:12!important;}
-
 /* 반응형 사이즈 커스터마이징 */
-
 .column-responsive{
     display:block;
     flex-basis:0;
@@ -135,13 +167,39 @@
     margin-top:-.115rem;
     flex-wrap: wrap;
     box-sizing:border-box;
+
+    --neomo-interval-x:0;
+    --neomo-interval-y:0;
+   
+    margin-top:calc(var(--neomo-interval-y) * -1);
+    margin-right:calc(var(--neomo-interval-x)/ -2);
+    margin-left:calc(var(--neomo-interval-x)/ -2);
 }
 
 .columns-responsive:not(:last-child){
     margin-bottom: .115rem;
 }
 
+.columns-responsive>*{
+    padding-right:calc(var(--neomo-interval-x)/ 2);
+    padding-left:calc(var(--neomo-interval-x)/ 2);
+    margin-top:var(--neomo-interval-y);
+}
 
+.columns-responsive.interval-1{
+    --neomo-interval-x:1.5rem;
+    --neomo-interval-y:1.5rem;
+}
+
+.columns-responsive.interval-2{
+    --neomo-interval-x:3.0rem;
+    --neomo-interval-y:3.0rem;
+}
+
+.columns-responsive.interval-3{
+    --neomo-interval-x:4.5rem;
+    --neomo-interval-y:4.5rem;
+}
 
 /* 1400픽셀 내외 반응형 */
 @media screen and (min-width:1400px),print{
