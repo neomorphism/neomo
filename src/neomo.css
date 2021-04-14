@@ -21,9 +21,11 @@
 @import "./forms/checkbox.css";
 @import "./forms/file.css";
 @import "./forms/input.css";
+@import "./forms/inputGroup.css";
 @import "./forms/labels.css";
 @import "./forms/radio.css";
 @import "./forms/range.css";
+@import "./forms/switches.css";
 @import "./helpers/typography.css";
 @import "./layout/layout.css";
 @import "./layout/columns.css";
