@@ -1,0 +1,61 @@
+/* Switches Section Information */
+
+/*
+* Title : Switch component
+* Description : this is Switch
+*/
+
+label.switch-label {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+input.switch-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
+}
+
+.switch:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 2px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .switch {
+  background: white;
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
+}
+
+input:checked + .switch:before {
+  -webkit-transform: translateX(26px);
+  -moz-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
