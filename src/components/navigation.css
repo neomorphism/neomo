@@ -9,105 +9,26 @@
                 Get Reactive with flex.
 */
 .nav {
-  border-radius: 50px;
-  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
   display: flex;
-  justify-content: space-evenly;
   padding-left: 0;
-  padding: 15px 10px;
+  list-style: none;
 }
 
+.flex-column {
+  flex-direction: column;
+}
 /* nav FINISH */
 
-/*
-* Title : nav2
-* Description : nomal2 nav.
-                express a different design from nav by giving shadows inside the box.
-                
-*/
-
-.nav2 {
-  border-radius: 20px;
-
-  display: flex;
-  justify-content: space-evenly;
-  padding-left: 0;
-  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
-}
-
-/* nav2 FINISH */
-
-/*
-  * Title : nav-item
-  * Description : Remove list-style
-*/
-
 .nav-item {
-  list-style: none;
-  padding: 10px 5px;
+  display: list-item;
 }
-
-/* nav-item FINISH */
-
-/*
-  * Title : nav-item--animation
-  * Description : 
-*/
-
-.nav-item--animation {
-  border-radius: 15px;
-  background: white;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  transition: all 1s ease-in-out;
-}
-
-/* nav-item--animation FINISH */
-
-/* .nav-item2 {
-  border-radius: 15px;
-  background: white;
-  background: linear-gradient(145deg, #f0f0f0, #cacaca);
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-} */
-
-/*
-  * Title : nav-item2
-  * Description : 
-*/
-
-.nav-item2 {
-  list-style: none;
-  border-radius: 15px;
-  padding: 10px;
-}
-/* nav-item2 FINISH */
-
-/*
-  * Title : nav-item2:hover
-  * Description : 
-*/
-
-.nav-item2:hover {
-  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
-}
-
-/* nav-item2:hover FINISH */
-
-/*
-  * Title : nav-link
-  * Description : nav-link layout
-*/
 
 .nav-link {
+  display: block;
   text-decoration: none;
+  padding: 0.7rem 2rem;
   border-radius: 15px;
-  background: white;
-  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
-  padding: 5px 12px;
-  color: rgba(0, 0, 0, 0.7);
 }
-
-/* nav-link FINISH */
 
 /*
   * Title : nav-link:focus
@@ -115,9 +36,8 @@
 */
 
 .nav-link:focus {
-  border-radius: 15px;
-  background: white;
-  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
+  box-shadow: inset -3px -3px 7px #ffffffe5,
+    inset 3px 3px 5px rgba(88, 100, 121, 0.288) !important;
 }
 
 /* nav-link FINISH */
@@ -128,13 +48,12 @@
 */
 
 .nav-link--animation {
+  display: block;
   text-decoration: none;
-  padding: 5px 12px;
+  padding: 0.7rem 2rem;
   border-radius: 15px;
-  background: white;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  color: rgba(0, 0, 0, 0.7);
-  transition: all 1s ease-in-out;
+  color: #707070;
+  transition: box-shadow 1s ease-in-out;
 }
 
 /* nav-link--animation FINISH */
@@ -145,94 +64,22 @@
 */
 
 .nav-link--animation:hover {
-  border-radius: 15px;
-  background: white;
-  color: blue;
-  box-shadow: inset 3px 3px 3px #bebebe, inset -0.1px -0.1px 2px #bebebe;
+  box-shadow: inset -3px -3px 7px #ffffffe5,
+    inset 3px 3px 5px rgba(88, 100, 121, 0.288) !important;
 }
+
+.nav-content {
+  display: none;
+}
+
+/* .nav-link--animation:focus + .nav-content {
+  display: block;
+  color: green;
+} */
 
 /* nav-link--animation FINISH */
 
-/*
-  * Title : nav-link2
-  * Description : nav-link layout
-*/
-
-.nav-link2 {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.7);
-}
-
-/* nav-link FINISH */
-
-/*
-  * Title : nav-link2:focus
-  * Description : nav-link layout
-*/
-
-.nav-link2:focus {
-  border-radius: 10px;
-  box-shadow: 0 0 0 0.1rem skyblue;
-}
-
-/* nav-link FINISH */
-
-/*
-  * Title : nav-cloumn
-  * Description : nav version column
-*/
-
-.nav-column {
-  border-radius: 50px;
-  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
-  display: flex;
-  flex-direction: column;
-}
-
-/*
-  * Title : nav-item--col
-  * Description : Remove list-style
-*/
-
-.nav-item--column {
-  list-style: none;
-  padding: 10px;
-  margin-top: 20px;
-}
-
-.nav-item--column:last-child {
-  margin-bottom: 20px;
-}
-/* nav-item--col FINISH */
-
-/* nav-cloumn FINISH */
-
-/*
-  * Title : nav-link--column
-  * Description : nav version column
-*/
-
-.nav-link--column {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-  border-radius: 15px;
-  background: white;
-  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
-}
-
-/* nav-link--column FINISH */
-
-/*
-  * Title : nav-link--column
-  * Description : nav version column
-*/
-
-.nav-link--column:focus {
-  border-radius: 15px;
-  background: white;
-  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
-}
+/* Navbar Information */
 
 /* nav-link--column FINISH */
 

@@ -200,8 +200,6 @@
     <input type="range" min="1" max="100" class="range-round" id="myRange" />
     <p>Value: <span id="demo"></span></p>
   </body>
-
-  <script src="../src/forms/range.js"></script>
 </html>
 ```
 
