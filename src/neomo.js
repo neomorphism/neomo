@@ -115,3 +115,29 @@ window.onclick = function (event) {
     event.target.style.display = "none";
   }
 };
+
+/* Range */
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function () {
+  output.innerHTML = this.value;
+};
+
+/* Navigation */
+function sideNav() {
+  var menu = document.getElementsByClassName("side-menu");
+  var content = document.getElementsByClassName("nav-content");
+
+  for (var i = 0; i < menu.length; i++) {
+    if (menu[i] === event.target) {
+      console.log("click");
+      if (content[i].style.display == "block") {
+        content[i].style.display = "none";
+      } else {
+        content[i].style.display = "block";
+      }
+    }
+  }
+}
