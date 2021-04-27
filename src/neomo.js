@@ -1,103 +1,137 @@
 /* Alert function start */
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("df");
-  var alt = document.querySelector("alt-close");
+  var alt = document.getElementsByClassName("alert");
+  var alt_close = document.getElementsByClassName("alt-close");
+  var funcs = [];
 
-  if (alt !== null) {
-    alt.addEventListener("click", function () {
-      alt.parentElement.style.display = "none";
-    });
+  function Alt(num) {
+    return function () {
+      alt_close[num].onclick = function () {
+        alt[num].style.display = "none";
+      };
+    };
   }
+  for (var i = 0; i < alt_close.length; i++) {
+    funcs[i] = Alt(i);
+  }
+  for (var j = 0; j < alt_close.length; j++) {
+    funcs[j]();
+  }
+
+  /* Alert function end */
+
+  /* File function start */
+  var file = document.querySelectorAll(".file .file-hidden");
+
+  file.forEach(function (element) {
+    element.addEventListener("change", function () {
+      if (window.FileReader) {
+        var filename = this.files[0].name;
+      }
+      this.parentNode.getElementsByClassName("file-name")[0].value = filename;
+    });
+  });
+  /* File function end */
+
+  /* Modal function start */
+  var modals = document.getElementsByClassName("modal");
+  var modal_btns = document.getElementsByClassName("modal-button");
+  var modal_close = document.getElementsByClassName("modal-close");
+  var funcs = [];
+
+  function Modal(num) {
+    return function () {
+      modal_btns[num].onclick = function () {
+        modals[num].style.display = "block";
+      };
+      modal_close[num].onclick = function () {
+        modals[num].style.display = "none";
+      };
+    };
+  }
+  for (var i = 0; i < modal_btns.length; i++) {
+    funcs[i] = Modal(i);
+  }
+  for (var j = 0; j < modal_btns.length; j++) {
+    funcs[j]();
+  }
+  /* Modal function end */
+
+  /* Tab function start */
+  $(".tab").each(function (i) {
+    var oTab = $(this);
+    var tabIndex = $(this).find(".current").attr("id").match(/\d+$/);
+
+    $(this)
+      .find(".tab-content")
+      .find("#content-" + tabIndex[0])
+      .show();
+
+    $(this)
+      .find(".tab-list li a")
+      .click(function () {
+        var tabIndex = $(this).attr("id").match(/\d+$/);
+
+        oTab.find(".tab-list li a").removeClass("current");
+        $(this).addClass("current");
+
+        oTab.find(".tab-content li").hide();
+        oTab
+          .find(".tab-content")
+          .find("#content-" + tabIndex[0])
+          .show();
+
+        return false;
+      });
+  });
+  /* Tab function end */
+
+  /* Toast function start */
+  function toast_button(obj) {
+    obj.closest(".toast").classList.remove("show");
+  }
+  /* Toast function end */
+
+  window.onclick = function (event) {
+    /* Dropdown window */
+    if (!event.target.matches(".dropdown-toggle--button")) {
+      var dropdowns = document.getElementsByClassName(
+        "dropdown-toggle--content"
+      );
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        openDropdown.style.display = "none";
+      }
+    }
+
+    /* Modal window */
+    if (event.target.className === "modal") {
+      event.target.style.display = "none";
+    }
+  };
 });
-/* Alert function end */
 
 /* Dropdown function start */
 function DropdownToggle() {
   var dropdown = document.getElementsByClassName("dropdown-toggle--button");
-
   var i;
   for (i = 0; i < dropdown.length; i++) {
     if (
       event.target === dropdown[i] ||
       event.target === dropdown[i].childNodes[1]
     ) {
-      dropdown_content[i].style.display = "block";
+      dropdown[i].nextElementSibling.style.display = "block";
     }
   }
 }
 /* Dropdown function end */
 
-/* File function start */
-document.addEventListener("DOMContentLoaded", function () {
-  var file = document.querySelectorAll(".file .file-hidden");
-
-  file.forEach(function (element) {
-    element.addEventListener("change", function () {
-      var filename;
-      if (window.FileReader) {
-        filename = this.files[0].name;
-      }
-      this.parentNode.getElementsByClassName("file-name")[0].value = filename;
-    });
-  });
-});
-/* File function end */
-
-/* Modal function start */
-function ModalOpen() {
-  var modal = document.getElementById("Modal");
-  var btn = document.getElementById("ModalBtn");
-  var span = document.getElementsByClassName("modal-close")[0];
-
-  btn.onclick = function () {
-    modal.style.display = "block";
-  };
-  span.onclick = function () {
-    modal.style.display = "none";
-  };
-  window.onclick = function (event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  };
-}
-/* Modal function end */
-
-/* Tab function start */
-$(".tab").each(function (i) {
-  console.log("df");
-  var oTab = $(this);
-  var tabIndex = $(this).find(".current").attr("id").match(/\d+$/);
-
-  $(this)
-    .find(".tab-content")
-    .find("#content-" + tabIndex[0])
-    .show();
-
-  $(this)
-    .find(".tab-list li a")
-    .click(function () {
-      var tabIndex = $(this).attr("id").match(/\d+$/);
-
-      oTab.find(".tab-list li a").removeClass("current");
-      $(this).addClass("current");
-
-      oTab.find(".tab-content li").hide();
-      oTab
-        .find(".tab-content")
-        .find("#content-" + tabIndex[0])
-        .show();
-
-      return false;
-    });
-});
-/* Tab function end */
-
-/* navbarToggle end */
+/* Navbar function start */
 function NavbarToggle() {
   var toggle = document.getElementsByClassName("toggle-button");
   var i;
-  console.log(event.target);
+
   for (i = 0; i < toggle.length; i++) {
     if (toggle[i] === event.target) {
       toggle[i].classList.toggle("active");
@@ -110,4 +144,4 @@ function NavbarToggle() {
     }
   }
 }
-/* navbarToggle end */
+/* Navbar function end */
