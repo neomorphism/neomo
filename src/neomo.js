@@ -1,4 +1,3 @@
-/* eslint-disable */
 /* Alert function start */
 document.addEventListener("DOMContentLoaded", function () {
   console.log("df");
