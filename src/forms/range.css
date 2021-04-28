@@ -9,7 +9,9 @@
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
 }
-
+.range-round.disabled {
+  background: #ccc;
+}
 .range-round::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -20,7 +22,14 @@
   box-shadow: 1px 1px 1px white;
   cursor: pointer;
 }
-
+.range-round.disabled::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #ccc !important;
+}
 .range-round::-moz-range-thumb {
   width: 25px;
   height: 25px;
@@ -28,7 +37,6 @@
   background: #4caf50;
   cursor: pointer;
 }
-
-.range-round:hover {
+.range-round:hover:not(.disabled) {
   opacity: 1;
 }
