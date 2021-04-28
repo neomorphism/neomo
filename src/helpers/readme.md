@@ -1,8 +1,53 @@
 # Helpers
 
-## Helpers Information
+## Colored Links Information
 
-> Helpers usage
+> Colored Links usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+
+  <body>
+    <div class="column size-8 m-3">
+      <a
+        href="https://getbootstrap.com/docs/5.0/helpers/colored-links/"
+        class="link-info"
+        >Info Link</a
+      >
+    </div>
+    <div class="column size-8 m-3">
+      <a
+        href="https://bulma.io/documentation/helpers/color-helpers/"
+        class="link-success"
+        >Success Link</a
+      >
+    </div>
+    <div class="column size-8 m-3">
+      <a
+        href="https://startbootstrap.com/previews/sb-admin-2"
+        class="link-danger"
+        >Danger Link</a
+      >
+    </div>
+    <div class="column size-8 m-3">
+      <a
+        href="https://demo.themesberg.com/neumorphism-ui/html/components/forms.html"
+        class="link-warning"
+        >Warning Link</a
+      >
+    </div>
+  </body>
+</html>
+```
+
+## Typography Information
+
+> Typography usage
 
 ```html
 <!DOCTYPE html>
@@ -93,4 +138,3 @@
 
 </html>
 ```
-

@@ -148,6 +148,68 @@
 </html>
 ```
 
+> Input Group usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+
+  <body>
+    <div class="container p-5">
+      <br />
+      <div class="input-group">
+        <span class="input-group-left text-center">@</span>
+        <input type="text" class="input-group-right" placeholder="Username" />
+      </div>
+      <br />
+    </div>
+    <br />
+    <div class="container neomo p-5">
+      <br />
+      <div class="input-group neomo">
+        <span class="input-group-left text-center">@</span>
+        <input
+          type="text"
+          class="input-group-right outset-neomo"
+          placeholder="Username"
+        />
+      </div>
+      <br />
+    </div>
+    <br />
+    <div class="container gray p-5">
+      <br />
+      <div class="input-group outset-gray">
+        <input
+          type="text"
+          class="input-group-left outset-gray"
+          placeholder="Username"
+        />
+        <span class="input-group-right text-center">@</span>
+      </div>
+      <br />
+    </div>
+    <br />
+    <div class="container dark p-5">
+      <br />
+      <div class="input-group outset-dark">
+        <input
+          type="text"
+          class="input-group-left outset-dark"
+          placeholder="Username"
+        />
+        <span class="input-group-right text-center">@</span>
+      </div>
+      <br />
+    </div>
+  </body>
+</html>
+```
+
 ## Radio Information
 
 > Radio usage
@@ -226,6 +288,54 @@
         <label for="fullname" class="floatinglabel-label">Name</label>
       </div>
     </form>
+  </body>
+</html>
+```
+
+## Switches Information
+
+> Switches usage
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  </head>
+  <body>
+    <div class="container column size-2 p-2">
+      <h1>Default Switch</h1>
+      <label class="switch-label">
+        <input type="checkbox" />
+        <span class="switch"></span>
+      </label>
+    </div>
+    <br />
+    <div class="container neomo column size-2 p-2">
+      <h1>Neomo Switch</h1>
+      <label class="switch-label">
+        <input type="checkbox" />
+        <span class="switch outset-neomo"></span>
+      </label>
+    </div>
+    <br />
+    <div class="container gray column size-2 p-2">
+      <h1>Gray Switch</h1>
+      <label class="switch-label">
+        <input type="checkbox" />
+        <span class="switch outset-gray"></span>
+      </label>
+    </div>
+    <br />
+    <div class="container dark column size-2 p-2">
+      <h1>Dark Switch</h1>
+      <label class="switch-label">
+        <input type="checkbox" />
+        <span class="switch outset-dark"></span>
+      </label>
+    </div>
   </body>
 </html>
 ```
