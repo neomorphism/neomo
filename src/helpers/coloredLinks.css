@@ -1,0 +1,45 @@
+/* Colored Links Information */
+/*
+* Title : Colored Links component
+* Description : this is Colored Link
+*/
+.link-info:link {
+  color: #0d6efd;
+}
+.link-info:visited,
+.link-info:active {
+  color: #031735;
+}
+.link-info:hover {
+  color: #063c8d;
+}
+.link-success:link {
+  color: #12ce76;
+}
+.link-success:visited,
+.link-info:active {
+  color: #042c19;
+}
+.link-success:hover {
+  color: #09683b;
+}
+.link-danger:link {
+  color: #f41a30;
+}
+.link-danger:visited,
+.link-danger:active {
+  color: #1d0305;
+}
+.link-danger:hover {
+  color: #53080f;
+}
+.link-warning:link {
+  color: #ffc71d;
+}
+.link-warning:visited,
+.link-warning:active {
+  color: #221a04;
+}
+.link-warning:hover {
+  color: #5e4909;
+}

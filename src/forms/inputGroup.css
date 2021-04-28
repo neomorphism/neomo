@@ -1,0 +1,42 @@
+/* Input Group Information */
+/*
+* Title : Input Group component
+* Description : this is Input Group
+*/
+.input-group {
+  display: flex;
+  width: fit-content;
+  border-radius: 10px;
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
+}
+.input-group > input {
+  border: none;
+}
+.input-group > .input-group-left {
+  padding: 10px;
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  box-shadow: none !important;
+}
+.input-group > .input-group-left:not(input) {
+  border-right: 0.1px solid;
+  border-color: rgb(235, 234, 234);
+}
+.input-group > .input-group-right {
+  padding: 10px;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+  box-shadow: none !important;
+}
+.input-group > .input-group-right:not(input) {
+  border-left: 0.1px solid;
+  border-color: rgb(235, 234, 234);
+}
+.input-group
+  > input:not(.outset-neomo):not(.outset-gray):not(.outset-dark):focus {
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff !important;
+}
