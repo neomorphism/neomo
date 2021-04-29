@@ -41,6 +41,14 @@
   animation: spin 2s linear infinite;
 }
 
+.loader.point-orange {
+  border-top: 3px solid #fa821b;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  animation: spin 2s linear infinite;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
