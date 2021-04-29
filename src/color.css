@@ -39,6 +39,10 @@
   color: #ffc71d !important;
 }
 
+.smoke {
+  background-color: #f5f5f5
+}
+
 .inset-neomo,
 button.outset-neomo:hover,
 input.outset-neomo:focus,
@@ -87,6 +91,8 @@ input:checked + .switch.outset-gray,
     inset 3px 3px 5px rgba(94, 104, 121, 0.288) !important;
   color: var(--neomo-gray-text);
 }
+
+
 .inset-dark,
 button.outset-dark:hover,
 input.outset-dark:focus,
@@ -151,7 +157,39 @@ input:checked + .switch.outset-dark,
   color: var(--neomo-dark-text);
 }
 
+.outset-smoke {
+  border: none;
+  background: #f5f5f5;
+  box-shadow: -3px -3px 7px #a19d9db2, 3px 3px 5px #180e0649 !important;
+  color: var(--neomo-dark-text);
+}
+
+.inset-smoke,
+button.outset-smoke:hover,
+input.outset-smoke:focus,
+input.outset-smoke:disabled,
+input:checked + .switch.outset-smoke,
+.dropdown-content.outset-smoke a:hover,
+.neomo .dropdown-toggle:hover .dropdown-toggle--button,
+.neomo .dropdown-toggle--content a:hover,
+.neomo .dropdown-toggle--button:focus,
+.neomo .file .file-name,
+.neomo .file label:hover,
+.neomo .tab ul.tab-list li a:hover,
+.neomo .tab ul.tab-list li a.current,
+.neomo ul.pagination li a.active,
+.neomo ul.pagination li a:hover:not(.active),
+.neomo ul.pagination-round li a.active,
+.neomo ul.pagination-round li a:hover:not(.active) {
+  border: none;
+  background: #f5f5f5;
+  box-shadow: inset -3px -3px 7px #e9e6e6b2, inset 3px 3px 5px #221b146c!important;
+  color: var(--neomo-dark-text);
+}
+
 :root {
   --neomo-gray: #d3d3d3;
   --neomo-dark: #464646;
 }
+
+
