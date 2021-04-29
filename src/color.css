@@ -40,7 +40,7 @@
 }
 
 .smoke {
-  background-color: #f5f5f5
+  background-color: #f5f5f5;
 }
 
 .inset-neomo,
@@ -67,6 +67,7 @@ input:checked + .switch.outset-neomo,
     inset 3px 3px 5px rgba(88, 100, 121, 0.288) !important;
   color: var(--neomo-blue-text);
 }
+
 .inset-gray,
 button.outset-gray:hover,
 input.outset-gray:focus,
@@ -91,7 +92,6 @@ input:checked + .switch.outset-gray,
     inset 3px 3px 5px rgba(94, 104, 121, 0.288) !important;
   color: var(--neomo-gray-text);
 }
-
 
 .inset-dark,
 button.outset-dark:hover,
@@ -130,6 +130,7 @@ input:checked + .switch.outset-dark,
   box-shadow: -3px -3px 7px #ffffffe5, 3px 3px 5px #58647949 !important;
   color: var(--neomo-blue-text);
 }
+
 .outset-gray,
 .switch.outset-gray:before,
 .gray .dropdown-content,
@@ -143,6 +144,7 @@ input:checked + .switch.outset-dark,
   box-shadow: -3px -3px 7px #ffffff80, 3px 3px 5px rgba(94, 104, 121, 0.288) !important;
   color: var(--neomo-gray-text);
 }
+
 .outset-dark,
 .switch.outset-dark:before,
 .dark .dropdown-content,
@@ -183,13 +185,46 @@ input:checked + .switch.outset-smoke,
 .neomo ul.pagination-round li a:hover:not(.active) {
   border: none;
   background: #f5f5f5;
-  box-shadow: inset -3px -3px 7px #e9e6e6b2, inset 3px 3px 5px #221b146c!important;
+  box-shadow: inset -3px -3px 7px #e9e6e6b2, inset 3px 3px 5px #221b146c !important;
   color: var(--neomo-dark-text);
+}
+
+.outset-orange {
+  border: none;
+  background: #fa821b;
+  background: radial-gradient(
+    circle,
+    rgba(244, 157, 82, 1) 0%,
+    rgba(250, 130, 27, 1) 100%
+  );
+  box-shadow: -3px -3px 7px #ffffffe5, 3px 3px 5px #27140449 !important;
+  color: whitesmoke;
+}
+
+.inset-orange,
+button.outset-orange:hover,
+input.outset-orange:focus,
+input.outset-orange:disabled,
+input:checked + .switch.outset-orange,
+.dropdown-content.outset-orange a:hover,
+.neomo .dropdown-toggle:hover .dropdown-toggle--button,
+.neomo .dropdown-toggle--content a:hover,
+.neomo .dropdown-toggle--button:focus,
+.neomo .file .file-name,
+.neomo .file label:hover,
+.neomo .tab ul.tab-list li a:hover,
+.neomo .tab ul.tab-list li a.current,
+.neomo ul.pagination li a.active,
+.neomo ul.pagination li a:hover:not(.active),
+.neomo ul.pagination-round li a.active,
+.neomo ul.pagination-round li a:hover:not(.active) {
+  border: none;
+  background: #fa821b !important;
+  box-shadow: inset -3px -3px 7px #f7ba84, inset 3px 3px 5px #27140449 !important;
+  color: whitesmoke;
 }
 
 :root {
   --neomo-gray: #d3d3d3;
   --neomo-dark: #464646;
 }
-
-
