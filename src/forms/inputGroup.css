@@ -14,10 +14,10 @@
 }
 .input-group > .input-group-left {
   padding: 10px;
-  border-top-left-radius: 10px !important;
-  border-bottom-left-radius: 10px !important;
-  border-top-right-radius: 0px !important;
-  border-bottom-right-radius: 0px !important;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
   box-shadow: none !important;
 }
 .input-group > .input-group-left:not(input) {
@@ -26,10 +26,10 @@
 }
 .input-group > .input-group-right {
   padding: 10px;
-  border-top-left-radius: 0px !important;
-  border-bottom-left-radius: 0px !important;
-  border-top-right-radius: 10px !important;
-  border-bottom-right-radius: 10px !important;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   box-shadow: none !important;
 }
 .input-group > .input-group-right:not(input) {
@@ -37,6 +37,6 @@
   border-color: rgb(235, 234, 234);
 }
 .input-group
-  > input:not(.outset-neomo):not(.outset-gray):not(.outset-dark):focus {
-  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff !important;
+  > input:not(.outset-neomo):not(.outset-gray):not(.outset-dark):not(.outset-orange):focus {
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
 }
