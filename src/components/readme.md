@@ -475,24 +475,23 @@
       </div>
       <div class="card-content">
         <div>
-          <div class="media-left">
+          <div>
             <img
               src="https://bulma.io/images/placeholders/96x96.png"
               alt="Placeholder image"
             />
           </div>
           <div>
-            <p>John Smith</p>
-            <p>@johnsmith</p>
+            <p>WOJCIECH SZCZĘSNY</p>
+            <p>@SZCZĘSNY</p>
           </div>
         </div>
 
-        <div class="content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-          iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
+        <div>
+          Blessed with outstanding agility and athleticism, Wojciech Szczesny’s charisma and class also makes him one of the game’s great personalities. <a>@seasons</a>. <a href="#">#css</a>
           <a href="#">#responsive</a>
           <br />
-          <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+          <time datetime="1990-4-18">saw him concede just nine goals in 21 appearances across all competitions, 2017/18</time>
         </div>
       </div>
       <footer class="card-footer">
@@ -1044,62 +1043,6 @@
 </html>
 ```
 
-> Breadcrumb-icon usage
-
-```html
-<!DOCTYPE html>
-<html charset="utf-8">
-  <head>
-    <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="columns">
-        <div class="column size-6">
-          <nav class="breadcrumb" aria-label="breadcrumbs">
-            <ul>
-              <li>
-                <a href="#">
-                  <div class="icon-circle icon-sm">
-                    <i class="fas fa-home fa-sm"></i>
-                  </div>
-                  <span>Neomo</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="icon-circle icon-sm">
-                    <i class="fas fa-home fa-sm"></i>
-                  </div>
-                  <span>Documentation</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <div class="icon-circle icon-sm">
-                    <i class="fas fa-home fa-sm"></i>
-                  </div>
-                  <span>Components</span>
-                </a>
-              </li>
-              <li class="is-active">
-                <a href="#" aria-current="page">
-                  <div class="icon-circle icon-sm">
-                    <i class="fas fa-home fa-sm"></i>
-                  </div>
-                  <span>Breadcrumb</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
-```
-
 > Breadcrumb-centered usage
 
 ```html
@@ -1126,7 +1069,7 @@
               <li>
                 <a href="#">
                   <div class="icon-circle icon-sm">
-                    <i class="fas fa-home fa-sm"></i>
+                    <i class="fas fa-file-alt fa-sm"></i>
                   </div>
                   <span>Documentation</span>
                 </a>
@@ -1134,7 +1077,7 @@
               <li>
                 <a href="#">
                   <div class="icon-circle icon-sm">
-                    <i class="fas fa-home fa-sm"></i>
+                    <i class="fas fa-database fa-sm"></i>
                   </div>
                   <span>Components</span>
                 </a>
@@ -1142,7 +1085,7 @@
               <li class="is-active">
                 <a href="#" aria-current="page">
                   <div class="icon-circle icon-sm">
-                    <i class="fas fa-home fa-sm"></i>
+                    <i class="fas fa-bread-slice fa-sm"></i>
                   </div>
                   <span>Breadcrumb</span>
                 </a>
@@ -1157,7 +1100,6 @@
 ```
 
 > Breadcrumb-right usage
-
 ```html
 <!DOCTYPE html>
 <html charset="utf-8">
@@ -1182,7 +1124,7 @@
               <li>
                 <a href="#">
                   <div class="icon-circle icon-sm">
-                    <i class="fas fa-home fa-sm"></i>
+                    <i class="fas fa-file-alt fa-sm"></i>
                   </div>
                   <span>Documentation</span>
                 </a>
@@ -1190,7 +1132,7 @@
               <li>
                 <a href="#">
                   <div class="icon-circle icon-sm">
-                    <i class="fas fa-home fa-sm"></i>
+                    <i class="fas fa-database fa-sm"></i>
                   </div>
                   <span>Components</span>
                 </a>
@@ -1198,7 +1140,7 @@
               <li class="is-active">
                 <a href="#" aria-current="page">
                   <div class="icon-circle icon-sm">
-                    <i class="fas fa-home fa-sm"></i>
+                    <i class="fas fa-bread-slice fa-sm"></i>
                   </div>
                   <span>Breadcrumb</span>
                 </a>
@@ -1238,7 +1180,7 @@
               <li>
                 <a href="#">
                   <div class="icon-circle icon-sm">
-                    <i class="fas fa-home fa-sm"></i>
+                    <i class="fas fa-file-alt fa-sm"></i>
                   </div>
                   <span>Documentation</span>
                 </a>
@@ -1246,7 +1188,7 @@
               <li>
                 <a href="#">
                   <div class="icon-circle icon-sm">
-                    <i class="fas fa-home fa-sm"></i>
+                    <i class="fas fa-database fa-sm"></i>
                   </div>
                   <span>Components</span>
                 </a>
@@ -1254,7 +1196,7 @@
               <li class="is-active">
                 <a href="#" aria-current="page">
                   <div class="icon-circle icon-sm">
-                    <i class="fas fa-home fa-sm"></i>
+                    <i class="fas fa-bread-slice fa-sm"></i>
                   </div>
                   <span>Breadcrumb</span>
                 </a>
@@ -1294,7 +1236,7 @@
               <li>
                 <a href="#">
                   <div class="icon-circle icon-sm">
-                    <i class="fas fa-home fa-sm"></i>
+                    <i class="fas fa-file-alt fa-sm"></i>
                   </div>
                   <span>Documentation</span>
                 </a>
@@ -1302,7 +1244,7 @@
               <li>
                 <a href="#">
                   <div class="icon-circle icon-sm">
-                    <i class="fas fa-home fa-sm"></i>
+                    <i class="fas fa-database fa-sm"></i>
                   </div>
                   <span>Components</span>
                 </a>
@@ -1310,7 +1252,7 @@
               <li class="is-active">
                 <a href="#" aria-current="page">
                   <div class="icon-circle icon-sm">
-                    <i class="fas fa-home fa-sm"></i>
+                    <i class="fas fa-bread-slice fa-sm"></i>
                   </div>
                   <span>Breadcrumb</span>
                 </a>
