@@ -58,10 +58,6 @@
     --neomo-interval-y:4.5rem;
 }
 
-
-
-
-
 /* 상하좌우 정렬옵션, columns */
 .columns.align-top{align-self:flex-start!important;}
 .columns.align-mid{align-self:center!important;}
@@ -86,7 +82,7 @@
 .column.order-12{order:12!important;}
 
 /* 반응형 기본옵션 */
-@media screen and (min-width:1169px),print{
+@media screen and (min-width:992px),print{
     .columns{
         display:flex;
     }
@@ -151,457 +147,69 @@
     }    
 }
 
-/* 반응형 사이즈 커스터마이징 */
-.column-responsive{
-    display:block;
-    flex-basis:0;
-    flex-grow:1;
-    flex-shrink:1;
-    padding:.115rem;
-    box-sizing:border-box;
+/* 반응형 제거버전 */
+.columns.static{
+    display:flex;
+}
+.static >.column.size-1{
+    flex:none;
+    width:8.33333%;
 }
 
-.columns-responsive{
-    padding-left:-.115rem;
-    padding-right:-.115rem;
-    padding-top:-.115rem;
-    flex-wrap: wrap;
-    box-sizing:border-box;
-
-    --neomo-interval-x:0;
-    --neomo-interval-y:0;
-   
-    padding-top:calc(var(--neomo-interval-y) * -1);
-    padding-right:calc(var(--neomo-interval-x)/ -2);
-    padding-left:calc(var(--neomo-interval-x)/ -2);
+.static >.column.size-2{
+    flex:none;
+    width:16.66666%;
 }
 
-.columns-responsive:not(:last-child){
-    padding-bottom: .115rem;
+.static >.column.size-3{
+    flex:none;
+    width:24.99999%;
 }
 
-.columns-responsive>*{
-    padding-right:calc(var(--neomo-interval-x)/ 2);
-    padding-left:calc(var(--neomo-interval-x)/ 2);
-    padding-top:var(--neomo-interval-y);
+.static >.column.size-4{
+    flex:none;
+    width:33.33332%;
 }
 
-.columns-responsive.interval-1{
-    --neomo-interval-x:1.5rem;
-    --neomo-interval-y:1.5rem;
+.static >.column.size-5{
+    flex:none;
+    width:41.66665%;
 }
 
-.columns-responsive.interval-2{
-    --neomo-interval-x:3.0rem;
-    --neomo-interval-y:3.0rem;
+.static >.column.size-6{
+    flex:none;
+    width:49.99998%;
 }
 
-.columns-responsive.interval-3{
-    --neomo-interval-x:4.5rem;
-    --neomo-interval-y:4.5rem;
+.static >.column.size-7{
+    flex:none;
+    width:58.33331%;
 }
 
-/* 1400픽셀 내외 반응형 */
-@media screen and (min-width:1400px),print{
-    .columns-responsive.xxlg{
-        display:flex;
-    }
-
-    .xxlg > .column-responsive.size-1{
-        flex:none;
-        width:8.33333%;
-    }
-
-    .xxlg > .column-responsive.size-2{
-        flex:none;
-        width:16.66666%;
-    }
-
-    .xxlg > .column-responsive.size-3{
-        flex:none;
-        width:24.99999%;
-    }
-
-    .xxlg > .column-responsive.size-4{
-        flex:none;
-        width:33.33332%;
-    }
-
-    .xxlg > .column-responsive.size-5{
-        flex:none;
-        width:41.66665%;
-    }
-
-    .xxlg > .column-responsive.size-6{
-        flex:none;
-        width:49.99998%;
-    }
-
-    .xxlg > .column-responsive.size-7{
-        flex:none;
-        width:58.33331%;
-    }
-
-    .xxlg > .column-responsive.size-8{
-        flex:none;
-        width:66.66664%;
-    }
-
-    .xxlg > .column-responsive.size-9{
-        flex:none;
-        width:74.99997%;
-    }
-
-    .xxlg > .column-responsive.size-10{
-        flex:none;
-        width:83.33333%;
-    }
-
-    .xxlg > .column-responsive.size-11{
-        flex:none;
-        width:91.66663%;
-    }
-
-    .xxlg > .column-responsive.size-12{
-        flex:none;
-        width:100%;
-    }    
+.static >.column.size-8{
+    flex:none;
+    width:66.66664%;
 }
 
-/* 1200픽셀 내외 반응형 */
-@media screen and (min-width:1200px),print{
-    .columns-responsive.xlg{
-        display:flex;
-    }
-
-    .xlg > .column-responsive.size-1{
-        flex:none;
-        width:8.33333%;
-    }
-
-    .xlg > .column-responsive.size-2{
-        flex:none;
-        width:16.66666%;
-    }
-
-    .xlg > .column-responsive.size-3{
-        flex:none;
-        width:24.99999%;
-    }
-
-    .xlg > .column-responsive.size-4{
-        flex:none;
-        width:33.33332%;
-    }
-
-    .xlg > .column-responsive.size-5{
-        flex:none;
-        width:41.66665%;
-    }
-
-    .xlg > .column-responsive.size-6{
-        flex:none;
-        width:49.99998%;
-    }
-
-    .xlg > .column-responsive.size-7{
-        flex:none;
-        width:58.33331%;
-    }
-
-    .xlg > .column-responsive.size-8{
-        flex:none;
-        width:66.66664%;
-    }
-
-    .xlg > .column-responsive.size-9{
-        flex:none;
-        width:74.99997%;
-    }
-
-    .xlg > .column-responsive.size-10{
-        flex:none;
-        width:83.33333%;
-    }
-
-    .xlg > .column-responsive.size-11{
-        flex:none;
-        width:91.66663%;
-    }
-
-    .xlg > .column-responsive.size-12{
-        flex:none;
-        width:100%;
-    }    
+.static >.column.size-9{
+    flex:none;
+    width:74.99997%;
 }
 
-/* 992픽셀 내외 반응형 */
-@media screen and (min-width:992px),print{
-    .columns-responsive.lg{
-        display:flex;
-    }
-
-    .lg > .column-responsive.size-1{
-        flex:none;
-        width:8.33333%;
-    }
-
-    .lg > .column-responsive.size-2{
-        flex:none;
-        width:16.66666%;
-    }
-
-    .lg > .column-responsive.size-3{
-        flex:none;
-        width:24.99999%;
-    }
-
-    .lg > .column-responsive.size-4{
-        flex:none;
-        width:33.33332%;
-    }
-
-    .lg > .column-responsive.size-5{
-        flex:none;
-        width:41.66665%;
-    }
-
-    .lg > .column-responsive.size-6{
-        flex:none;
-        width:49.99998%;
-    }
-
-    .lg > .column-responsive.size-7{
-        flex:none;
-        width:58.33331%;
-    }
-
-    .lg > .column-responsive.size-8{
-        flex:none;
-        width:66.66664%;
-    }
-
-    .lg > .column-responsive.size-9{
-        flex:none;
-        width:74.99997%;
-    }
-
-    .lg > .column-responsive.size-10{
-        flex:none;
-        width:83.33333%;
-    }
-
-    .lg > .column-responsive.size-11{
-        flex:none;
-        width:91.66663%;
-    }
-
-    .lg > .column-responsive.size-12{
-        flex:none;
-        width:100%;
-    }    
+.static >.column.size-10{
+    flex:none;
+    width:83.33333%;
 }
 
-/* 768픽셀 내외 반응형 */
-@media screen and (min-width:768px),print{
-    .columns-responsive.md{
-        display:flex;
-    }
-
-    .md > .column-responsive.size-1{
-        flex:none;
-        width:8.33333%;
-    }
-
-    .md > .column-responsive.size-2{
-        flex:none;
-        width:16.66666%;
-    }
-
-    .md > .column-responsive.size-3{
-        flex:none;
-        width:24.99999%;
-    }
-
-    .md > .column-responsive.size-4{
-        flex:none;
-        width:33.33332%;
-    }
-
-    .md > .column-responsive.size-5{
-        flex:none;
-        width:41.66665%;
-    }
-
-    .md > .column-responsive.size-6{
-        flex:none;
-        width:49.99998%;
-    }
-
-    .md > .column-responsive.size-7{
-        flex:none;
-        width:58.33331%;
-    }
-
-    .md > .column-responsive.size-8{
-        flex:none;
-        width:66.66664%;
-    }
-
-    .md > .column-responsive.size-9{
-        flex:none;
-        width:74.99997%;
-    }
-
-    .md > .column-responsive.size-10{
-        flex:none;
-        width:83.33333%;
-    }
-
-    .md > .column-responsive.size-11{
-        flex:none;
-        width:91.66663%;
-    }
-
-    .md > .column-responsive.size-12{
-        flex:none;
-        width:100%;
-    }    
+.static >.column.size-11{
+    flex:none;
+    width:91.66663%;
 }
 
-/* 576픽셀 내외 반응형 */
-@media screen and (min-width:576px),print{
-    .columns-responsive.sm{
-        display:flex;
-    }
-
-    .sm > .column-responsive.size-1{
-        flex:none;
-        width:8.33333%;
-    }
-
-    .sm > .column-responsive.size-2{
-        flex:none;
-        width:16.66666%;
-    }
-
-    .sm > .column-responsive.size-3{
-        flex:none;
-        width:24.99999%;
-    }
-
-    .sm > .column-responsive.size-4{
-        flex:none;
-        width:33.33332%;
-    }
-
-    .sm > .column-responsive.size-5{
-        flex:none;
-        width:41.66665%;
-    }
-
-    .sm > .column-responsive.size-6{
-        flex:none;
-        width:49.99998%;
-    }
-
-    .sm > .column-responsive.size-7{
-        flex:none;
-        width:58.33331%;
-    }
-
-    .sm > .column-responsive.size-8{
-        flex:none;
-        width:66.66664%;
-    }
-
-    .sm > .column-responsive.size-9{
-        flex:none;
-        width:74.99997%;
-    }
-
-    .sm > .column-responsive.size-10{
-        flex:none;
-        width:83.33333%;
-    }
-
-    .sm > .column-responsive.size-11{
-        flex:none;
-        width:91.66663%;
-    }
-
-    .sm > .column-responsive.size-12{
-        flex:none;
-        width:100%;
-    }    
-}
-
-/* 항상 반응형 적용안됨, 고정크기 */
-@media screen and (min-width:0px),print{
-    .columns-responsive.xsm{
-        display:flex;
-    }
-
-    .xsm > .column-responsive.size-1{
-        flex:none;
-        width:8.33333%;
-    }
-
-    .xsm > .column-responsive.size-2{
-        flex:none;
-        width:16.66666%;
-    }
-
-    .xsm > .column-responsive.size-3{
-        flex:none;
-        width:24.99999%;
-    }
-
-    .xsm > .column-responsive.size-4{
-        flex:none;
-        width:33.33332%;
-    }
-
-    .xsm > .column-responsive.size-5{
-        flex:none;
-        width:41.66665%;
-    }
-
-    .xsm > .column-responsive.size-6{
-        flex:none;
-        width:49.99998%;
-    }
-
-    .xsm > .column-responsive.size-7{
-        flex:none;
-        width:58.33331%;
-    }
-
-    .xsm > .column-responsive.size-8{
-        flex:none;
-        width:66.66664%;
-    }
-
-    .xsm > .column-responsive.size-9{
-        flex:none;
-        width:74.99997%;
-    }
-
-    .xsm > .column-responsive.size-10{
-        flex:none;
-        width:83.33333%;
-    }
-
-    .xsm > .column-responsive.size-11{
-        flex:none;
-        width:91.66663%;
-    }
-
-    .xsm > .column-responsive.size-12{
-        flex:none;
-        width:100%;
-    }    
-}
+.static >.column.size-12{
+    flex:none;
+    width:100%;
+}    
 
 
 /* Column component FINISH */
