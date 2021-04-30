@@ -173,3 +173,16 @@ function sideNav() {
   }
 }
 /* Navigation function end */
+
+/* Collapsible function start */
+function Collap() {
+  var collapsed = document.getElementById("collapsed");
+  var expanded = document.getElementById("expanded");
+
+  if (expanded.style.display == "block") {
+    expanded.style.display = "none";
+  } else {
+    expanded.style.display = "block";
+  }
+}
+/* Navigation function end */
