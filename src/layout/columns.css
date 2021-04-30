@@ -59,9 +59,9 @@
 }
 
 /* 상하좌우 정렬옵션, columns */
-.columns.align-top{align-self:flex-start!important;}
-.columns.align-mid{align-self:center!important;}
-.columns.align-bottom{align-self:flex-end!important;}
+.columns.align-top{align-items:flex-start!important;}
+.columns.align-mid{align-items:center!important;}
+.columns.align-bottom{align-items:flex-end!important;}
 
 .columns.just-left{justify-content:flex-start!important;}
 .columns.just-center{justify-content:center!important;}
