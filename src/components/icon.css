@@ -1,11 +1,11 @@
 /* Icon Information */
 
 /*
-* Title : icon-square
-* Description : this is example
+* Title : icon
+* Description : icon is a container for any type of icon font
 */
 
-.icon-square {
+.icon {
   width: 50px;
   height: 50px;
   font-size: 30px;
@@ -13,11 +13,10 @@
   justify-content: center;
   align-items: center;
   border-radius: 10%;
-  background: white;
   box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
 
-.icon-square--sm {
+.icon-sm {
   width: 30px;
   height: 30px;
   font-size: 15px;
@@ -25,11 +24,10 @@
   justify-content: center;
   align-items: center;
   border-radius: 10%;
-  background: white;
   box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
 
-.icon-square--lg {
+.icon-lg {
   width: 70px;
   height: 70px;
   font-size: 45px;
@@ -37,14 +35,14 @@
   justify-content: center;
   align-items: center;
   border-radius: 10%;
-  background: white;
   box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
-/* icon-square FINISH */
+
+/* icon FINISH */
 
 /*
 * Title : icon-circle
-* Description : this is example
+* Description : Icon circle shape
 */
 
 .icon-circle {
@@ -55,7 +53,6 @@
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  background: white;
   box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
 
@@ -67,7 +64,6 @@
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  background: white;
   box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
 
@@ -79,7 +75,6 @@
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  background: white;
   box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
 

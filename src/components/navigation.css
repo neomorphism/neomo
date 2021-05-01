@@ -2,11 +2,7 @@
 
 /*
 * Title : nav
-* Description : normal nav. 
-                Expressing neumorphism with an effect on the boader.
-                Distribute even space using space-evenly.
-                Use padding to secure enough space.
-                Get Reactive with flex.
+* Description :  
 */
 .nav {
   display: flex;
@@ -14,10 +10,18 @@
   list-style: none;
 }
 
-.flex-column {
+.nav-column {
+  display: flex;
   flex-direction: column;
+  padding-left: 0;
+  list-style: none;
 }
-/* nav FINISH */
+
+.nav .disabled,
+.nav-column .disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
 
 .nav-item {
   display: list-item;
@@ -27,96 +31,30 @@
   display: block;
   text-decoration: none;
   padding: 0.7rem 2rem;
-  border-radius: 15px;
+  border-radius: 1rem;
+  color: #707070;
 }
 
-/*
-  * Title : nav-link:focus
-  * Description : nav-link layout
-*/
-
-.nav-link:focus {
+.nav-link:hover {
   box-shadow: inset -3px -3px 7px #ffffffe5,
     inset 3px 3px 5px rgba(88, 100, 121, 0.288) !important;
 }
 
-/* nav-link FINISH */
-
 /*
   * Title : nav-link--animation
-  * Description : nav-link layout
+  * Description : 
 */
 
 .nav-link--animation {
   display: block;
   text-decoration: none;
   padding: 0.7rem 2rem;
-  border-radius: 15px;
+  border-radius: 1rem;
   color: #707070;
-  transition: box-shadow 1s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out;
 }
-
-/* nav-link--animation FINISH */
-
-/*
-  * Title : nav-link--animation:focus
-  * Description : nav-link layout
-*/
 
 .nav-link--animation:hover {
   box-shadow: inset -3px -3px 7px #ffffffe5,
     inset 3px 3px 5px rgba(88, 100, 121, 0.288) !important;
 }
-
-.nav-content {
-  display: none;
-}
-
-/* .nav-link--animation:focus + .nav-content {
-  display: block;
-  color: green;
-} */
-
-/* nav-link--animation FINISH */
-
-/* Navbar Information */
-
-/* nav-link--column FINISH */
-
-/* type1은 a태그를 기준으로 했고 type2는 li 태그를 기준으로 했음 */
-
-/* @media screen and (min-width: 1400px) {
-  .nav-column {
-    max-width: 250px;
-  }
-}
-
-@media (max-width: 1400px) {
-  .nav-column {
-    max-width: 220px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .nav-column {
-    max-width: 200px;
-  }
-}
-
-@media (max-width: 992px) {
-  .nav-column {
-    max-width: 200px;
-  }
-}
-
-@media (max-width: 768px) {
-  .nav-column {
-    max-width: 200px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .nav-column {
-    max-width: 20%;
-  }
-} */

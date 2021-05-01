@@ -22,11 +22,13 @@
 .navbar-brand {
   margin-right: 1rem;
   font-size: 20px;
+  font-weight: bold;
   text-decoration: none;
 }
 .navbar-content a {
   text-decoration: none;
   align-self: flex-end;
+  color: #707070;
   margin-right: 1rem;
 }
 
@@ -39,7 +41,6 @@
 .search-bar {
   display: flex;
   border-radius: 10px;
-  background-color: var(--neomo);
 }
 
 .search-bar--text {
@@ -47,13 +48,17 @@
   border-bottom-left-radius: 10px;
   padding: 10px;
   border: none;
-  background-color: var(--neomo);
 }
 
 .search-bar--button {
   padding: 10px;
   border: none;
-  background-color: var(--neomo);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+
+.neomo .search-bar--text,
+.neomo .search-bar--button {
+  background-color: var(--neomo);
 }

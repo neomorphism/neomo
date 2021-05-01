@@ -331,7 +331,7 @@
 
 ## Navigation Information
 
-> Naviagtion type1 usage
+> Naviagtion usage 1
 
 ```html
 <!DOCTYPE html>
@@ -343,7 +343,7 @@
   <body>
     <ul class="nav">
       <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
+        <a class="nav-link" href="#">Link</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
@@ -359,7 +359,30 @@
 </html>
 ```
 
-> Naviagtion type1-animation usage
+> Naviagtion usage 2
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" href="../src/neomo.css" />
+  </head>
+  <body>
+    <ul class="nav">
+      <a class="nav-link" href="#">Link</a>
+
+      <a class="nav-link" href="#">Link</a>
+
+      <a class="nav-link" href="#">Link</a>
+
+      <a class="nav-link disabled">Disabled</a>
+    </ul>
+  </body>
+</html>
+```
+
+> Naviagtion animation usage
 
 ```html
 <!DOCTYPE html>
@@ -371,16 +394,13 @@
   <body>
     <ul class="nav">
       <li class="nav-item">
-        <a class="nav-link--animation" href="#">Active</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link--animation" href="#">Link</a>
       </li>
       <li class="nav-item">
         <a class="nav-link--animation" href="#">Link</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link--animation" href="#">Disabled1</a>
+        <a class="nav-link--animation" href="#">Link</a>
       </li>
       <li class="nav-item">
         <a class="nav-link--animation disabled">Disabled</a>
@@ -390,35 +410,7 @@
 </html>
 ```
 
-> Naviagtion type2 usage
-
-```html
-<!DOCTYPE html>
-<html charset="utf-8">
-  <head>
-    <title>test</title>
-    <link rel="stylesheet" href="../src/neomo.css" />
-  </head>
-  <body>
-    <ul class="nav2">
-      <li class="nav-item2">
-        <a class="nav-link2 active" href="#">Active</a>
-      </li>
-      <li class="nav-item2">
-        <a class="nav-link2 active" href="#">Active</a>
-      </li>
-      <li class="nav-item2">
-        <a class="nav-link2 active" href="#">Active</a>
-      </li>
-      <li class="nav-item2">
-        <a class="nav-link2 active" href="#">Active</a>
-      </li>
-    </ul>
-  </body>
-</html>
-```
-
-> Naviagtion column usage
+> Naviagtion vertical usage
 
 ```html
 <!DOCTYPE html>
@@ -430,20 +422,17 @@
 
   <body>
     <ul class="nav-column">
-      <li class="nav-item--column">
-        <a class="nav-link--column" href="#">Active</a>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
       </li>
-      <li class="nav-item--column">
-        <a class="nav-link--column" href="#">Link</a>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
       </li>
-      <li class="nav-item--column">
-        <a class="nav-link--column" href="#">Link</a>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
       </li>
-      <li class="nav-item--column">
-        <a class="nav-link--column" href="#">Disabled1</a>
-      </li>
-      <li class="nav-item--column">
-        <a class="nav-link--column disabled">Disabled</a>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
       </li>
     </ul>
   </body>
@@ -748,7 +737,7 @@
 
 ## Icon Information
 
-> square-icon usage
+> icon usage
 
 ```html
 <!DOCTYPE html>
@@ -759,14 +748,14 @@
   </head>
 
   <body>
-    <div class="icon-square">
+    <div class="icon">
       <i class="fas fa-home"></i>
     </div>
   </body>
 </html>
 ```
 
-> square-icon small usage
+> icon small usage
 
 ```html
 <!DOCTYPE html>
@@ -777,14 +766,32 @@
   </head>
 
   <body>
-    <div class="icon-square--sm">
+    <div class="icon-sm">
       <i class="fas fa-home"></i>
     </div>
   </body>
 </html>
 ```
 
-> circle-icon usage
+> icon large usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" href="../neomo.css" />
+  </head>
+
+  <body>
+    <div class="icon-lg">
+      <i class="fas fa-home"></i>
+    </div>
+  </body>
+</html>
+```
+
+> circle icon usage
 
 ```html
 <!DOCTYPE html>
@@ -796,24 +803,6 @@
 
   <body>
     <div class="icon-circle">
-      <i class="fas fa-home"></i>
-    </div>
-  </body>
-</html>
-```
-
-> circle-icon large usage
-
-```html
-<!DOCTYPE html>
-<html charset="utf-8">
-  <head>
-    <title>test</title>
-    <link rel="stylesheet" href="../neomo.css" />
-  </head>
-
-  <body>
-    <div class="icon-circle--lg">
       <i class="fas fa-home"></i>
     </div>
   </body>
@@ -871,7 +860,7 @@
 
 ## Navbar Information
 
-> navbar-search usage
+> navbar usage
 
 ```html
 <!DOCTYPE html>
@@ -881,10 +870,22 @@
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
   <body>
-    <form class="search-bar">
-      <input type="text" class="search-bar--text" placeholder="Search" />
-      <input type="submit" class="search-bar--button" value="Search" />
-    </form>
+    <nav class="navbar">
+      <div class="navbar-content">
+        <div class="navbar-brand">Navbar</div>
+        <a href="#">Home</a>
+        <a href="#">Link</a>
+      </div>
+
+      <div class="navbar-end">
+        <form class="search-bar ">
+          <input type="text" class="search-bar--text" placeholder="Search" />
+          <button type="submit" class="search-bar--button" value="Search">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </nav>
   </body>
 </html>
 ```
