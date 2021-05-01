@@ -129,7 +129,13 @@ input:checked + .switch.outset-dark,
 .neomo .tab ul.tab-list li a,
 .neomo ul.pagination li a,
 .neomo ul.pagination-round li a,
-.neomo .file label {
+.neomo .file label,
+.neomo .icon-circle,
+.neomo .icon-circle--sm,
+.neomo .icon-circle--lg,
+.neomo .icon-square,
+.neomo .icon-square--sm,
+.neomo .icon-square--lg {
   border: none;
   background: var(--neomo) !important;
   box-shadow: -3px -3px 7px #ffffffe5, 3px 3px 5px #58647949 !important;

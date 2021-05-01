@@ -488,10 +488,15 @@
         </div>
 
         <div>
-          Blessed with outstanding agility and athleticism, Wojciech Szczesny’s charisma and class also makes him one of the game’s great personalities. <a>@seasons</a>. <a href="#">#css</a>
+          Blessed with outstanding agility and athleticism, Wojciech Szczesny’s
+          charisma and class also makes him one of the game’s great
+          personalities. <a>@seasons</a>. <a href="#">#css</a>
           <a href="#">#responsive</a>
           <br />
-          <time datetime="1990-4-18">saw him concede just nine goals in 21 appearances across all competitions, 2017/18</time>
+          <time datetime="1990-4-18"
+            >saw him concede just nine goals in 21 appearances across all
+            competitions, 2017/18</time
+          >
         </div>
       </div>
       <footer class="card-footer">
@@ -743,7 +748,7 @@
 
 ## Icon Information
 
-> square-icon type1 usage
+> square-icon usage
 
 ```html
 <!DOCTYPE html>
@@ -754,14 +759,14 @@
   </head>
 
   <body>
-    <div class="icon-square icon-xs">
-      <i class="fas fa-home fa-xs"></i>
+    <div class="icon-square">
+      <i class="fas fa-home"></i>
     </div>
   </body>
 </html>
 ```
 
-> square-icon type2 usage
+> square-icon small usage
 
 ```html
 <!DOCTYPE html>
@@ -772,14 +777,14 @@
   </head>
 
   <body>
-    <div class="icon-square2 icon-xs">
-      <i class="fas fa-home fa-xs"></i>
+    <div class="icon-square--sm">
+      <i class="fas fa-home"></i>
     </div>
   </body>
 </html>
 ```
 
-> circle-icon type1 usage
+> circle-icon usage
 
 ```html
 <!DOCTYPE html>
@@ -790,14 +795,14 @@
   </head>
 
   <body>
-    <div class="icon-circle icon-sm">
-      <i class="fas fa-home fa-sm"></i>
+    <div class="icon-circle">
+      <i class="fas fa-home"></i>
     </div>
   </body>
 </html>
 ```
 
-> circle-icon type2 usage
+> circle-icon large usage
 
 ```html
 <!DOCTYPE html>
@@ -808,8 +813,8 @@
   </head>
 
   <body>
-    <div class="icon-circle2 icon-sm">
-      <i class="fas fa-home fa-sm"></i>
+    <div class="icon-circle--lg">
+      <i class="fas fa-home"></i>
     </div>
   </body>
 </html>
@@ -1100,6 +1105,7 @@
 ```
 
 > Breadcrumb-right usage
+
 ```html
 <!DOCTYPE html>
 <html charset="utf-8">
