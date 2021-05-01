@@ -133,9 +133,10 @@ input:checked + .switch.outset-dark,
 .neomo .icon-circle,
 .neomo .icon-circle--sm,
 .neomo .icon-circle--lg,
-.neomo .icon-square,
-.neomo .icon-square--sm,
-.neomo .icon-square--lg {
+.neomo .icon,
+.neomo .icon,
+.neomo .icon,
+.navbar .search-bar {
   border: none;
   background: var(--neomo) !important;
   box-shadow: -3px -3px 7px #ffffffe5, 3px 3px 5px #58647949 !important;
@@ -149,7 +150,13 @@ input:checked + .switch.outset-dark,
 .gray .tab ul.tab-list li a,
 .gray ul.pagination li a,
 .gray ul.pagination-round li a,
-.gray .file label {
+.gray .file label,
+.gray .icon-circle,
+.gray .icon-circle--sm,
+.gray .icon-circle--lg,
+.gray .icon,
+.gray .icon,
+.gray .icon {
   border: none;
   background: var(--neomo-gray) !important;
   box-shadow: -3px -3px 7px #ffffff80, 3px 3px 5px rgba(94, 104, 121, 0.288) !important;
@@ -163,7 +170,13 @@ input:checked + .switch.outset-dark,
 .dark .tab ul.tab-list li a,
 .dark ul.pagination li a,
 .dark ul.pagination-round li a,
-.dark .file label {
+.dark .file label,
+.dark .icon-circle,
+.dark .icon-circle--sm,
+.dark .icon-circle--lg,
+.dark .icon,
+.dark .icon,
+.dark .icon {
   border: none;
   background: var(--neomo-dark) !important;
   box-shadow: 3px 3px 12px #303030, -3px -3px 12px #5a5a5a !important;
