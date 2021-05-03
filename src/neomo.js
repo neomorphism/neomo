@@ -181,8 +181,16 @@ function Collap() {
 
   if (expanded.style.display == "block") {
     expanded.style.display = "none";
+    document
+      .getElementById("collap-icon")
+      .setAttribute("class", "fas fa-caret-down fa-2x");
+    collapsed.style.borderBottom = "none";
   } else {
     expanded.style.display = "block";
+    document
+      .getElementById("collap-icon")
+      .setAttribute("class", "fas fa-caret-up fa-2x");
+    collapsed.style.borderBottom = "1px solid var(--gray-400)";
   }
 }
 /* Navigation function end */
