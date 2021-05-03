@@ -10,13 +10,13 @@
   <head>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
-  <body>
-    <div class="alert" role="alert">This is alert!</div>
+  <body class="neomo">
+    <div class="alert outset-neomo" role="alert">This is alert!</div>
   </body>
 </html>
 ```
 
-> Alert outset usage
+> Alert inset usage
 
 ```html
 <!DOCTYPE html>
@@ -24,8 +24,8 @@
   <head>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
-  <body>
-    <div class="alert alert-outset" role="alert">This is alert outset!</div>
+  <body class="neomo">
+    <div class="alert inset-neomo" role="alert">This is alert!</div>
   </body>
 </html>
 ```
@@ -38,13 +38,17 @@
   <head>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
-  <body>
-    <div class="alert" role="alert">This is alert!</div>
-    <div class="alert alert-primary" role="alert">This is alert!</div>
-    <div class="alert alert-secondary" role="alert">This is alert!</div>
-    <div class="alert alert-success" role="alert">This is alert!</div>
-    <div class="alert alert-danger" role="alert">This is alert!</div>
-    <div class="alert alert-warning" role="alert">This is alert!</div>
+  <body class="neomo">
+    <div class="alert outset-neomo info" role="alert">This color is info!</div>
+    <div class="alert outset-neomo success" role="alert">
+      This color is success!
+    </div>
+    <div class="alert outset-neomo danger" role="alert">
+      This color is danger!
+    </div>
+    <div class="alert outset-neomo warning" role="alert">
+      This color is warning!
+    </div>
   </body>
 </html>
 ```
@@ -57,13 +61,13 @@
   <head>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
-  <body>
-    <div class="alert" id="Alt">
+  <body class="neomo">
+    <div class="outset-neomo alert" id="Alt">
       <span
         ><strong>Well done!</strong> You successfully read this important alert
         message.</span
       >
-      <button class="alt-close">X</button>
+      <span class="alt-close">X</span>
     </div>
 
     <script type="text/javascript" src="../src/neomo.js"></script>
@@ -76,38 +80,31 @@
 > Badge usage
 
 ```html
-<html>
+<!DOCTYPE html>
+<html charset="utf-8">
   <head>
-    <meta charset="utf-8" />
-    <title></title>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
-  <body>
-    <div class="mt-5">
-      <span class="badge">NEOMO</span>
-    </div>
+  <body class="neomo">
+    <span class="badge outset-neomo">NEOMO</span>
+    <span class="badge inset-neomo">NEOMO</span>
   </body>
 </html>
 ```
 
-> Badge background colors
+> Badge colors
 
 ```html
 <!DOCTYPE html>
-<html>
+<html charset="utf-8">
   <head>
-    <meta charset="utf-8" />
-    <title></title>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
-  <body>
-    <div class="mt-5">
-      <span class="badge badge-primary">NEOMO</span>
-      <span class="badge badge-secondary">NEOMO</span>
-      <span class="badge badge-success">NEOMO</span>
-      <span class="badge badge-danger">NEOMO</span>
-      <span class="badge badge-warning">NEOMO</span>
-    </div>
+  <body class="neomo">
+    <span class="badge outset-neomo info">NEOMO</span>
+    <span class="badge outset-neomo success">NEOMO</span>
+    <span class="badge outset-neomo danger">NEOMO</span>
+    <span class="badge outset-neomo warning">NEOMO</span>
   </body>
 </html>
 ```
@@ -122,12 +119,10 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
-  <body>
-    <div class="mt-5">
-      <span class="badge badge-sm">NEOMO</span>
-      <span class="badge badge-md">NEOMO</span>
-      <span class="badge badge-rg">NEOMO</span>
-    </div>
+  <body class="neomo">
+    <span class="badge outset-neomo badge-sm">NEOMO</span>
+    <span class="badge outset-neomo badge-md">NEOMO</span>
+    <span class="badge outset-neomo badge-rg">NEOMO</span>
   </body>
 </html>
 ```
@@ -189,20 +184,25 @@
 
 ```html
 <!DOCTYPE html>
-<html charset="utf-8">
+<html>
   <head>
-    <title>test</title>
+    <meta charset="utf-8" />
+    <title></title>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
-  <body>
-    <div class="mt-2 ml-2">
-      <select>
-        <option selected>This is select menu</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
-    </div>
+  <body class="neomo">
+    <select class="outset-neomo">
+      <option selected>This is select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <select class="inset-neomo">
+      <option selected>This is select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
   </body>
 </html>
 ```
@@ -211,45 +211,37 @@
 
 ```html
 <!DOCTYPE html>
-<html charset="utf-8">
+<html>
   <head>
-    <title>test</title>
+    <meta charset="utf-8" />
+    <title></title>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
-
-  <body>
-    <div class="mt-2 ml-2">
-      <select>
-        <option selected>This is select menu</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
-      <select class="slt-primary">
-        <option selected>This is select menu</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
-      <select class="slt-success">
-        <option selected>This is select menu</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
-      <select class="slt-danger">
-        <option selected>This is select menu</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
-      <select class="slt-warning">
-        <option selected>This is select menu</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
-    </div>
+  <body class="neomo">
+    <select class="outset-neomo info">
+      <option selected>This is select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <select class="outset-neomo success">
+      <option selected>This is select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <select class="outset-neomo danger">
+      <option selected>This is select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <select class="outset-neomo warning">
+      <option selected>This is select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
   </body>
 </html>
 ```
@@ -258,20 +250,19 @@
 
 ```html
 <!DOCTYPE html>
-<html charset="utf-8">
+<html>
   <head>
-    <title>test</title>
+    <meta charset="utf-8" />
+    <title></title>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
-  <body>
-    <div class="mt-2 ml-2">
-      <select multiple>
-        <option selected>This is select menu</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
-    </div>
+  <body class="neomo">
+    <select multiple class="outset-neomo">
+      <option selected>This is select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
   </body>
 </html>
 ```
