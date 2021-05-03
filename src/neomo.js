@@ -1,13 +1,13 @@
 /* Alert function start */
 document.addEventListener("DOMContentLoaded", function () {
-  var alt = document.getElementsByClassName("alert");
+  var alt = document.getElementsByClassName("alt-close");
   var alt_close = document.getElementsByClassName("alt-close");
   var funcs = [];
 
   function Alt(num) {
     return function () {
       alt_close[num].onclick = function () {
-        alt[num].style.display = "none";
+        alt[num].parentElement.style.display = "none";
       };
     };
   }
