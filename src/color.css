@@ -28,8 +28,7 @@
 }
 
 .neomo-orange {
-  background-color: #fa821b;
-  color: white;
+  color: #fa821b;
 }
 
 .info {
@@ -185,9 +184,9 @@ input:checked + .switch.outset-dark,
 
 .outset-smoke {
   border: none;
-  background: #f5f5f5;
-  box-shadow: -3px -3px 7px #a19d9db2, 3px 3px 5px #180e0649 !important;
-  color: var(--neomo-dark-text);
+  background: #f5f5f5 !important;
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288) !important;
+  color: #464545;
 }
 
 .inset-smoke,
@@ -208,7 +207,7 @@ input:checked + .switch.outset-smoke,
 .neomo ul.pagination-round li a.active,
 .neomo ul.pagination-round li a:hover:not(.active) {
   border: none;
-  background: #f5f5f5;
+  background: #f5f5f5 !important;
   box-shadow: inset -3px -3px 7px #e9e6e6b2, inset 3px 3px 5px #221b146c !important;
   color: var(--neomo-dark-text);
 }
