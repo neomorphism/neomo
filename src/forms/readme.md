@@ -25,7 +25,7 @@
 
 ## File Information
 
-> Simple File usage
+> File usage
 
 ```html
 <!DOCTYPE html>
@@ -34,37 +34,13 @@
     <title>test</title>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
-  <body class="p-2">
-    <div class="file">
-      <label for="ex-file" class="outset-gray">Choose a file...</label>
-      <input type="file" id="ex-file" />
-    </div>
-  </body>
-</html>
-```
-
-> Simple Filename usage
-
-```html
-<!DOCTYPE html>
-<html charset="utf-8">
-  <head>
-    <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
-  </head>
-  <body class="p-2">
+  <body class="container neomo">
     <div class="file">
       <input class="file-name" value="Choose a file..." disabled="disabled" />
-      <label for="ex-filename" class="outset-gray">Choose a file...</label>
-      <input
-        type="file"
-        id="ex-filename"
-        class="file-hidden"
-        onclick="FileUpload()"
-      />
+      <label for="file-label">Upload</label>
+      <input type="file" id="file-label" class="file-hidden" />
     </div>
 
-    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="../src/neomo.js"></script>
   </body>
 </html>
