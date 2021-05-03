@@ -6,7 +6,7 @@
 */
 
 .badge {
-  margin: 0 5px 0 5px;
+  margin: 5px;
   padding: 0.6rem 0.8rem;
   border-radius: 10px;
   box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;

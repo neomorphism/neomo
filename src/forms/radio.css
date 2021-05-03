@@ -6,7 +6,7 @@
 */
 
 .radio-input {
-  margin: 0 2px 0 0;
+  margin: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -16,8 +16,6 @@
   vertical-align: middle;
   width: 20px;
   height: 20px;
-  left: 0;
-  top: 0;
   cursor: pointer;
   border-radius: 100%;
   box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff;
