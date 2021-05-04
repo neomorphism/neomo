@@ -63,64 +63,59 @@
   </head>
 
   <body>
-    <div class="container bg-gray">
+    <div class="container">
+      <br />
+      <input class="input" type="text" disabled placeholder="Disabled" />
+      <input class="input square" type="text" placeholder="Square Input" />
+      <input class="input rounded" type="text" placeholder="Rounded Input" />
+      <br />
+    </div>
+    <div class="container neomo">
       <br />
       <input
-        class="input outset-gray"
+        class="input outset-neomo"
         type="text"
         disabled
         placeholder="Disabled"
       />
       <input
-        class="input square outset-gray"
+        class="input square outset-neomo"
         type="text"
         placeholder="Square Input"
       />
       <input
-        class="input rounded outset-gray"
+        class="input rounded outset-neomo"
         type="text"
         placeholder="Rounded Input"
       />
       <br />
     </div>
-    <div class="container bg-dark">
+    <div class="container neomo">
       <br />
       <input
-        class="input outset-dark small"
+        class="input outset-neomo small"
         type="text"
         placeholder="Small Input"
       />
       <br />
-      <input class="input outset-dark" type="text" placeholder="Normal Input" />
+      <input
+        class="input outset-neomo"
+        type="text"
+        placeholder="Normal Input"
+      />
       <br />
       <input
-        class="input outset-dark medium"
+        class="input outset-neomo medium"
         type="text"
         placeholder="Medium Input"
       />
       <br />
       <input
-        class="input outset-dark large"
+        class="input outset-neomo large"
         type="text"
         placeholder="Large Input"
       />
       <br />
-    </div>
-    <div class="container bg-blue">
-      <br />
-      <span class="left-icon">
-        <i class="far fa-envelope fa-lg icon"></i>
-        <input class="input outset-blue" type="email" placeholder="email" />
-      </span>
-      <br />
-      <span class="right-icon">
-        <i class="fas fa-lock fa-lg icon"></i>
-        <input
-          class="input outset-blue"
-          type="password"
-          placeholder="password"
-        />
-      </span>
     </div>
   </body>
 </html>
