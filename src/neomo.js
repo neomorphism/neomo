@@ -49,11 +49,14 @@ document.addEventListener("DOMContentLoaded", function () {
       };
     };
   }
-  for (var i = 0; i < modal_btns.length; i++) {
-    funcs[i] = Modal(i);
-  }
-  for (var j = 0; j < modal_btns.length; j++) {
-    funcs[j]();
+
+  if(modals){
+    for (var i = 0; i < modal_btns.length; i++) {
+      funcs[i] = Modal(i);
+    }
+    for (var j = 0; j < modal_btns.length; j++) {
+      funcs[j]();
+    }
   }
   /* Modal function end */
 
@@ -164,13 +167,16 @@ function NavbarToggle() {
 /* Navbar function end */
 
 /* Range start */
+
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
-output.innerHTML = slider.value;
+if (slider){
+  output.innerHTML = slider.value;
 
-slider.oninput = function () {
-  output.innerHTML = this.value;
-};
+  slider.oninput = function () {
+    output.innerHTML = this.value;
+  };
+}
 /* Range end */
 
 /* Navigation function start */
