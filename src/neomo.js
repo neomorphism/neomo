@@ -58,32 +58,49 @@ document.addEventListener("DOMContentLoaded", function () {
   /* Modal function end */
 
   /* Tab function start */
-  $(".tab").each(function (i) {
-    var oTab = $(this);
-    var tabIndex = $(this).find(".current").attr("id").match(/\d+$/);
+  var tab = document.getElementsByClassName("tab");
+  var tab_list = [];
+  
+  for (var i = 0; i < tab.length; i++) {
+    tab_list[i] = tab[i]
+      .getElementsByClassName("tab-list")[0]
+      .getElementsByTagName("a");
+    var tab_index = tab[i]
+      .getElementsByClassName("current")[0]
+      .id.split("-")[1];
+    var tab_content = tab[i].querySelector("#content-" + tab_index);
+    tab_content.style.display = "block";
+  }
 
-    $(this)
-      .find(".tab-content")
-      .find("#content-" + tabIndex[0])
-      .show();
+  for (var i = 0; i < tab_list.length; i++) {
+    for (var j = 0; j < tab_list[i].length; j++) {
+      tab_list[i][j].onclick = function () {
+        var tab = this.parentElement.parentElement.parentElement;
+        if (!tab.classList.contains("tab")) {
+          tab = this.parentElement.parentElement.parentElement.parentElement;
+        }
+        var tab_list = this.parentElement.parentElement.getElementsByTagName(
+          "a"
+        );
+        var tab_index;
+        var tab_content;
 
-    $(this)
-      .find(".tab-list li a")
-      .click(function () {
-        var tabIndex = $(this).attr("id").match(/\d+$/);
+        for (var k = 0; k < tab_list.length; k++) {
+          tab_index = tab_list[k].id.split("-")[1];
+          tab_content = tab_content = tab.querySelector(
+            "#content-" + tab_index
+          );
+          tab_content.style.display = "none";
+          tab_list[k].classList.remove("current");
+        }
 
-        oTab.find(".tab-list li a").removeClass("current");
-        $(this).addClass("current");
-
-        oTab.find(".tab-content li").hide();
-        oTab
-          .find(".tab-content")
-          .find("#content-" + tabIndex[0])
-          .show();
-
-        return false;
-      });
-  });
+        this.classList.add("current");
+        tab_index = this.id.split("-")[1];
+        tab_content = tab.querySelector("#content-" + tab_index);
+        tab_content.style.display = "block";
+      };
+    }
+  }
   /* Tab function end */
 
   /* Toast function start */
@@ -163,7 +180,6 @@ function sideNav() {
 
   for (var i = 0; i < menu.length; i++) {
     if (menu[i] === event.target) {
-      console.log("click");
       if (content[i].style.display == "block") {
         content[i].style.display = "none";
       } else {
