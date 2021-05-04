@@ -5,7 +5,7 @@
 * Description : This is the css of the Tab on the component.
 */
 
-.tab ul {
+.tab ul.tab-list {
   list-style: none;
   margin: 10px 0 30px 0;
   padding: 0;
@@ -18,6 +18,7 @@
   text-align: center;
   display: block;
   text-decoration: none;
+  cursor: pointer;
   padding: 15px 20px 15px 20px;
   color: black;
   overflow: hidden;
@@ -41,7 +42,7 @@
   border-radius: 10px;
   box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
-.tab ul.tab-content li {
+.tab ul.tab-content li.tab-content--list {
   display: none;
   min-height: 200px;
   overflow: hidden;
