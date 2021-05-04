@@ -995,29 +995,30 @@
     <title>test</title>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
+
   <body class="container neomo">
     <div class="tab">
       <ul class="tab-list">
-        <li><a href="#" class="current" id="tab-1">tab1</a></li>
-        <li><a href="#" id="tab-2">tab2</a></li>
-        <li><a href="#" id="tab-3">tab3</a></li>
+        <li><a class="current" id="tab-1">tab1</a></li>
+        <li><a id="tab-2">tab2</a></li>
+        <li><a id="tab-3">tab3</a></li>
       </ul>
       <div class="columns">
         <div class="column size-8">
           <ul class="tab-content outset-neomo">
-            <li id="content-1">
+            <li id="content-1" class="tab-content--list">
               <div class="tab-content--title">title1</div>
               <div class="tab-content--text">
                 You can insert any type of content with this tab class.
               </div>
             </li>
-            <li id="content-2">
+            <li id="content-2" class="tab-content--list">
               <div class="tab-content--title">title2</div>
               <div class="tab-content--text">
                 You can insert any type of content with this tab class.
               </div>
             </li>
-            <li id="content-3">
+            <li id="content-3" class="tab-content--list">
               <div class="tab-content--title">title3</div>
               <div class="tab-content--text">
                 You can insert any type of content with this tab class.
@@ -1028,11 +1029,9 @@
       </div>
     </div>
 
-    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="../src/neomo.js"></script>
   </body>
 </html>
-
 ```
 
 > Inset Tab usage
@@ -1044,40 +1043,39 @@
     <title>test</title>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
+
   <body class="container neomo">
     <div class="tab">
       <ul class="tab-list">
-        <li><a href="#" class="current" id="tab-1">tab1</a></li>
-        <li><a href="#" id="tab-2">tab2</a></li>
-        <li><a href="#" id="tab-3">tab3</a></li>
+        <li><a class="current" id="tab-4">tab4</a></li>
+        <li><a id="tab-5">tab5</a></li>
+        <li><a id="tab-6">tab6</a></li>
       </ul>
       <div class="columns">
         <div class="column size-8">
           <ul class="tab-content inset-neomo">
-            <li id="content-1">
-              <div class="tab-content--title">title1</div>
+            <li id="content-4" class="tab-content--list">
+              <div class="tab-content--title">title4</div>
               <div class="tab-content--text">
                 You can insert any type of content with this tab class.
               </div>
             </li>
-            <li id="content-2">
-              <div class="tab-content--title">title2</div>
+            <li id="content-5" class="tab-content--list">
+              <div class="tab-content--title">title5</div>
               <div class="tab-content--text">
                 You can insert any type of content with this tab class.
               </div>
             </li>
-            <li id="content-3">
-              <div class="tab-content--title">title3</div>
+            <li id="content-6" class="tab-content--list">
+              <div class="tab-content--title">title6</div>
               <div class="tab-content--text">
                 You can insert any type of content with this tab class.
-              </div>
             </li>
           </ul>
         </div>
       </div>
     </div>
 
-    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="../src/neomo.js"></script>
   </body>
 </html>
@@ -1092,32 +1090,33 @@
     <title>test</title>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
   </head>
+
   <body class="container neomo">
     <div class="tab vertical">
       <div class="columns">
         <div class="column size-2">
           <ul class="tab-list">
-            <li><a href="#" class="current" id="tab-1">tab1</a></li>
-            <li><a href="#" id="tab-2">tab2</a></li>
-            <li><a href="#" id="tab-3">tab3</a></li>
+            <li><a class="current" id="tab-7">tab7</a></li>
+            <li><a id="tab-8">tab8</a></li>
+            <li><a id="tab-9">tab9</a></li>
           </ul>
         </div>
         <div class="column size-4">
           <ul class="tab-content inset-neomo">
-            <li id="content-1">
-              <div class="tab-content--title">title1</div>
+            <li id="content-7" class="tab-content--list">
+              <div class="tab-content--title">title7</div>
               <div class="tab-content--text">
                 You can insert any type of content with this tab class.
               </div>
             </li>
-            <li id="content-2">
-              <div class="tab-content--title">title2</div>
+            <li id="content-8" class="tab-content--list">
+              <div class="tab-content--title">title8</div>
               <div class="tab-content--text">
                 You can insert any type of content with this tab class.
               </div>
             </li>
-            <li id="content-3">
-              <div class="tab-content--title">title3</div>
+            <li id="content-9" class="tab-content--list">
+              <div class="tab-content--title">title9</div>
               <div class="tab-content--text">
                 You can insert any type of content with this tab class.
               </div>
@@ -1127,7 +1126,6 @@
       </div>
     </div>
 
-    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="../src/neomo.js"></script>
   </body>
 </html>
