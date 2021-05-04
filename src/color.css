@@ -19,15 +19,11 @@
   color: white;
 }
 
-.inset {
-  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff !important;
-}
-
 .smoke {
   background-color: #f5f5f5;
 }
 
-.neomo-orange {
+.orange {
   color: #fa821b;
 }
 
@@ -45,6 +41,10 @@
 
 .warning {
   color: #ffc71d !important;
+}
+
+.inset {
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff !important;
 }
 
 .inset-neomo,
@@ -121,6 +121,52 @@ input:checked + .switch.outset-dark,
   color: var(--neomo-dark-text);
 }
 
+.inset-smoke,
+button.outset-smoke:hover,
+input.outset-smoke:focus,
+input.outset-smoke:disabled,
+input:checked + .switch.outset-smoke,
+.dropdown-content.outset-smoke a:hover,
+.smoke .dropdown-toggle:hover .dropdown-toggle--button,
+.smoke .dropdown-toggle--content a:hover,
+.smoke .dropdown-toggle--button:focus,
+.smoke .file .file-name,
+.smoke .file label:hover,
+.smoke .tab ul.tab-list li a:hover,
+.smoke .tab ul.tab-list li a.current,
+.smoke ul.pagination li a.active,
+.smoke ul.pagination li a:hover:not(.active),
+.smoke ul.pagination-round li a.active,
+.smoke ul.pagination-round li a:hover:not(.active) {
+  border: none;
+  background: #f5f5f5 !important;
+  box-shadow: inset -3px -3px 7px #e9e6e6b2, inset 3px 3px 5px #221b146c !important;
+  color: var(--neomo-dark-text);
+}
+
+.inset-orange,
+button.outset-orange:hover,
+input.outset-orange:focus,
+input.outset-orange:disabled,
+input:checked + .switch.outset-orange,
+.dropdown-content.outset-orange a:hover,
+.orange .dropdown-toggle:hover .dropdown-toggle--button,
+.orange .dropdown-toggle--content a:hover,
+.orange .dropdown-toggle--button:focus,
+.orange .file .file-name,
+.orange .file label:hover,
+.orange .tab ul.tab-list li a:hover,
+.orange .tab ul.tab-list li a.current,
+.orange ul.pagination li a.active,
+.orange ul.pagination li a:hover:not(.active),
+.orange ul.pagination-round li a.active,
+.orange ul.pagination-round li a:hover:not(.active) {
+  border: none;
+  background: #fa821b !important;
+  box-shadow: inset -3px -3px 7px #f7ba84, inset 3px 3px 5px #27140449 !important;
+  color: whitesmoke;
+}
+
 .outset-neomo,
 .switch.outset-neomo:before,
 .neomo .dropdown-content,
@@ -132,8 +178,6 @@ input:checked + .switch.outset-dark,
 .neomo .icon-circle,
 .neomo .icon-circle--sm,
 .neomo .icon-circle--lg,
-.neomo .icon,
-.neomo .icon,
 .neomo .icon,
 .navbar .search-bar {
   border: none;
@@ -153,8 +197,6 @@ input:checked + .switch.outset-dark,
 .gray .icon-circle,
 .gray .icon-circle--sm,
 .gray .icon-circle--lg,
-.gray .icon,
-.gray .icon,
 .gray .icon {
   border: none;
   background: var(--neomo-gray) !important;
@@ -173,8 +215,6 @@ input:checked + .switch.outset-dark,
 .dark .icon-circle,
 .dark .icon-circle--sm,
 .dark .icon-circle--lg,
-.dark .icon,
-.dark .icon,
 .dark .icon {
   border: none;
   background: var(--neomo-dark) !important;
@@ -182,37 +222,36 @@ input:checked + .switch.outset-dark,
   color: var(--neomo-dark-text);
 }
 
-.outset-smoke {
+.outset-smoke,
+.switch.outset-smoke:before,
+.smoke .dropdown-content,
+.smoke .dropdown-toggle--content,
+.smoke .tab ul.tab-list li a,
+.smoke ul.pagination li a,
+.smoke ul.pagination-round li a,
+.smoke .file label,
+.smoke .icon-circle,
+.smoke .icon-circle--sm,
+.smoke .icon-circle--lg,
+.smoke .icon {
   border: none;
   background: #f5f5f5 !important;
   box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288) !important;
   color: #464545;
 }
 
-.inset-smoke,
-button.outset-smoke:hover,
-input.outset-smoke:focus,
-input.outset-smoke:disabled,
-input:checked + .switch.outset-smoke,
-.dropdown-content.outset-smoke a:hover,
-.neomo .dropdown-toggle:hover .dropdown-toggle--button,
-.neomo .dropdown-toggle--content a:hover,
-.neomo .dropdown-toggle--button:focus,
-.neomo .file .file-name,
-.neomo .file label:hover,
-.neomo .tab ul.tab-list li a:hover,
-.neomo .tab ul.tab-list li a.current,
-.neomo ul.pagination li a.active,
-.neomo ul.pagination li a:hover:not(.active),
-.neomo ul.pagination-round li a.active,
-.neomo ul.pagination-round li a:hover:not(.active) {
-  border: none;
-  background: #f5f5f5 !important;
-  box-shadow: inset -3px -3px 7px #e9e6e6b2, inset 3px 3px 5px #221b146c !important;
-  color: var(--neomo-dark-text);
-}
-
-.outset-orange {
+.outset-orange,
+.switch.outset-orange:before,
+.orange .dropdown-content,
+.orange .dropdown-toggle--content,
+.orange .tab ul.tab-list li a,
+.orange ul.pagination li a,
+.orange ul.pagination-round li a,
+.orange .file label,
+.orange .icon-circle,
+.orange .icon-circle--sm,
+.orange .icon-circle--lg,
+.orange .icon {
   border: none;
   background: #fa821b !important;
   background: radial-gradient(
@@ -221,29 +260,6 @@ input:checked + .switch.outset-smoke,
     rgba(250, 130, 27, 1) 100%
   ) !important;
   box-shadow: -3px -3px 7px #ffffffe5, 3px 3px 5px #27140449 !important;
-  color: whitesmoke;
-}
-
-.inset-orange,
-button.outset-orange:hover,
-input.outset-orange:focus,
-input.outset-orange:disabled,
-input:checked + .switch.outset-orange,
-.dropdown-content.outset-orange a:hover,
-.neomo .dropdown-toggle:hover .dropdown-toggle--button,
-.neomo .dropdown-toggle--content a:hover,
-.neomo .dropdown-toggle--button:focus,
-.neomo .file .file-name,
-.neomo .file label:hover,
-.neomo .tab ul.tab-list li a:hover,
-.neomo .tab ul.tab-list li a.current,
-.neomo ul.pagination li a.active,
-.neomo ul.pagination li a:hover:not(.active),
-.neomo ul.pagination-round li a.active,
-.neomo ul.pagination-round li a:hover:not(.active) {
-  border: none;
-  background: #fa821b !important;
-  box-shadow: inset -3px -3px 7px #f7ba84, inset 3px 3px 5px #27140449 !important;
   color: whitesmoke;
 }
 
