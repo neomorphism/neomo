@@ -101,6 +101,10 @@
   border-color: transparent transparent var(--neomo-dark) transparent;
 }
 
+.tooltip .tooltip-content.bottom.outset-smoke::after {
+  border-color: transparent transparent var(--neomo-smoke) transparent;
+}
+
 .tooltip .tooltip-content.top.outset-neomo::after {
   border-color: var(--neomo) transparent transparent transparent;
 }
@@ -111,6 +115,10 @@
 
 .tooltip .tooltip-content.top.outset-dark::after {
   border-color: var(--neomo-dark) transparent transparent transparent;
+}
+
+.tooltip .tooltip-content.top.outset-smoke::after {
+  border-color: var(--neomo-smoke) transparent transparent transparent;
 }
 
 .tooltip .tooltip-content.left.outset-neomo::after {
@@ -125,6 +133,10 @@
   border-color: transparent transparent transparent var(--neomo-dark);
 }
 
+.tooltip .tooltip-content.left.outset-smoke::after {
+  border-color: transparent transparent transparent var(--neomo-smoke);
+}
+
 .tooltip .tooltip-content.right.outset-neomo::after {
   border-color: transparent var(--neomo) transparent transparent;
 }
@@ -135,4 +147,14 @@
 
 .tooltip .tooltip-content.right.outset-dark::after {
   border-color: transparent var(--neomo-dark) transparent transparent;
+}
+
+.tooltip .tooltip-content.right.outset-smoke::after {
+  border-color: transparent var(--neomo-smoke) transparent transparent;
+}
+
+:root {
+  --neomo-gray: #d3d3d3;
+  --neomo-dark: #464646;
+  --neomo-smoke: #f5f5f5;
 }
