@@ -119,7 +119,6 @@ document.addEventListener("DOMContentLoaded", function () {
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
-        console.log(openDropdown.childNodes[1]);
         if(!(event.target === button[i].childNodes[1]) ){
           openDropdown.style.display = "none";
         }
@@ -143,7 +142,13 @@ function DropdownToggle() {
       event.target === dropdown[i] ||
       event.target === dropdown[i].childNodes[1]
     ) {
-      dropdown[i].nextElementSibling.style.display = "block";
+      if(dropdown[i].nextElementSibling.style.display === "block"){
+        dropdown[i].nextElementSibling.style.display = "none";
+      }
+      else {
+        dropdown[i].nextElementSibling.style.display = "block";
+      }
+  
     }
   }
 }
