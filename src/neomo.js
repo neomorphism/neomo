@@ -78,13 +78,8 @@ document.addEventListener("DOMContentLoaded", function () {
   for (var i = 0; i < tab_list.length; i++) {
     for (var j = 0; j < tab_list[i].length; j++) {
       tab_list[i][j].onclick = function () {
-        var tab = this.parentElement.parentElement.parentElement;
-        if (!tab.classList.contains("tab")) {
-          tab = this.parentElement.parentElement.parentElement.parentElement;
-        }
-        var tab_list = this.parentElement.parentElement.getElementsByTagName(
-          "a"
-        );
+        var tab = this.closest(".tab")
+        var tab_list = this.closest(".tab-list").getElementsByTagName("a");
         var tab_index;
         var tab_content;
 
