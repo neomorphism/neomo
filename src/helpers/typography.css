@@ -30,27 +30,19 @@
 }
 
 .font-weight-1 {
-  font-weight: 900;
+  font-weight: 850;
 }
 
 .font-weight-2 {
-  font-weight: 750;
+  font-weight: 620;
 }
 
 .font-weight-3 {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .font-weight-4 {
-  font-weight: 450;
-}
-
-.font-weight-5 {
-  font-weight: 300;
-}
-
-.font-weight-6 {
-  font-weight: 150;
+  font-weight: lighter;
 }
 
 .font-style-normal {

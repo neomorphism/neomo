@@ -71,8 +71,6 @@
     <span class="font-size-1 font-weight-2">This is font-weight-2</span> </br>
     <span class="font-size-1 font-weight-3">This is font-weight-3</span> </br>
     <span class="font-size-1 font-weight-4">This is font-weight-4</span> </br>
-    <span class="font-size-1 font-weight-5">This is font-weight-5</span> </br>
-    <span class="font-size-1 font-weight-6">This is font-weight-6</span> </br>
     </br>
     <span class="font-size-1 font-style-normal">This is font-style-normal</span> </br>
     <span class="font-size-1 font-style-italic">This is font-style-italic</span> </br>
