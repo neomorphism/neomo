@@ -78,13 +78,8 @@ document.addEventListener("DOMContentLoaded", function () {
   for (var i = 0; i < tab_list.length; i++) {
     for (var j = 0; j < tab_list[i].length; j++) {
       tab_list[i][j].onclick = function () {
-        var tab = this.parentElement.parentElement.parentElement;
-        if (!tab.classList.contains("tab")) {
-          tab = this.parentElement.parentElement.parentElement.parentElement;
-        }
-        var tab_list = this.parentElement.parentElement.getElementsByTagName(
-          "a"
-        );
+        var tab = this.closest(".tab")
+        var tab_list = this.closest(".tab-list").getElementsByTagName("a");
         var tab_index;
         var tab_content;
 
@@ -118,10 +113,16 @@ document.addEventListener("DOMContentLoaded", function () {
       var dropdowns = document.getElementsByClassName(
         "dropdown-toggle--content"
       );
+      var button = document.getElementsByClassName(
+        "dropdown-toggle--button"
+      );
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
-        openDropdown.style.display = "none";
+        if(!(event.target === button[i].childNodes[1]) ){
+          openDropdown.style.display = "none";
+        }
+        
       }
     }
 
@@ -141,7 +142,13 @@ function DropdownToggle() {
       event.target === dropdown[i] ||
       event.target === dropdown[i].childNodes[1]
     ) {
-      dropdown[i].nextElementSibling.style.display = "block";
+      if(dropdown[i].nextElementSibling.style.display === "block"){
+        dropdown[i].nextElementSibling.style.display = "none";
+      }
+      else {
+        dropdown[i].nextElementSibling.style.display = "block";
+      }
+  
     }
   }
 }
