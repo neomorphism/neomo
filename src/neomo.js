@@ -113,10 +113,17 @@ document.addEventListener("DOMContentLoaded", function () {
       var dropdowns = document.getElementsByClassName(
         "dropdown-toggle--content"
       );
+      var button = document.getElementsByClassName(
+        "dropdown-toggle--button"
+      );
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
-        openDropdown.style.display = "none";
+        console.log(openDropdown.childNodes[1]);
+        if(!(event.target === button[i].childNodes[1]) ){
+          openDropdown.style.display = "none";
+        }
+        
       }
     }
 
