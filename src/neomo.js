@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
   }
 
-  if(modals){
+  if (modals) {
     for (var i = 0; i < modal_btns.length; i++) {
       funcs[i] = Modal(i);
     }
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
   /* Tab function start */
   var tab = document.getElementsByClassName("tab");
   var tab_list = [];
-  
+
   for (var i = 0; i < tab.length; i++) {
     tab_list[i] = tab[i]
       .getElementsByClassName("tab-list")[0]
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
   for (var i = 0; i < tab_list.length; i++) {
     for (var j = 0; j < tab_list[i].length; j++) {
       tab_list[i][j].onclick = function () {
-        var tab = this.closest(".tab")
+        var tab = this.closest(".tab");
         var tab_list = this.closest(".tab-list").getElementsByTagName("a");
         var tab_index;
         var tab_content;
@@ -113,16 +113,13 @@ document.addEventListener("DOMContentLoaded", function () {
       var dropdowns = document.getElementsByClassName(
         "dropdown-toggle--content"
       );
-      var button = document.getElementsByClassName(
-        "dropdown-toggle--button"
-      );
+      var button = document.getElementsByClassName("dropdown-toggle--button");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
-        if(!(event.target === button[i].childNodes[1]) ){
+        if (!(event.target === button[i].childNodes[1])) {
           openDropdown.style.display = "none";
         }
-        
       }
     }
 
@@ -142,13 +139,11 @@ function DropdownToggle() {
       event.target === dropdown[i] ||
       event.target === dropdown[i].childNodes[1]
     ) {
-      if(dropdown[i].nextElementSibling.style.display === "block"){
+      if (dropdown[i].nextElementSibling.style.display === "block") {
         dropdown[i].nextElementSibling.style.display = "none";
-      }
-      else {
+      } else {
         dropdown[i].nextElementSibling.style.display = "block";
       }
-  
     }
   }
 }
@@ -177,7 +172,7 @@ function NavbarToggle() {
 
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
-if (slider){
+if (slider) {
   output.innerHTML = slider.value;
 
   slider.oninput = function () {
@@ -220,4 +215,19 @@ function ContentToggle() {
     }
   }
 }
-/* Collapsible function end */
+
+/* Change Text Color animation start */
+function ChangeTxtColor(button) {
+  const colors = [
+    "var(--success)",
+    "var(--info)",
+    "var(--warning)",
+    "var(--danger)",
+  ];
+
+  var click_cnt = Number(button.dataset.current);
+  click_cnt = (click_cnt + 1) % colors.length;
+  button.dataset.current = click_cnt;
+  button.style.color = colors[click_cnt];
+}
+/* Change Text Color animation end */
