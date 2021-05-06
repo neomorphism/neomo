@@ -1,64 +1,55 @@
+/* Navbar Information */
+
 /*
 * Title : Navbar
 * Description : this is Navbar example
 */
 
 .navbar {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  width: 200px;
+  height: 100%;
+  overflow-x: hidden;
 }
-
-.navbar-content {
-  display: flex;
-  margin-left: 2rem;
-  justify-content: space-between;
-}
-
-.navbar-brand {
-  margin-right: 1rem;
-  font-size: 20px;
-  font-weight: bold;
+.navbar .toggle-button {
+  margin-top: 5px;
+  padding: 6px 8px 6px 16px;
   text-decoration: none;
-}
-.navbar-content a {
-  text-decoration: none;
-  align-self: flex-end;
-  color: #707070;
-  margin-right: 1rem;
-}
-
-.navbar-end {
-  display: flex;
-  align-self: flex-end;
-  margin-right: 2rem;
-}
-
-.search-bar {
-  display: flex;
-  border-radius: 10px;
-}
-
-.search-bar--text {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  padding: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #818181;
+  display: block;
   border: none;
-}
-
-.search-bar--button {
-  padding: 10px;
-  border: none;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  background: none;
+  width: 100%;
+  text-align: left;
   cursor: pointer;
+  outline: none;
 }
-
-.neomo .search-bar--text,
-.neomo .search-bar--button {
-  background-color: var(--neomo);
+.navbar .toggle-button:hover {
+  color: rgb(48, 84, 241);
 }
+.navbar .active {
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff !important;
+}
+.navbar .toggle-content {
+  display: none;
+  padding-left: 30px;
+  padding-top: 10px;
+  transition: all 1s;
+}
+.navbar .toggle-content a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: block;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  padding-bottom: 5px;
+  color: #818181;
+}
+.navbar .toggle-content a:hover {
+  color: rgb(48, 84, 241);
+}
+/* Navbar FINISH */

@@ -43,8 +43,9 @@
   color: #ffc71d !important;
 }
 
-.inset {
-  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff !important;
+.inset,
+.navbar .active {
+  box-shadow: inset 3px 3px 5px #c0c0c0, inset -3px -3px 5px #fff !important;
 }
 
 .inset-neomo,
@@ -64,11 +65,14 @@ input:checked + .switch.outset-neomo,
 .neomo ul.pagination li a.active,
 .neomo ul.pagination li a:hover:not(.active),
 .neomo ul.pagination-round li a.active,
-.neomo ul.pagination-round li a:hover:not(.active) {
+.neomo ul.pagination-round li a:hover:not(.active),
+.neomo .checkbox-input:checked:after,
+.neomo .radio-input:before,
+.neomo .navbar .active {
   border: none;
   background: var(--neomo) !important;
   box-shadow: inset -3px -3px 7px #ffffffe5,
-    inset 3px 3px 5px rgba(88, 100, 121, 0.288) !important;
+    inset 3px 3px 5px rgba(55, 114, 216, 0.288) !important;
   color: var(--neomo-blue-text);
 }
 
@@ -89,11 +93,14 @@ input:checked + .switch.outset-gray,
 .gray ul.pagination li a.active,
 .gray ul.pagination li a:hover:not(.active),
 .gray ul.pagination-round li a.active,
-.gray ul.pagination-round li a:hover:not(.active) {
+.gray ul.pagination-round li a:hover:not(.active),
+.gray .checkbox-input:checked:after,
+.gray .radio-input:before,
+.gray .navbar .active {
   border: none;
   background: var(--neomo-gray) !important;
   box-shadow: inset -3px -3px 7px #ffffff80,
-    inset 3px 3px 5px rgba(94, 104, 121, 0.288) !important;
+    inset 3px 3px 5px rgba(46, 46, 46, 0.288) !important;
   color: var(--neomo-gray-text);
 }
 
@@ -114,10 +121,13 @@ input:checked + .switch.outset-dark,
 .dark ul.pagination li a.active,
 .dark ul.pagination li a:hover:not(.active),
 .dark ul.pagination-round li a.active,
-.dark ul.pagination-round li a:hover:not(.active) {
+.dark ul.pagination-round li a:hover:not(.active),
+.dark .checkbox-input:checked:after,
+.dark .radio-input:before,
+.dark .navbar .active {
   border: none;
   background: var(--neomo-dark) !important;
-  box-shadow: inset 5px 5px 9px #3c3c3c, inset -5px -5px 9px #535353 !important;
+  box-shadow: inset 5px 5px 9px #303030, inset -5px -5px 9px #535353 !important;
   color: var(--neomo-dark-text);
 }
 
@@ -182,7 +192,7 @@ input:checked + .switch.outset-orange,
 .navbar .search-bar {
   border: none;
   background: var(--neomo) !important;
-  box-shadow: -3px -3px 7px #ffffffe5, 3px 3px 5px #58647949 !important;
+  box-shadow: -3px -3px 7px #ffffffe5, 3px 3px 5px #3a72d349 !important;
   color: var(--neomo-blue-text);
 }
 
@@ -218,7 +228,7 @@ input:checked + .switch.outset-orange,
 .dark .icon {
   border: none;
   background: var(--neomo-dark) !important;
-  box-shadow: 3px 3px 12px #303030, -3px -3px 12px #5a5a5a !important;
+  box-shadow: 3px 3px 7px #272727, -3px -3px 5px #5a5a5a !important;
   color: var(--neomo-dark-text);
 }
 
@@ -261,6 +271,24 @@ input:checked + .switch.outset-orange,
   ) !important;
   box-shadow: -3px -3px 7px #ffffffe5, 3px 3px 5px #27140449 !important;
   color: whitesmoke;
+}
+
+.button.inset:hover {
+  box-shadow: inset 3px 3px 5px #9c9da0, inset -3px -3px 5px #fff !important;
+}
+
+.button.inset-neomo:hover {
+  box-shadow: inset -3px -3px 7px #ffffffe5,
+    inset 3px 3px 7px rgba(8, 91, 235, 0.288) !important;
+}
+
+.button.inset-gray:hover {
+  box-shadow: inset -3px -3px 7px #ffffff80,
+    inset 5px 5px 7px rgba(22, 22, 22, 0.288) !important;
+}
+
+.button.inset-dark:hover {
+  box-shadow: inset 5px 5px 9px #242424, inset -5px -5px 9px #535353 !important;
 }
 
 :root {

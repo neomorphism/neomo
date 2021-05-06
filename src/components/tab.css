@@ -14,6 +14,12 @@
   float: left;
   margin: 10px 30px 0 0;
 }
+
+.tab ul.tab-right li {
+  float: left;
+  margin: 10px 0 0 30px;
+}
+
 .tab ul.tab-list li a {
   text-align: center;
   display: block;
@@ -41,6 +47,7 @@
   border: none;
   border-radius: 10px;
   box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
+  padding: 0 20px 0 20px;
 }
 .tab ul.tab-content li.tab-content--list {
   display: none;
@@ -63,4 +70,8 @@
 }
 .vertical ul.tab-list li a {
   margin: 0 30px 20px 0;
+}
+
+.tab-right {
+  float: right;
 }

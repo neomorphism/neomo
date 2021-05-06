@@ -43,7 +43,7 @@
   display: inline-block;
   position: absolute;
   border-radius: 20% !important;
-   box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff !important;
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff !important;
 }
 
 .checkbox-input:hover:before {
