@@ -204,22 +204,20 @@ function sideNav() {
 /* Navigation function end */
 
 /* Collapsible function start */
-function Collap() {
-  var collapsed = document.getElementById("collapsed");
-  var expanded = document.getElementById("expanded");
+function ContentToggle() {
+  var collapse = document.getElementsByClassName("collapse");
+  var expanded = document.getElementsByClassName("expanded");
+  var i;
 
-  if (expanded.style.display == "block") {
-    expanded.style.display = "none";
-    document
-      .getElementById("collap-icon")
-      .setAttribute("class", "fas fa-caret-down fa-2x");
-    collapsed.style.borderBottom = "none";
-  } else {
-    expanded.style.display = "block";
-    document
-      .getElementById("collap-icon")
-      .setAttribute("class", "fas fa-caret-up fa-2x");
-    collapsed.style.borderBottom = "1px solid var(--gray-400)";
+  console.log(expanded, event.target);
+  for (i = 0; i < collapse.length; i++) {
+    if (event.target === collapse[i]) {
+      if (expanded[i].style.display === "block") {
+        expanded[i].style.display = "none";
+      } else {
+        expanded[i].style.display = "block";
+      }
+    }
   }
 }
-/* Navigation function end */
+/* Collapsible function end */
