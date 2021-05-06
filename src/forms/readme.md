@@ -143,7 +143,7 @@
     <br />
     <div class="container neomo p-5">
       <br />
-      <div class="input-group neomo">
+      <div class="input-group outset-neomo">
         <span class="input-group-left text-center">@</span>
         <input
           type="text"
