@@ -59,6 +59,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
   /* Modal function end */
+  
+  /* Range start */
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("demo");
+  if (slider) {
+    output.innerHTML = slider.value;
+    console.log(output);
+    slider.oninput = function () {
+      output.innerHTML = this.value;
+    };
+  }
+  /* Range end */
 
   /* Tab function start */
   var tab = document.getElementsByClassName("tab");
@@ -167,19 +179,6 @@ function NavbarToggle() {
   }
 }
 /* Navbar function end */
-
-/* Range start */
-
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-if (slider) {
-  output.innerHTML = slider.value;
-
-  slider.oninput = function () {
-    output.innerHTML = this.value;
-  };
-}
-/* Range end */
 
 /* Navigation function start */
 function sideNav() {
