@@ -97,3 +97,19 @@
 {
  -webkit-box-shadow: 0 0 0 30px var(--neomo) inset !important;
 }
+
+.gray .floatinglabel-input:-webkit-autofill,
+.gray .floatinglabel-input:-webkit-autofill:hover, 
+.gray .floatinglabel-input:-webkit-autofill:focus, 
+.gray .floatinglabel-input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px var(--neomo-gray) inset !important;
+}
+
+.dark .floatinglabel-input:-webkit-autofill,
+.dark .floatinglabel-input:-webkit-autofill:hover, 
+.dark .floatinglabel-input:-webkit-autofill:focus, 
+.dark .floatinglabel-input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px var(--neomo-dark) inset !important;
+}
