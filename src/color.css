@@ -299,7 +299,6 @@ input:checked + .switch.outset-orange,
 .floatinglabel-field.inset-gray:focus-within {
   box-shadow: inset -3px -3px 7px #ffffff80,
     inset 5px 5px 7px rgba(22, 22, 22, 0.288) !important;
-    margin-top: 2px;
 }
 
 .button.inset-dark:hover,
