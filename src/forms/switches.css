@@ -59,3 +59,7 @@ input:checked + .switch:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
+
+.switch-label input {
+  display: none;
+}
