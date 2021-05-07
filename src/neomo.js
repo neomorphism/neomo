@@ -119,6 +119,41 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   /* Toast function end */
 
+  /* lebel function start */
+  var input = document.getElementsByClassName("floatinglabel-input");
+  var field = document.getElementsByClassName("floatinglabel-field");
+  var k;
+
+
+  for(k=0;k<input.length;k++){
+     (function(m){
+       if(!field[m].classList.contains("inset") && !field[m].classList.contains("inset-neomo") && !field[m].classList.contains("inset-gray")&& !field[m].classList.contains("inset-dark")){
+         console.log(input[m].classList);
+        input[m].addEventListener('click', function(event){
+          
+          // field[m].style["boxShadow"] = "inset -3px -3px 7px #ffffffe5, inset 3px 3px 5px rgba(88, 100, 121, 0.288) ";
+          if(field[m].classList.contains("outset-neomo")){
+            field[m].setAttribute('style','box-shadow : inset -3px -3px 7px #ffffffe5, inset 3px 3px 5px rgba(55, 114, 216, 0.288) !important');
+          }
+          else if(field[m].classList.contains("outset-gray")){
+            field[m].setAttribute('style',' box-shadow: inset -3px -3px 7px #ffffff80, inset 3px 3px 5px rgba(46, 46, 46, 0.288) !important');
+          }
+          else if(field[m].classList.contains("outset-dark")){
+            field[m].setAttribute('style','  box-shadow: inset 5px 5px 9px #303030, inset -5px -5px 9px #535353 !important');
+          }
+          else {
+            field[m].setAttribute('style','box-shadow: inset 3px 3px 5px #c0c0c0, inset -3px -3px 5px #fff !important');
+          }
+         
+         
+          }); 
+       }
+      
+     })(k);
+      
+  }
+  /* lebel function end */
+
   window.onclick = function (event) {
     /* Dropdown window */
     if (!event.target.matches(".dropdown-toggle--button")) {

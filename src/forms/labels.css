@@ -8,7 +8,12 @@
 .floatinglabel-field {
   display: flex;
   flex-flow: column-reverse;
+  width: 300px;
+  padding: 5px;
   margin-bottom: 1em;
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff  ;
+  border: none;
+  border-radius: 10px;
 }
 
 .floatinglabel-input,
@@ -20,17 +25,21 @@
 .floatinglabel-input {
   font-size: 1.5em;
   border: 0;
-  border-bottom: 1px solid #ccc;
   font-family: inherit;
   -webkit-appearance: none;
-  border-radius: 0;
+  border-radius: 10px;
   padding: 0;
   cursor: text;
+  outline: none;
+  text-indent: 5px; 
 }
 
 .floatinglabel-input:focus {
   outline: 0;
-  border-bottom: 1px solid #666;
+  border: none;
+  box-shadow: none !important;
+  
+
 }
 
 .floatinglabel-label {
@@ -46,21 +55,45 @@
   text-overflow: ellipsis;
   transform-origin: left bottom;
   transform: translate(0, 25.5px) scale(1.5);
+  
 }
 
 .floatinglabel-input::-webkit-input-placeholder {
   opacity: 0;
   transition: inherit;
+  
 }
 /**
     * Show the placeholder when the input is focused.
     */
 .floatinglabel-input:focus::-webkit-input-placeholder {
   opacity: 1;
+  
+
+  
 }
 
 .floatinglabel-input:not(:placeholder-shown) + label,
 .floatinglabel-input:focus + label {
   transform: translate(0, 0) scale(1);
   cursor: pointer;
+  /* color: blue; */
+  
+}
+
+.floatinglabel-input:-webkit-autofill,
+.floatinglabel-input:-webkit-autofill:hover, 
+.floatinglabel-input:-webkit-autofill:focus, 
+.floatinglabel-input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+
+.neomo .floatinglabel-input:-webkit-autofill,
+.neomo .floatinglabel-input:-webkit-autofill:hover, 
+.neomo .floatinglabel-input:-webkit-autofill:focus, 
+.neomo .floatinglabel-input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px var(--neomo) inset !important;
 }

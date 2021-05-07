@@ -283,21 +283,27 @@ input:checked + .switch.outset-orange,
   color: whitesmoke;
 }
 
-.button.inset:hover {
+.button.inset:hover,
+.floatinglabel-field.inset:focus-within  {
   box-shadow: inset 3px 3px 5px #9c9da0, inset -3px -3px 5px #fff !important;
+ 
 }
 
-.button.inset-neomo:hover {
+.button.inset-neomo:hover,
+.floatinglabel-field.inset-neomo:focus-within  {
   box-shadow: inset -3px -3px 7px #ffffffe5,
     inset 3px 3px 7px rgba(8, 91, 235, 0.288) !important;
 }
 
-.button.inset-gray:hover {
+.button.inset-gray:hover,
+.floatinglabel-field.inset-gray:focus-within {
   box-shadow: inset -3px -3px 7px #ffffff80,
     inset 5px 5px 7px rgba(22, 22, 22, 0.288) !important;
+    margin-top: 2px;
 }
 
-.button.inset-dark:hover {
+.button.inset-dark:hover,
+.floatinglabel-field.inset-dark:focus-within {
   box-shadow: inset 5px 5px 9px #242424, inset -5px -5px 9px #535353 !important;
 }
 

@@ -249,19 +249,34 @@
   <head>
     <link rel="stylesheet" type="text/css" href="..src/neomo.css" />
   </head>
-  <body>
+  <body class="neomo">
     <form action="">
-      <div class="floatinglabel-field">
-        <input
-          type="text"
-          name="fullname"
-          id="fullname"
-          placeholder="Your Name"
-          class="floatinglabel-input"
-        />
-        <label for="fullname" class="floatinglabel-label">Name</label>
-      </div>
-    </form>
+            <div class="floatinglabel-field outset-neomo">
+                <input
+                  type="text"
+                  name="fullname0"
+                  id="fullname0"
+                  placeholder="Your password"
+                  class="floatinglabel-input neomo"
+                 
+                />
+                <label for="fullname0" class="floatinglabel-label">Name</label>
+              </div>
+          </form>
+        
+          <form action="">
+            <div class="floatinglabel-field inset-neomo">
+                <input
+                  type="text"
+                  name="fullname7"
+                  id="fullname7"
+                  placeholder="Your password"
+                  class="floatinglabel-input neomo"
+                 
+                />
+                <label for="fullname7" class="floatinglabel-label">Name</label>
+            </div>
+          </form>
   </body>
 </html>
 ```
