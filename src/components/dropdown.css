@@ -60,11 +60,11 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.dropdown .fa-caret-down {
+.dropdown i {
   float: right;
   padding-right: 8px;
 }
-.dropdown .fa-caret-up {
+.dropdown i {
   float: right;
   padding-right: 8px;
 }
