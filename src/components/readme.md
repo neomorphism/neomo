@@ -557,7 +557,7 @@
 ```
 
 > Dropdown Toggle usage
-> 
+
 ```html
 <!DOCTYPE html>
 <html charset="utf-8">
@@ -600,7 +600,10 @@
   <head>
     <title>test</title>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body class="container p-2 neomo">
     <ul class="pagination">
@@ -624,7 +627,10 @@
   <head>
     <title>test</title>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body class="container neomo">
     <ul class="pagination">
@@ -648,18 +654,25 @@
   <head>
     <title>test</title>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body class="container neomo">
     <ul class="pagination">
-      <li><a href="#"><span class="fas fa-angle-double-left"></span></a></li>
+      <li>
+        <a href="#"><span class="fas fa-angle-double-left"></span></a>
+      </li>
       <li><a href="#">1</a></li>
       <li><a href="#" class="active">2</a></li>
       <li><a href="#">3</a></li>
       <li><a href="#">4</a></li>
       <li><a href="#">5</a></li>
       <li><a href="#">6</a></li>
-      <li><a href="#"><span class="fas fa-angle-double-right"></span></a></li>
+      <li>
+        <a href="#"><span class="fas fa-angle-double-right"></span></a>
+      </li>
     </ul>
   </body>
 </html>
@@ -672,18 +685,25 @@
   <head>
     <title>test</title>
     <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body class="container neomo">
     <ul class="pagination-round">
-      <li><a href="#"><span class="fas fa-angle-double-left"></span></a></li>
+      <li>
+        <a href="#"><span class="fas fa-angle-double-left"></span></a>
+      </li>
       <li><a href="#">1</a></li>
       <li><a href="#" class="active">2</a></li>
       <li><a href="#">3</a></li>
       <li><a href="#">4</a></li>
-      <li><a href="#">5</a></li> 
+      <li><a href="#">5</a></li>
       <li><a href="#">6</a></li>
-      <li><a href="#"><span class="fas fa-angle-double-right"></span></a></li>
+      <li>
+        <a href="#"><span class="fas fa-angle-double-right"></span></a>
+      </li>
     </ul>
   </body>
 </html>
@@ -1224,52 +1244,42 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container neomo">
       <h1>Tooltip Example</h1>
       <br />
       <br />
       <br />
-      <div class="tooltip">
-        <span>Hover here!</span>
-        <div class="tooltip-content top">
-          <p>tooltip default!</p>
-        </div>
+      <div class="tooltip neomo">
+        Hover here!
+        <span class="tooltip-content top outset-neomo"> tooltip! </span>
       </div>
       <br />
       <br />
       <br />
       <div class="tooltip neomo">
-        <span>Hover here!</span>
-        <div class="tooltip-content bottom outset-neomo">
-          <p>bottom neomo color tooltip!</p>
-        </div>
+        Hover here!
+        <span class="tooltip-content outset-neomo right"> tooltip! </span>
       </div>
       <br />
       <br />
       <br />
-      <div class="tooltip gray">
-        <span>Hover here!</span>
-        <div class="tooltip-content top outset-gray">
-          <p>top gray color tooltip!</p>
-        </div>
+      <div class="tooltip neomo">
+        Hover here!
+        <span class="tooltip-content top outset-neomo"> tooltip! </span>
       </div>
       <br />
       <br />
       <br />
-      <div class="tooltip dark">
-        <span>Hover here!</span>
-        <div class="tooltip-content left outset-dark">
-          <p>left dark color tooltip!</p>
-        </div>
+      <div class="tooltip neomo">
+        Hover here!
+        <span class="tooltip-content left outset-neomo"> tooltip! </span>
       </div>
       <br />
       <br />
       <br />
-      <div class="tooltip dark">
-        <span>Hover here!</span>
-        <div class="tooltip-content right outset-dark">
-          <p>right dark color tooltip!</p>
-        </div>
+      <div class="tooltip neomo">
+        Hover here!
+        <span class="tooltip-content right outset-neomo"> tooltip! </span>
       </div>
     </div>
   </body>
