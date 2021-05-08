@@ -120,11 +120,11 @@
 .dropdown-show {
   display: block;
 }
-.dropdown-toggle .fa-caret-down {
+.dropdown-toggle i {
   float: right;
   padding-right: 8px;
 }
-.dropdown-toggle .fa-caret-up {
+.dropdown-toggle i {
   float: right;
   padding-right: 8px;
 }
