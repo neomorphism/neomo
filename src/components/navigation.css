@@ -36,8 +36,7 @@
 }
 
 .nav-link:hover {
-  box-shadow: inset -3px -3px 7px #ffffffe5,
-    inset 3px 3px 5px rgba(88, 100, 121, 0.288) !important;
+  box-shadow: inset 3px 3px 5px #c0c0c0, inset -3px -3px 5px #fff !important;
 }
 
 /*
@@ -55,6 +54,5 @@
 }
 
 .nav-link--animation:hover {
-  box-shadow: inset -3px -3px 7px #ffffffe5,
-    inset 3px 3px 5px rgba(88, 100, 121, 0.288) !important;
+  box-shadow: inset 3px 3px 5px #c0c0c0, inset -3px -3px 5px #fff !important;
 }

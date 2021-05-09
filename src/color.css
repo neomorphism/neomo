@@ -70,7 +70,9 @@ input:checked + .switch.outset-neomo,
 .neomo ul.pagination-round li a:hover:not(.active),
 .neomo .checkbox-input:checked:after,
 .neomo .radio-input:before,
-.neomo .navbar .active {
+.neomo .navbar .active,
+.neomo .nav-link:hover,
+.neomo .nav-link--animation:hover  {
   border: none;
   background: var(--neomo) !important;
   box-shadow: inset -3px -3px 7px #ffffffe5,
@@ -100,7 +102,9 @@ input:checked + .switch.outset-gray,
 .gray ul.pagination-round li a:hover:not(.active),
 .gray .checkbox-input:checked:after,
 .gray .radio-input:before,
-.gray .navbar .active {
+.gray .navbar .active,
+.gray .nav-link:hover,
+.gray .nav-link--animation:hover {
   border: none;
   background: var(--neomo-gray) !important;
   box-shadow: inset -3px -3px 7px #ffffff80,
@@ -130,7 +134,9 @@ input:checked + .switch.outset-dark,
 .dark ul.pagination-round li a:hover:not(.active),
 .dark .checkbox-input:checked:after,
 .dark .radio-input:before,
-.dark .navbar .active {
+.dark .navbar .active,
+.dark .nav-link:hover,
+.dark .nav-link--animation:hover  {
   border: none;
   background: var(--neomo-dark) !important;
   box-shadow: inset 5px 5px 9px #303030, inset -5px -5px 9px #535353 !important;
@@ -155,7 +161,9 @@ input:checked + .switch.outset-smoke,
 .smoke ul.pagination li a.active,
 .smoke ul.pagination li a:hover:not(.active),
 .smoke ul.pagination-round li a.active,
-.smoke ul.pagination-round li a:hover:not(.active) {
+.smoke ul.pagination-round li a:hover:not(.active),
+.smoke .nav-link:hover,
+.smoke .nav-link--animation:hover  {
   border: none;
   background: #f5f5f5 !important;
   box-shadow: inset -3px -3px 7px #e9e6e6b2, inset 3px 3px 5px #221b146c !important;
@@ -180,7 +188,9 @@ input:checked + .switch.outset-orange,
 .orange ul.pagination li a.active,
 .orange ul.pagination li a:hover:not(.active),
 .orange ul.pagination-round li a.active,
-.orange ul.pagination-round li a:hover:not(.active) {
+.orange ul.pagination-round li a:hover:not(.active),
+.orange .nav-link:hover,
+.orange .nav-link--animation:hover  {
   border: none;
   background: #fa821b !important;
   box-shadow: inset -3px -3px 7px #f7ba84, inset 3px 3px 5px #27140449 !important;
