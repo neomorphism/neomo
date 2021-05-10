@@ -233,8 +233,8 @@
   </head>
   <body>
     <div>example</div>
-    <input type="range" min="1" max="100" class="range-round" id="myRange" />
-    <p>Value: <span id="demo"></span></p>
+    <input type="range" min="1" max="100" class="range-round myRange"   />
+    <p>Value: <span class="demo"></span></p>
   </body>
 </html>
 ```

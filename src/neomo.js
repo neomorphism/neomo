@@ -61,15 +61,19 @@ document.addEventListener("DOMContentLoaded", function () {
   /* Modal function end */
   
   /* Range start */
-  var slider = document.getElementById("myRange");
-  var output = document.getElementById("demo");
-  if (slider) {
-    output.innerHTML = slider.value;
-    console.log(output);
-    slider.oninput = function () {
-      output.innerHTML = this.value;
-    };
-  }
+  var slider = document.getElementsByClassName("myRange");
+  var output = document.getElementsByClassName("demo");
+  for(var i=0; i < slider.length; i++ ) {
+    console.log("1");
+    (function(m) {
+      output[m].innerHTML = slider[m].value;
+      slider[m].addEventListener("input", function(){
+        output[m].innerHTML =slider[m].value;
+      });
+    })(i);
+}
+  
+ 
   /* Range end */
 
   /* Tab function start */
@@ -119,12 +123,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   /* Toast function end */
 
-  /* lebel function start */
+  /* label function start */
   var input = document.getElementsByClassName("floatinglabel-input");
   var field = document.getElementsByClassName("floatinglabel-field");
   var k;
-
-
   for(k=0;k<input.length;k++){
      (function(m){
        if(!field[m].classList.contains("inset") && !field[m].classList.contains("inset-neomo") && !field[m].classList.contains("inset-gray")&& !field[m].classList.contains("inset-dark")){
@@ -152,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
      })(k);
       
   }
-  /* lebel function end */
+  /* label function end */
 
   window.onclick = function (event) {
     /* Dropdown window */
