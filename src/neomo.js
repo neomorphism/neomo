@@ -240,17 +240,21 @@ function ContentToggle() {
   var expanded = document.getElementsByClassName("expanded");
   var i;
 
-  console.log(expanded, event.target);
   for (i = 0; i < collapse.length; i++) {
     if (event.target === collapse[i]) {
-      if (expanded[i].style.display === "block") {
-        expanded[i].style.display = "none";
+      if (expanded[i].style.visibility === "visible") {
+        expanded[i].style.visibility = "hidden";
+        expanded[i].style.maxHeight = "0";
+        expanded[i].style.opacity = "0";
       } else {
-        expanded[i].style.display = "block";
+        expanded[i].style.visibility = "visible";
+        expanded[i].style.maxHeight = "100vh";
+        expanded[i].style.opacity = "1";
       }
     }
   }
 }
+/* collapsible function end */
 
 /* Change Text Color animation start */
 function ChangeTxtColor(button) {
