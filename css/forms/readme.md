@@ -9,7 +9,7 @@
 <html charset="utf-8">
   <head>
     <title></title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
     <input
@@ -32,7 +32,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="container neomo">
     <div class="file">
@@ -41,7 +41,7 @@
       <input type="file" id="file-label" class="file-hidden" />
     </div>
 
-    <script type="text/javascript" src="../src/neomo.js"></script>
+    <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>
 ```
@@ -55,7 +55,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
     <script
       src="https://kit.fontawesome.com/6ad71d6444.js"
       crossorigin="anonymous"
@@ -128,7 +128,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
 
   <body>
@@ -192,7 +192,7 @@
   <head>
     <meta charset="utf-8" />
     <title></title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
     <div>
@@ -229,7 +229,7 @@
   <head>
     <meta charset="utf-8" />
     <title></title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body>
     <div>example</div>
@@ -291,7 +291,7 @@
   <head>
     <meta charset="utf-8" />
     <title></title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body>
     <div class="container column size-2 p-2">
