@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html charset="utf-8">
   <head>
-    <link rel="stylesheet" type="text/css" href="~/css/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
     <div class="alert outset-neomo" role="alert">This is alert!</div>
@@ -443,42 +443,47 @@
     <link rel="stylesheet" type="text/css" href="src/neomo.css" />
   </head>
   <body>
-    <div class="card outset-neomo" style="width:18rem;">
+    <div class="card" style="width: 18rem;">
+      <header class="card-header">
+        <p class="card-header-title">Component</p>
+      </header>
       <div class="card-image">
         <img
-          src="https://unsplash.com/photos/ukKUN2fSND0"
+          src="https://bulma.io/images/placeholders/1280x960.png"
           alt="Placeholder image"
         />
       </div>
       <div class="card-content">
-        <p class="font-size-4 profile-link text-left m-0">
-          <img 
-            class="img-profile p-0" 
-            srcset="https://images.unsplash.com/profile-1609856653329-a9e174ff28b6image?dpr=1&amp;
-            auto=format&amp;fit=crop&amp;w=32&amp;h=32&amp;q=60&amp;crop=faces&amp;
-            bg=fff 1x, https://images.unsplash.com/profile-1609856653329-a9e174ff28b6image?dpr=2&amp;auto=format&amp;fit=crop&amp;w=32&amp;h=32&amp;q=60&amp;crop=faces&amp;bg=fff 2x" src="https://images.unsplash.com/profile-1609856653329-a9e174ff28b6image?auto=format&amp;fit=crop&amp;w=32&amp;h=32&amp;q=60&amp;crop=faces&amp;bg=fff" 
-            width="32" 
-            height="32" 
-            role="presentation" 
-            alt="Go to Julian Steenbergen's profile"
+        <div>
+          <div>
+            <img
+              src="https://bulma.io/images/placeholders/96x96.png"
+              alt="Placeholder image"
+            />
+          </div>
+          <div>
+            <p>WOJCIECH SZCZĘSNY</p>
+            <p>@SZCZĘSNY</p>
+          </div>
+        </div>
+
+        <div>
+          Blessed with outstanding agility and athleticism, Wojciech Szczesny’s
+          charisma and class also makes him one of the game’s great
+          personalities. <a>@seasons</a>. <a href="#">#css</a>
+          <a href="#">#responsive</a>
+          <br />
+          <time datetime="1990-4-18"
+            >saw him concede just nine goals in 21 appearances across all
+            competitions, 2017/18</time
           >
-          
-          Julian Steenbergen
-        </p>
-        <p class="text-left">
-          I'm actually a musician, but photography is just too fun. 
-          It brings me joy, inspiration and peace. 
-          Happy to support the community here with my work! ✨
-        </p>
-        <p class="text-left"> 
-          <i class="fas fa-calendar-week"></i> 
-          Published on May 9, 2021
-        </p>
-        <p class="text-left">
-          <i class="fas fa-shield-alt"></i>
-          Free to use under the Unsplash License
-        </p>
+        </div>
       </div>
+      <footer class="card-footer">
+        <a href="#" class="card-footer-item">Save</a>
+        <a href="#" class="card-footer-item">Edit</a>
+        <a href="#" class="card-footer-item">Delete</a>
+      </footer>
     </div>
   </body>
 </html>
@@ -778,40 +783,42 @@
     <div class="modal">
       <div class="modal-content--sm outset-neomo">
         <span class="modal-close">&times;</span>
+        <header class="card-header">
+          <p class="card-header-title">Component</p>
+        </header>
         <div class="card-image">
           <img
-            src="./card_img_1111.jpg"
+            src="https://bulma.io/images/placeholders/1280x960.png"
             alt="Placeholder image"
           />
         </div>
-        <div class="card-content pt-1 pl-1 pr-1">
-          
-          <p class="font-size-4 profile-link text-left m-0">
-            <img 
-              class="img-profile p-0" 
-              srcset="https://images.unsplash.com/profile-1585224130087-8fc37d1fba1eimage?dpr=1&amp;
-              auto=format&amp;fit=crop&amp;w=32&amp;h=32&amp;q=60&amp;crop=faces&amp;
-              bg=fff 1x, https://images.unsplash.com/profile-1585224130087-8fc37d1fba1eimage?dpr=2&amp;
-              auto=format&amp;fit=crop&amp;w=32&amp;h=32&amp;q=60&amp;crop=faces&amp;bg=fff 2x" 
-              src="https://images.unsplash.com/profile-1585224130087-8fc37d1fba1eimage?auto=format&amp;
-              fit=crop&amp;w=32&amp;h=32&amp;q=60&amp;crop=faces&amp;bg=fff" 
-              width="32" height="32" role="presentation" alt="Go to Gabrielle Henderson's profile"
-            >
-            Gabrielle Henderson
-          </p>
-          <p class="text-left">
-            Melbourne based photographer, wordsmith, crafter...xoxo
-            Owner of d'oro global. doroglobal.com
-          </p>
-          <p class="text-left"> 
-            <i class="fas fa-calendar-week"></i> 
-            Published on May 9, 2021
-          </p>
-          <p class="text-left">
-            <i class="fas fa-shield-alt"></i>
-            Free to use under the Unsplash License
-          </p>
+        <div class="card-content">
+          <div>
+            <div class="media-left">
+              <img
+                src="https://bulma.io/images/placeholders/96x96.png"
+                alt="Placeholder image"
+              />
+            </div>
+            <div>
+              <p>John Smith</p>
+              <p>@johnsmith</p>
+            </div>
+          </div>
+
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            nec iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
+            <a href="#">#responsive</a>
+            <br />
+            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+          </div>
         </div>
+        <footer class="card-footer">
+          <a href="#" class="card-footer-item">Save</a>
+          <a href="#" class="card-footer-item">Edit</a>
+          <a href="#" class="card-footer-item">Delete</a>
+        </footer>
       </div>
     </div>
 
@@ -838,47 +845,46 @@
     <div class="modal">
       <div class="modal-content--md inset-neomo">
         <span class="modal-close">&times;</span>
+        <header class="card-header">
+          <p class="card-header-title">Component</p>
+        </header>
         <div class="card-image">
           <img
-            src="./card_img_1111.jpg"
+            src="https://bulma.io/images/placeholders/1280x960.png"
             alt="Placeholder image"
           />
         </div>
-        <div class="card-content pt-1 pl-1 pr-1">
-          <p class="font-size-4 profile-link text-left m-0">
-            <img 
-              class="img-profile p-0" 
-              srcset="https://images.unsplash.com/profile-1585224130087-8fc37d1fba1eimage?dpr=1&amp;
-              auto=format&amp;fit=crop&amp;w=32&amp;h=32&amp;q=60&amp;crop=faces&amp;
-              bg=fff 1x, https://images.unsplash.com/profile-1585224130087-8fc37d1fba1eimage?dpr=2&amp;
-              auto=format&amp;fit=crop&amp;w=32&amp;h=32&amp;q=60&amp;crop=faces&amp;bg=fff 2x" 
-              src="https://images.unsplash.com/profile-1585224130087-8fc37d1fba1eimage?auto=format&amp;
-              fit=crop&amp;w=32&amp;h=32&amp;q=60&amp;crop=faces&amp;bg=fff" 
-              width="32" height="32" role="presentation" alt="Go to Gabrielle Henderson's profile"
-            >
-            Gabrielle Henderson
-          </p>
-          <p class="text-left">
-            Melbourne based photographer, wordsmith, crafter...xoxo
-            Owner of d'oro global. doroglobal.com
-          </p>
-          <p class="text-left"> 
-            <i class="fas fa-calendar-week"></i> 
-            Published on May 9, 2021
-          </p>
-          <p class="text-left">
-            <i class="fas fa-shield-alt"></i>
-            Free to use under the Unsplash License
-          </p>
+        <div class="card-content">
+          <div>
+            <div class="media-left">
+              <img
+                src="https://bulma.io/images/placeholders/96x96.png"
+                alt="Placeholder image"
+              />
+            </div>
+            <div>
+              <p>John Smith</p>
+              <p>@johnsmith</p>
+            </div>
+          </div>
+
+          <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            nec iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
+            <a href="#">#responsive</a>
+            <br />
+            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+          </div>
         </div>
+        <footer class="card-footer">
+          <a href="#" class="card-footer-item">Save</a>
+          <a href="#" class="card-footer-item">Edit</a>
+          <a href="#" class="card-footer-item">Delete</a>
+        </footer>
       </div>
     </div>
-<<<<<<< HEAD:src/components/readme.md
-    <script type="text/javascript" src="../src/neomo.js"></script>
-=======
 
     <script type="text/javascript" src="/js/neomo.js"></script>
->>>>>>> main:css/components/readme.md
   </body>
 </html>
 ```
