@@ -2,6 +2,10 @@
 
 ## Explanatory notes
 
+### Code formatting
+
+When writing code, we use prettier for readability and collaboration efficiency.
+
 ### File naming and Class naming
 
 The file name must be lowercase and must be hyphenated to distinguish between word spacing.<br/>

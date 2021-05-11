@@ -233,7 +233,7 @@
   </head>
   <body>
     <div>example</div>
-    <input type="range" min="1" max="100" class="range-round myRange"   />
+    <input type="range" min="1" max="100" class="range-round myRange" />
     <p>Value: <span class="demo"></span></p>
   </body>
 </html>
@@ -251,32 +251,30 @@
   </head>
   <body class="neomo">
     <form action="">
-            <div class="floatinglabel-field outset-neomo">
-                <input
-                  type="text"
-                  name="fullname0"
-                  id="fullname0"
-                  placeholder="Your password"
-                  class="floatinglabel-input neomo"
-                 
-                />
-                <label for="fullname0" class="floatinglabel-label">Name</label>
-              </div>
-          </form>
-        
-          <form action="">
-            <div class="floatinglabel-field inset-neomo">
-                <input
-                  type="text"
-                  name="fullname7"
-                  id="fullname7"
-                  placeholder="Your password"
-                  class="floatinglabel-input neomo"
-                 
-                />
-                <label for="fullname7" class="floatinglabel-label">Name</label>
-            </div>
-          </form>
+      <div class="floatinglabel-field outset-neomo">
+        <input
+          type="text"
+          name="fullname0"
+          id="fullname0"
+          placeholder="Your password"
+          class="floatinglabel-input neomo"
+        />
+        <label for="fullname0" class="floatinglabel-label">Name</label>
+      </div>
+    </form>
+
+    <form action="">
+      <div class="floatinglabel-field inset-neomo">
+        <input
+          type="text"
+          name="fullname7"
+          id="fullname7"
+          placeholder="Your password"
+          class="floatinglabel-input neomo"
+        />
+        <label for="fullname7" class="floatinglabel-label">Name</label>
+      </div>
+    </form>
   </body>
 </html>
 ```

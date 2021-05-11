@@ -12,8 +12,6 @@
   box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
 
-
-
 .card-header {
   align-items: stretch;
   display: flex;
@@ -32,7 +30,7 @@
 }
 
 .card-footer {
-  border-top: thin solid rgba(0,0,0,0.09);
+  border-top: thin solid rgba(0, 0, 0, 0.09);
   align-items: stretch;
   display: flex;
 }
@@ -47,13 +45,11 @@
   padding: 0.75rem;
 }
 
-
 .card-image:first-child img {
   border-radius: 10px 10px 0px 0px;
 }
 
 .card-image > img {
-  height: auto; 
+  height: auto;
   max-width: 100%;
 }
-

@@ -5,82 +5,80 @@
 * Description : this is Progressbar
 */
 
+.progress {
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
+  margin-bottom: 1rem;
+}
 
-.progress{
-    display:flex;
-    height:1rem;
-    overflow:hidden;
-    border-radius: 10px;
-    box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
-    margin-bottom:1rem;
-  }
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  white-space: nowrap;
+  transition: width 0.6s ease;
+}
 
-  .progress-bar{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    white-space:nowrap;
-    transition:width .6s ease;
-  }
+.progress-bar.success {
+  background-color: var(--success);
+}
 
+.progress-bar.info {
+  background-color: var(--info);
+}
 
-  .progress-bar.success{
-    background-color:var(--success);
-  }
+.progress-bar.danger {
+  background-color: var(--danger);
+}
 
-  .progress-bar.info{
-    background-color:var(--info);
-  }
+.progress-bar.dark {
+  background-color: var(--dark);
+}
 
-  .progress-bar.danger{
-    background-color:var(--danger);
-  }
+.progress-bar.gray {
+  background-color: var(--gray);
+}
 
-  .progress-bar.dark{
-    background-color:var(--dark);
-  }
+.progress-bar.width-1 {
+  width: 10% !important;
+}
 
-  .progress-bar.gray{
-    background-color:var(--gray);
-  }
+.progress-bar.width-2 {
+  width: 20% !important;
+}
 
-  .progress-bar.width-1{
-    width: 10% !important;;
-  }
+.progress-bar.width-3 {
+  width: 30% !important;
+}
 
-  .progress-bar.width-2{
-    width: 20% !important;;
-  }
+.progress-bar.width-4 {
+  width: 40% !important;
+}
 
-  .progress-bar.width-3{
-    width: 30% !important;;
-  }
+.progress-bar.width-5 {
+  width: 50% !important;
+}
 
-  .progress-bar.width-4{
-    width: 40% !important;;
-  }
+.progress-bar.width-6 {
+  width: 60% !important;
+}
 
-  .progress-bar.width-5{
-    width: 50% !important;;
-  }
+.progress-bar.width-7 {
+  width: 70% !important;
+}
 
-  .progress-bar.width-6{
-    width: 60% !important;;
-  }
+.progress-bar.width-8 {
+  width: 80% !important;
+}
 
-  .progress-bar.width-7{
-    width: 70% !important;;
-  }
+.progress-bar.width-9 {
+  width: 90% !important;
+}
 
-  .progress-bar.width-8{
-    width: 80% !important;;
-  }
-
-  .progress-bar.width-9{
-    width: 90% !important;;
-  }
-
-  .progress-bar.width-10{
-    width: 100% !important;;
-  }
-  /* Progressbar component FINISH */
+.progress-bar.width-10 {
+  width: 100% !important;
+}
+/* Progressbar component FINISH */
