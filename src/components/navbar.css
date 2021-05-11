@@ -8,7 +8,6 @@
 .navbar {
   width: 200px;
   height: 100%;
-  overflow-x: hidden;
 }
 .navbar .toggle-button {
   margin-top: 5px;
@@ -32,12 +31,19 @@
   border: none;
   border-radius: 10px;
   box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff !important;
+  transition: all 0.3s linear;
 }
 .navbar .toggle-content {
-  display: none;
+  visibility: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: cubic-bezier(0.25, 0.8, 0.5, 1);
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.5, 1);
+  transition-delay: 0s;
   padding-left: 30px;
   padding-top: 10px;
-  transition: all 1s;
 }
 .navbar .toggle-content a {
   text-decoration: none;
