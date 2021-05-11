@@ -23,11 +23,11 @@
 ### NPM/YARN Package
 
 ```
-npm install @neomorphism/neomo-ui
+npm install neomo
 
 or
 
-yarn add @neomorphism/neomo-ui
+yarn add neomo
 ```
 
 ## Examples
