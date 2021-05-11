@@ -1,3 +1,4 @@
+/* eslint-disable */
 /* Alert function start */
 document.addEventListener("DOMContentLoaded", function () {
   var alt = document.getElementsByClassName("alt-close");
@@ -216,10 +217,15 @@ function NavbarToggle() {
     if (toggle[i] === event.target) {
       toggle[i].classList.toggle("active");
       var toggleContent = toggle[i].nextElementSibling;
-      if (toggleContent.style.display === "block") {
-        toggleContent.style.display = "none";
+
+      if (toggleContent.style.visibility === "visible") {
+        toggleContent.style.visibility = "hidden";
+        toggleContent.style.maxHeight = "0";
+        toggleContent.style.opacity = "0";
       } else {
-        toggleContent.style.display = "block";
+        toggleContent.style.visibility = "visible";
+        toggleContent.style.maxHeight = "100vh";
+        toggleContent.style.opacity = "1";
       }
     }
   }
