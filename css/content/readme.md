@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html charset="utf-8">
   <head>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
     <table class="table outset-neomo">
@@ -52,7 +52,7 @@
 <!DOCTYPE html>
 <html charset="utf-8">
   <head>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
     <table class="table inset-neomo">

@@ -9,7 +9,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
 
   <body>
@@ -55,7 +55,7 @@
 
 <head>
   <title>test</title>
-  <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
 </head>
 
 <body>
@@ -93,7 +93,7 @@
 
 <head>
   <title>test</title>
-  <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
 </head>
 
 <body>
@@ -119,7 +119,7 @@
 
 <head>
   <title>test</title>
-  <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+  <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
 </head>
 
 <body>

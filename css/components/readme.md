@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html charset="utf-8">
   <head>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/neomo.css" />
   </head>
   <body class="neomo">
     <div class="alert outset-neomo" role="alert">This is alert!</div>
@@ -22,7 +22,7 @@
 <!DOCTYPE html>
 <html charset="utf-8">
   <head>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
     <div class="alert inset-neomo" role="alert">This is alert!</div>
@@ -36,7 +36,7 @@
 <!DOCTYPE html>
 <html charset="utf-8">
   <head>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
     <div class="alert outset-neomo info" role="alert">This color is info!</div>
@@ -59,7 +59,7 @@
 <!DOCTYPE html>
 <html charset="utf-8">
   <head>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
     <div class="outset-neomo alert" id="Alt">
@@ -70,7 +70,7 @@
       <span class="alt-close">X</span>
     </div>
 
-    <script type="text/javascript" src="../src/neomo.js"></script>
+    <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>
 ```
@@ -83,7 +83,7 @@
 <!DOCTYPE html>
 <html charset="utf-8">
   <head>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
     <span class="badge outset-neomo">NEOMO</span>
@@ -98,7 +98,7 @@
 <!DOCTYPE html>
 <html charset="utf-8">
   <head>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
     <span class="badge outset-neomo info">NEOMO</span>
@@ -117,7 +117,7 @@
   <head>
     <meta charset="utf-8" />
     <title></title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
     <span class="badge outset-neomo badge-sm">NEOMO</span>
@@ -136,7 +136,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
 
   <body>
@@ -188,7 +188,7 @@
   <head>
     <meta charset="utf-8" />
     <title></title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
     <select class="outset-neomo">
@@ -215,7 +215,7 @@
   <head>
     <meta charset="utf-8" />
     <title></title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
     <select class="outset-neomo info">
@@ -254,7 +254,7 @@
   <head>
     <meta charset="utf-8" />
     <title></title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
     <select multiple class="outset-neomo">
@@ -276,7 +276,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
 
   <body>
@@ -329,7 +329,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" href="../src/neomo.css" />
+    <link rel="stylesheet" href="/css/neomo.css" />
   </head>
   <body>
     <ul class="nav">
@@ -357,7 +357,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" href="../src/neomo.css" />
+    <link rel="stylesheet" href="/css/neomo.css" />
   </head>
   <body>
     <ul class="nav">
@@ -380,7 +380,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" href="../src/neomo.css" />
+    <link rel="stylesheet" href="/css/neomo.css" />
   </head>
   <body>
     <ul class="nav">
@@ -408,7 +408,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" href="../src/neomo.css" />
+    <link rel="stylesheet" href="/css/neomo.css" />
   </head>
 
   <body>
@@ -498,7 +498,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
@@ -528,7 +528,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
@@ -563,7 +563,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
@@ -586,7 +586,7 @@
     </div>
 
     <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="../src/neomo.js"></script>
+    <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>
 ```
@@ -599,7 +599,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
@@ -626,7 +626,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
@@ -653,7 +653,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
@@ -684,7 +684,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
       rel="stylesheet"
@@ -718,7 +718,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
     <div class="columns just-center">
@@ -733,7 +733,7 @@
       </div>
     </div>
 
-    <script type="text/javascript" src="../src/neomo.js"></script>
+    <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>
 ```
@@ -745,7 +745,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
     <div class="columns just-center">
@@ -760,7 +760,7 @@
       </div>
     </div>
 
-    <script type="text/javascript" src="../src/neomo.js"></script>
+    <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>
 ```
@@ -772,7 +772,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
     <div class="columns just-center">
@@ -822,7 +822,7 @@
       </div>
     </div>
 
-    <script type="text/javascript" src="../src/neomo.js"></script>
+    <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>
 ```
@@ -834,7 +834,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
     <div class="columns just-center">
@@ -884,7 +884,7 @@
       </div>
     </div>
 
-    <script type="text/javascript" src="../src/neomo.js"></script>
+    <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>
 ```
@@ -898,7 +898,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="p-2">
     <div class="columns">
@@ -1013,7 +1013,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
 
   <body class="container neomo">
@@ -1049,7 +1049,7 @@
       </div>
     </div>
 
-    <script type="text/javascript" src="../src/neomo.js"></script>
+    <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>
 ```
@@ -1061,7 +1061,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
 
   <body class="container neomo">
@@ -1096,7 +1096,7 @@
       </div>
     </div>
 
-    <script type="text/javascript" src="../src/neomo.js"></script>
+    <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>
 ```
@@ -1108,7 +1108,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
 
   <body class="container neomo">
@@ -1146,7 +1146,7 @@
       </div>
     </div>
 
-    <script type="text/javascript" src="../src/neomo.js"></script>
+    <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>
 ```
@@ -1160,7 +1160,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -1228,7 +1228,7 @@
   </body>
 </html>
 
-<script type="text/javascript" src="../src/neomo.js"></script>
+<script type="text/javascript" src="/js/neomo.js"></script>
 ```
 
 ## Tooltips Information
@@ -1240,7 +1240,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
 
   <body>
@@ -1295,7 +1295,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body>
     <div class="container">
@@ -1339,7 +1339,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body>
     <div class="container">
@@ -1395,7 +1395,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body>
     <div class="container">
@@ -1451,7 +1451,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body>
     <div class="container">
@@ -1507,7 +1507,7 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="../src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body>
     <div class="container">
