@@ -2,7 +2,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   var alt = document.getElementsByClassName("alt-close");
   var alt_close = document.getElementsByClassName("alt-close");
-  var funcs = [];
+  var altArray = [];
+  var i, j, k;
 
   function Alt(num) {
     return function () {
@@ -11,11 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
       };
     };
   }
-  for (var i = 0; i < alt_close.length; i++) {
-    funcs[i] = Alt(i);
+  for (i = 0; i < alt_close.length; i++) {
+    altArray[i] = Alt(i);
   }
-  for (var j = 0; j < alt_close.length; j++) {
-    funcs[j]();
+  for (j = 0; j < alt_close.length; j++) {
+    altArray[j]();
   }
 
   /* Alert function end */
@@ -37,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var modals = document.getElementsByClassName("modal");
   var modal_btns = document.getElementsByClassName("modal-button");
   var modal_close = document.getElementsByClassName("modal-close");
-  var funcs = [];
+  var modalArray = [];
 
   function Modal(num) {
     return function () {
@@ -51,36 +52,35 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   if (modals) {
-    for (var i = 0; i < modal_btns.length; i++) {
-      funcs[i] = Modal(i);
+    for (i = 0; i < modal_btns.length; i++) {
+      modalArray[i] = Modal(i);
     }
-    for (var j = 0; j < modal_btns.length; j++) {
-      funcs[j]();
+    for (j = 0; j < modal_btns.length; j++) {
+      modalArray[j]();
     }
   }
   /* Modal function end */
-  
+
   /* Range start */
   var slider = document.getElementsByClassName("myRange");
   var output = document.getElementsByClassName("demo");
-  for(var i=0; i < slider.length; i++ ) {
+  for (i = 0; i < slider.length; i++) {
     console.log("1");
-    (function(m) {
+    (function (m) {
       output[m].innerHTML = slider[m].value;
-      slider[m].addEventListener("input", function(){
-        output[m].innerHTML =slider[m].value;
+      slider[m].addEventListener("input", function () {
+        output[m].innerHTML = slider[m].value;
       });
     })(i);
-}
-  
- 
+  }
+
   /* Range end */
 
   /* Tab function start */
   var tab = document.getElementsByClassName("tab");
   var tab_list = [];
 
-  for (var i = 0; i < tab.length; i++) {
+  for (i = 0; i < tab.length; i++) {
     tab_list[i] = tab[i]
       .getElementsByClassName("tab-list")[0]
       .getElementsByTagName("a");
@@ -91,15 +91,15 @@ document.addEventListener("DOMContentLoaded", function () {
     tab_content.style.display = "block";
   }
 
-  for (var i = 0; i < tab_list.length; i++) {
-    for (var j = 0; j < tab_list[i].length; j++) {
+  for (i = 0; i < tab_list.length; i++) {
+    for (j = 0; j < tab_list[i].length; j++) {
       tab_list[i][j].onclick = function () {
         var tab = this.closest(".tab");
         var tab_list = this.closest(".tab-list").getElementsByTagName("a");
         var tab_index;
         var tab_content;
 
-        for (var k = 0; k < tab_list.length; k++) {
+        for (k = 0; k < tab_list.length; k++) {
           tab_index = tab_list[k].id.split("-")[1];
           tab_content = tab_content = tab.querySelector(
             "#content-" + tab_index
@@ -126,33 +126,42 @@ document.addEventListener("DOMContentLoaded", function () {
   /* label function start */
   var input = document.getElementsByClassName("floatinglabel-input");
   var field = document.getElementsByClassName("floatinglabel-field");
-  var k;
-  for(k=0;k<input.length;k++){
-     (function(m){
-       if(!field[m].classList.contains("inset") && !field[m].classList.contains("inset-neomo") && !field[m].classList.contains("inset-gray")&& !field[m].classList.contains("inset-dark")){
-         console.log(input[m].classList);
-        input[m].addEventListener('click', function(event){
-          
+
+  for (k = 0; k < input.length; k++) {
+    (function (m) {
+      if (
+        !field[m].classList.contains("inset") &&
+        !field[m].classList.contains("inset-neomo") &&
+        !field[m].classList.contains("inset-gray") &&
+        !field[m].classList.contains("inset-dark")
+      ) {
+        console.log(input[m].classList);
+        input[m].addEventListener("click", function (event) {
           // field[m].style["boxShadow"] = "inset -3px -3px 7px #ffffffe5, inset 3px 3px 5px rgba(88, 100, 121, 0.288) ";
-          if(field[m].classList.contains("outset-neomo")){
-            field[m].setAttribute('style','box-shadow : inset -3px -3px 7px #ffffffe5, inset 3px 3px 5px rgba(55, 114, 216, 0.288) !important');
+          if (field[m].classList.contains("outset-neomo")) {
+            field[m].setAttribute(
+              "style",
+              "box-shadow : inset -3px -3px 7px #ffffffe5, inset 3px 3px 5px rgba(55, 114, 216, 0.288) !important"
+            );
+          } else if (field[m].classList.contains("outset-gray")) {
+            field[m].setAttribute(
+              "style",
+              " box-shadow: inset -3px -3px 7px #ffffff80, inset 3px 3px 5px rgba(46, 46, 46, 0.288) !important"
+            );
+          } else if (field[m].classList.contains("outset-dark")) {
+            field[m].setAttribute(
+              "style",
+              "  box-shadow: inset 5px 5px 9px #303030, inset -5px -5px 9px #535353 !important"
+            );
+          } else {
+            field[m].setAttribute(
+              "style",
+              "box-shadow: inset 3px 3px 5px #c0c0c0, inset -3px -3px 5px #fff !important"
+            );
           }
-          else if(field[m].classList.contains("outset-gray")){
-            field[m].setAttribute('style',' box-shadow: inset -3px -3px 7px #ffffff80, inset 3px 3px 5px rgba(46, 46, 46, 0.288) !important');
-          }
-          else if(field[m].classList.contains("outset-dark")){
-            field[m].setAttribute('style','  box-shadow: inset 5px 5px 9px #303030, inset -5px -5px 9px #535353 !important');
-          }
-          else {
-            field[m].setAttribute('style','box-shadow: inset 3px 3px 5px #c0c0c0, inset -3px -3px 5px #fff !important');
-          }
-         
-         
-          }); 
-       }
-      
-     })(k);
-      
+        });
+      }
+    })(k);
   }
   /* label function end */
 
@@ -221,8 +230,9 @@ function NavbarToggle() {
 function sideNav() {
   var menu = document.getElementsByClassName("side-menu");
   var content = document.getElementsByClassName("nav-content");
+  var i;
 
-  for (var i = 0; i < menu.length; i++) {
+  for (i = 0; i < menu.length; i++) {
     if (menu[i] === event.target) {
       if (content[i].style.display == "block") {
         content[i].style.display = "none";
