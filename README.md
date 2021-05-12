@@ -1,4 +1,4 @@
-# neomo
+# NEOMO
 
 [![GitHub stars](https://img.shields.io/github/stars/neomorphism/neomo)](https://github.com/neomorphism/neomo/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/neomorphism/neomo)](https://github.com/neomorphism/neomo/issues)
@@ -14,10 +14,21 @@
 
 ## Getting Started
 
-### HTML Link
+### CSS
+
+- CSS
 
 ```html
-<link rel="stylesheet" type="text/css" href="neomo.min.css" />
+<link
+  href="https://cdn.jsdelivr.net/npm/neomo@1.0.1/dist/neomo.css"
+  rel="stylesheet"
+/>
+```
+
+-JS
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/neomo@1.0.1/dist/neomo.js"></script>
 ```
 
 ### NPM/YARN Package
@@ -30,7 +41,6 @@ or
 yarn add neomo
 ```
 
-## Examples
+## Homepage
 
-How to normalize :
-![Example](https://github.com/neomorphism/neomo)
+> https://neomo-ui.com
