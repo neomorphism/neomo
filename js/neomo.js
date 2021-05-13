@@ -231,8 +231,22 @@ document.addEventListener("DOMContentLoaded", function () {
   /* Tab function end */
 
   /* Toast function start */
-  function toast_button(obj) {
-    obj.closest(".toast").classList.remove("show");
+  var toast = document.getElementsByClassName("toast-close");
+  var toast_close = document.getElementsByClassName("toast-close");
+  var toastArray = [];
+
+  function Toast(num) {
+    return function () {
+      toast_close[num].onclick = function () {
+        toast[num].parentElement.parentElement.style.display = "none";
+      };
+    };
+  }
+  for (i = 0; i < toast_close.length; i++) {
+    toastArray[i] = Toast(i);
+  }
+  for (j = 0; j < toast_close.length; j++) {
+    toastArray[j]();
   }
   /* Toast function end */
 

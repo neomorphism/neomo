@@ -572,7 +572,6 @@
   <body class="neomo">
     <div class="dropdown-toggle">
       <button
-        onclick="DropdownToggle()"
         class="dropdown-toggle--button outset-neomo"
       >
         Toggle
@@ -585,7 +584,6 @@
       </div>
     </div>
 
-    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>
@@ -1160,25 +1158,44 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
+    <link rel="stylesheet" href="/css/neomo.css" />
   </head>
-  <body>
-    <nav class="navbar">
-      <div class="navbar-content">
-        <div class="navbar-brand">Navbar</div>
-        <a href="#">Home</a>
-        <a href="#">Link</a>
-      </div>
 
-      <div class="navbar-end">
-        <form class="search-bar ">
-          <input type="text" class="search-bar--text" placeholder="Search" />
-          <button type="submit" class="search-bar--button" value="Search">
-            <i class="fas fa-search"></i>
-          </button>
-        </form>
+  <body class="neomo">
+    <div class="navbar" style="margin: 0 auto">
+      <div>
+        <button class="toggle-button">
+          List1
+        </button>
+        <div class="toggle-content">
+          <a href="#">Link1</a>
+          <a href="#">Link2</a>
+          <a href="#">Link3</a>
+        </div>
       </div>
-    </nav>
+      <div>
+        <button class="toggle-button">
+          List2
+        </button>
+        <div class="toggle-content">
+          <a href="#">Link1</a>
+          <a href="#">Link2</a>
+          <a href="#">Link3</a>
+        </div>
+      </div>
+      <div>
+        <button class="toggle-button">
+          List3
+        </button>
+        <div class="toggle-content">
+          <a href="#">Link1</a>
+          <a href="#">Link2</a>
+          <a href="#">Link3</a>
+        </div>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>
 ```
@@ -1192,43 +1209,27 @@
 <html charset="utf-8">
   <head>
     <title>test</title>
-    <link rel="stylesheet" href="../neomo.css" />
+    <link rel="stylesheet" href="/css/neomo.css" />
   </head>
 
-  <body>
-    <div class="columns m-5">
-      <div class="columns m-5">
-      <div class="column size-3">
-        <div class="toast show inset-gray" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-              <span class=""></span>
-              <strong class="mr-auto ml-2">Neumorphism</strong>
-              <small class="mr-2 ml-auto">11 mins ago</small>
-              <button type="button" class="" data-dismiss="toast" aria-label="Close" onclick="toast_button(this);">
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-            <div class="toast-body">Hello, world! This is a toast message.</div>
-        </div>
+  <body class="neomo">
+    <div
+      id="Toast"
+      class="toast show outset-neomo alert"
+    >
+      <div class="toast-header">
+        <strong class="font-size-5">Neomo</strong>
+        <small class="mr-2 ml-auto">12 mins ago</small>
+        <span class="toast-close">X</span>
       </div>
-      <div class="column size-3">
-        <div class="toast show outset-gray" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header">
-              <span class=""></span>
-              <strong class="mr-auto ml-2">Neumorphism</strong>
-              <small class="mr-2 ml-auto">11 mins ago</small>
-              <button type="button" class="" data-dismiss="toast" aria-label="Close" onclick="toast_button(this);">
-                <span aria-hidden="true">×</span>
-              </button>
-            </div>
-            <div class="toast-body">Hello, world! This is a toast message.</div>
-        </div>
+      <div class="toast-body text-center">
+        Hello, world! This is a toast message.
       </div>
     </div>
+    
+    <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>
-
-<script type="text/javascript" src="/js/neomo.js"></script>
 ```
 
 ## Tooltips Information
