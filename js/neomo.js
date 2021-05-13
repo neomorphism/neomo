@@ -1,4 +1,3 @@
-/* eslint-disable */
 /* Alert function start */
 document.addEventListener("DOMContentLoaded", function () {
   var alt = document.getElementsByClassName("alt-close");
@@ -22,6 +21,53 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* Alert function end */
 
+  /* Collapsible function start */
+  var collapse = document.getElementsByClassName("collapse");
+
+  for (i = 0; i < collapse.length; i++) {
+    collapse[i].onclick = function () {
+      var collapse = document.getElementsByClassName("collapse");
+      var expanded = document.getElementsByClassName("expanded");
+
+      for (j = 0; j < collapse.length; j++) {
+        if (event.target === collapse[j]) {
+          if (expanded[j].style.visibility === "visible") {
+            expanded[j].style.visibility = "hidden";
+            expanded[j].style.maxHeight = "0";
+            expanded[j].style.opacity = "0";
+          } else {
+            expanded[j].style.visibility = "visible";
+            expanded[j].style.maxHeight = "100vh";
+            expanded[j].style.opacity = "1";
+          }
+        }
+      }
+    };
+  }
+  /* collapsible function end */
+
+  /* Dropdown function start */
+  var dropdown = document.getElementsByClassName("dropdown-toggle--button");
+
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].onclick = function () {
+      var dropdown = document.getElementsByClassName("dropdown-toggle--button");
+      for (j = 0; j < dropdown.length; j++) {
+        if (
+          event.target === dropdown[j] ||
+          event.target === dropdown[j].childNodes[1]
+        ) {
+          if (dropdown[j].nextElementSibling.style.display === "block") {
+            dropdown[j].nextElementSibling.style.display = "none";
+          } else {
+            dropdown[j].nextElementSibling.style.display = "block";
+          }
+        }
+      }
+    };
+  }
+  /* Dropdown function end */
+
   /* File function start */
   var file = document.querySelectorAll(".file .file-hidden");
 
@@ -34,6 +80,46 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   /* File function end */
+
+  /* label function start */
+  var input = document.getElementsByClassName("floatinglabel-input");
+  var field = document.getElementsByClassName("floatinglabel-field");
+
+  for (k = 0; k < input.length; k++) {
+    (function (m) {
+      if (
+        !field[m].classList.contains("inset") &&
+        !field[m].classList.contains("inset-neomo") &&
+        !field[m].classList.contains("inset-gray") &&
+        !field[m].classList.contains("inset-dark")
+      ) {
+        input[m].addEventListener("click", function (event) {
+          if (field[m].classList.contains("outset-neomo")) {
+            field[m].setAttribute(
+              "style",
+              "box-shadow : inset -3px -3px 7px #ffffffe5, inset 3px 3px 5px rgba(55, 114, 216, 0.288) !important"
+            );
+          } else if (field[m].classList.contains("outset-gray")) {
+            field[m].setAttribute(
+              "style",
+              " box-shadow: inset -3px -3px 7px #ffffff80, inset 3px 3px 5px rgba(46, 46, 46, 0.288) !important"
+            );
+          } else if (field[m].classList.contains("outset-dark")) {
+            field[m].setAttribute(
+              "style",
+              "  box-shadow: inset 5px 5px 9px #303030, inset -5px -5px 9px #535353 !important"
+            );
+          } else {
+            field[m].setAttribute(
+              "style",
+              "box-shadow: inset 3px 3px 5px #c0c0c0, inset -3px -3px 5px #fff !important"
+            );
+          }
+        });
+      }
+    })(k);
+  }
+  /* label function end */
 
   /* Modal function start */
   var modals = document.getElementsByClassName("modal");
@@ -62,11 +148,37 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   /* Modal function end */
 
+  /* Navbar function start */
+  var navbar = document.getElementsByClassName("toggle-button");
+
+  for (i = 0; i < navbar.length; i++) {
+    navbar[i].onclick = function () {
+      var navbar = document.getElementsByClassName("toggle-button");
+
+      for (j = 0; j < navbar.length; j++) {
+        if (navbar[j] === event.target) {
+          navbar[j].classList.toggle("active");
+          var toggleContent = navbar[j].nextElementSibling;
+
+          if (toggleContent.style.visibility === "visible") {
+            toggleContent.style.visibility = "hidden";
+            toggleContent.style.maxHeight = "0";
+            toggleContent.style.opacity = "0";
+          } else {
+            toggleContent.style.visibility = "visible";
+            toggleContent.style.maxHeight = "100vh";
+            toggleContent.style.opacity = "1";
+          }
+        }
+      }
+    };
+  }
+  /* Navbar function end */
+
   /* Range start */
   var slider = document.getElementsByClassName("myRange");
   var output = document.getElementsByClassName("demo");
   for (i = 0; i < slider.length; i++) {
-    console.log("1");
     (function (m) {
       output[m].innerHTML = slider[m].value;
       slider[m].addEventListener("input", function () {
@@ -124,50 +236,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   /* Toast function end */
 
-  /* label function start */
-  var input = document.getElementsByClassName("floatinglabel-input");
-  var field = document.getElementsByClassName("floatinglabel-field");
-
-  for (k = 0; k < input.length; k++) {
-    (function (m) {
-      if (
-        !field[m].classList.contains("inset") &&
-        !field[m].classList.contains("inset-neomo") &&
-        !field[m].classList.contains("inset-gray") &&
-        !field[m].classList.contains("inset-dark")
-      ) {
-        console.log(input[m].classList);
-        input[m].addEventListener("click", function (event) {
-          // field[m].style["boxShadow"] = "inset -3px -3px 7px #ffffffe5, inset 3px 3px 5px rgba(88, 100, 121, 0.288) ";
-          if (field[m].classList.contains("outset-neomo")) {
-            field[m].setAttribute(
-              "style",
-              "box-shadow : inset -3px -3px 7px #ffffffe5, inset 3px 3px 5px rgba(55, 114, 216, 0.288) !important"
-            );
-          } else if (field[m].classList.contains("outset-gray")) {
-            field[m].setAttribute(
-              "style",
-              " box-shadow: inset -3px -3px 7px #ffffff80, inset 3px 3px 5px rgba(46, 46, 46, 0.288) !important"
-            );
-          } else if (field[m].classList.contains("outset-dark")) {
-            field[m].setAttribute(
-              "style",
-              "  box-shadow: inset 5px 5px 9px #303030, inset -5px -5px 9px #535353 !important"
-            );
-          } else {
-            field[m].setAttribute(
-              "style",
-              "box-shadow: inset 3px 3px 5px #c0c0c0, inset -3px -3px 5px #fff !important"
-            );
-          }
-        });
-      }
-    })(k);
-  }
-  /* label function end */
-
   window.onclick = function (event) {
-    /* Dropdown window */
+    /* Dropdown window start */
     if (!event.target.matches(".dropdown-toggle--button")) {
       var dropdowns = document.getElementsByClassName(
         "dropdown-toggle--content"
@@ -181,109 +251,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     }
+    /* Dropdown window end */
 
-    /* Modal window */
+    /* Modal window start */
     if (event.target.className === "modal") {
       event.target.style.display = "none";
     }
+    /* Modal window end */
   };
 });
-
-/* Dropdown function start */
-function DropdownToggle() {
-  var dropdown = document.getElementsByClassName("dropdown-toggle--button");
-  var i;
-  for (i = 0; i < dropdown.length; i++) {
-    if (
-      event.target === dropdown[i] ||
-      event.target === dropdown[i].childNodes[1]
-    ) {
-      if (dropdown[i].nextElementSibling.style.display === "block") {
-        dropdown[i].nextElementSibling.style.display = "none";
-      } else {
-        dropdown[i].nextElementSibling.style.display = "block";
-      }
-    }
-  }
-}
-/* Dropdown function end */
-
-/* Navbar function start */
-function NavbarToggle() {
-  var toggle = document.getElementsByClassName("toggle-button");
-  var i;
-
-  for (i = 0; i < toggle.length; i++) {
-    if (toggle[i] === event.target) {
-      toggle[i].classList.toggle("active");
-      var toggleContent = toggle[i].nextElementSibling;
-
-      if (toggleContent.style.visibility === "visible") {
-        toggleContent.style.visibility = "hidden";
-        toggleContent.style.maxHeight = "0";
-        toggleContent.style.opacity = "0";
-      } else {
-        toggleContent.style.visibility = "visible";
-        toggleContent.style.maxHeight = "100vh";
-        toggleContent.style.opacity = "1";
-      }
-    }
-  }
-}
-/* Navbar function end */
-
-/* Navigation function start */
-function sideNav() {
-  var menu = document.getElementsByClassName("side-menu");
-  var content = document.getElementsByClassName("nav-content");
-  var i;
-
-  for (i = 0; i < menu.length; i++) {
-    if (menu[i] === event.target) {
-      if (content[i].style.display == "block") {
-        content[i].style.display = "none";
-      } else {
-        content[i].style.display = "block";
-      }
-    }
-  }
-}
-/* Navigation function end */
-
-/* Collapsible function start */
-function ContentToggle() {
-  var collapse = document.getElementsByClassName("collapse");
-  var expanded = document.getElementsByClassName("expanded");
-  var i;
-
-  for (i = 0; i < collapse.length; i++) {
-    if (event.target === collapse[i]) {
-      if (expanded[i].style.visibility === "visible") {
-        expanded[i].style.visibility = "hidden";
-        expanded[i].style.maxHeight = "0";
-        expanded[i].style.opacity = "0";
-      } else {
-        expanded[i].style.visibility = "visible";
-        expanded[i].style.maxHeight = "100vh";
-        expanded[i].style.opacity = "1";
-      }
-    }
-  }
-}
-/* collapsible function end */
-
-/* Change Text Color animation start */
-function ChangeTxtColor(button) {
-  const colors = [
-    "var(--success)",
-    "var(--info)",
-    "var(--warning)",
-    "var(--danger)",
-  ];
-
-  var click_cnt = Number(button.dataset.current);
-  click_cnt = (click_cnt + 1) % colors.length;
-  button.dataset.current = click_cnt;
-  button.style.color = colors[click_cnt];
-}
-/* Change Text Color animation end */
