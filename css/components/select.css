@@ -15,6 +15,10 @@ select {
   box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
 
+select:hover {
+  cursor: pointer;
+}
+
 select:focus {
   outline: 0;
 }

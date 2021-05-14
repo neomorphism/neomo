@@ -1,54 +1,45 @@
 /* Spinners Section Information */
-
 /*
 * Title : Spinner component
 * Description : this is Spinner
 */
-
 .loader {
   margin: auto;
 }
-
 .loader.border-white {
   border: 3px solid var(--white);
 }
-
 .loader.border-gray {
   border: 3px solid var(--gray-400);
 }
-
 .loader.point-purple {
-  border-top: 3px solid var(--purple);
+  border-bottom: 3px solid var(--purple);
   border-radius: 50%;
   width: 1.5em;
   height: 1.5em;
   animation: spin 2s linear infinite;
 }
-
 .loader.point-gray {
-  border-top: 3px solid var(--gray-600);
+  border-bottom: 3px solid var(--gray-600);
   border-radius: 50%;
   width: 1.5em;
   height: 1.5em;
   animation: spin 2s linear infinite;
 }
-
 .loader.point-blue {
-  border-top: 3px solid var(--blue);
+  border-bottom: 3px solid var(--blue);
   border-radius: 50%;
   width: 1.5em;
   height: 1.5em;
   animation: spin 2s linear infinite;
 }
-
 .loader.point-orange {
-  border-top: 3px solid #fa821b;
+  border-bottom: 3px solid #fa821b;
   border-radius: 50%;
   width: 1.5em;
   height: 1.5em;
   animation: spin 2s linear infinite;
 }
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -57,7 +48,6 @@
     transform: rotate(360deg);
   }
 }
-
 @-webkit-keyframes spin {
   0% {
     transform: rotate(0deg);
