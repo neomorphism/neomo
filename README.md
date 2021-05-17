@@ -20,7 +20,7 @@
 
 ```html
 <link
-  href="https://cdn.jsdelivr.net/npm/neomo@1.0.1/dist/neomo.min.css"
+  href="https://cdn.jsdelivr.net/npm/neomo@1.0.2/dist/neomo.min.css"
   rel="stylesheet"
 />
 ```
@@ -28,7 +28,7 @@
 - JS
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/neomo@1.0.1/dist/neomo.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/neomo@1.0.2/dist/neomo.min.js"></script>
 ```
 
 ### NPM/YARN Package
@@ -43,4 +43,12 @@ yarn add neomo
 
 ## Homepage
 
-> https://neomo-ui.com
+- URL : https://neomo-ui.com
+
+- Github : https://github.com/Officialsite-frontend/official-site
+
+## Template page
+
+- URL : https://neomorphism.github.io/
+
+- Github : https://github.com/neomorphism/neomorphism.github.io
