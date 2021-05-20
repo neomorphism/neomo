@@ -571,9 +571,7 @@
   </head>
   <body class="neomo">
     <div class="dropdown-toggle">
-      <button
-        class="dropdown-toggle--button outset-neomo"
-      >
+      <button class="dropdown-toggle--button outset-neomo">
         Toggle
         <i class="fa fa-caret-down"></i>
       </button>
@@ -721,16 +719,17 @@
   <body class="neomo">
     <div class="columns just-center">
       <div class="column size-10">
-        <button class="modal-button outset-neomo">Outset MODAL</button>
+        <button data-modal-id="modal" class="modal-button outset-neomo">
+          MODAL Button
+        </button>
+      </div>
+      <div data-modal-id="modal" class="modal">
+        <div class="modal-content--md outset-neomo">
+          <span class="modal-close">&times;</span>
+          <p>You can insert any type of content with this modal class.</p>
+        </div>
       </div>
     </div>
-    <div class="modal">
-      <div class="modal-content--md outset-neomo">
-        <span class="modal-close">&times;</span>
-        <p>You can insert any type of content with this modal class.</p>
-      </div>
-    </div>
-
     <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>
@@ -748,16 +747,17 @@
   <body class="neomo">
     <div class="columns just-center">
       <div class="column size-10">
-        <button class="modal-button inset-neomo">Inset MODAL</button>
+        <button data-modal-id="modal" class="modal-button inset-neomo">
+          MODAL Button
+        </button>
+      </div>
+      <div data-modal-id="modal" class="modal">
+        <div class="modal-content--md inset-neomo">
+          <span class="modal-close">&times;</span>
+          <p>You can insert any type of content with this modal class.</p>
+        </div>
       </div>
     </div>
-    <div class="modal">
-      <div class="modal-content--md inset-neomo">
-        <span class="modal-close">&times;</span>
-        <p>You can insert any type of content with this modal class.</p>
-      </div>
-    </div>
-
     <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>
@@ -1164,9 +1164,7 @@
   <body class="neomo">
     <div class="navbar" style="margin: 0 auto">
       <div>
-        <button class="toggle-button">
-          List1
-        </button>
+        <button class="toggle-button">List1</button>
         <div class="toggle-content">
           <a href="#">Link1</a>
           <a href="#">Link2</a>
@@ -1174,9 +1172,7 @@
         </div>
       </div>
       <div>
-        <button class="toggle-button">
-          List2
-        </button>
+        <button class="toggle-button">List2</button>
         <div class="toggle-content">
           <a href="#">Link1</a>
           <a href="#">Link2</a>
@@ -1184,9 +1180,7 @@
         </div>
       </div>
       <div>
-        <button class="toggle-button">
-          List3
-        </button>
+        <button class="toggle-button">List3</button>
         <div class="toggle-content">
           <a href="#">Link1</a>
           <a href="#">Link2</a>
@@ -1194,7 +1188,7 @@
         </div>
       </div>
     </div>
-    
+
     <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>
@@ -1213,10 +1207,7 @@
   </head>
 
   <body class="neomo">
-    <div
-      id="Toast"
-      class="toast show outset-neomo alert"
-    >
+    <div id="Toast" class="toast show outset-neomo alert">
       <div class="toast-header">
         <strong class="font-size-5">Neomo</strong>
         <small class="mr-2 ml-auto">12 mins ago</small>
@@ -1226,7 +1217,7 @@
         Hello, world! This is a toast message.
       </div>
     </div>
-    
+
     <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>

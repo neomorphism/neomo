@@ -122,29 +122,34 @@ document.addEventListener("DOMContentLoaded", function () {
   /* label function end */
 
   /* Modal function start */
-  var modals = document.getElementsByClassName("modal");
-  var modal_btns = document.getElementsByClassName("modal-button");
-  var modal_close = document.getElementsByClassName("modal-close");
-  var modalArray = [];
-
-  function Modal(num) {
-    return function () {
-      modal_btns[num].onclick = function () {
-        modals[num].style.display = "block";
-      };
-      modal_close[num].onclick = function () {
-        modals[num].style.display = "none";
-      };
-    };
+  const modals = document.querySelectorAll("[data-modal-id]");
+  function addModalEvent(modal, element) {
+    modals.forEach((btn) => {
+      // button
+      if (
+        btn.tagName === "BUTTON" &&
+        btn.getAttribute("data-modal-id") === modal
+      ) {
+        btn.onclick = function () {
+          element.style.display = "block";
+        };
+        return;
+      }
+    });
   }
 
   if (modals) {
-    for (i = 0; i < modal_btns.length; i++) {
-      modalArray[i] = Modal(i);
-    }
-    for (j = 0; j < modal_btns.length; j++) {
-      modalArray[j]();
-    }
+    modals.forEach((element) => {
+      const modal = element.getAttribute("data-modal-id");
+      const tag = element.tagName;
+      // modal content
+      if (tag === "DIV") {
+        element.getElementsByClassName("modal-close")[0].onclick = function () {
+          element.style.display = "none";
+        };
+        addModalEvent(modal, element);
+      }
+    });
   }
   /* Modal function end */
 
