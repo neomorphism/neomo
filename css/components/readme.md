@@ -570,11 +570,14 @@
   </head>
   <body class="neomo">
     <div class="dropdown-toggle">
-      <button class="dropdown-toggle--button outset-neomo">
+      <button
+        data-dropdown-id="dropdown"
+        class="dropdown-toggle--button outset-neomo"
+      >
         Toggle
         <i class="fa fa-caret-down"></i>
       </button>
-      <div class="dropdown-toggle--content">
+      <div data-dropdown-id="dropdown" class="dropdown-toggle--content">
         <a href="#">Link 1</a>
         <a href="#">Link 2</a>
         <a href="#">Link 3</a>
@@ -706,7 +709,7 @@
 
 ## Modal Information
 
-> Ouset Button Modal usage
+> Ouset Modal usage
 
 ```html
 <!DOCTYPE html>
@@ -729,12 +732,13 @@
         </div>
       </div>
     </div>
+    
     <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>
 ```
 
-> Inset Button Modal usage
+> Inset Modal usage
 
 ```html
 <!DOCTYPE html>
@@ -746,23 +750,24 @@
   <body class="neomo">
     <div class="columns just-center">
       <div class="column size-10">
-        <button data-modal-id="modal" class="modal-button inset-neomo">
+        <button data-modal-id="modal2" class="modal-button outset-neomo">
           MODAL Button
         </button>
       </div>
-      <div data-modal-id="modal" class="modal">
+      <div data-modal-id="modal2" class="modal">
         <div class="modal-content--md inset-neomo">
           <span class="modal-close">&times;</span>
           <p>You can insert any type of content with this modal class.</p>
         </div>
       </div>
     </div>
+    
     <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>
 ```
 
-> Ouset Card Modal usage
+> Middle Card Modal usage
 
 ```html
 <!DOCTYPE html>
@@ -772,112 +777,110 @@
     <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
-    <div class="columns just-center">
-      <div class="column size-10">
-        <button class="modal-button outset-neomo">Outset Card MODAL</button>
+    <button data-modal-id="modal3" class="modal-button outset-neomo">Middle Card MODAL</button>
+    <div data-modal-id="modal3" class="modal">
+      <div class="modal-content--md outset-neomo">
+        <span class="modal-close">&times;</span>
+        <header class="card-header">
+          <p class="card-header-title">Modal Card</p>
+        </header>
+        <div class="column size-10 text-center ml-10" style="margin: 0 auto">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1593642634524-b40b5baae6bb?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80"
+              alt="Placeholder image"
+              style="border-radius: 0"
+            />
+          </div>
+          <div class="card-content">
+            <p class="font-size-4 profile-link text-left m-0">
+              <img
+                class="img-profile p-0"
+                src="https://images.unsplash.com/profile-1609856653329-a9e174ff28b6image?auto=format&amp;fit=crop&amp;w=32&amp;h=32&amp;q=60&amp;crop=faces&amp;bg=fff"
+                width="32"
+                height="32"
+                role="presentation"
+                alt="Go to Julian Steenbergen's profile"
+              />
+
+              Julian Steenbergen
+            </p>
+            <p class="text-left">
+              I'm actually a musician, but photography is just too fun. It brings me
+              joy, inspiration and peace. Happy to support the community here with
+              my work! ✨
+            </p>
+            <p class="text-left">
+              <i class="fas fa-calendar-week"></i>
+              Published on May 9, 2021
+            </p>
+            <p class="text-left">
+              <i class="fas fa-shield-alt"></i>
+              Free to use under the Unsplash License
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="modal">
+
+    <script type="text/javascript" src="/js/neomo.js"></script>
+  </body>
+</html>
+```
+
+> Small Card Modal usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
+  </head>
+  <body class="neomo">
+    <button data-modal-id="modal4" class="modal-button outset-neomo">Small Card MODAL</button>
+    <div data-modal-id="modal4" class="modal">
       <div class="modal-content--sm outset-neomo">
         <span class="modal-close">&times;</span>
         <header class="card-header">
-          <p class="card-header-title">Component</p>
+          <p class="card-header-title">Modal Card</p>
         </header>
-        <div class="card-image">
-          <img
-            src="https://bulma.io/images/placeholders/1280x960.png"
-            alt="Placeholder image"
-          />
-        </div>
-        <div class="card-content">
-          <div>
-            <div class="media-left">
+        <div class="column size-10 text-center ml-10" style="margin: 0 auto">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+              alt="Placeholder image"
+              style="border-radius: 0"
+            />
+          </div>
+          <div class="card-content">
+            <p class="font-size-4 profile-link text-left m-0">
               <img
-                src="https://bulma.io/images/placeholders/96x96.png"
-                alt="Placeholder image"
+                class="img-profile p-0"
+                src="https://images.unsplash.com/profile-1609856653329-a9e174ff28b6image?auto=format&amp;fit=crop&amp;w=32&amp;h=32&amp;q=60&amp;crop=faces&amp;bg=fff"
+                width="32"
+                height="32"
+                role="presentation"
+                alt="Go to Julian Steenbergen's profile"
               />
-            </div>
-            <div>
-              <p>John Smith</p>
-              <p>@johnsmith</p>
-            </div>
-          </div>
 
-          <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            nec iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
-            <a href="#">#responsive</a>
-            <br />
-            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-          </div>
-        </div>
-        <footer class="card-footer">
-          <a href="#" class="card-footer-item">Save</a>
-          <a href="#" class="card-footer-item">Edit</a>
-          <a href="#" class="card-footer-item">Delete</a>
-        </footer>
-      </div>
-    </div>
-
-    <script type="text/javascript" src="/js/neomo.js"></script>
-  </body>
-</html>
-```
-
-> Inset Card Modal usage
-
-```html
-<!DOCTYPE html>
-<html charset="utf-8">
-  <head>
-    <title>test</title>
-    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
-  </head>
-  <body class="neomo">
-    <div class="columns just-center">
-      <div class="column size-10">
-        <button class="modal-button outset-neomo">Inset Card MODAL</button>
-      </div>
-    </div>
-    <div class="modal">
-      <div class="modal-content--md inset-neomo">
-        <span class="modal-close">&times;</span>
-        <header class="card-header">
-          <p class="card-header-title">Component</p>
-        </header>
-        <div class="card-image">
-          <img
-            src="https://bulma.io/images/placeholders/1280x960.png"
-            alt="Placeholder image"
-          />
-        </div>
-        <div class="card-content">
-          <div>
-            <div class="media-left">
-              <img
-                src="https://bulma.io/images/placeholders/96x96.png"
-                alt="Placeholder image"
-              />
-            </div>
-            <div>
-              <p>John Smith</p>
-              <p>@johnsmith</p>
-            </div>
-          </div>
-
-          <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            nec iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
-            <a href="#">#responsive</a>
-            <br />
-            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+              Julian Steenbergen
+            </p>
+            <p class="text-left">
+              I'm actually a musician, but photography is just too fun. It brings me
+              joy, inspiration and peace. Happy to support the community here with
+              my work! ✨
+            </p>
+            <p class="text-left">
+              <i class="fas fa-calendar-week"></i>
+              Published on May 9, 2021
+            </p>
+            <p class="text-left">
+              <i class="fas fa-shield-alt"></i>
+              Free to use under the Unsplash License
+            </p>
           </div>
         </div>
-        <footer class="card-footer">
-          <a href="#" class="card-footer-item">Save</a>
-          <a href="#" class="card-footer-item">Edit</a>
-          <a href="#" class="card-footer-item">Delete</a>
-        </footer>
       </div>
     </div>
 
@@ -1195,7 +1198,7 @@
 
 ## Toast Information
 
-> toast usage
+> toast Outset usage
 
 ```html
 <!DOCTYPE html>
@@ -1206,7 +1209,34 @@
   </head>
 
   <body class="neomo">
-    <div id="Toast" class="toast show outset-neomo alert">
+    <div class="toast show outset-neomo">
+      <div class="toast-header">
+        <strong class="font-size-5">Neomo</strong>
+        <small class="mr-2 ml-auto">12 mins ago</small>
+        <span class="toast-close">X</span>
+      </div>
+      <div class="toast-body text-center">
+        Hello, world! This is a toast message.
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/js/neomo.js"></script>
+  </body>
+</html>
+```
+
+> toast Inset usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title>test</title>
+    <link rel="stylesheet" href="/css/neomo.css" />
+  </head>
+
+  <body class="neomo">
+    <div class="toast show inset-neomo">
       <div class="toast-header">
         <strong class="font-size-5">Neomo</strong>
         <small class="mr-2 ml-auto">12 mins ago</small>
