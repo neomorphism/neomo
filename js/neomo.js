@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-  /* Alert function start */
+ /* Alert function start */
   const alerts = document.querySelectorAll(".alert");
 
   if (alerts) {
     alerts.forEach((element) => {
-      element.getElementsByClassName("alt-close")[0].onclick = function () {
-        element.style.display = "none";
-      };
+      if (element.getElementsByClassName("alt-close")[0]) {
+        element.getElementsByClassName("alt-close")[0].onclick = function () {
+          element.style.display = "none";
+        };
+      }
     });
   }
   /* Alert function end */
