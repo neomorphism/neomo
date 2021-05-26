@@ -79,12 +79,12 @@ document.addEventListener("DOMContentLoaded", function () {
   /* Dropdown function end */
 
   /* File function start */
-  var file = document.querySelectorAll(".file .file-hidden");
+  const file = document.querySelectorAll(".file .file-hidden");
 
   file.forEach(function (element) {
     element.addEventListener("change", function () {
       if (window.FileReader) {
-        var filename = this.files[0].name;
+        const filename = this.files[0].name;
       }
       this.parentNode.getElementsByClassName("file-name")[0].value = filename;
     });
@@ -124,16 +124,16 @@ document.addEventListener("DOMContentLoaded", function () {
   /* Modal function end */
 
   /* Navbar function start */
-  var navbar = document.getElementsByClassName("toggle-button");
+  const navbar = document.getElementsByClassName("toggle-button");
 
   for (i = 0; i < navbar.length; i++) {
     navbar[i].onclick = function () {
-      var navbar = document.getElementsByClassName("toggle-button");
+      const navbar = document.getElementsByClassName("toggle-button");
 
       for (j = 0; j < navbar.length; j++) {
         if (navbar[j] === event.target) {
           navbar[j].classList.toggle("active");
-          var toggleContent = navbar[j].nextElementSibling;
+          const toggleContent = navbar[j].nextElementSibling;
 
           if (toggleContent.style.visibility === "visible") {
             toggleContent.style.visibility = "hidden";
@@ -180,27 +180,27 @@ document.addEventListener("DOMContentLoaded", function () {
   /* Range end */
 
   /* Tab function start */
-  var tab = document.getElementsByClassName("tab");
-  var tab_list = [];
+  const tab = document.getElementsByClassName("tab");
+  let tab_list = [];
 
   for (i = 0; i < tab.length; i++) {
     tab_list[i] = tab[i]
       .getElementsByClassName("tab-list")[0]
       .getElementsByTagName("a");
-    var tab_index = tab[i]
+    let tab_index = tab[i]
       .getElementsByClassName("current")[0]
       .id.split("-")[1];
-    var tab_content = tab[i].querySelector("#content-" + tab_index);
+    let tab_content = tab[i].querySelector("#content-" + tab_index);
     tab_content.style.display = "block";
   }
 
   for (i = 0; i < tab_list.length; i++) {
     for (j = 0; j < tab_list[i].length; j++) {
       tab_list[i][j].onclick = function () {
-        var tab = this.closest(".tab");
-        var tab_list = this.closest(".tab-list").getElementsByTagName("a");
-        var tab_index;
-        var tab_content;
+        const tab = this.closest(".tab");
+        const tab_list = this.closest(".tab-list").getElementsByTagName("a");
+        let tab_index;
+        let tab_content;
 
         for (k = 0; k < tab_list.length; k++) {
           tab_index = tab_list[k].id.split("-")[1];
@@ -235,13 +235,13 @@ document.addEventListener("DOMContentLoaded", function () {
   window.onclick = function (event) {
     /* Dropdown window start */
     if (!event.target.matches(".dropdown-toggle--button")) {
-      var dropdowns = document.getElementsByClassName(
+      const dropdowns = document.getElementsByClassName(
         "dropdown-toggle--content"
       );
-      var button = document.getElementsByClassName("dropdown-toggle--button");
-      var i;
+      const button = document.getElementsByClassName("dropdown-toggle--button");
+      let i;
       for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
+        const openDropdown = dropdowns[i];
         if (!(event.target === button[i].childNodes[1])) {
           openDropdown.style.display = "none";
         }
