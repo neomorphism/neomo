@@ -62,14 +62,13 @@
     <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
-    <div class="outset-neomo alert" id="Alt">
+    <div class="outset-neomo alert" role="alert">
       <span
         ><strong>Well done!</strong> You successfully read this important alert
         message.</span
       >
       <span class="alt-close">X</span>
     </div>
-
     <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>

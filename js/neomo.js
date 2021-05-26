@@ -1,24 +1,14 @@
-/* Alert function start */
 document.addEventListener("DOMContentLoaded", function () {
-  var alt = document.getElementsByClassName("alt-close");
-  var alt_close = document.getElementsByClassName("alt-close");
-  var altArray = [];
-  var i, j, k;
+  /* Alert function start */
+  const alerts = document.querySelectorAll(".alert");
 
-  function Alt(num) {
-    return function () {
-      alt_close[num].onclick = function () {
-        alt[num].parentElement.style.display = "none";
+  if (alerts) {
+    alerts.forEach((element) => {
+      element.getElementsByClassName("alt-close")[0].onclick = function () {
+        element.style.display = "none";
       };
-    };
+    });
   }
-  for (i = 0; i < alt_close.length; i++) {
-    altArray[i] = Alt(i);
-  }
-  for (j = 0; j < alt_close.length; j++) {
-    altArray[j]();
-  }
-
   /* Alert function end */
 
   /* Collapsible function start */
