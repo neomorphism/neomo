@@ -732,7 +732,7 @@
         </div>
       </div>
     </div>
-    
+
     <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>
@@ -761,7 +761,7 @@
         </div>
       </div>
     </div>
-    
+
     <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>
@@ -777,7 +777,9 @@
     <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
-    <button data-modal-id="modal3" class="modal-button outset-neomo">Middle Card MODAL</button>
+    <button data-modal-id="modal3" class="modal-button outset-neomo">
+      Middle Card MODAL
+    </button>
     <div data-modal-id="modal3" class="modal">
       <div class="modal-content--md outset-neomo">
         <span class="modal-close">&times;</span>
@@ -806,9 +808,9 @@
               Julian Steenbergen
             </p>
             <p class="text-left">
-              I'm actually a musician, but photography is just too fun. It brings me
-              joy, inspiration and peace. Happy to support the community here with
-              my work! ✨
+              I'm actually a musician, but photography is just too fun. It
+              brings me joy, inspiration and peace. Happy to support the
+              community here with my work! ✨
             </p>
             <p class="text-left">
               <i class="fas fa-calendar-week"></i>
@@ -838,7 +840,9 @@
     <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body class="neomo">
-    <button data-modal-id="modal4" class="modal-button outset-neomo">Small Card MODAL</button>
+    <button data-modal-id="modal4" class="modal-button outset-neomo">
+      Small Card MODAL
+    </button>
     <div data-modal-id="modal4" class="modal">
       <div class="modal-content--sm outset-neomo">
         <span class="modal-close">&times;</span>
@@ -867,9 +871,9 @@
               Julian Steenbergen
             </p>
             <p class="text-left">
-              I'm actually a musician, but photography is just too fun. It brings me
-              joy, inspiration and peace. Happy to support the community here with
-              my work! ✨
+              I'm actually a musician, but photography is just too fun. It
+              brings me joy, inspiration and peace. Happy to support the
+              community here with my work! ✨
             </p>
             <p class="text-left">
               <i class="fas fa-calendar-week"></i>
