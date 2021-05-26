@@ -25,7 +25,7 @@
   <head>
     <meta charset="utf-8" />
     <title>test.html</title>
-    <link rel="stylesheet" type="text/css" href="src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body>
     <div class="container">
@@ -62,7 +62,7 @@
   <head>
     <meta charset="utf-8" />
     <title>test.html</title>
-    <link rel="stylesheet" type="text/css" href="src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body>
     <div class="container">
@@ -138,7 +138,7 @@
   <head>
     <meta charset="utf-8" />
     <title>test.html</title>
-    <link rel="stylesheet" type="text/css" href="src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body>
     <div class="container">
@@ -191,7 +191,7 @@
   <head>
     <meta charset="utf-8" />
     <title>test.html</title>
-    <link rel="stylesheet" type="text/css" href="src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body>
     <div class="container">
@@ -241,7 +241,7 @@
   <head>
     <meta charset="utf-8" />
     <title>test.html</title>
-    <link rel="stylesheet" type="text/css" href="src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body>
     <div class="container">
@@ -291,7 +291,7 @@
   <head>
     <meta charset="utf-8" />
     <title>test.html</title>
-    <link rel="stylesheet" type="text/css" href="src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body>
     <div class="container">
@@ -341,7 +341,7 @@
   <head>
     <meta charset="utf-8" />
     <title>test.html</title>
-    <link rel="stylesheet" type="text/css" href="src/neomo.css" />
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
   <body>
     <div class="container">
