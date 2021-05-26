@@ -233,50 +233,16 @@
 
   <body class="neomo">
     <div>example</div>
-    <input data-range-id="range" type="range" min="1" max="100" class="range-round inset-neomo myRange" />
+    <input
+      data-range-id="range"
+      type="range"
+      min="1"
+      max="100"
+      class="range-round inset-neomo myRange"
+    />
     <p>Value: <span data-range-id="range" class="demo"></span></p>
 
     <script type="text/javascript" src="/js/neomo.js"></script>
-  </body>
-</html>
-```
-
-## Label Information
-
-> Floating label usage
-
-```html
-<!DOCTYPE html>
-<html charset="utf-8">
-  <head>
-    <link rel="stylesheet" type="text/css" href="..src/neomo.css" />
-  </head>
-  <body class="neomo">
-    <form action="">
-      <div class="floatinglabel-field outset-neomo">
-        <input
-          type="text"
-          name="fullname0"
-          id="fullname0"
-          placeholder="Your password"
-          class="floatinglabel-input neomo"
-        />
-        <label for="fullname0" class="floatinglabel-label">Name</label>
-      </div>
-    </form>
-
-    <form action="">
-      <div class="floatinglabel-field inset-neomo">
-        <input
-          type="text"
-          name="fullname7"
-          id="fullname7"
-          placeholder="Your password"
-          class="floatinglabel-input neomo"
-        />
-        <label for="fullname7" class="floatinglabel-label">Name</label>
-      </div>
-    </form>
   </body>
 </html>
 ```

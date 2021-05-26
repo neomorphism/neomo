@@ -91,46 +91,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   /* File function end */
 
-  /* label function start */
-  var input = document.getElementsByClassName("floatinglabel-input");
-  var field = document.getElementsByClassName("floatinglabel-field");
-
-  for (k = 0; k < input.length; k++) {
-    (function (m) {
-      if (
-        !field[m].classList.contains("inset") &&
-        !field[m].classList.contains("inset-neomo") &&
-        !field[m].classList.contains("inset-gray") &&
-        !field[m].classList.contains("inset-dark")
-      ) {
-        input[m].addEventListener("click", function (event) {
-          if (field[m].classList.contains("outset-neomo")) {
-            field[m].setAttribute(
-              "style",
-              "box-shadow : inset -3px -3px 7px #ffffffe5, inset 3px 3px 5px rgba(55, 114, 216, 0.288) !important"
-            );
-          } else if (field[m].classList.contains("outset-gray")) {
-            field[m].setAttribute(
-              "style",
-              " box-shadow: inset -3px -3px 7px #ffffff80, inset 3px 3px 5px rgba(46, 46, 46, 0.288) !important"
-            );
-          } else if (field[m].classList.contains("outset-dark")) {
-            field[m].setAttribute(
-              "style",
-              "  box-shadow: inset 5px 5px 9px #303030, inset -5px -5px 9px #535353 !important"
-            );
-          } else {
-            field[m].setAttribute(
-              "style",
-              "box-shadow: inset 3px 3px 5px #c0c0c0, inset -3px -3px 5px #fff !important"
-            );
-          }
-        });
-      }
-    })(k);
-  }
-  /* label function end */
-
   /* Modal function start */
   const modals = document.querySelectorAll("[data-modal-id]");
   function addModalEvent(modal, element) {
