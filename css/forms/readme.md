@@ -225,16 +225,18 @@
 
 ```html
 <!DOCTYPE html>
-<html>
+<html charset="utf-8">
   <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <title>test</title>
     <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
   </head>
-  <body>
+
+  <body class="neomo">
     <div>example</div>
-    <input type="range" min="1" max="100" class="range-round myRange" />
-    <p>Value: <span class="demo"></span></p>
+    <input data-range-id="range" type="range" min="1" max="100" class="range-round inset-neomo myRange" />
+    <p>Value: <span data-range-id="range" class="demo"></span></p>
+
+    <script type="text/javascript" src="/js/neomo.js"></script>
   </body>
 </html>
 ```
