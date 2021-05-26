@@ -12,49 +12,69 @@ document.addEventListener("DOMContentLoaded", function () {
   /* Alert function end */
 
   /* Collapsible function start */
-  var collapse = document.getElementsByClassName("collapse");
-
-  for (i = 0; i < collapse.length; i++) {
-    collapse[i].onclick = function () {
-      var collapse = document.getElementsByClassName("collapse");
-      var expanded = document.getElementsByClassName("expanded");
-
-      for (j = 0; j < collapse.length; j++) {
-        if (event.target === collapse[j]) {
-          if (expanded[j].style.visibility === "visible") {
-            expanded[j].style.visibility = "hidden";
-            expanded[j].style.maxHeight = "0";
-            expanded[j].style.opacity = "0";
-          } else {
-            expanded[j].style.visibility = "visible";
-            expanded[j].style.maxHeight = "100vh";
-            expanded[j].style.opacity = "1";
-          }
+  const collapses = document.querySelectorAll("[data-collapse-id]");
+  function addCollapseEvent(collapse) {
+    collapses.forEach((expanded) => {
+      if (
+        expanded.tagName === "DIV" &&
+        expanded.getAttribute("data-collapse-id") === collapse
+      ) {
+        if (expanded.style.visibility === "visible") {
+          expanded.style.visibility = "hidden";
+          expanded.style.maxHeight = "0";
+          expanded.style.opacity = "0";
+        } else {
+          expanded.style.visibility = "visible";
+          expanded.style.maxHeight = "100vh";
+          expanded.style.opacity = "1";
         }
+        return;
       }
-    };
+    });
+  }
+
+  if (collapses) {
+    collapses.forEach((element) => {
+      const collapse = element.getAttribute("data-collapse-id");
+      const tag = element.tagName;
+
+      // collapse content
+      if (tag === "BUTTON") {
+        element.onclick = function () {
+          addCollapseEvent(collapse);
+        };
+      }
+    });
   }
   /* collapsible function end */
 
   /* Dropdown function start */
-  var dropdown = document.getElementsByClassName("dropdown-toggle--button");
-
-  for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].onclick = function () {
-      var dropdown = document.getElementsByClassName("dropdown-toggle--button");
-      for (j = 0; j < dropdown.length; j++) {
-        if (
-          event.target === dropdown[j] ||
-          event.target === dropdown[j].childNodes[1]
-        ) {
-          if (dropdown[j].nextElementSibling.style.display === "block") {
-            dropdown[j].nextElementSibling.style.display = "none";
-          } else {
-            dropdown[j].nextElementSibling.style.display = "block";
-          }
-        }
+  const dropdowns = document.querySelectorAll("[data-dropdown-id]");
+  function addDropdownEvent(dropdown) {
+    dropdowns.forEach((tag) => {
+      // tag
+      if (
+        tag.tagName === "DIV" &&
+        tag.getAttribute("data-dropdown-id") === dropdown
+      ) {
+        if (tag.style.display === "block") tag.style.display = "none";
+        else tag.style.display = "block";
+        return;
       }
-    };
+    });
+  }
+
+  if (dropdowns) {
+    dropdowns.forEach((element) => {
+      const dropdown = element.getAttribute("data-dropdown-id");
+      const tag = element.tagName;
+      // dropdown content
+      if (tag === "BUTTON") {
+        element.onclick = function () {
+          addDropdownEvent(dropdown);
+        };
+      }
+    });
   }
   /* Dropdown function end */
 
@@ -171,17 +191,32 @@ document.addEventListener("DOMContentLoaded", function () {
   /* Navbar function end */
 
   /* Range start */
-  var slider = document.getElementsByClassName("myRange");
-  var output = document.getElementsByClassName("demo");
-  for (i = 0; i < slider.length; i++) {
-    (function (m) {
-      output[m].innerHTML = slider[m].value;
-      slider[m].addEventListener("input", function () {
-        output[m].innerHTML = slider[m].value;
-      });
-    })(i);
+  const ranges = document.querySelectorAll("[data-range-id]");
+  function addRangeEvent(range, element) {
+    ranges.forEach((tag) => {
+      if (
+        tag.tagName === "SPAN" &&
+        tag.getAttribute("data-range-id") === range
+      ) {
+        tag.innerHTML = element.value;
+        return;
+      }
+    });
   }
 
+  if (ranges) {
+    ranges.forEach((element) => {
+      const range = element.getAttribute("data-range-id");
+      const tag = element.tagName;
+      // range content
+      if (tag === "INPUT") {
+        addRangeEvent(range, element);
+        element.addEventListener("input", function () {
+          addRangeEvent(range, element);
+        });
+      }
+    });
+  }
   /* Range end */
 
   /* Tab function start */
@@ -226,22 +261,14 @@ document.addEventListener("DOMContentLoaded", function () {
   /* Tab function end */
 
   /* Toast function start */
-  var toast = document.getElementsByClassName("toast-close");
-  var toast_close = document.getElementsByClassName("toast-close");
-  var toastArray = [];
+  const toasts = document.querySelectorAll(".toast");
 
-  function Toast(num) {
-    return function () {
-      toast_close[num].onclick = function () {
-        toast[num].parentElement.parentElement.style.display = "none";
+  if (toasts) {
+    toasts.forEach((element) => {
+      element.getElementsByClassName("toast-close")[0].onclick = function () {
+        element.style.display = "none";
       };
-    };
-  }
-  for (i = 0; i < toast_close.length; i++) {
-    toastArray[i] = Toast(i);
-  }
-  for (j = 0; j < toast_close.length; j++) {
-    toastArray[j]();
+    });
   }
   /* Toast function end */
 
