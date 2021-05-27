@@ -22,6 +22,7 @@
 @import "./forms/checkbox.css";
 @import "./forms/file.css";
 @import "./forms/input.css";
+@import "./forms/floatinglabel.css";
 @import "./forms/radio.css";
 @import "./forms/range.css";
 @import "./forms/switches.css";

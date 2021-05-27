@@ -182,6 +182,35 @@
   </body>
 </html>
 ```
+## Floating Label Information
+
+> Floating Label usage
+
+```html
+<!DOCTYPE html>
+<html charset="utf-8">
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/css/neomo.css" />
+  </head>
+  <body class="neomo">
+      <form action="">
+            <div class="floatinglabel-field ">
+                <input
+                  type="text"
+                  name="fullname"
+                  id="fullname"
+                  placeholder="Your Name"
+                  class="floatinglabel-input neomo"
+                />
+                <label for="fullname" class="floatinglabel-label outset-neomo">Enter your Name</label>
+              </div>
+        </form>
+      
+     <script type="text/javascript" src="/js/neomo.js"></script>
+  </body>
+</html>
+```
 
 ## Radio Information
 
