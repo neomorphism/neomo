@@ -5,6 +5,12 @@
 [![GitHub forks](https://img.shields.io/github/forks/neomorphism/neomo)](https://github.com/neomorphism/neomo/network)
 [![GitHub license](https://img.shields.io/github/license/neomorphism/neomo)](https://github.com/neomorphism/neomo/blob/main/LICENSE)
 [![npm version](https://img.shields.io/npm/v/neomo)](https://www.npmjs.com/package/neomo)
+<a href="https://www.npmjs.com/package/neomo">
+<img src="https://img.shields.io/npm/dt/neomo.svg" alt="Downloads">
+</a>
+<a href="https://www.npmjs.com/package/neomo">
+<img src="https://img.shields.io/npm/dm/neomo.svg" alt="Downloads">
+</a>
 [![](https://data.jsdelivr.com/v1/package/npm/neomo/badge)](https://www.jsdelivr.com/package/npm/neomo)
 
 > Neomorphism Design Framework Open Source
