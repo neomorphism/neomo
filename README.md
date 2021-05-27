@@ -4,6 +4,8 @@
 [![GitHub issues](https://img.shields.io/github/issues/neomorphism/neomo)](https://github.com/neomorphism/neomo/issues)
 [![GitHub forks](https://img.shields.io/github/forks/neomorphism/neomo)](https://github.com/neomorphism/neomo/network)
 [![GitHub license](https://img.shields.io/github/license/neomorphism/neomo)](https://github.com/neomorphism/neomo/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/neomo)](https://www.npmjs.com/package/neomo)
+[![](https://data.jsdelivr.com/v1/package/npm/neomo/badge)](https://www.jsdelivr.com/package/npm/neomo)
 
 > Neomorphism Design Framework Open Source
 
