@@ -198,6 +198,8 @@ input:checked + .switch.outset-orange,
 }
 
 .outset-neomo,
+.neomo .checkbox-input:before,
+.neomo .checkbox-input:focus,
 .switch.outset-neomo:before,
 .neomo .dropdown-content,
 .neomo .dropdown-toggle--content,
@@ -217,6 +219,8 @@ input:checked + .switch.outset-orange,
 }
 
 .outset-gray,
+.gray .checkbox-input:before,
+.gray .checkbox-input:focus,
 .switch.outset-gray:before,
 .gray .dropdown-content,
 .gray .dropdown-toggle--content,
@@ -235,6 +239,8 @@ input:checked + .switch.outset-orange,
 }
 
 .outset-dark,
+.dark .checkbox-input:before,
+.dark .checkbox-input:focus,
 .switch.outset-dark:before,
 .dark .dropdown-content,
 .dark .dropdown-toggle--content,

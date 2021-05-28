@@ -2,7 +2,7 @@
 
 /*
 * Title : checkbox form
-* Description : this is checkbox
+* Description : this is checkbox.
 */
 
 .checkbox-input {
@@ -14,7 +14,8 @@
   height: 20px;
   vertical-align: middle;
   outline: none;
-  border-radius: 20% !important;
+}
+.checkbox-input:focus {
   box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
 
@@ -31,6 +32,8 @@
   top: 0;
   display: inline-block;
   position: absolute;
+  border-radius: 20% !important;
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
 }
 
 .checkbox-input:checked:after {
