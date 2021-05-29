@@ -28,7 +28,7 @@
 
 ```html
 <link
-  href="https://cdn.jsdelivr.net/npm/neomo@2.0.0/dist/neomo.min.css"
+  href="https://cdn.jsdelivr.net/npm/neomo@2.0.1/dist/neomo.min.css"
   rel="stylesheet"
 />
 ```
@@ -36,7 +36,7 @@
 - JS
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/neomo@2.0.0/dist/neomo.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/neomo@2.0.1/dist/neomo.min.js"></script>
 ```
 
 ### NPM/YARN Package
