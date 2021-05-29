@@ -13,6 +13,12 @@
 </a>
 [![](https://data.jsdelivr.com/v1/package/npm/neomo/badge)](https://www.jsdelivr.com/package/npm/neomo)
 
+<div align="center">
+  <a href="https://neomo-ui.com/">
+    <img src="https://neomo-ui.com/mainlogo.png" alt="neomo logo" width="350" height="350">
+  </a>
+</div>
+
 > Neomorphism Design Framework Open Source
 
 ## Features
