@@ -211,6 +211,8 @@ input:checked + .switch.outset-orange,
 .neomo .icon-circle--sm,
 .neomo .icon-circle--lg,
 .neomo .icon,
+.neomo .icon-sm,
+.neomo .icon-lg,
 .navbar .search-bar {
   border: none;
   background: var(--neomo) !important;
@@ -231,7 +233,9 @@ input:checked + .switch.outset-orange,
 .gray .icon-circle,
 .gray .icon-circle--sm,
 .gray .icon-circle--lg,
-.gray .icon {
+.gray .icon,
+.gray .icon-sm,
+.gray .icon-lg {
   border: none;
   background: var(--neomo-gray) !important;
   box-shadow: -3px -3px 7px #ffffff80, 3px 3px 5px rgba(94, 104, 121, 0.288) !important;
@@ -251,7 +255,9 @@ input:checked + .switch.outset-orange,
 .dark .icon-circle,
 .dark .icon-circle--sm,
 .dark .icon-circle--lg,
-.dark .icon {
+.dark .icon,
+.dark .icon-sm,
+.dark .icon-lg {
   border: none;
   background: var(--neomo-dark) !important;
   box-shadow: 3px 3px 7px #272727, -3px -3px 5px #5a5a5a !important;
@@ -269,7 +275,9 @@ input:checked + .switch.outset-orange,
 .smoke .icon-circle,
 .smoke .icon-circle--sm,
 .smoke .icon-circle--lg,
-.smoke .icon {
+.smoke .icon,
+.smoke .icon-sm,
+.smoke .icon-lg {
   border: none;
   background: #f5f5f5 !important;
   box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, 0.288) !important;
