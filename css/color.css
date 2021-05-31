@@ -212,8 +212,7 @@ input:checked + .switch.outset-orange,
 .neomo .icon-circle--lg,
 .neomo .icon,
 .neomo .icon-sm,
-.neomo .icon-lg,
-.navbar .search-bar {
+.neomo .icon-lg {
   border: none;
   background: var(--neomo) !important;
   box-shadow: -3px -3px 7px #ffffffe5, 3px 3px 5px #3a72d349 !important;
@@ -329,7 +328,32 @@ input:checked + .switch.outset-orange,
   box-shadow: inset 5px 5px 9px #242424, inset -5px -5px 9px #535353 !important;
 }
 
+
+.neomo .range-round::-webkit-slider-thumb{
+  background: #9ccef8;
+}
+.neomo .range-round::-moz-range-thumb {
+  background: #9ccef8;
+}
+
+.gray .range-round::-webkit-slider-thumb{
+  background: rgb(182, 181, 181);
+}
+.gray .range-round::-moz-range-thumb {
+  background: rgb(182, 181, 181);
+}
+
+.dark .range-round::-webkit-slider-thumb{
+  background: rgb(25, 25, 25);
+}
+.dark .range-round::-moz-range-thumb {
+  background: rgb(25, 25, 25);
+}
+
+
+
 :root {
   --neomo-gray: #d3d3d3;
   --neomo-dark: #464646;
 }
+

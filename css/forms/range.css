@@ -18,13 +18,8 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #fa821b;
-  background: radial-gradient(
-    circle,
-    rgba(244, 157, 82, 1) 0%,
-    rgba(250, 130, 27, 1) 100%
-  );
-  box-shadow: 1px 1px 1px white;
+  background: rgb(82, 81, 81);
+  box-shadow: none;
   cursor: pointer;
 }
 .range-round.disabled::-webkit-slider-thumb {
@@ -39,12 +34,8 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #fa821b;
-  background: radial-gradient(
-    circle,
-    rgba(244, 157, 82, 1) 0%,
-    rgba(250, 130, 27, 1) 100%
-  );
+  background: rgb(82, 81, 81);
+  box-shadow: none;
   cursor: pointer;
 }
 .range-round:hover:not(.disabled) {
