@@ -83,3 +83,19 @@ input.large {
   > input:not(.outset-neomo):not(.outset-gray):not(.outset-dark):not(.outset-orange):focus {
   box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff !important;
 }
+
+
+.textarea{
+  width: 100%;
+  border-left: 0.1px solid;
+  border-color: rgb(235, 234, 234);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff;
+}
+
+.textarea:focus{
+  outline: 0;
+  cursor: pointer;
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff !important;
+}
