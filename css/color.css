@@ -44,7 +44,11 @@
 }
 
 .inset,
-.navbar .active {
+.navbar .active,
+.inset input:-webkit-autofill,
+.inset input:-webkit-autofill:hover, 
+.inset input:-webkit-autofill:focus, 
+.inset input:-webkit-autofill:active {
   box-shadow: inset 3px 3px 5px #c0c0c0, inset -3px -3px 5px #fff !important;
 }
 
@@ -72,7 +76,11 @@ input:checked + .switch.outset-neomo,
 .neomo .radio-input:before,
 .neomo .navbar .active,
 .neomo .nav-link:hover,
-.neomo .nav-link--animation:hover {
+.neomo .nav-link--animation:hover,
+.neomo input:-webkit-autofill,
+.neomo input:-webkit-autofill:hover, 
+.neomo input:-webkit-autofill:focus, 
+.neomo input:-webkit-autofill:active {
   border: none;
   background: var(--neomo) !important;
   box-shadow: inset -3px -3px 7px #ffffffe5,
@@ -104,7 +112,11 @@ input:checked + .switch.outset-gray,
 .gray .radio-input:before,
 .gray .navbar .active,
 .gray .nav-link:hover,
-.gray .nav-link--animation:hover {
+.gray .nav-link--animation:hover,
+.gray input:-webkit-autofill,
+.gray input:-webkit-autofill:hover, 
+.gray input:-webkit-autofill:focus, 
+.gray input:-webkit-autofill:active {
   border: none;
   background: var(--neomo-gray) !important;
   box-shadow: inset -3px -3px 7px #ffffff80,
@@ -136,7 +148,11 @@ input:checked + .switch.outset-dark,
 .dark .radio-input:before,
 .dark .navbar .active,
 .dark .nav-link:hover,
-.dark .nav-link--animation:hover {
+.dark .nav-link--animation:hover,
+.dark input:-webkit-autofill,
+.dark input:-webkit-autofill:hover, 
+.dark input:-webkit-autofill:focus, 
+.dark input:-webkit-autofill:active {
   border: none;
   background: var(--neomo-dark) !important;
   box-shadow: inset 5px 5px 9px #303030, inset -5px -5px 9px #535353 !important;
