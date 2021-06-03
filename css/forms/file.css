@@ -9,8 +9,8 @@
 }
 .file input[type="file"] {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 0;
+  height: 0;
   padding: 0;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
@@ -18,9 +18,8 @@
 }
 .file .file-name {
   display: inline-block;
-  padding: 15px;
+  padding: 0.8rem;
   border: none;
-  width: 200px;
   font-size: inherit;
   font-family: inherit;
   line-height: normal;
@@ -36,7 +35,7 @@
 }
 .file label {
   display: inline-block;
-  padding: 15px;
+  padding: 0.8rem;
   font-size: inherit;
   line-height: normal;
   vertical-align: middle;
