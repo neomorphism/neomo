@@ -1,0 +1,58 @@
+/* Container Information */
+
+/*
+* Title : container
+* Description : containers layout
+*/
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+/* XX-Large */
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+/* X-Large */
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+/* Large */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+/* Medium */
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+/* Small */
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+/* Extra Small */
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
+/* container FINISH */
+
+/*
+* Title : container-fluid
+* Description : containers layout
+*/
+.container-fluid {
+  width: 100%;
+  max-width: 100%;
+}
+/* container-fluid FINISH */
