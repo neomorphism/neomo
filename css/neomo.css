@@ -28,8 +28,8 @@
 @import "./forms/switches.css";
 @import "./helpers/coloredLinks.css";
 @import "./helpers/typography.css";
-@import "./layout/layout.css";
 @import "./layout/columns.css";
+@import "./layout/container.css";
 
 /* Common Section */
 
