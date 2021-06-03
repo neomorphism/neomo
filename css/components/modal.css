@@ -83,3 +83,40 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+/* Medium */
+@media (max-width: 992px) {
+  .modal-content--sm {
+    width: 40%;
+  }
+  .modal-content--md {
+    width: 60%;
+  }
+  .modal-content--lg {
+    width: 80%;
+  }
+}
+/* Small */
+@media (max-width: 768px) {
+  .modal-content--sm {
+    width: 50%;
+  }
+  .modal-content--md {
+    width: 60%;
+  }
+  .modal-content--lg {
+    width: 70%;
+  }
+}
+/* Extra Small */
+@media screen and (max-width: 576px) {
+  .modal-content--sm {
+    width: 60%;
+  }
+  .modal-content--md {
+    width: 70%;
+  }
+  .modal-content--lg {
+    width: 80%;
+  }
+}

@@ -6,6 +6,7 @@
 */
 
 .badge {
+  display: inline-block;
   margin: 5px;
   padding: 0.6rem 0.8rem;
   border-radius: 10px;

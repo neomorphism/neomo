@@ -6,6 +6,7 @@
 */
 .dropdown {
   display: inline-block;
+  position: relative;
 }
 .dropdown-button {
   padding: 8px;
