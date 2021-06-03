@@ -34,7 +34,7 @@
 
 ```html
 <link
-  href="https://cdn.jsdelivr.net/npm/neomo@2.0.1/dist/neomo.min.css"
+  href="https://cdn.jsdelivr.net/npm/neomo@2.0.2/dist/neomo.min.css"
   rel="stylesheet"
 />
 ```
@@ -42,7 +42,7 @@
 - JS
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/neomo@2.0.1/dist/neomo.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/neomo@2.0.2/dist/neomo.min.js"></script>
 ```
 
 ### NPM/YARN Package
@@ -53,6 +53,62 @@ npm install neomo
 or
 
 yarn add neomo
+```
+
+## What's included
+
+```text
+neomo/
+├── css/
+│   ├── components/
+│   │   ├── alert.css
+│   │   ├── badge.css
+│   │   ├── breadcrumb.css
+│   │   ├── button.css
+│   │   ├── card.css
+│   │   ├── dropdown.css
+│   │   ├── icon.css
+│   │   ├── modal.css
+│   │   ├── navbar.css
+│   │   ├── navigation.css
+│   │   ├── pagination.css
+│   │   ├── progressbar.css
+│   │   ├── select.css
+│   │   ├── spinners.css
+│   │   ├── tab.css
+│   │   ├── toast.css
+│   │   └── tooltips.css
+│   │
+│   ├── content/
+│   │   └── table.css
+│   │
+│   ├── forms/
+│   │   ├── checkbox.css
+│   │   ├── file.css
+│   │   ├── floatinglabel.css
+│   │   ├── input.css
+│   │   ├── radio.css
+│   │   ├── range.css
+│   │   └── switches.css
+│   │
+│   ├── helpers/
+│   │   ├── coloredLinks.css
+│   │   └── typography.css
+│   │
+│   ├── layout/
+│   │   ├── columns.css
+│   │   └── container.css
+│   │
+│   ├── color.css
+│   └── neomo.css
+│
+├── dist/
+│   ├── neomo.min.css
+│   └── neomo.min.js
+│
+└── js/
+    └── neomo.js
+
 ```
 
 ## Homepage
