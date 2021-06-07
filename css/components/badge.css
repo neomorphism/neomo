@@ -3,6 +3,7 @@
 /*
 * Title : Badge component
 * Description : This is the css of the badge on the component.
+*               We offer three different sizes which are sm, md, and rg.
 */
 
 .badge {

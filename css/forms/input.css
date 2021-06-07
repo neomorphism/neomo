@@ -2,7 +2,10 @@
 
 /*
 * Title : Input component
-* Description : this is Input
+* Description : This is Input.
+*               The default border-radius is 10px, but you can adjust it through your own stylesheet or these class names: square, rounded.
+*               We offer three different sizes which are small, medium, and large.
+*               You can also make use of input-group and textarea.
 */
 
 .input {

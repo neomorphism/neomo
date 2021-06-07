@@ -1,7 +1,7 @@
 /* Common Section */
 /*
 * Title : Neumorphism Color
-* Description : this is NEOMO color
+* Description : The default color is white, and we offer three different colors which are neomo, gray, and dark.
 */
 
 .neomo {
@@ -46,8 +46,8 @@
 .inset,
 .navbar .active,
 .inset input:-webkit-autofill,
-.inset input:-webkit-autofill:hover, 
-.inset input:-webkit-autofill:focus, 
+.inset input:-webkit-autofill:hover,
+.inset input:-webkit-autofill:focus,
 .inset input:-webkit-autofill:active {
   box-shadow: inset 3px 3px 5px #c0c0c0, inset -3px -3px 5px #fff !important;
 }
@@ -78,8 +78,8 @@ input:checked + .switch.outset-neomo,
 .neomo .nav-link:hover,
 .neomo .nav-link--animation:hover,
 .neomo input:-webkit-autofill,
-.neomo input:-webkit-autofill:hover, 
-.neomo input:-webkit-autofill:focus, 
+.neomo input:-webkit-autofill:hover,
+.neomo input:-webkit-autofill:focus,
 .neomo input:-webkit-autofill:active {
   border: none;
   background: var(--neomo) !important;
@@ -114,8 +114,8 @@ input:checked + .switch.outset-gray,
 .gray .nav-link:hover,
 .gray .nav-link--animation:hover,
 .gray input:-webkit-autofill,
-.gray input:-webkit-autofill:hover, 
-.gray input:-webkit-autofill:focus, 
+.gray input:-webkit-autofill:hover,
+.gray input:-webkit-autofill:focus,
 .gray input:-webkit-autofill:active {
   border: none;
   background: var(--neomo-gray) !important;
@@ -150,8 +150,8 @@ input:checked + .switch.outset-dark,
 .dark .nav-link:hover,
 .dark .nav-link--animation:hover,
 .dark input:-webkit-autofill,
-.dark input:-webkit-autofill:hover, 
-.dark input:-webkit-autofill:focus, 
+.dark input:-webkit-autofill:hover,
+.dark input:-webkit-autofill:focus,
 .dark input:-webkit-autofill:active {
   border: none;
   background: var(--neomo-dark) !important;
@@ -344,32 +344,28 @@ input:checked + .switch.outset-orange,
   box-shadow: inset 5px 5px 9px #242424, inset -5px -5px 9px #535353 !important;
 }
 
-
-.neomo .range-round::-webkit-slider-thumb{
+.neomo .range-round::-webkit-slider-thumb {
   background: #9ccef8;
 }
 .neomo .range-round::-moz-range-thumb {
   background: #9ccef8;
 }
 
-.gray .range-round::-webkit-slider-thumb{
+.gray .range-round::-webkit-slider-thumb {
   background: rgb(182, 181, 181);
 }
 .gray .range-round::-moz-range-thumb {
   background: rgb(182, 181, 181);
 }
 
-.dark .range-round::-webkit-slider-thumb{
+.dark .range-round::-webkit-slider-thumb {
   background: rgb(25, 25, 25);
 }
 .dark .range-round::-moz-range-thumb {
   background: rgb(25, 25, 25);
 }
 
-
-
 :root {
   --neomo-gray: #d3d3d3;
   --neomo-dark: #464646;
 }
-

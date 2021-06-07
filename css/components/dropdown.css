@@ -2,7 +2,10 @@
 
 /*
 * Title : Dropdown component
-* Description : this is Dropdown
+* Description : This is Dropdown.
+*               There are two different ways for showing the list: hover and click.
+*               If you want to use the first way, write the class name without "toggle".
+*               On the contrary, if you want to use the second way, write the class name with "toggle".
 */
 .dropdown {
   display: inline-block;
@@ -10,7 +13,7 @@
 }
 .dropdown-button {
   padding: 8px;
-  font-size: 15px;
+  font-size: 12px;
   min-width: 150px;
   min-height: 50px;
   cursor: pointer;
