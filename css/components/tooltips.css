@@ -2,7 +2,7 @@
 
 /*
 * Title : Tooltip component
-* Description : this is Tooltip
+* Description : This is Tooltip.
 */
 
 .tooltip {
@@ -24,30 +24,28 @@
 }
 
 .tooltip .tooltip-content.bottom {
-  margin-top: 10px;
+  transform: translateX(-50%);
+  top: 115%;
+  left: 50%;
 }
 
 .tooltip .tooltip-content.top {
-  bottom: 100%;
+  transform: translateX(-50%);
+  bottom: 115%;
   left: 50%;
-  margin-left: -50%;
-  margin-bottom: 10px;
 }
 
 .tooltip .tooltip-content.left {
-  right: 110%;
-  top: -7px;
+  transform: translateY(-40%);
+  right: 115%;
 }
 
 .tooltip .tooltip-content.right {
-  left: 110%;
-  top: -7px;
+  transform: translateY(-40%);
+  left: 115%;
 }
 
-.tooltip:hover .tooltip-content.bottom,
-.tooltip:hover .tooltip-content.top,
-.tooltip:hover .tooltip-content.left,
-.tooltip:hover .tooltip-content.right {
+.tooltip:hover .tooltip-content {
   visibility: visible;
 }
 
