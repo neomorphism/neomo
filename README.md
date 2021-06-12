@@ -1,5 +1,3 @@
-# NEOMO
-
 [![GitHub stars](https://img.shields.io/github/stars/neomorphism/neomo)](https://github.com/neomorphism/neomo/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/neomorphism/neomo)](https://github.com/neomorphism/neomo/issues)
 [![GitHub forks](https://img.shields.io/github/forks/neomorphism/neomo)](https://github.com/neomorphism/neomo/network)
@@ -21,14 +19,22 @@
 
 > Neomorphism Design Framework Open Source
 
-## Features
+# Features
 
 - Neomorphism design is a design language that makes the distinction between objects and backgrounds only shadowed, giving them a voluminous and vivid feeling of life.
 - The distinction between objects and backgrounds is distinguished only by shadows and light, not by color tea, giving a round and smooth impression. Overall, the UI is lively, and this is tactile beyond simple graphics.
 
-## Getting Started
+# Table of content
 
-### CDN via JsDelivr
+- [Getting Started](#getting-started)
+- [What's included](#whats-included)
+- [Homepage (Docs)](#homepage-docs)
+- [NEOMO UI Sample](#neomo-ui-sample)
+- [Template](#template)
+
+# Getting Started
+
+## CDN via JsDelivr
 
 - CSS
 
@@ -45,7 +51,7 @@
 <script src="https://cdn.jsdelivr.net/npm/neomo@2.0.2/dist/neomo.min.js"></script>
 ```
 
-### NPM/YARN Package
+## NPM/YARN Package
 
 ```
 npm install neomo
@@ -55,7 +61,7 @@ or
 yarn add neomo
 ```
 
-## What's included
+# What's included
 
 ```text
 neomo/
@@ -111,14 +117,36 @@ neomo/
 
 ```
 
-## Homepage
+# Homepage (Docs)
 
 - URL : https://neomo-ui.com
 
-- Github : https://github.com/Officialsite-frontend/official-site
-
-## Template page
+# NEOMO UI Sample
 
 - URL : https://neomorphism.github.io/
 
-- Github : https://github.com/neomorphism/neomorphism.github.io
+## Example
+
+<div align="center">
+<img src="https://neomo-ui.com/template1.png" alt="neomo logo" width="340" height="340">
+<img src="https://neomo-ui.com/template2.png" alt="neomo logo" width="340" height="340">
+</div>
+<div align="center">
+<img src="https://neomo-ui.com/template3.png" alt="neomo logo" width="340" height="340">
+<img src="https://neomo-ui.com/template4.png" alt="neomo logo" width="340" height="340">
+</div>
+
+# Template
+
+- URL :https://neomorphism.github.io/template/
+
+## Example
+
+<div align="center">
+<img src="https://neomorphism.github.io/template/landing.png" alt="neomo logo" width="340" height="210">
+<img src="https://neomorphism.github.io/template/portfolio.png" alt="neomo logo" width="340" height="210">
+</div>
+<div align="center">
+<img src="https://neomorphism.github.io/template/sign-in.png" alt="neomo logo" width="340" height="210">
+<img src="https://neomorphism.github.io/template/shop.png" alt="neomo logo" width="340" height="210">
+</div>
