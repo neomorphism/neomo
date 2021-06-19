@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
- /* Alert function start */
+  /* Alert function start */
   const alerts = document.querySelectorAll(".alert");
 
   if (alerts) {
@@ -234,36 +234,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   /* Toast function end */
 
-  /* Floatinglabel function start */
-  var fields=document.querySelectorAll(".floatinglabel-field");
-  function addLabelEvent(field) {
-    if(field.childNodes[3].classList.contains("outset-neomo")){
-      field.setAttribute('style','box-shadow : inset -3px -3px 7px #ffffffe5, inset 3px 3px 5px rgba(55, 114, 216, 0.288) !important');
-      field.childNodes[3].setAttribute('style', 'box-shadow: none !important');
-    }
-    else if(field.childNodes[3].classList.contains("outset-gray")){
-      field.setAttribute('style',' box-shadow: inset -3px -3px 7px #ffffff80, inset 3px 3px 5px rgba(46, 46, 46, 0.288) !important');
-      field.childNodes[3].setAttribute('style', 'box-shadow: none !important');
-    }
-    else if(field.childNodes[3].classList.contains("outset-dark")){
-      field.setAttribute('style','  box-shadow: inset 5px 5px 9px #303030, inset -5px -5px 9px #535353 !important');
-      field.childNodes[3].setAttribute('style', 'box-shadow: none !important');
-    }
-    else {
-      field.childNodes[3].setAttribute('style', 'box-shadow: none !important');
-      field.setAttribute('style','box-shadow: inset 3px 3px 5px #c0c0c0, inset -3px -3px 5px #fff !important');
-    }
-  }
-
-  if(fields){
-    fields.forEach((element) => {
-      element.addEventListener('click', function(){
-        console.log(element);
-        addLabelEvent(element);
-      })
-    });
-  }
-  /* Floatinglabel function end */
 
 
   window.onclick = function (event) {
