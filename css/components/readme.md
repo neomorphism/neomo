@@ -1269,35 +1269,28 @@
       <br />
       <br />
       <div class="tooltip neomo">
-        Hover here!
+        Top Tooltip!
         <span class="tooltip-content top outset-neomo"> tooltip! </span>
       </div>
       <br />
       <br />
       <br />
       <div class="tooltip neomo">
-        Hover here!
-        <span class="tooltip-content outset-neomo right"> tooltip! </span>
+        Bottom Tooltip!
+        <span class="tooltip-content bottom outset-neomo"> tooltip! </span>
       </div>
       <br />
       <br />
       <br />
       <div class="tooltip neomo">
-        Hover here!
-        <span class="tooltip-content top outset-neomo"> tooltip! </span>
-      </div>
-      <br />
-      <br />
-      <br />
-      <div class="tooltip neomo">
-        Hover here!
+        Left Tooltip!
         <span class="tooltip-content left outset-neomo"> tooltip! </span>
       </div>
       <br />
       <br />
       <br />
       <div class="tooltip neomo">
-        Hover here!
+        Right Tooltip!
         <span class="tooltip-content right outset-neomo"> tooltip! </span>
       </div>
     </div>
