@@ -6,109 +6,96 @@
 */
 
 .floatinglabel-field {
-    display: flex;
-    flex-flow: column-reverse;
-    width: 300px;
-    padding: 5px;
-    margin-bottom: 1em;
-    border: none;
-    border-radius: 10px;
-  }
-  .floatinglabel-field:focus-within {
-    box-shadow: inset 3px 3px 5px #c0c0c0, inset -3px -3px 5px #fff !important;
-  }
-  .floatinglabel-input,
-  .floatinglabel-label {
-    transition: all 0.2s;
-    touch-action: manipulation;
-  }
-  
-  .floatinglabel-input {
-    font-size: 1.5em;
-    border: 0;
-    font-family: inherit;
-    -webkit-appearance: none;
-    border-radius: 10px;
-    padding: 5px;
-    cursor: text;
-    outline: none;
-    text-indent: 5px; 
-  }
-  
-  .floatinglabel-input:focus {
-    outline: 0;
-    border: none;
-    box-shadow: none !important;
-  }
-  
-  .floatinglabel-label {
-   
-    letter-spacing: 0.05em;
-    padding: 5px;
-    
-  }
-  
-  .floatinglabel-input:placeholder-shown + label {
-    cursor: text;
-    width: 180px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    transform-origin: left bottom;
-    transform: translate(0, 25.5px) scale(1.5);
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 3px 3px 7px #ababab, -3px -3px 7px #ffffff  ;
-    
-  }
-  
-  .floatinglabel-input::-webkit-input-placeholder {
-    opacity: 0;
-    transition: inherit;
-    
-  }
-  
-  .floatinglabel-input:focus::-webkit-input-placeholder {
-    opacity: 1;
-  }
-  
-  .floatinglabel-input:not(:placeholder-shown) + label,
-  .floatinglabel-input:focus + label {
-    transform: translate(0, 0) scale(1);
-    cursor: pointer;
-    box-shadow: none ;
-    
-  }
-  
-  .floatinglabel-input:-webkit-autofill,
-  .floatinglabel-input:-webkit-autofill:hover, 
-  .floatinglabel-input:-webkit-autofill:focus, 
-  .floatinglabel-input:-webkit-autofill:active
-  {
-   -webkit-box-shadow: 0 0 0 30px white inset !important;
-  }
-  
-  
-  .neomo .floatinglabel-input:-webkit-autofill,
-  .neomo .floatinglabel-input:-webkit-autofill:hover, 
-  .neomo .floatinglabel-input:-webkit-autofill:focus, 
-  .neomo .floatinglabel-input:-webkit-autofill:active
-  {
-   -webkit-box-shadow: 0 0 0 30px var(--neomo) inset !important;
-  }
-  
-  .gray .floatinglabel-input:-webkit-autofill,
-  .gray .floatinglabel-input:-webkit-autofill:hover, 
-  .gray .floatinglabel-input:-webkit-autofill:focus, 
-  .gray .floatinglabel-input:-webkit-autofill:active
-  {
-   -webkit-box-shadow: 0 0 0 30px var(--neomo-gray) inset !important;
-  }
-  
-  .dark .floatinglabel-input:-webkit-autofill,
-  .dark .floatinglabel-input:-webkit-autofill:hover, 
-  .dark .floatinglabel-input:-webkit-autofill:focus, 
-  .dark .floatinglabel-input:-webkit-autofill:active
-  {
-   -webkit-box-shadow: 0 0 0 30px var(--neomo-dark) inset !important;
-  }
+  display: flex;
+  flex-flow: column-reverse;
+  width: 250px;
+  padding: 5px;
+  margin-bottom: 1em;
+  border: none;
+  border-radius: 10px;
+}
+
+.floatinglabel-input,
+.floatinglabel-label {
+  transition: all 0.2s;
+  touch-action: manipulation;
+}
+
+.floatinglabel-input {
+  font-size: 1.5em;
+  border: 0;
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  cursor: text;
+  outline: none;
+  text-indent: 5px;
+  box-shadow: inset 3px 3px 5px #b8b9be, inset -3px -3px 5px #fff !important;
+  z-index: 1;
+}
+
+.floatinglabel-input:focus {
+  outline: 0;
+  border: none;
+}
+
+.floatinglabel-label {
+  letter-spacing: 0.05em;
+  padding-left: 0.3rem;
+  z-index: 2;
+}
+
+.floatinglabel-input:placeholder-shown + label {
+  cursor: text;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left;
+  transform: translate(0, 30.5px) scale(1.5);
+  border-radius: 10px;
+}
+
+.floatinglabel-input::-webkit-input-placeholder {
+  opacity: 0;
+  transition: inherit;
+}
+
+.floatinglabel-input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.floatinglabel-input:not(:placeholder-shown) + label,
+.floatinglabel-input:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.floatinglabel-input:-webkit-autofill,
+.floatinglabel-input:-webkit-autofill:hover,
+.floatinglabel-input:-webkit-autofill:focus,
+.floatinglabel-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.neomo .floatinglabel-input:-webkit-autofill,
+.neomo .floatinglabel-input:-webkit-autofill:hover,
+.neomo .floatinglabel-input:-webkit-autofill:focus,
+.neomo .floatinglabel-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--neomo) inset !important;
+}
+
+.gray .floatinglabel-input:-webkit-autofill,
+.gray .floatinglabel-input:-webkit-autofill:hover,
+.gray .floatinglabel-input:-webkit-autofill:focus,
+.gray .floatinglabel-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--neomo-gray) inset !important;
+}
+
+.dark .floatinglabel-input:-webkit-autofill,
+.dark .floatinglabel-input:-webkit-autofill:hover,
+.dark .floatinglabel-input:-webkit-autofill:focus,
+.dark .floatinglabel-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--neomo-dark) inset !important;
+}

@@ -80,7 +80,8 @@ input:checked + .switch.outset-neomo,
 .neomo input:-webkit-autofill,
 .neomo input:-webkit-autofill:hover,
 .neomo input:-webkit-autofill:focus,
-.neomo input:-webkit-autofill:active {
+.neomo input:-webkit-autofill:active,
+.neomo .floatinglabel-input.inset-neomo {
   border: none;
   background: var(--neomo) !important;
   box-shadow: inset -3px -3px 7px #ffffffe5,
@@ -116,7 +117,8 @@ input:checked + .switch.outset-gray,
 .gray input:-webkit-autofill,
 .gray input:-webkit-autofill:hover,
 .gray input:-webkit-autofill:focus,
-.gray input:-webkit-autofill:active {
+.gray input:-webkit-autofill:active,
+.gray .floatinglabel-input.inset-gray {
   border: none;
   background: var(--neomo-gray) !important;
   box-shadow: inset -3px -3px 7px #ffffff80,
@@ -152,7 +154,8 @@ input:checked + .switch.outset-dark,
 .dark input:-webkit-autofill,
 .dark input:-webkit-autofill:hover,
 .dark input:-webkit-autofill:focus,
-.dark input:-webkit-autofill:active {
+.dark input:-webkit-autofill:active,
+.dark .floatinglabel-input.inset-dark {
   border: none;
   background: var(--neomo-dark) !important;
   box-shadow: inset 5px 5px 9px #303030, inset -5px -5px 9px #535353 !important;
@@ -322,25 +325,21 @@ input:checked + .switch.outset-orange,
   color: whitesmoke;
 }
 
-.button.inset:hover,
-.floatinglabel-field.inset:focus-within {
+.button.inset:hover {
   box-shadow: inset 3px 3px 5px #9c9da0, inset -3px -3px 5px #fff !important;
 }
 
-.button.inset-neomo:hover,
-.floatinglabel-field.inset-neomo:focus-within {
+.button.inset-neomo:hover {
   box-shadow: inset -3px -3px 7px #ffffffe5,
     inset 3px 3px 7px rgba(8, 91, 235, 0.288) !important;
 }
 
-.button.inset-gray:hover,
-.floatinglabel-field.inset-gray:focus-within {
+.button.inset-gray:hover {
   box-shadow: inset -3px -3px 7px #ffffff80,
     inset 5px 5px 7px rgba(22, 22, 22, 0.288) !important;
 }
 
-.button.inset-dark:hover,
-.floatinglabel-field.inset-dark:focus-within {
+.button.inset-dark:hover {
   box-shadow: inset 5px 5px 9px #242424, inset -5px -5px 9px #535353 !important;
 }
 
